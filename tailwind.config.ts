@@ -9,9 +9,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'background-light': "var(--background-light)",
+        'background-dark': "var(--background-dark)",
+        'foreground-light': "var(--foreground-light)",
+        'foreground-dark': "var(--foreground-dark)",
+        'highlight': "var(--highlight)",
+        'text-dark': "var(--text-dark)",
+        'text-light': "var(--text-light)"
       },
+      spacing: {
+        'edge': "var(--edge-spacer)"
+      }
     },
   },
   plugins: [],

@@ -3,8 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-light: #FFF;
+  --background-dark: #173A52;
+
+  --foreground-light-gray: #C4C4C4;
+  --foreground-dark-gray: #B3B3B3;
+
+  --highlight-blue: #9EE7E5;
+  --highlight-yellow: #FFC53D;
+
+  --text-dark: #005271;
+  --text-light: #FFF;
+
+  --edge-spacer: 175px;
 }
 
 * {
