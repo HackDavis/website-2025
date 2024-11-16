@@ -1,0 +1,50 @@
+.landing_container {
+  position: relative;
+  width: 100%; 
+  height: 3000px; 
+  overflow: hidden; 
+}
+
+/* Water: Background Layer */
+.water {
+  position: relative;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 900px; 
+  z-index: -1; 
+}
+
+/* Sand */
+.sand {
+  position: absolute;
+  top: 719px; 
+  width: 2089px;
+  height: 1072px;
+  flex-shrink: 0;
+  z-index: 1; 
+}
+
+/* Mud */
+.mud {
+  position: absolute;
+  top: 1478px;
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 1682px;
+  height: 412px;
+  flex-shrink: 0;
+  z-index: 2; // Above Sand
+}
+
+/* Leaves */
+.leaves {
+  position: absolute;
+  top: 1672px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1583px;
+  height: 321px;
+  flex-shrink: 0;
+  z-index: 3;
+}

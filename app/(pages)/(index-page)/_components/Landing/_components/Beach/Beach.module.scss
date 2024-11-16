@@ -1,0 +1,66 @@
+.container {
+    position: absolute;
+    width: 100%;
+    height: auto; // Automatically adjust based on content
+    overflow: hidden; // Ensure no content overflows
+    z-index: 2;
+  }
+
+  
+/* Layer: Sand Semicircle */
+.sand_semicircle {
+    position: absolute;
+    top: 260px; 
+    width: 2089px;
+    height: 812px; 
+    z-index: 2;
+}
+ 
+/* Layer: Water Rectangle */
+.water_rectangle {
+    position: absolute;
+    top: 200px;
+    width: 1792px;
+    height: 147px;
+    flex-shrink: 0;
+    margin-left: -126px; 
+    margin-right: -226px;
+    z-index: 3;
+  }
+  
+  /* Layer: Water Light */
+.water_light {
+    position: absolute;
+    top: 198px; 
+    width: 1726px;
+    height: 100px;
+    flex-shrink: 0;
+    margin-left: -156px;
+    margin-right: -130px;
+    z-index: 4;
+}
+  
+/* Layer: Sand Dark */
+.sand_dark {
+    position: absolute;
+    top: 248px;
+    width: 1726px;
+    height: 100px;
+    flex-shrink: 0;
+    margin-left: -156px;
+    margin-right: -130px;
+    z-index: 5;
+}
+  
+/* Layer: Sand Light */
+.sand_light {
+    position: absolute;
+    top: 298px;
+    width: 1726px;
+    height: 100px;
+    flex-shrink: 0;
+    margin-left: -156px;
+    margin-right: -130px;
+    z-index: 7;
+    stroke-width: 59px;
+}
