@@ -60,36 +60,39 @@ export default function Navbar() {
   };
 
   return (
-    <div className={`${styles.content} ${isScrolled ? styles.scrolled : ''}`}>
-      <div className={styles.hdIcon}>
-        <Image src={WhiteLogo} alt="White HackDavis Logo" />
-      </div>
-      <div className={styles.navLinks}>
-        <p
-          onClick={() => scrollToSection('about')}
-          className={`${styles.navLink} ${
-            activeSection === 'about' ? styles.active : ''
-          }`}
-        >
-          ABOUT
-        </p>
-        <p
-          onClick={() => scrollToSection('faq')}
-          className={`${styles.navLink} ${
-            activeSection === 'faq' ? styles.active : ''
-          }`}
-        >
-          FAQ
-        </p>
-        <p
-          onClick={() => scrollToSection('sponsors')}
-          className={`${styles.navLink} ${
-            activeSection === 'sponsors' ? styles.active : ''
-          }`}
-        >
-          SPONSORS
-        </p>
-      </div>
+    <div className={styles.container}>
+        <div className={`${styles.content} ${isScrolled ? styles.scrolled : ''}`}>
+            <div className={styles.hdIcon}>
+                <Image src={WhiteLogo} alt="White HackDavis Logo" />
+            </div>
+            <div className={styles.navLinks}>
+                <p
+                onClick={() => scrollToSection('about')}
+                className={`${styles.navLink} ${
+                    activeSection === 'about' ? styles.active : ''
+                }`}
+                >
+                ABOUT
+                </p>
+                <p
+                onClick={() => scrollToSection('faq')}
+                className={`${styles.navLink} ${
+                    activeSection === 'faq' ? styles.active : ''
+                }`}
+                >
+                FAQ
+                </p>
+                <p
+                onClick={() => scrollToSection('sponsors')}
+                className={`${styles.navLink} ${
+                    activeSection === 'sponsors' ? styles.active : ''
+                }`}
+                >
+                SPONSORS
+                </p>
+            </div>
+        </div>
     </div>
+    
   );
 }
