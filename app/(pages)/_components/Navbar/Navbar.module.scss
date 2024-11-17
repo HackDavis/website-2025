@@ -1,0 +1,45 @@
+.content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: transparent;
+    transition: background-color 0.6s ease, box-shadow 0.6s ease;
+    z-index: 1000;
+    background-color: #2BC0F1; // TODO: This is a placeholder so that it can be seen on white backgrounds until the main hero section comes in
+    // Comment out once main background is in.
+  
+    &.scrolled {
+      background-color: rgba(4, 102, 101, 0.415); // TODO: NEEDS TO BE CHANGED
+      backdrop-filter: blur(10px);
+    }
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 24px;
+  
+    .navLink {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s;
+  
+      &:hover {
+        color: #9EE7E5;
+      }
+  
+      &.active {
+        color: #9EE7E5; // Active section color
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+  
