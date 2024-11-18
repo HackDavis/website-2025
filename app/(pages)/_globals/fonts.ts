@@ -1,4 +1,4 @@
-import { Inter, Montserrat, Plus_Jakarta_Sans} from 'next/font/google';
+import { Inter, Montserrat, Plus_Jakarta_Sans } from 'next/font/google';
 
 const inter = Inter({
   subsets: ['latin'],
