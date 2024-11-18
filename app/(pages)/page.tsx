@@ -11,6 +11,9 @@ export default function Home() {
       <p className="text-4xl font-bold font-inter">
         Halo! Welcome to the HackDavis template repo :D
       </p>
+      <p className="text-4xl font-bold font-jakarta">
+        Halo! Welcome to the HackDavis template repo :D
+      </p>
 
       {/* Sections for Testing */}
       <div

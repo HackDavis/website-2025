@@ -23,7 +23,8 @@ export default {
       fontFamily: {
         'metropolis': "var(--font-metropolis)",
         'montserrat': "var(--font-montserrat)",
-        'inter': "var(--font-inter)"
+        'inter': "var(--font-inter)",
+        'jakarta': "var(--font-jakarta)"
       }
     },
   },
