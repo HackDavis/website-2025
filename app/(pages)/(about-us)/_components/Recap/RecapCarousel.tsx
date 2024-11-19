@@ -9,10 +9,16 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import Image from 'next/image';
+import CarouselIMG1 from '@/public/aboutUs/Recap/carousel1.png';
+import CarouselIMG2 from '@/public/aboutUs/Recap/carousel2.png';
+import CarouselIMG3 from '@/public/aboutUs/Recap/carousel3.png';
 
 export function RecapCarousel() {
   const [api, setApi] = React.useState<any>();
   const [current, setCurrent] = React.useState(0);
+
+  const images = [CarouselIMG1, CarouselIMG2, CarouselIMG3];
 
   React.useEffect(() => {
     if (!api) return;
@@ -26,15 +32,20 @@ export function RecapCarousel() {
     <div className="flex flex-col items-center gap-2 w-full max-w-xs">
       <Carousel setApi={setApi} className="w-full">
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
+          {images.map((img, index) => (
             <CarouselItem key={index}>
-              <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-4xl font-semibold">{index + 1}</span>
+              <Card className="rounded-3xl overflow-hidden border-2 border-transparent bg-gradient-to-br from-blue-200 to-green-200 p-[1px]">
+                <div className="bg-white rounded-3xl h-full w-full overflow-hidden">
+                  <CardContent className="relative flex aspect-square items-center justify-center">
+                    <Image
+                      src={img}
+                      alt={`Carousel image ${index + 1}`}
+                      className="object-cover w-full h-full"
+                      fill
+                    />
                   </CardContent>
-                </Card>
-              </div>
+                </div>
+              </Card>
             </CarouselItem>
           ))}
         </CarouselContent>
@@ -44,7 +55,7 @@ export function RecapCarousel() {
 
       {/* Indicators */}
       <div className="flex gap-2 mt-2">
-        {Array.from({ length: 5 }).map((_, index) => (
+        {images.map((_, index) => (
           <button
             key={index}
             className={`w-2 h-2 rounded-full transition-all ${
