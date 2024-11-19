@@ -1,3 +1,30 @@
 .container {
-    background-color: pink;
+    background-color: #173A52;
+    color: white;
+    width: 100%;
+    padding: 15%;
+
+    .buttonsContainer {
+        display: flex;
+    }
+
+    .buttons {
+        background-color: #005271;
+        flex-direction: row;
+        display: flex;
+        border: 1px black solid;
+        border-radius: 50px;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        margin-right: 2%;
+        color: #9EE7E5;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .buttons:hover {
+        background-color: #9EE7E5;
+        cursor: pointer;
+        color: #005271;
+    }
 }
