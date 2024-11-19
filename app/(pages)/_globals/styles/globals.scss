@@ -57,6 +57,20 @@
   --text-light: #FFF;
 
   --edge-spacer: 175px;
+
+  /* Navbar Styles */
+  --navbar-top-spacing: 38px;
+  --navbar-padding-left: 40px;
+  --navbar-padding-right: 97px;
+  --navbar-height: 60px;
+  --navbar-text-weight-normal: 400;
+  --navbar-item-spacing: 48px;
+  --navbar-highlight: #9EE7E5;
+  --navbar-highlight-text-weight: 700;
+  --navbar-scrolled-background: rgba(4, 102, 101, 0.415);
+  --navbar-scrolled-padding: 5px;
+  --navbar-scrolled-blur: blur(10px);
+  --navbar-placeholder-background: #2BC0F1;
 }
 
 * {
