@@ -11,18 +11,28 @@
     }
 
     .text {
-        padding-bottom: 2.5%;
+        padding-bottom: 3.5%;
+        
+
+        h1 {
+            font-size: 3rem;
+        }
+        
+        h3 {
+            font-size: 1rem;
+        }
+
     }
 
     .buttons {
         background-color: #005271;
         flex-direction: row;
         display: flex;
-        border: 1px black solid;
-        border-radius: 50px;
+        border-radius: 40px;
         padding-top: 1.5%;
         padding-bottom: 1.5%;
         margin-right: 2%;
+        margin-bottom: 5%;
         color: #9EE7E5;
         padding-left: 3%;
         padding-right: 3%;
@@ -33,4 +43,21 @@
         cursor: pointer;
         color: #005271;
     }
+
+    .team {
+        // background-color: pink;
+        border: 3px white solid;
+        display: flex;
+        gap: 20px;
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            padding: 5%;
+        }
+    }
+
+
+
 }
