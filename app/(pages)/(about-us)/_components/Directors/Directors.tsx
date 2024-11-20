@@ -34,7 +34,21 @@ export default function Directors() {
             <p> Position, lead</p>
           </div>
 
-          
+          {/* 3rd profile */}
+          <div className={styles.profile}>
+            <img/>
+            <h4>First last</h4>
+            <p> Position, lead</p>
+          </div>
+
+          {/* 4th profile */}
+          <div className={styles.profile}>
+            <img/>
+            <h4>First last</h4>
+            <p> Position, lead</p>
+          </div>
+
+
         </div>
 
     </div>
