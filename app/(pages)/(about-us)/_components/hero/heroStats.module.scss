@@ -1,0 +1,77 @@
+// @use 'app/(pages)/_globals/mixins';
+// $bg-color: #015270;
+// $tablet-breakpoint: 1024px;
+// $mobile-breakpoint: 505px;
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+//   background: #E5C28E; //temp background to see text
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow: hidden; 
+
+}
+
+.stats{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10%;
+
+//   @media (max-width: $mobile-breakpoint) {
+//     flex-direction: column;
+//   }
+
+  &_inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // @media (max-width: $mobile-breakpoint) {
+    //   flex-direction: row;
+    //   width: 100%;
+    //   gap: 18px; 
+    // }
+
+    h1{
+      color: #005271;
+      font-family: "Metropolis";
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 96px */
+      letter-spacing: 1.28px;
+      text-transform: lowercase;
+
+    //   @media (max-width: $tablet-breakpoint) {
+    //     font-size: 40px;
+    //   }
+    //   @media (max-width: $mobile-breakpoint) {
+    //     font-size: 48px;
+    //   }
+    }
+    p{
+      color: #FFF;
+      font-family: "Metropolis";
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px; /* 111.111% */
+      letter-spacing: 0.72px;
+
+    //   @media (max-width: $tablet-breakpoint) {
+    //     font-size: 14px;
+    //   }
+    //   @media (max-width: $mobile-breakpoint) {
+    //     font-size: 30px;
+    //   }
+    }
+  }
+
+}
