@@ -1,8 +1,49 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis/TrueType/Metropolis-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis/TrueType/Metropolis-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis/TrueType/Metropolis-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis/TrueType/Metropolis-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis/TrueType/Metropolis-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis/TrueType/Metropolis-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 :root {
+  --font-metropolis: 'Metropolis', sans-serif;
   --background-light: #FFF;
   --background-dark: #173A52;
 
@@ -16,12 +57,32 @@
   --text-light: #FFF;
 
   --edge-spacer: 175px;
+
+  /* Navbar Styles */
+  --navbar-top-spacing: 38px;
+  --navbar-padding-left: 40px;
+  --navbar-padding-right: 97px;
+  --navbar-height: 60px;
+  --navbar-text-weight-normal: 400;
+  --navbar-text-letter-spacing: 0.36px;
+  --navbar-item-spacing: 48px;
+  /* Navbar styles for when text is highlighted */
+  --navbar-highlight: #9EE7E5;
+  --navbar-highlight-text-weight: 700;
+  --navbar-highlight-underline-height: 2px;
+  --navbar-highlight-underline-distance: -4px;
+  /* Navbar styles for partial scroll */
+  --navbar-scrolled-background: rgba(4, 102, 101, 0.415);
+  --navbar-scrolled-padding: 5px;
+  --navbar-scrolled-blur: blur(10px);
+  --navbar-placeholder-background: #2BC0F1;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: var(--font-metropolis);
 }
 
 h1 {

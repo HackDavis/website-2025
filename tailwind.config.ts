@@ -19,6 +19,12 @@ export default {
       },
       spacing: {
         'edge': "var(--edge-spacer)"
+      },
+      fontFamily: {
+        'metropolis': "var(--font-metropolis)",
+        'montserrat': "var(--font-montserrat)",
+        'inter': "var(--font-inter)",
+        'jakarta': "var(--font-jakarta)"
       }
     },
   },
