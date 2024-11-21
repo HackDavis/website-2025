@@ -1,4 +1,6 @@
 import styles from './Directors.module.scss';
+import { useState } from "react";
+const [activeCategory, setActiveCategory] = useState('Technical');
 
 export default function Directors() {
   return (
