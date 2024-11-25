@@ -1,4 +1,4 @@
-import Directors from './(about-us)/_components/Directors/Directors';
+// import Directors from './(about-us)/_components/Directors/Directors';
 
 export default function Home() {
   return (
