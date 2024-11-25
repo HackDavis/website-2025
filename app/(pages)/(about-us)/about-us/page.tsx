@@ -1,5 +1,5 @@
 // import Directors from '../_components/Directors/Directors';
-import OurTeam from '../OurTeam/OurTeam';
+import OurTeam from '../_components/OurTeam/OurTeam';
 // import ProfileCard from '../_components/Directors/ProfileCard';
 
 export default function AboutUs() {

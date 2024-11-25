@@ -2,9 +2,10 @@
 import ProfileCard from './_components/ProfileCard';
 import styles from './OurTeam.module.scss';
 import { useState, useEffect } from 'react';
-import { getAllTeamMembers } from '@/app/(api)/_actions/teamMembers/filterTeamMongo';
 import useEmblaCarousel from 'embla-carousel-react';
 import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures';
+import teamMembersData from '../../_data/teamMembers.json';
+// import teamMembersData from '_data/teamMembers.json'; // Import team members JSON file
 
 type TeamMember = {
   id: string;
@@ -32,13 +33,23 @@ export default function OurTeam() {
   );
 
   useEffect(() => {
-    async function loadAllTeamMembers() {
-      const members = await getAllTeamMembers();
+    function loadAllTeamMembers() {
+      // Transform JSON data to match the TeamMember type
+      const members: TeamMember[] = teamMembersData.map((member) => ({
+        id: member._id.$oid, // Use `_id.$oid` as the `id`
+        name: member.name, // Access the `name` property
+        position: member.position, // Access the `position` property
+        teamCategory: member.team_category, // Correctly map `team_category` to `teamCategory`
+        profileImageUrl: member.profile_image_url, // Correctly map `profile_image_url` to `profileImageUrl`
+        linkedinURL: member.linkedinURL, // Access the `linkedinURL` property
+      }));
+
       if (members) {
         setAllTeamMembers(members);
         filterTeam('Design', members);
       }
     }
+
     loadAllTeamMembers();
   }, []);
 
@@ -46,11 +57,9 @@ export default function OurTeam() {
     const filteredMembers = members
       .filter((member) => member.teamCategory === teamName)
       .sort((a, b) => {
-        // Check if 'position' contains 'Lead'
         const aIsLead = a.position.includes('Lead');
         const bIsLead = b.position.includes('Lead');
 
-        // Prioritize leads
         if (aIsLead && !bIsLead) return -1;
         if (!aIsLead && bIsLead) return 1;
 
@@ -84,7 +93,7 @@ export default function OurTeam() {
                   className={`${
                     styles.ourTeam_container_embla_filterButtons_button
                   } ${activeTeam === teamName ? styles.active : ''}`}
-                  onClick={async () => {
+                  onClick={() => {
                     if (emblaApi) emblaApi.scrollTo(index, false);
                     filterTeam(teamName, allTeamMembers);
                   }}
@@ -97,17 +106,15 @@ export default function OurTeam() {
         </div>
 
         <div className={styles.ourTeam_container_team}>
-          {teamMembers.map((member) => {
-            return (
-              <ProfileCard
-                key={member.id}
-                name={member.name}
-                title={member.position}
-                imageUrl={member.profileImageUrl}
-                linkedinURL={member.linkedinURL}
-              />
-            );
-          })}
+          {teamMembers.map((member) => (
+            <ProfileCard
+              key={member.id}
+              name={member.name}
+              title={member.position}
+              imageUrl={member.profileImageUrl}
+              linkedinURL={member.linkedinURL}
+            />
+          ))}
         </div>
       </div>
     </div>
