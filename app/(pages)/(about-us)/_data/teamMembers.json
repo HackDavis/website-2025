@@ -195,9 +195,9 @@
       "$oid": "65b6e0a06a7eaf354ea8e4aa"
     },
     "id": 2,
-    "name": "Samantha Mah",
+    "name": "Samantha Zhang",
     "position": "UI/UX Design Director",
-    "profile_image_url": "/images/team_members/design/Samantha_Mah.jpeg",
+    "profile_image_url": "/images/team_members/design/Samantha_Zhang.jpeg",
     "team_category": "Design",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/samanthamah-design/"
@@ -207,9 +207,9 @@
       "$oid": "65b6e0a06a7eaf354ea8e4ae"
     },
     "id": 1,
-    "name": "Rachel Yap",
-    "position": "Co-President, Design Lead",
-    "profile_image_url": "/images/team_members/design/Rachel_Yap.jpeg",
+    "name": "Sechan Kim",
+    "position": "Design Lead",
+    "profile_image_url": "/images/team_members/design/Sechan_Kim.jpeg",
     "team_category": "Design",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/rachelyapp/"
@@ -219,12 +219,12 @@
       "$oid": "65b6e0a06a7eaf354ea8e4ac"
     },
     "id": 3,
-    "name": "Sechan Kim",
+    "name": "Sidney Heng",
     "position": "UX Design Director",
-    "profile_image_url": "/images/team_members/design/Sechan_Kim.jpeg",
+    "profile_image_url": "/images/team_members/design/Sidney_Heng.jpeg",
     "team_category": "Design",
     "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/sechankim"
+    "linkedinURL": "https://www.linkedin.com/in/sidneyheng"
   },
   {
     "_id": {
@@ -279,21 +279,21 @@
       "$oid": "65b6e0a06a7eaf354ea8e4cc"
     },
     "id": 38,
-    "name": "Ayushi Bhatnagar",
-    "position": "Operations Lead",
-    "profile_image_url": "/images/team_members/Operations/Ayushi_Bhatnagar.jpeg",
+    "name": "Alice Nguyen",
+    "position": "Operations Director",
+    "profile_image_url": "/images/team_members/Operations/Alice_Nguyen.jpeg",
     "team_category": "Operations",
     "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/ayushi-bhatnagar-1064911b8/"
+    "linkedinURL": "https://www.linkedin.com/in/alice-t-nguyen/"
   },
   {
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4d0"
     },
     "id": 41,
-    "name": "Xiaolin Ma",
-    "position": "External Lead",
-    "profile_image_url": "/images/team_members/External/Xiaolin_Ma.jpeg",
+    "name": "Kelly Tran",
+    "position": "External Director",
+    "profile_image_url": "/images/team_members/External/Kelly_Tran.jpeg",
     "team_category": "External",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/xiaolinm/"
@@ -303,12 +303,12 @@
       "$oid": "65b6e0a06a7eaf354ea8e4d1"
     },
     "id": 42,
-    "name": "Shounak Ranabhor",
-    "position": "Co-President, External Lead",
-    "profile_image_url": "/images/team_members/External/Shounak_Ranabhor.jpeg",
+    "name": "Lana Wong",
+    "position": "External Lead",
+    "profile_image_url": "/images/team_members/External/Lana_Wong.jpeg",
     "team_category": "External",
     "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/shounakranabhor/"
+    "linkedinURL": "https://www.linkedin.com/in/lanawong/"
   },
   {
     "_id": {
@@ -351,21 +351,21 @@
       "$oid": "65b6e0a06a7eaf354ea8e4c3"
     },
     "id": 29,
-    "name": "Caitlyn Wong",
+    "name": "Joyce Kim",
     "position": "Operations Director",
-    "profile_image_url": "/images/team_members/Operations/Caitlyn_Wong.jpeg",
+    "profile_image_url": "/images/team_members/Operations/Joyce_Kim.jpeg",
     "team_category": "Operations",
     "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/caitlynmwong/"
+    "linkedinURL": "https://www.linkedin.com/in/Joyce_Kim/"
   },
   {
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4ca"
     },
     "id": 30,
-    "name": "Katerina Rahhal",
+    "name": "Jonathan Lew",
     "position": "Operations Director",
-    "profile_image_url": "/images/team_members/Operations/Katerina_Rahhal.jpeg",
+    "profile_image_url": "/images/team_members/Operations/Jonathan_Lew.jpeg",
     "team_category": "Operations",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/katerina-rahhal/"
@@ -399,24 +399,12 @@
       "$oid": "65b6e0a06a7eaf354ea8e4bf"
     },
     "id": 23,
-    "name": "Lana Wong",
+    "name": "Roshni Sandhu",
     "position": "External Director",
-    "profile_image_url": "/images/team_members/External/Lana_Wong.jpeg",
+    "profile_image_url": "/images/team_members/External/Roshni_Sandhu.jpeg",
     "team_category": "External",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/lana-wong-2639281a3/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4cd"
-    },
-    "id": 35,
-    "name": "Kennedy Ma",
-    "position": "Operations Lead",
-    "profile_image_url": "/images/team_members/Operations/Kennedy_Ma.jpeg",
-    "team_category": "Operations",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/kxma/"
   },
   {
     "_id": {
@@ -436,7 +424,7 @@
     },
     "id": 6,
     "name": "Jason Xie",
-    "position": "Brand Design Director",
+    "position": "Design Lead, Brand Design Director",
     "profile_image_url": "/images/team_members/design/Jason_Xie.jpeg",
     "team_category": "Design",
     "year": 2024,
@@ -471,9 +459,21 @@
       "$oid": "65b6e0a06a7eaf354ea8e4ce"
     },
     "id": 36,
-    "name": "Rayna Prasad",
+    "name": "Abirami Kathiresan",
     "position": "External Director",
-    "profile_image_url": "/images/team_members/External/Rayna_Prasad.jpeg",
+    "profile_image_url": "/images/team_members/External/Abirami_Kathiresan.jpeg",
+    "team_category": "External",
+    "year": 2024,
+    "linkedinURL": "www.linkedin.com/in/rayna-p-007360274"
+  },
+  {
+    "_id": {
+      "$oid": "65b6e0a06a7eaf354ea8e4ce"
+    },
+    "id": 36,
+    "name": "Saili Karkare",
+    "position": "External Director",
+    "profile_image_url": "/images/team_members/External/Saili_Karkare.jpeg",
     "team_category": "External",
     "year": 2024,
     "linkedinURL": "www.linkedin.com/in/rayna-p-007360274"
@@ -544,7 +544,7 @@
     },
     "id": 32,
     "name": "Michelle Zhu",
-    "position": "Operations Director",
+    "position": "Operations Lead",
     "profile_image_url": "/images/team_members/Operations/Michelle_Zhu.jpeg",
     "team_category": "Operations",
     "year": 2024,
@@ -591,9 +591,21 @@
       "$oid": "65b6e0a06a7eaf354ea8e4cb"
     },
     "id": 37,
-    "name": "Nicole Wetzel",
+    "name": "Denil Neil",
     "position": "Operations Director",
-    "profile_image_url": "/images/team_members/Operations/Nicole_Wetzel.jpeg",
+    "profile_image_url": "/images/team_members/Operations/Denil_Neil.jpeg",
+    "team_category": "Operations",
+    "year": 2024,
+    "linkedinURL": "https://www.linkedin.com/in/nicwetzel/"
+  },
+  {
+    "_id": {
+      "$oid": "65b6e0a06a7eaf354ea8e4cb"
+    },
+    "id": 37,
+    "name": "Matthew Hong",
+    "position": "Operations Director",
+    "profile_image_url": "/images/team_members/Operations/Matthew_Hong.jpeg",
     "team_category": "Operations",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/nicwetzel/"
