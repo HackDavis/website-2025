@@ -3,8 +3,8 @@
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
     "id": 11,
-    "name": "Laasya Madgula",
-    "position": "Technical Director",
+    "name": "Aidan Kim",
+    "position": "Finance Director",
     "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
     "team_category": "Finance",
     "year": 2024,
@@ -15,8 +15,8 @@
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
     "id": 11,
-    "name": "aasdfasdfsadf Madgula",
-    "position": "Technical Director",
+    "name": "Anna Pandey",
+    "position": "Finance Director",
     "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
     "team_category": "Finance",
     "year": 2024,
@@ -27,9 +27,9 @@
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
     "id": 11,
-    "name": "Laasya Madgula",
-    "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
+    "name": "Krishna Thaker",
+    "position": "Finance Lead",
+    "profile_image_url": "/images/team_members/sponsorship/Laasya_Madgula.jpeg",
     "team_category": "Finance",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -39,81 +39,9 @@
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
     "id": 11,
-    "name": "Laasya Madgula",
-    "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
-    "team_category": "Finance",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4b3"
-    },
-    "id": 11,
-    "name": "Laasya Madgula",
-    "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
-    "team_category": "Finance",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4b3"
-    },
-    "id": 11,
-    "name": "aasdfasdfsadf Madgula",
-    "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
-    "team_category": "Finance",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4b3"
-    },
-    "id": 11,
-    "name": "Laasya Madgula",
-    "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
-    "team_category": "Finance",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4b3"
-    },
-    "id": 11,
-    "name": "Laasya Madgula",
-    "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
-    "team_category": "Finance",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4b3"
-    },
-    "id": 11,
-    "name": "Laasya Madgula",
-    "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
-    "team_category": "Finance",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4b3"
-    },
-    "id": 11,
-    "name": "aasdfasdfsadf Madgula",
-    "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
+    "name": "Suranjana Sooraj",
+    "position": "Sponsorship Lead",
+    "profile_image_url": "/images/team_members/sponsorship/Laasya_Madgula.jpeg",
     "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -123,9 +51,9 @@
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
     "id": 11,
-    "name": "Laasya Madgula",
-    "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
+    "name": "Shreya Maddhali",
+    "position": "Sponsorship Lead",
+    "profile_image_url": "/images/team_members/technical/Shreya_Maddhali.jpeg",
     "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -135,9 +63,9 @@
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
     "id": 11,
-    "name": "aasdfasdfsadf Madgula",
+    "name": "Shinaya Arora",
     "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
+    "profile_image_url": "/images/team_members/sponsorship/Shinaya_Arora.jpeg",
     "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -147,9 +75,9 @@
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
     "id": 11,
-    "name": "Laasya Madgula",
-    "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
+    "name": "Morgan Brady",
+    "position": "Sponsorship Director",
+    "profile_image_url": "/images/team_members/sponsorship/Morgan_Brady.jpeg",
     "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -159,9 +87,33 @@
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
     "id": 11,
-    "name": "Laasya Madgula",
-    "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
+    "name": "Kaushal Ramalingam",
+    "position": "Sponsorship Director",
+    "profile_image_url": "/images/team_members/sponsorship/Kaushal_Ramalingam.jpeg",
+    "team_category": "Sponsorship",
+    "year": 2024,
+    "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
+  },
+  {
+    "_id": {
+      "$oid": "65b6e0a06a7eaf354ea8e4b3"
+    },
+    "id": 11,
+    "name": "Satya Sanegepalli",
+    "position": "Sponsorship Director",
+    "profile_image_url": "/images/team_members/sponsorship/Satya_Sanegepalli.jpeg",
+    "team_category": "Sponsorship",
+    "year": 2024,
+    "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
+  },
+  {
+    "_id": {
+      "$oid": "65b6e0a06a7eaf354ea8e4b3"
+    },
+    "id": 11,
+    "name": "Carolyn Vo",
+    "position": "Sponsorship Director",
+    "profile_image_url": "/images/team_members/sponsorship/Carolyn_Vo.jpeg",
     "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -171,9 +123,21 @@
       "$oid": "65b6e0a06a7eaf354ea8e4ad"
     },
     "id": 9,
-    "name": "Sauvikesh Lal",
+    "name": "Sandeep Reehal",
     "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Sauvikesh_Lal.jpeg",
+    "profile_image_url": "/images/team_members/technical/Sandeep_Reehal.jpeg",
+    "team_category": "Technical",
+    "year": 2024,
+    "linkedinURL": "https://www.linkedin.com/in/sauvikesh-lal/"
+  },
+  {
+    "_id": {
+      "$oid": "65b6e0a06a7eaf354ea8e4ad"
+    },
+    "id": 9,
+    "name": "Haylie Tan",
+    "position": "Technical Director",
+    "profile_image_url": "/images/team_members/technical/Haylie_Tan.jpeg",
     "team_category": "Technical",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/sauvikesh-lal/"
@@ -231,9 +195,9 @@
       "$oid": "65b6e0a06a7eaf354ea8e4ab"
     },
     "id": 8,
-    "name": "Trishna Sharma",
-    "position": "Co-President, Technical Lead",
-    "profile_image_url": "/images/team_members/technical/Trishna_Sharma.jpeg",
+    "name": "Michelle Yeoh",
+    "position": "Technical Director",
+    "profile_image_url": "/images/team_members/technical/Michelle_Yeoh.jpeg",
     "team_category": "Technical",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/trishnasharma/"
@@ -255,9 +219,9 @@
       "$oid": "65b6e0a06a7eaf354ea8e4b9"
     },
     "id": 16,
-    "name": "Jessica Chu",
-    "position": "Marketing Lead",
-    "profile_image_url": "/images/team_members/marketing/Jessica_Chu.jpeg",
+    "name": "Sean Batoon",
+    "position": "Marketing Director",
+    "profile_image_url": "/images/team_members/marketing/Sean_Batoon.jpeg",
     "team_category": "Marketing",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/jessica-chu-/"
@@ -339,9 +303,9 @@
       "$oid": "65b6e0a06a7eaf354ea8e4bc"
     },
     "id": 18,
-    "name": "Sruti Elangovan",
+    "name": "Jamie Chac",
     "position": "Marketing Director",
-    "profile_image_url": "/images/team_members/marketing/Sruti_Elangovan.jpeg",
+    "profile_image_url": "/images/team_members/marketing/Jamie_Chac.jpeg",
     "team_category": "Marketing",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/sruti-elangovan-51166a202/"
@@ -387,9 +351,9 @@
       "$oid": "65b6e0a06a7eaf354ea8e4bd"
     },
     "id": 20,
-    "name": "Jasleen Gunsi",
+    "name": "Vanessa Guo",
     "position": "Marketing Director",
-    "profile_image_url": "/images/team_members/marketing/Jasleen_Gunsi.jpeg",
+    "profile_image_url": "/images/team_members/marketing/Vanessa_Guo.jpeg",
     "team_category": "Marketing",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/jasleen-gunsi-9897ab259/"
@@ -412,7 +376,7 @@
     },
     "id": 10,
     "name": "Win Cheng",
-    "position": "Technical Director",
+    "position": "Technical Lead",
     "profile_image_url": "/images/team_members/technical/Win_Cheng.jpeg",
     "team_category": "Technical",
     "year": 2024,
@@ -424,7 +388,7 @@
     },
     "id": 6,
     "name": "Jason Xie",
-    "position": "Design Lead, Brand Design Director",
+    "position": "Design Lead",
     "profile_image_url": "/images/team_members/design/Jason_Xie.jpeg",
     "team_category": "Design",
     "year": 2024,
@@ -441,18 +405,6 @@
     "team_category": "Sponsorship/Finance",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/fiona-chau/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4c6"
-    },
-    "id": 34,
-    "name": "Kiana Sotelo",
-    "position": "Sponsorship Lead",
-    "profile_image_url": "/images/team_members/Sponsorship/Finance/Kiana_Sotelo.jpeg",
-    "team_category": "Sponsorship/Finance",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/kiana-a-sotelo-kas0528/"
   },
   {
     "_id": {
@@ -492,18 +444,6 @@
   },
   {
     "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4be"
-    },
-    "id": 21,
-    "name": "Angela Lee",
-    "position": "Marketing Director",
-    "profile_image_url": "/images/team_members/marketing/Angela_Lee.jpeg",
-    "team_category": "Marketing",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/angelayjlee/"
-  },
-  {
-    "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4d2"
     },
     "id": 40,
@@ -532,7 +472,7 @@
     },
     "id": 14,
     "name": "Jay Jain",
-    "position": "Technical Director",
+    "position": "Technical Lead",
     "profile_image_url": "/images/team_members/technical/Jay_Jain.jpeg",
     "team_category": "Technical",
     "year": 2024,
@@ -549,42 +489,6 @@
     "team_category": "Operations",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/michelleszhu/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4bb"
-    },
-    "id": 19,
-    "name": "Annie Ding",
-    "position": "Marketing Director",
-    "profile_image_url": "/images/team_members/marketing/Annie_Ding.jpeg",
-    "team_category": "Marketing",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/annieding04/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4c4"
-    },
-    "id": 27,
-    "name": "Harumi Arvizu Nansen",
-    "position": "Finance Lead",
-    "profile_image_url": "/images/team_members/Sponsorship/Finance/Harumi_Arvizu_Nansen.jpeg",
-    "team_category": "Sponsorship/Finance",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4c9"
-    },
-    "id": 33,
-    "name": "Valerie Ekwedike",
-    "position": "Sponsorship Director",
-    "profile_image_url": "/images/team_members/Sponsorship/Finance/Valerie_Ekwedike.jpeg",
-    "team_category": "Sponsorship/Finance",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/"
   },
   {
     "_id": {
@@ -609,28 +513,4 @@
     "team_category": "Operations",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/nicwetzel/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4cf"
-    },
-    "id": 39,
-    "name": "Arpita Vashisht",
-    "position": "Sponsorship Director",
-    "profile_image_url": "/images/team_members/Sponsorship/Finance/Arpita_Vashisht.jpeg",
-    "team_category": "Sponsorship/Finance",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/arpita-vashisht/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4c5"
-    },
-    "id": 26,
-    "name": "Shreya Maddhali",
-    "position": "Sponsorship Director",
-    "profile_image_url": "/images/team_members/Sponsorship/Finance/Shreya_Maddhali.jpeg",
-    "team_category": "Sponsorship/Finance",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/shreyamaddhali"
   }]
