@@ -5,7 +5,7 @@
     "id": 11,
     "name": "Aidan Kim",
     "position": "Finance Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
+    "profile_image_url": "/images/team_members/finance/Aidan_Kim.jpg",
     "team_category": "Finance",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -17,7 +17,7 @@
     "id": 11,
     "name": "Anna Pandey",
     "position": "Finance Director",
-    "profile_image_url": "/images/team_members/technical/Laasya_Madgula.jpeg",
+    "profile_image_url": "/images/team_members/finance/Anna_Pandey.jpg",
     "team_category": "Finance",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -29,7 +29,7 @@
     "id": 11,
     "name": "Krishna Thaker",
     "position": "Finance Lead",
-    "profile_image_url": "/images/team_members/sponsorship/Laasya_Madgula.jpeg",
+    "profile_image_url": "/images/team_members/finance/Krishna_Thaker.jpg",
     "team_category": "Finance",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -53,7 +53,7 @@
     "id": 11,
     "name": "Shreya Maddhali",
     "position": "Sponsorship Lead",
-    "profile_image_url": "/images/team_members/technical/Shreya_Maddhali.jpeg",
+    "profile_image_url": "/images/team_members/technical/Shreya_Maddhali.jpg",
     "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -65,7 +65,7 @@
     "id": 11,
     "name": "Shinaya Arora",
     "position": "Technical Director",
-    "profile_image_url": "/images/team_members/sponsorship/Shinaya_Arora.jpeg",
+    "profile_image_url": "/images/team_members/sponsorship/Shinaya_Arora.jpg",
     "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -77,7 +77,7 @@
     "id": 11,
     "name": "Morgan Brady",
     "position": "Sponsorship Director",
-    "profile_image_url": "/images/team_members/sponsorship/Morgan_Brady.jpeg",
+    "profile_image_url": "/images/team_members/sponsorship/Morgan_Brady.jpg",
     "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -101,7 +101,7 @@
     "id": 11,
     "name": "Satya Sanegepalli",
     "position": "Sponsorship Director",
-    "profile_image_url": "/images/team_members/sponsorship/Satya_Sanegepalli.jpeg",
+    "profile_image_url": "/images/team_members/sponsorship/Satya_Sanegepalli.jpg",
     "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -113,7 +113,7 @@
     "id": 11,
     "name": "Carolyn Vo",
     "position": "Sponsorship Director",
-    "profile_image_url": "/images/team_members/sponsorship/Carolyn_Vo.jpeg",
+    "profile_image_url": "/images/team_members/sponsorship/Carolyn_Vo.jpg",
     "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
@@ -149,8 +149,8 @@
     "id": 24,
     "name": "Suranjana Sooraj",
     "position": "Sponsorship Director",
-    "profile_image_url": "/images/team_members/Sponsorship/Finance/Suranjana_Sooraj.jpeg",
-    "team_category": "Sponsorship/Finance",
+    "profile_image_url": "/images/team_members/sponsorship/Suranjana_Sooraj.jpg",
+    "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/suranjana-sooraj-54331825b/"
   },
@@ -221,7 +221,7 @@
     "id": 16,
     "name": "Sean Batoon",
     "position": "Marketing Director",
-    "profile_image_url": "/images/team_members/marketing/Sean_Batoon.jpeg",
+    "profile_image_url": "/images/team_members/marketing/Sean_Batoon.jpg",
     "team_category": "Marketing",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/jessica-chu-/"
@@ -245,7 +245,7 @@
     "id": 38,
     "name": "Alice Nguyen",
     "position": "Operations Director",
-    "profile_image_url": "/images/team_members/Operations/Alice_Nguyen.jpeg",
+    "profile_image_url": "/images/team_members/Operations/Alice_Nguyen.jpg",
     "team_category": "Operations",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/alice-t-nguyen/"
@@ -257,7 +257,7 @@
     "id": 41,
     "name": "Kelly Tran",
     "position": "External Director",
-    "profile_image_url": "/images/team_members/External/Kelly_Tran.jpeg",
+    "profile_image_url": "/images/team_members/External/Kelly_Tran.jpg",
     "team_category": "External",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/xiaolinm/"
@@ -269,7 +269,7 @@
     "id": 42,
     "name": "Lana Wong",
     "position": "External Lead",
-    "profile_image_url": "/images/team_members/External/Lana_Wong.jpeg",
+    "profile_image_url": "/images/team_members/External/Lana_Wong.jpg",
     "team_category": "External",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/lanawong/"
@@ -293,7 +293,7 @@
     "id": 17,
     "name": "Christina Chung",
     "position": "Marketing Director",
-    "profile_image_url": "/images/team_members/marketing/Christina_Chung.jpeg",
+    "profile_image_url": "/images/team_members/marketing/Christina_Chung.jpg",
     "team_category": "Marketing",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/christina-chung-21223a250/"
@@ -305,7 +305,7 @@
     "id": 18,
     "name": "Jamie Chac",
     "position": "Marketing Director",
-    "profile_image_url": "/images/team_members/marketing/Jamie_Chac.jpeg",
+    "profile_image_url": "/images/team_members/marketing/Jamie_Chac.jpg",
     "team_category": "Marketing",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/sruti-elangovan-51166a202/"
@@ -317,7 +317,7 @@
     "id": 29,
     "name": "Joyce Kim",
     "position": "Operations Director",
-    "profile_image_url": "/images/team_members/Operations/Joyce_Kim.jpeg",
+    "profile_image_url": "/images/team_members/Operations/Joyce_Kim.jpg",
     "team_category": "Operations",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/Joyce_Kim/"
@@ -329,7 +329,7 @@
     "id": 30,
     "name": "Jonathan Lew",
     "position": "Operations Director",
-    "profile_image_url": "/images/team_members/Operations/Jonathan_Lew.jpeg",
+    "profile_image_url": "/images/team_members/Operations/Jonathan_Lew.jpg",
     "team_category": "Operations",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/katerina-rahhal/"
@@ -341,7 +341,7 @@
     "id": 4,
     "name": "Johnson Ou",
     "position": "UI Design Director",
-    "profile_image_url": "/images/team_members/design/Johnson_Ou.jpeg",
+    "profile_image_url": "/images/team_members/design/Johnson_Ou.jpg",
     "team_category": "Design",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/johnsonou/"
@@ -353,7 +353,7 @@
     "id": 20,
     "name": "Vanessa Guo",
     "position": "Marketing Director",
-    "profile_image_url": "/images/team_members/marketing/Vanessa_Guo.jpeg",
+    "profile_image_url": "/images/team_members/marketing/Vanessa_Guo.jpg",
     "team_category": "Marketing",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/jasleen-gunsi-9897ab259/"
@@ -413,7 +413,7 @@
     "id": 36,
     "name": "Abirami Kathiresan",
     "position": "External Director",
-    "profile_image_url": "/images/team_members/External/Abirami_Kathiresan.jpeg",
+    "profile_image_url": "/images/team_members/External/Abirami_Kathiresan.jpg",
     "team_category": "External",
     "year": 2024,
     "linkedinURL": "www.linkedin.com/in/rayna-p-007360274"
@@ -425,7 +425,7 @@
     "id": 36,
     "name": "Saili Karkare",
     "position": "External Director",
-    "profile_image_url": "/images/team_members/External/Saili_Karkare.jpeg",
+    "profile_image_url": "/images/team_members/External/Saili_Karkare.jpg",
     "team_category": "External",
     "year": 2024,
     "linkedinURL": "www.linkedin.com/in/rayna-p-007360274"
@@ -449,7 +449,7 @@
     "id": 40,
     "name": "Siddharth Singh",
     "position": "External Director",
-    "profile_image_url": "/images/team_members/External/Siddharth_Singh.jpeg",
+    "profile_image_url": "/images/team_members/External/Siddharth_Singh.jpg",
     "team_category": "External",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/"
@@ -485,7 +485,7 @@
     "id": 32,
     "name": "Michelle Zhu",
     "position": "Operations Lead",
-    "profile_image_url": "/images/team_members/Operations/Michelle_Zhu.jpeg",
+    "profile_image_url": "/images/team_members/Operations/Michelle_Zhu.jpg",
     "team_category": "Operations",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/michelleszhu/"
@@ -497,7 +497,19 @@
     "id": 37,
     "name": "Denil Neil",
     "position": "Operations Director",
-    "profile_image_url": "/images/team_members/Operations/Denil_Neil.jpeg",
+    "profile_image_url": "/images/team_members/Operations/Denil_Neil.jpg",
+    "team_category": "Operations",
+    "year": 2024,
+    "linkedinURL": "https://www.linkedin.com/in/nicwetzel/"
+  },
+  {
+    "_id": {
+      "$oid": "65b6e0a06a7eaf354ea8e4cb"
+    },
+    "id": 37,
+    "name": "Daniel Yang",
+    "position": "Operations Director",
+    "profile_image_url": "/images/team_members/Operations/Daniel_Yang.jpg",
     "team_category": "Operations",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/nicwetzel/"
@@ -509,7 +521,7 @@
     "id": 37,
     "name": "Matthew Hong",
     "position": "Operations Director",
-    "profile_image_url": "/images/team_members/Operations/Matthew_Hong.jpeg",
+    "profile_image_url": "/images/team_members/Operations/Matthew_Hong.jpg",
     "team_category": "Operations",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/nicwetzel/"
