@@ -132,6 +132,18 @@
   },
   {
     "_id": {
+      "$oid": "65b6e0a06a7eaf354ea8e4ad"
+    },
+    "id": 9,
+    "name": "Daniel Kim",
+    "position": "Technical Director",
+    "profile_image_url": "/images/team_members/technical/Daniel_Kim.jpg",
+    "team_category": "Technical",
+    "year": 2024,
+    "linkedinURL": "https://www.linkedin.com/in/sauvikesh-lal/"
+  },
+  {
+    "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4c0"
     },
     "id": 24,
@@ -160,7 +172,7 @@
     },
     "id": 1,
     "name": "Sechan Kim",
-    "position": "Design Lead",
+    "position": "UX Design Co-Lead",
     "profile_image_url": "/images/team_members/design/Sechan_Kim.jpg",
     "team_category": "Design",
     "year": 2024,
@@ -172,7 +184,7 @@
     },
     "id": 3,
     "name": "Sidney Heng",
-    "position": "Graphic Design Director",
+    "position": "Content Design Director",
     "profile_image_url": "/images/team_members/design/Sidney_Heng.jpg",
     "team_category": "Design",
     "year": 2024,
@@ -328,7 +340,7 @@
     },
     "id": 4,
     "name": "Johnson Ou",
-    "position": "UI Design Director",
+    "position": "UI/UX Design Director",
     "profile_image_url": "/images/team_members/design/Johnson_Ou.jpg",
     "team_category": "Design",
     "year": 2024,
@@ -376,7 +388,7 @@
     },
     "id": 6,
     "name": "Jason Xie",
-    "position": "Design Lead",
+    "position": "Brand Design Co-Lead",
     "profile_image_url": "/images/team_members/design/Jason_Xie.jpg",
     "team_category": "Design",
     "year": 2024,
@@ -424,7 +436,7 @@
     },
     "id": 7,
     "name": "Joanne Lai",
-    "position": "Brand Design Director",
+    "position": "Product Design Director",
     "profile_image_url": "/images/team_members/design/Joanne_Lai.jpg",
     "team_category": "Design",
     "year": 2024,
