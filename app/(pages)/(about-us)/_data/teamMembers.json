@@ -39,18 +39,6 @@
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
     "id": 11,
-    "name": "Suranjana Sooraj",
-    "position": "Sponsorship Lead",
-    "profile_image_url": "/images/team_members/sponsorship/Laasya_Madgula.jpeg",
-    "team_category": "Sponsorship",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/laasya-madgula-08a4131b7/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4b3"
-    },
-    "id": 11,
     "name": "Shreya Maddhali",
     "position": "Sponsorship Lead",
     "profile_image_url": "/images/team_members/technical/Shreya_Maddhali.jpg",
@@ -125,7 +113,7 @@
     "id": 9,
     "name": "Sandeep Reehal",
     "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Sandeep_Reehal.jpeg",
+    "profile_image_url": "/images/team_members/technical/Sandeep_Reehal.jpg",
     "team_category": "Technical",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/sauvikesh-lal/"
@@ -137,7 +125,7 @@
     "id": 9,
     "name": "Haylie Tan",
     "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Haylie_Tan.jpeg",
+    "profile_image_url": "/images/team_members/technical/Haylie_Tan.jpg",
     "team_category": "Technical",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/sauvikesh-lal/"
@@ -148,7 +136,7 @@
     },
     "id": 24,
     "name": "Suranjana Sooraj",
-    "position": "Sponsorship Director",
+    "position": "Sponsorship Lead",
     "profile_image_url": "/images/team_members/sponsorship/Suranjana_Sooraj.jpg",
     "team_category": "Sponsorship",
     "year": 2024,
@@ -197,7 +185,7 @@
     "id": 8,
     "name": "Michelle Yeoh",
     "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Michelle_Yeoh.jpeg",
+    "profile_image_url": "/images/team_members/technical/Michelle_Yeoh.jpg",
     "team_category": "Technical",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/trishnasharma/"
@@ -209,7 +197,7 @@
     "id": 12,
     "name": "Brandon Wong",
     "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Brandon_Wong.jpeg",
+    "profile_image_url": "/images/team_members/technical/Brandon_Wong.jpg",
     "team_category": "Technical",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/brandonw504"
@@ -281,7 +269,7 @@
     "id": 13,
     "name": "Austin Shih",
     "position": "Technical Director",
-    "profile_image_url": "/images/team_members/technical/Austin_Shih.jpeg",
+    "profile_image_url": "/images/team_members/technical/Austin_Shih.jpg",
     "team_category": "Technical",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/austin-shih/"
@@ -377,7 +365,7 @@
     "id": 10,
     "name": "Win Cheng",
     "position": "Technical Lead",
-    "profile_image_url": "/images/team_members/technical/Win_Cheng.jpeg",
+    "profile_image_url": "/images/team_members/technical/Win_Cheng.jpg",
     "team_category": "Technical",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/teeranade-cheng/"
