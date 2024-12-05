@@ -5,9 +5,9 @@ import CountUp from '@components/CountUp/CountUp';
 
 const statsData = [
   { stat: 750, text: 'HACKERS', suffix: '+', duration: 2000 },
+  { stat: 24, text: 'HOURS', duration: 2000 },
   { stat: 150, text: 'PROJECTS', suffix: '+', duration: 2000 },
   { stat: 15, text: 'PRIZES', prefix: '$', suffix: 'k+', duration: 2000 },
-  { stat: 24, text: 'HOURS', duration: 2000 },
 ];
 
 export default function HeroStats() {
