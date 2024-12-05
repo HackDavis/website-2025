@@ -43,32 +43,29 @@ const CountUp: React.FC<CountUpProps> = ({
 
   useEffect(() => {
     // if (start) {
-      let startTimestamp: number | null = null;
-      const step = (timestamp: number) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = timestamp - startTimestamp;
-        const currentCount = Math.min(end, (progress / duration) * end);
-        setCount(currentCount);
-        if (progress < duration) {
-          window.requestAnimationFrame(step);
-        }
-      };
+    let startTimestamp: number | null = null;
+    const step = (timestamp: number) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = timestamp - startTimestamp;
+      const currentCount = Math.min(end, (progress / duration) * end);
+      setCount(currentCount);
+      if (progress < duration) {
+        window.requestAnimationFrame(step);
+      }
+    };
 
-      window.requestAnimationFrame(step);
+    window.requestAnimationFrame(step);
     // }
   }, [start, end, duration]);
 
   return (
-    <div
-      ref={countUpRef}
-      style={{ fontFamily: 'Metropolis', color: '005271' }}
-    >
+    <div ref={countUpRef} style={{ fontFamily: 'Metropolis', color: '005271' }}>
       {/* {start && (
         <> */}
-          {prefix}
-          {Math.floor(count)}
-          {suffix}
-        {/* </>
+      {prefix}
+      {Math.floor(count)}
+      {suffix}
+      {/* </>
       )} */}
     </div>
   );
