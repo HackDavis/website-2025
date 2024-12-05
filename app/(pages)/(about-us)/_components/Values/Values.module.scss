@@ -1,0 +1,17 @@
+.container {
+    padding: 15%;
+    align-items: center;
+
+    .valuesContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .valuesBox {
+            padding: 5%;
+            margin: 2%;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+    }
+}
