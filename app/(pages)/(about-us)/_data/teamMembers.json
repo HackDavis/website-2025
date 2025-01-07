@@ -41,7 +41,7 @@
     "id": 11,
     "name": "Shreya Maddhali",
     "position": "Sponsorship Lead",
-    "profile_image_url": "/images/team_members/technical/Shreya_Maddhali.jpg",
+    "profile_image_url": "/images/team_members/sponsorship/Shreya_Maddhali.jpg",
     "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/shreyamaddhali"
@@ -69,18 +69,6 @@
     "team_category": "Sponsorship",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/morgan-brady-b11bb4242"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4b3"
-    },
-    "id": 11,
-    "name": "Kaushal Ramalingam",
-    "position": "Sponsorship Director",
-    "profile_image_url": "/images/team_members/sponsorship/Kaushal_Ramalingam.jpeg",
-    "team_category": "Sponsorship",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/kaushal-ramalingam-566870234/"
   },
   {
     "_id": {
@@ -161,7 +149,7 @@
     "id": 2,
     "name": "Samantha Zhang",
     "position": "UI/UX Design Director",
-    "profile_image_url": "/images/team_members/design/Samantha_Zhang.jpeg",
+    "profile_image_url": "/images/team_members/design/Samantha_Zhang.jpg",
     "team_category": "Design",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/samanthamah-design/"
@@ -365,7 +353,7 @@
     "id": 23,
     "name": "Roshni Sandhu",
     "position": "External Director",
-    "profile_image_url": "/images/team_members/External/Roshni_Sandhu.jpeg",
+    "profile_image_url": "/images/team_members/External/Roshni_Sandhu.jpg",
     "team_category": "External",
     "year": 2024,
     "linkedinURL": "https://www.linkedin.com/in/roshni-sandhu-06a273290/"
