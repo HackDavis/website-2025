@@ -2,20 +2,49 @@
     padding: 15%;
     align-items: center;
 
+    h1 {
+        font-weight: bold;
+        font-size: 2rem;
+        padding-bottom: 3%;
+        letter-spacing: .1rem;
+    }
+
     .valuesContainer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        gap: 3%;
 
-        .valuesBox {
+        .valuesBoxInclusive {
             padding: 5%;
-            margin: 2%;
-            border: 2px solid black;
+            background-color: #79D9D0;
             border-radius: 20px;
 
             h4 {
                 font-weight: bold;
                 font-size: 1.4rem;
+            }
+        }
+
+        .valuesBoxLearning {
+            padding: 5%;
+            background-color: #AFD157;
+            border-radius: 20px;
+
+            h4 {
+                font-weight: bold;
+                font-size: 1.4rem ;
+            }
+        }
+
+        .valuesBoxProjects {
+            padding: 5%;
+            background-color: #FFA7A7;
+            border-radius: 20px;
+
+            h4 {
+                font-weight: bold;
+                font-size: 1.4rem ;
             }
         }
     }
