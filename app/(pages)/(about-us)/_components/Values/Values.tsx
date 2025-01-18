@@ -1,6 +1,4 @@
 import styles from './Values.module.scss';
-// import { useState } from 'react';
-// const [activeCategory, setActiveCategory] = useState('Technical');
 
 export default function Values() {
   return (
