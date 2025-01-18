@@ -1,0 +1,65 @@
+.container {
+    padding: 15%;
+    align-items: center;
+
+    h1 {
+        font-weight: bold;
+        font-size: 2rem;
+        padding-bottom: 3%;
+        letter-spacing: .1rem;
+    }
+
+    .valuesContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 3%;
+
+        .valuesBoxInclusive {
+            padding: 5% 5% 10%;
+            background-color: #79D9D0;
+            border-radius: 20px;
+            flex-basis: 100%;
+            transform-origin: left;
+            transition: flex-basis 0.3s ease, transform 0.3s ease;
+
+            h4 {
+                font-weight: bold;
+                font-size: 1.4rem;
+            }
+        }
+
+        .valuesBoxInclusive:hover,
+        .valuesBoxLearning:hover,
+        .valuesBoxProjects:hover {
+            flex-basis: 140%; 
+            transform: scaleX(1.05);
+        }
+
+        .valuesBoxLearning {
+            padding: 5%;
+            background-color: #AFD157;
+            border-radius: 20px;
+            flex-basis: 100%;
+            transition: flex-basis 0.3s ease, transform 0.3s ease;
+
+            h4 {
+                font-weight: bold;
+                font-size: 1.4rem ;
+            }
+        }
+
+        .valuesBoxProjects {
+            padding: 5%;
+            background-color: #FFA7A7;
+            border-radius: 20px;
+            flex-basis: 100%;
+            transition: flex-basis 0.3s ease, transform 0.3s ease;
+
+            h4 {
+                font-weight: bold;
+                font-size: 1.4rem ;
+            }
+        }
+    }
+}
