@@ -34,7 +34,7 @@ export function RecapCarousel() {
         <CarouselContent>
           {images.map((img, index) => (
             <CarouselItem key={index}>
-              <Card className="rounded-3xl overflow-hidden border-2 border-transparent bg-gradient-to-br from-blue-200 to-green-200 p-[1px]">
+              <Card className="rounded-3xl overflow-hidden border-2 border-transparent">
                 <div className="bg-white rounded-3xl h-full w-full overflow-hidden">
                   <CardContent className="relative flex aspect-square items-center justify-center">
                     <Image
