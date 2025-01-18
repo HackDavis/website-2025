@@ -83,7 +83,7 @@ export default function OurTeam() {
     <div className={styles.ourTeam}>
       <div className={styles.ourTeam_container}>
         <div className={styles.ourTeam_container_title}>
-          <h1>Meet our Directors</h1>
+          <h1>Get to know our team</h1>
           <p>HackDavis is built by students, for students.</p>
         </div>
         <div className={styles.ourTeam_container_embla} ref={emblaRef}>

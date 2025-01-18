@@ -1,11 +1,12 @@
-// import Directors from '../_components/Directors/Directors';
+import Values from '../_components/Values/Values';
 import OurTeam from '../_components/OurTeam/OurTeam';
-// import ProfileCard from '../_components/Directors/ProfileCard';
 
 export default function AboutUs() {
   return (
     <div>
-      Halo this is the about us page! <OurTeam />{' '}
+      Halo this is the about us page!
+      <Values />
+      <OurTeam />
     </div>
   );
 }
