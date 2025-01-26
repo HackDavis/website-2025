@@ -55,27 +55,27 @@
 
   --text-dark: #005271;
   --text-light: #FFF;
+  
+  /* Landing Colors */
+  --sand-background-dark: #E6BB7B;
+  --sand-background-light: #E5C28E;
+  --sky-background: #4DB7D9;
+  --sea-background: #123041;
+  --water-background: #4DB7D9;
+  --grass-background-dark: #7FB732;
+  --grass-background-light: #AFD157;
 
-  --edge-spacer: 175px;
+  --navbar-scrolled-background: rgba(4, 102, 101, 0.415);
+
+  /* Spaces */
+  --edge-space: 175px;
+  --landing-text-space-left: 200px;
+  --landing-text-space-right: 120px;
 
   /* Navbar Styles */
-  --navbar-top-spacing: 38px;
-  --navbar-padding-left: 40px;
-  --navbar-padding-right: 97px;
-  --navbar-height: 60px;
-  --navbar-text-weight-normal: 400;
-  --navbar-text-letter-spacing: 0.36px;
+  --navbar-top-spacing: 55px;
+  --navbar-height: 50px;
   --navbar-item-spacing: 48px;
-  /* Navbar styles for when text is highlighted */
-  --navbar-highlight: #9EE7E5;
-  --navbar-highlight-text-weight: 700;
-  --navbar-highlight-underline-height: 2px;
-  --navbar-highlight-underline-distance: -4px;
-  /* Navbar styles for partial scroll */
-  --navbar-scrolled-background: rgba(4, 102, 101, 0.415);
-  --navbar-scrolled-padding: 5px;
-  --navbar-scrolled-blur: blur(10px);
-  --navbar-placeholder-background: #2BC0F1;
 }
 
 * {
@@ -85,24 +85,30 @@
   font-family: var(--font-metropolis);
 }
 
+h1, h2, h3, h4, p {
+  font-style: normal;
+  line-height: 100%;
+  font-weight: 400;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: 3rem; //48px in wireframe
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; //40px
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2rem; //32px
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; //24px
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.125rem; //18px
 }
 
 a {
@@ -116,4 +122,5 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--highlight-yellow);
 }
