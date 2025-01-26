@@ -1,0 +1,44 @@
+.landing_container {
+  top: 0px;
+  position: absolute;
+  width: 100%; 
+  height: 2500px;
+  overflow: hidden; 
+}
+
+/* Water: Background Layer */
+.sky {
+  position: relative;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  //height: 900px; 
+  z-index: -10; 
+}
+
+/* Sand */
+.beach {
+  position: absolute;
+  width: 100%;
+  z-index: 1; 
+}
+
+/* Mud */
+.mud {
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  height: 2000px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+/* Leaves */
+.leaves {
+  position: absolute;
+  top: 1900px; 
+  width: 100%;
+  height: 500px;
+  flex-shrink: 0;
+  z-index: 3;
+}

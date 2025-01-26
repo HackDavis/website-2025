@@ -1,0 +1,51 @@
+.container {
+  position: absolute;
+  height: 900px;
+  width: 100%;
+  background: linear-gradient(180deg, #2BC0F1 13.11%, #F1FFA0 101.92%);
+  margin: 0; 
+  flex-shrink: 0; 
+  overflow: hidden; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  z-index: 0;   
+  
+  .water_building_left {
+    position: absolute;
+    top: 480px;
+    left: -16px;
+    height: 220px;
+    width: 432px;
+    z-index: 1;
+    transform: translateY(-50%); 
+  
+    img {
+      width: 432px;
+      height: 220px;
+    }
+  }
+  
+  .water_building_right {
+    position: absolute;
+    top: 385px; 
+    right: 0;
+    width: 459px; 
+    height: 422px; 
+    z-index: 1;
+    transform: translateY(-50%);
+  
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+    
+  /* Layer: Water Semicircle */
+  .water_semicircle {
+    position: absolute;
+    top: 535px; 
+    width: 100%;
+    z-index: 2; 
+  }
+}
