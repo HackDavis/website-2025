@@ -1,3 +1,4 @@
+'use client';
 import AccordionFAQ from './AccordionFAQ';
 import style from './FAQ.module.scss';
 

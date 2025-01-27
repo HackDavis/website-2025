@@ -1,18 +1,14 @@
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: #7FB732;
     justify-content: space-between;
     align-items: flex-start;
-    padding-bottom: 10%;
-    flex-wrap: wrap;
-    padding-left: 13vw;
+    // width: 100vw;
+    // padding-bottom: 10%;
+    // flex-wrap: wrap;
+    // padding-left: 13vw;
     padding-right: 13vw;
-
-    // .polaroids {
-    //     align-self: flex-start;
-    // }
-
 }
 
 @media screen and (min-width: 1920px) {
@@ -20,10 +16,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        // .polaroids {
-        //     align-self: inherit;
-        // }
     }
 }
 
@@ -32,10 +24,5 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        
-        // .polaroids {
-        //     align-self: inherit;
-        // }
     }
 }

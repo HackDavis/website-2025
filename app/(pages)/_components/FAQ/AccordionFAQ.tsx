@@ -153,12 +153,13 @@ const AccordionFAQ = () => {
       <div>
         <h1 className={styles.FAQText}>FAQ</h1>
       </div>
-      <Accordion transition transitionTimeout={250}>
+      <Accordion transition transitionTimeout={250} defaultValue={['0']}>
         {faqs.map(({ question, answer }, i) => (
           <React.Fragment key={i}>
             <AccordionItem
               header={<p className={styles.questions}>{question}</p>}
               key={i}
+              value={String(i)}
             >
               <p className={styles.answer}>{answer}</p>
             </AccordionItem>
