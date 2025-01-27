@@ -1,5 +1,5 @@
 // import Directors from './(about-us)/_components/Directors/Directors';
-import FAQ from './_components/FAQ/FAQ';
+import FAQ from '../_components/FAQ/FAQ';
 
 export default function Home() {
   return (

@@ -1,12 +1,15 @@
 // values are for the screen width 960 and less
 .container {
     display: flex;
-    flex-direction: column;
-    width: 83%;
-    padding-top: 5%;
+    // flex-direction: column;
+    // width: 83%;
+    // padding-top: 5%;
+    align-items: flex-start;
+    background-color: transparent;
+    overflow-anchor: none;
 
     .FAQText {
-        color: #FFF;
+        color: var(--text-light);
         font-family: "Metropolis";
         font-size: 2.25rem;
         font-style: normal;
@@ -16,7 +19,7 @@
         padding-bottom: 36px;
     }
     .questions {
-        color: #FFF;
+        color: var(--text-light);
         font-family: "Metropolis";
         font-size: 1rem;
         font-style: normal;
@@ -27,7 +30,7 @@
     }
 
     .answer {
-        color: #FFF;
+        color: var(--text-light);
         font-family: "Metropolis";
         font-size: 1rem;
         font-style: normal;
@@ -38,15 +41,15 @@
     }
       
     // used for customizable Accordion item
-      .itemBtn {
+    .itemBtn {
         cursor: pointer;
         background-color: transparent;
         border: none;
         width: 100%;
         text-align: start;
-      }
+    }
 
-      .itemBtnExpanded {
+    .itemBtnExpanded {
         background-color: transparent;
 
         .questionRow{
@@ -54,34 +57,36 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
     
             .dropDownArrow {
                 transform: rotate(180deg);
             }
-          }
-      }
+        }
+    }
       
-      .itemContent {
+    .itemContent {
         transition: height 0.3s ease-in-out;
-      }   
+    }   
 
-      .questionRow{
+    .questionRow{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
         .dropDownArrow {
+            margin-left: auto;
             transform: rotate(0deg);
             transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
             transform-origin: center center; 
         }
-      }
+    }
       
   }
   @media screen and (min-width: 961px) {
     .container {
-        width: 39%;
+        // width: 39%;
 
         .FAQText {
             font-size: 3.75rem;
@@ -101,7 +106,7 @@
 
 @media screen and (min-width: 1024px) {
     .container {
-        width: 56%;
+        // width: 56%;
 
         .FAQText {
             font-size: 4rem;
@@ -121,7 +126,7 @@
 
 @media screen and (min-width: 1366px) {
     .container {
-        width: 56%;
+        // width: 56%;
 
         .FAQText {
             font-size: 5.7rem;
@@ -140,7 +145,7 @@
 
 @media screen and (min-width: 1920px) {
     .container {
-        width: 61%;
+        // width: 61%;
         
         .FAQText {
             font-size: 8rem;

@@ -116,54 +116,83 @@ const AccordionFAQ = () => {
     */
   }
 
-  interface AccordionItemProps {
-    header: React.ReactNode;
-    [key: string]: any;
-  }
+  //   interface AccordionItemProps {
+  //     header: React.ReactNode;
+  //     [key: string]: any;
+  //   }
 
-  const AccordionItem: React.FC<AccordionItemProps> = ({
-    header,
-    ...rest
-  }: AccordionItemProps) => {
-    return (
-      <Item
-        {...rest}
-        header={
-          <>
-            <div className={styles.questionRow}>
-              {header}
+  //   const AccordionItem: React.FC<AccordionItemProps> = ({
+  //     header,
+  //     ...rest
+  //   }: AccordionItemProps) => {
+  //     return (
+  //       <Item
+  //         {...rest}
+  //         header={
+  //           <>
+  //             <div className={styles.questionRow}>
+  //               {header}
 
-              <div className={styles.dropDownArrow}>
-                <DropDownArrow />
-              </div>
-            </div>
-          </>
-        }
-        buttonProps={{
-          className: ({ isEnter }: { isEnter: boolean }) =>
-            `${styles.itemBtn} ${isEnter ? styles.itemBtnExpanded : ''}`,
-        }}
-        contentProps={{ className: styles.itemContent }}
-      />
-    );
-  };
+  //               <div className={styles.dropDownArrow}>
+  //                 <DropDownArrow />
+  //               </div>
+  //             </div>
+  //           </>
+  //         }
+  //         buttonProps={{
+  //           className: ({ isEnter }: { isEnter: boolean }) =>
+  //             `${styles.itemBtn} ${isEnter ? styles.itemBtnExpanded : ''}`,
+  //         }}
+  //         contentProps={{ className: styles.itemContent }}
+  //       />
+  //     );
+  //   };
 
+  //   return (
+  //     <div className={styles.container}>
+  //       <div>
+  //         <h1 className={styles.FAQText}>FAQ</h1>
+  //       </div>
+  //       <Accordion transition transitionTimeout={250}>
+  //         {faqs.map(({ question, answer }, i) => (
+  //           <React.Fragment key={i}>
+  //             <AccordionItem
+  //               header={<p className={styles.questions}>{question}</p>}
+  //               key={i}
+  //             >
+  //               <p className={styles.answer}>{answer}</p>
+  //             </AccordionItem>
+  //             {i < faqs.length - 1 && <hr />}
+  //           </React.Fragment>
+  //         ))}
+  //       </Accordion>
+  //     </div>
+  //   );
   return (
     <div className={styles.container}>
-      <div>
-        <h1 className={styles.FAQText}>FAQ</h1>
-      </div>
-      <Accordion transition transitionTimeout={250} defaultValue={['0']}>
-        {faqs.map(({ question, answer }, i) => (
-          <React.Fragment key={i}>
-            <AccordionItem
-              header={<p className={styles.questions}>{question}</p>}
-              key={i}
-              value={String(i)}
+      <h1 className={styles.FAQText}>FAQ</h1>
+      <Accordion transition transitionTimeout={250}>
+        {faqs.map(({ question, answer }, index) => (
+          <React.Fragment key={index}>
+            <Item
+              key={index}
+              header={
+                <div className={styles.questionRow}>
+                  <p className={styles.questions}>{question}</p>
+                  <div className={styles.dropDownArrow}>
+                    <DropDownArrow />
+                  </div>
+                </div>
+              }
+              buttonProps={{
+                className: ({ isEnter }: { isEnter: boolean }) =>
+                  `${styles.itemBtn} ${isEnter ? styles.itemBtnExpanded : ''}`,
+              }}
+              contentProps={{ className: styles.itemContent }}
             >
               <p className={styles.answer}>{answer}</p>
-            </AccordionItem>
-            {i < faqs.length - 1 && <hr />}
+            </Item>
+            {index < faqs.length - 1 && <hr />}
           </React.Fragment>
         ))}
       </Accordion>
