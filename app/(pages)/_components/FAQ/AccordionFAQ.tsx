@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import styles from './FAQ.module.scss';
+import styles from './AccordionFAQ.module.scss';
 import Link from 'next/link';
 import { Accordion, AccordionItem as Item } from '@szhsin/react-accordion';
 import { DropDownArrow } from './Assets/dropDown';

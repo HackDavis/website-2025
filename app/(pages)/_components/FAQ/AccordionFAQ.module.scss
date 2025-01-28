@@ -1,12 +1,14 @@
 // values are for the screen width 960 and less
 .container {
     display: flex;
-    // flex-direction: column;
+    flex-direction: column;
     // width: 83%;
+    width: 40vw; //overall size of the FAQ section
     // padding-top: 5%;
     align-items: flex-start;
-    background-color: transparent;
     overflow-anchor: none;
+    
+    
 
     .FAQText {
         color: var(--text-light);
@@ -41,24 +43,38 @@
     }
       
     // used for customizable Accordion item
+    .questionRow{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 40vw; //for lines to stretch throughout the FAQ section
+
+        .dropDownArrow {
+            margin-left: auto;
+            transform: rotate(0deg);
+            transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
+            transform-origin: center center; 
+        }
+    }
+
     .itemBtn {
         cursor: pointer;
         background-color: transparent;
         border: none;
-        width: 100%;
+        // width: 100%;
         text-align: start;
     }
 
     .itemBtnExpanded {
         background-color: transparent;
-
+        
         .questionRow{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width: 100%;
-    
+
             .dropDownArrow {
                 transform: rotate(180deg);
             }
@@ -68,22 +84,8 @@
     .itemContent {
         transition: height 0.3s ease-in-out;
     }   
+}
 
-    .questionRow{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        .dropDownArrow {
-            margin-left: auto;
-            transform: rotate(0deg);
-            transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
-            transform-origin: center center; 
-        }
-    }
-      
-  }
   @media screen and (min-width: 961px) {
     .container {
         // width: 39%;
