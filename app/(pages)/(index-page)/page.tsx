@@ -1,8 +1,11 @@
 // import Directors from './(about-us)/_components/Directors/Directors';
+import Sponsors from './_components/Sponsors/Sponsors';
+
+import styles from './page.module.scss';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 bg-sky-background">
+    <div className={styles.container}>
       {/* Intro Section */}
       <p className="text-4xl font-bold font-metropolis invisible">
         Halo! Welcome to the HackDavis template repo :D
@@ -32,11 +35,8 @@ export default function Home() {
         <h2 className="text-3xl font-bold">FAQ Section</h2>
       </div>
 
-      <div
-        id="sponsors"
-        className="h-[800px] w-full flex items-center justify-center bg-gray-300"
-      >
-        <h2 className="text-3xl font-bold">Sponsors Section</h2>
+      <div id="sponsors" className="w-full">
+        <Sponsors />
       </div>
     </div>
   );
