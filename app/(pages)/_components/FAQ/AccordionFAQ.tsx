@@ -116,58 +116,6 @@ const AccordionFAQ = () => {
     */
   }
 
-  //   interface AccordionItemProps {
-  //     header: React.ReactNode;
-  //     [key: string]: any;
-  //   }
-
-  //   const AccordionItem: React.FC<AccordionItemProps> = ({
-  //     header,
-  //     ...rest
-  //   }: AccordionItemProps) => {
-  //     return (
-  //       <Item
-  //         {...rest}
-  //         header={
-  //           <>
-  //             <div className={styles.questionRow}>
-  //               {header}
-
-  //               <div className={styles.dropDownArrow}>
-  //                 <DropDownArrow />
-  //               </div>
-  //             </div>
-  //           </>
-  //         }
-  //         buttonProps={{
-  //           className: ({ isEnter }: { isEnter: boolean }) =>
-  //             `${styles.itemBtn} ${isEnter ? styles.itemBtnExpanded : ''}`,
-  //         }}
-  //         contentProps={{ className: styles.itemContent }}
-  //       />
-  //     );
-  //   };
-
-  //   return (
-  //     <div className={styles.container}>
-  //       <div>
-  //         <h1 className={styles.FAQText}>FAQ</h1>
-  //       </div>
-  //       <Accordion transition transitionTimeout={250}>
-  //         {faqs.map(({ question, answer }, i) => (
-  //           <React.Fragment key={i}>
-  //             <AccordionItem
-  //               header={<p className={styles.questions}>{question}</p>}
-  //               key={i}
-  //             >
-  //               <p className={styles.answer}>{answer}</p>
-  //             </AccordionItem>
-  //             {i < faqs.length - 1 && <hr />}
-  //           </React.Fragment>
-  //         ))}
-  //       </Accordion>
-  //     </div>
-  //   );
   return (
     <div className={styles.container}>
       <h1 className={styles.FAQText}>FAQ</h1>

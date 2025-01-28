@@ -3,67 +3,61 @@
     display: flex;
     flex-direction: column;
     // width: 83%;
-    width: 40vw; //overall size of the FAQ section
-    // padding-top: 5%;
-    align-items: flex-start;
-    overflow-anchor: none;
-    
-    
 
     .FAQText {
         color: var(--text-light);
-        font-family: "Metropolis";
-        font-size: 2.25rem;
+        font-family: Metropolis;
+        font-size: 4rem; //64px
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1.821px;
-        padding-bottom: 36px;
+        letter-spacing: 1.28px;
+
+        padding-bottom: 4%;
     }
     .questions {
         color: var(--text-light);
-        font-family: "Metropolis";
-        font-size: 1rem;
+        font-family: Metropolis;
+        font-size: 1.25rem; //20px
         font-style: normal;
         font-weight: 700;
-        line-height: 64px;
-        letter-spacing: 0.342px;
-        background-image: none;
+        line-height: 45px; //manual enter
+        letter-spacing: 0.4px;
     }
 
     .answer {
         color: var(--text-light);
-        font-family: "Metropolis";
-        font-size: 1rem;
+        font-family: Metropolis;
+        font-size: 1.25rem; //20px
         font-style: normal;
         font-weight: 400;
-        line-height: 150%; /* 25.613px */
-        letter-spacing: 0.342px;
-        padding-bottom: 3%;
+        line-height: 30px;
+        letter-spacing: 0.4px;
+        
+        padding-bottom: 2%;
     }
       
     // used for customizable Accordion item
-    .questionRow{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 40vw; //for lines to stretch throughout the FAQ section
-
-        .dropDownArrow {
-            margin-left: auto;
-            transform: rotate(0deg);
-            transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
-            transform-origin: center center; 
-        }
-    }
-
     .itemBtn {
         cursor: pointer;
         background-color: transparent;
         border: none;
-        // width: 100%;
         text-align: start;
+        width: 100%;
+        
+        .questionRow{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%; //for lines to stretch throughout the FAQ section
+    
+            .dropDownArrow {
+                margin-left: auto;
+                transform: rotate(0deg);
+                transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
+                transform-origin: center center; 
+            }
+        }
     }
 
     .itemBtnExpanded {
@@ -86,81 +80,80 @@
     }   
 }
 
-  @media screen and (min-width: 961px) {
-    .container {
-        // width: 39%;
+// @media screen and (min-width: 961px) {
+//     .container {
+//         // width: 39%;
 
-        .FAQText {
-            font-size: 3.75rem;
-        }
+//         .FAQText {
+//             font-size: 3.75rem;
+//         }
 
-        .questions {
-            font-size: 0.9375rem;
-            line-height: 39px;
+//         .questions {
+//             font-size: 0.9375rem;
+//             line-height: 39px;
+//         }
 
-        }
+//         .answer {
+//             font-size: 0.9375rem;
+//         }
+//     }
+// }
 
-        .answer {
-            font-size: 0.9375rem;
-        }
-    }
-}
+// @media screen and (min-width: 1024px) {
+//     .container {
+//         // width: 56%;
 
-@media screen and (min-width: 1024px) {
-    .container {
-        // width: 56%;
+//         .FAQText {
+//             font-size: 4rem;
+//             // padding-bottom: 55px;
+//         }
 
-        .FAQText {
-            font-size: 4rem;
-            padding-bottom: 55px;
-        }
+//         .questions {
+//             font-size: 1rem;
+//             line-height: 41.6px;
+//         }
 
-        .questions {
-            font-size: 1rem;
-            line-height: 41.6px;
-        }
+//         .answer {
+//             font-size: 1rem;
+//         }
+//     }
+// }
 
-        .answer {
-            font-size: 1rem;
-        }
-    }
-}
+// @media screen and (min-width: 1366px) {
+//     .container {
+//         // width: 56%;
 
-@media screen and (min-width: 1366px) {
-    .container {
-        // width: 56%;
+//         .FAQText {
+//             font-size: 5.7rem;
+//         }
 
-        .FAQText {
-            font-size: 5.7rem;
-        }
+//         .questions {
+//             font-size: 1.07rem;
+//             line-height: 51.16px;
+//         }
 
-        .questions {
-            font-size: 1.07rem;
-            line-height: 51.16px;
-        }
+//         .answer {
+//             font-size: 1.07rem;
+//         }
+//     }
+// }
 
-        .answer {
-            font-size: 1.07rem;
-        }
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .container {
-        // width: 61%;
+// @media screen and (min-width: 1920px) {
+//     .container {
+//         // width: 61%;
         
-        .FAQText {
-            font-size: 8rem;
-        }
+//         .FAQText {
+//             font-size: 8rem;
+//         }
 
-        .questions {
-            font-size: 1.5rem;
-            line-height: 72px;
-        }
+//         .questions {
+//             font-size: 1.5rem;
+//             line-height: 72px;
+//         }
 
-        .answer {
-            font-size: 1.5rem;
-        }
-    }
-}
+//         .answer {
+//             font-size: 1.5rem;
+//         }
+//     }
+// }
 
