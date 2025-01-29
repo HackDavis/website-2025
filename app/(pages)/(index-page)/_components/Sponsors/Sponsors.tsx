@@ -6,20 +6,36 @@ import Froggy from './_components/Froggy/Froggy';
 import SponsorsCarousel from './_components/Sponsors/SponsorsCarousel';
 import RedFlower from 'public/Sponsors/characters/red-flower.svg';
 import YellowFlower from 'public/Sponsors/characters/yellow-flower.svg';
+import LeftGrass from 'public/Sponsors/characters/left-grass.svg';
+import RightGrass from 'public/Sponsors/characters/right-grass.svg';
 import styles from './Sponsors.module.scss';
 
 export default async function Sponsors() {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
+        <div className={styles.grass}>
+          <Image src={LeftGrass} alt="grass" height={185} width={617} />
+          <Image
+            className={styles.yellowFlower}
+            src={YellowFlower}
+            alt="yellow flower"
+            height={68}
+            width={68}
+          />
+        </div>
         <div className={styles.topBlock}></div>
         <div className={styles.middleBlock}>
           <div className={styles.bunny}>
             <Bunny />
           </div>
-          <div className={styles.redFlower}>
-            <Image src={RedFlower} alt="red flower" height={79} width={79} />
-          </div>
+          <Image
+            className={styles.redFlower}
+            src={RedFlower}
+            alt="red flower"
+            height={79}
+            width={79}
+          />
         </div>
         <div className={styles.bottomBlock}>
           <div className={styles.cow}>
@@ -37,19 +53,28 @@ export default async function Sponsors() {
       </div>
 
       <div className={styles.right}>
+        <div className={styles.grass}>
+          <Image src={RightGrass} alt="grass" height={197} width={562} />
+          <Image
+            className={styles.redFlower}
+            src={RedFlower}
+            alt="red flower"
+            height={53}
+            width={53}
+          />
+        </div>
         <div className={styles.topBlock}></div>
         <div className={styles.middleBlock}>
           <div className={styles.ducky}>
             <Ducky />
           </div>
-          <div className={styles.yellowFlower}>
-            <Image
-              src={YellowFlower}
-              alt="yellow flower"
-              height={68}
-              width={68}
-            />
-          </div>
+          <Image
+            className={styles.yellowFlower}
+            src={YellowFlower}
+            alt="yellow flower"
+            height={68}
+            width={68}
+          />
         </div>
         <div className={styles.bottomBlock}>
           <div className={styles.froggy}>

@@ -35,7 +35,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold">FAQ Section</h2>
       </div>
 
-      <div id="sponsors" className="w-full">
+      <div id="sponsors" className={styles.sponsors}>
         <Sponsors />
       </div>
     </div>

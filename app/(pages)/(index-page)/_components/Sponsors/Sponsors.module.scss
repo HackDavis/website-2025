@@ -5,7 +5,7 @@
   height: 1024px;
   width: 100%;
   background-color: var(--grass-background-dark);
-  overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
 }
 
@@ -25,6 +25,19 @@
 
 .left {
   z-index: 1;
+
+  .grass {
+    position: absolute;
+    top: -85px;
+    left: -262px;
+    z-index: inherit;
+
+    .yellowFlower {
+      position: absolute;
+      bottom: -11px;
+      right: 158px;
+    }
+  }
 
   .topBlock {
     position: absolute;
@@ -94,6 +107,19 @@
 
 .right {
   z-index: 1;
+
+  .grass {
+    position: absolute;
+    top: -85px;
+    right: -222px;
+    z-index: inherit;
+
+    .redFlower {
+      position: absolute;
+      bottom: 36px;
+      left: 183px;
+    }
+  }
 
   .topBlock {
     position: absolute;
