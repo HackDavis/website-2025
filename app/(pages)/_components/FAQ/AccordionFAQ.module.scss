@@ -49,13 +49,19 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            // text-align: center;
             width: 100%; //for lines to stretch throughout the FAQ section
     
-            .dropDownArrow {
-                margin-left: auto;
-                transform: rotate(0deg);
-                transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
-                transform-origin: center center; 
+            // .dropDownArrow {
+            //     margin-left: auto;
+            //     transform: rotate(0deg);
+            //     transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
+            //     transform-origin: center center; 
+            // }
+            .dropDownPlus{
+                visibility: visible;
+                transform: rotate(90deg);
+                padding-left: 15%;
             }
         }
     }
@@ -69,8 +75,11 @@
             justify-content: space-between;
             align-items: center;
 
-            .dropDownArrow {
-                transform: rotate(180deg);
+            // .dropDownArrow {
+            //     transform: rotate(180deg);
+            // }
+            .dropDownPlus{
+                visibility: hidden;
             }
         }
     }
@@ -78,6 +87,25 @@
     .itemContent {
         transition: height 0.3s ease-in-out;
     }   
+}
+
+@media screen and (max-width: 760px) {
+    .container{
+        .FAQText {
+            font-size: 2.5rem; //40px
+        }
+            
+        .questions {
+            font-size: 0.875rem; //14px
+            line-height: 38px; //manual enter
+        }
+            
+        .answer {
+            font-size: 0.75rem; //12px
+            line-height: 21px;
+        }
+    }
+    
 }
 
 // @media screen and (min-width: 961px) {

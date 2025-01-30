@@ -3,7 +3,11 @@ import React from 'react';
 import styles from './AccordionFAQ.module.scss';
 import Link from 'next/link';
 import { Accordion, AccordionItem as Item } from '@szhsin/react-accordion';
-import { DropDownArrow } from './Assets/dropDown';
+// import { DropDownArrow } from './Assets/dropDown';
+import { PlusHorizontal } from './Assets/plusHorizontal';
+import { PlusVertical } from './Assets/plusVertical';
+// import { Minus } from './Assets/minus.svg';
+// import { Plus } from './Assets/plus.svg';
 
 const whatIsHackathonAnswer = (
   <>
@@ -127,8 +131,11 @@ const AccordionFAQ = () => {
               header={
                 <div className={styles.questionRow}>
                   <p className={styles.questions}>{question}</p>
-                  <div className={styles.dropDownArrow}>
-                    <DropDownArrow />
+                  <div>
+                    <div className={styles.dropDownPlus}>
+                      <PlusVertical />
+                    </div>
+                    <PlusHorizontal />
                   </div>
                 </div>
               }
