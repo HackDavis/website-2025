@@ -1,15 +1,29 @@
 .container {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     // background: var(--grass-background-dark);
     // justify-content: space-between;
     // align-items: flex-start;
     // padding-bottom: 10%;
     // flex-wrap: wrap;
     // padding-left: 13vw;
-    width: 40vw;
+    
     
     // padding-right: 13vw;
+}
+.faq {
+    width: 70%;
+    padding: 15%;//can remove when adding donate section
+    background-color: var(--grass-background-dark);
+}
+.waterfall {
+    width: 20%;
+    background-color: var(--water-background);
+    border: 10px solid #2BACD5;
+}
+.grass_space{
+    width: 10%;
+    background-color: var(--grass-background-dark);
 }
 
 @media screen and (max-width: 760px) {
