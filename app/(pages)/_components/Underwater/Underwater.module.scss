@@ -1,0 +1,29 @@
+.container {
+    background-color: var(--sea-background);
+    padding: 15%;
+    display: flex;
+    justify-content: flex-end;
+
+    .textcontainer {
+        border: 3px white solid;
+        width: 40%;
+        flex-direction: column;
+
+        .text {
+            font-weight: bold;
+            line-height: 1;
+            color: var(--text-light);
+        }
+
+        .coloredtext {
+            font-weight: bold;
+            line-height: 1;
+            color: var(--highlight-blue);
+        }
+
+        p {
+            color: var(--text-light);
+            padding-top: 1rem;
+        }
+    }
+}
