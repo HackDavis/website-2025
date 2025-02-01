@@ -1,8 +1,16 @@
 'use client';
+import Image from 'next/image';
+
 import style from './Underwater.module.scss';
+import Bunny from 'public/images/landing_page/BunnySnorkel.svg';
+// import Caustics from 'public/images/landing_page/Caustics.svg';
+// import WaterRays from 'public/images/landing_page/WaterRays.svg';
 
 const Underwater = () => (
   <div className={style.container}>
+    <div className={style.imagecontainer}>
+      <Image className={style.bunny} src={Bunny} alt="bunny" />
+    </div>
     <div className={style.textcontainer}>
       <h2 className={style.text}>create for</h2>
       <h2 className={style.coloredtext}>social good</h2>
