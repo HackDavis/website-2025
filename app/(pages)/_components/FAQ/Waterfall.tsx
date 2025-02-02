@@ -16,18 +16,21 @@ export default function Waterfall() {
         alt="waterfall gradient"
         width={200}
         height={10}
+        className={style.water_sheen}
       />
       <Image
         src="/images/faq/waterfall_sheen.svg"
         alt="waterfall gradient"
         width={200}
         height={10}
+        className={style.water_sheen}
       />
       <Image
         src="/images/faq/waterfall_base.svg"
         alt="waterfall gradient"
-        width={1000}
+        width={500}
         height={10}
+        className={style.water_base}
       />
     </div>
   );

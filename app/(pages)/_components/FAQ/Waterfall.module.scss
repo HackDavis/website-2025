@@ -1,5 +1,19 @@
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    // align-content: space-between;
+    // position: relative;
+    // overflow: hidden;
+    height: 100%;
+}
+.water_sheen{
+    width: 70%;
+}
+.water_base{
+    // width: 120%;
+    // position: relative;
+    // bottom: 0;
+    // height: auto;
 }

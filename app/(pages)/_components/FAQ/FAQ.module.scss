@@ -1,36 +1,55 @@
+.main_container{
+    position: relative;
+}
 .container {
     display: flex;
-    // flex-direction: column;
-    // background: var(--grass-background-dark);
-    // justify-content: space-between;
-    // align-items: flex-start;
-    // padding-bottom: 10%;
-    // flex-wrap: wrap;
-    // padding-left: 13vw;
-    
-    
-    // padding-right: 13vw;
+}
+.underwater_dark{
+    position: absolute;
+    width:100%;
+    top: -50%;
+    // z-index: -1;
+}
+.underwater_med{
+    position: absolute;
+    width:100%;
+    top: -25%;
+    // z-index: -1;
+}
+.grass_dark{
+    position: absolute;
+    width:100%;
+    top: -10%;
+    // z-index: -1;
+}
+.grass_light{
+    position: absolute;
+    width:100%;
+    top: -7%;
+    // z-index: -1;
 }
 .faq {
     width: 70%;
     padding: 15%;//can remove when adding donate section
-    background-color: var(--grass-background-dark);
+    background-color: #549645;
 }
 .waterfall {
     width: 20%;
     background-color: var(--water-background);
-    border: 10px solid #2BACD5;
+    border-width: 0px 16px 0px 16px ;
+    border-style: solid;
+    border-color: #2BACD5;
 }
 .grass_space{
     width: 10%;
     background-color: var(--grass-background-dark);
 }
 
-@media screen and (max-width: 760px) {
-    .container{
-        width: 80vw;
-    }
-}
+// @media screen and (max-width: 760px) {
+//     .container{
+//         // width: 80vw;
+//     }
+// }
 
 // @media screen and (min-width: 1920px) {
 //     .container {
