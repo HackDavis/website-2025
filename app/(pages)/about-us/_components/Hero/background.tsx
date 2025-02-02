@@ -7,9 +7,7 @@ import styles from './background.module.scss';
 export default function Hero() {
   return (
     <div className={styles.landing_container}>
-      <div className={styles.sky}>
-        <Sky />
-      </div>
+      <Sky />
       <div className={styles.beach}>
         <Beach />
       </div>

@@ -1,18 +1,18 @@
 'use client';
 import Image from 'next/image';
 import styles from './Beach.module.scss';
-import WaterNormalWavy from '/public/index/Hero/Beach/WaterTransition/WaterNormalWavy.svg';
-import WaterLight from '/public/index/Hero/Beach/WaterTransition/WaterLightWavy.svg';
-import SandDark from '/public/index/Hero/Beach/WaterTransition/SandDarkWavy.svg';
-import SandLight from '/public/index/Hero/Beach/WaterTransition/SandLightWavy.svg';
-import BeachDecoration from '/public/index/Hero/Beach/SandArea/BeachDecoration.svg';
+import WaterNormalWavy from '/public/aboutUs/Hero/Beach/WaterTransition/WaterNormalWavy.svg';
+import WaterLight from '/public/aboutUs/Hero/Beach/WaterTransition/WaterLightWavy.svg';
+import SandDark from '/public/aboutUs/Hero/Beach/WaterTransition/SandDarkWavy.svg';
+import SandLight from '/public/aboutUs/Hero/Beach/WaterTransition/SandLightWavy.svg';
+import BeachDecoration from '/public/aboutUs/Hero/Beach/SandArea/BeachDecoration.svg';
 
-// import CowSitting from '/public/index/Hero/Beach/BeachCampfire/CowSitting.svg';
-// import DuckySitting from '/public/index/Hero/Beach/BeachCampfire/DuckySitting.svg';
-// import FrogSitting from '/public/index/Hero/Beach/BeachCampfire/FrogSitting.svg';
-// import GuitarBunny from '/public/index/Hero/Beach/BeachCampfire/GuitarBunny.svg';
+// import CowSitting from '/public/aboutUs/Hero/Beach/BeachCampfire/CowSitting.svg';
+// import DuckySitting from '/public/aboutUs/Hero/Beach/BeachCampfire/DuckySitting.svg';
+// import FrogSitting from '/public/aboutUs/Hero/Beach/BeachCampfire/FrogSitting.svg';
+// import GuitarBunny from '/public/aboutUs/Hero/Beach/BeachCampfire/GuitarBunny.svg';
 
-import FullGroup from '/public/index/Hero/Beach/BeachCampfire/FullGroup.svg';
+import FullGroup from '/public/aboutUs/Hero/Beach/BeachCampfire/FullGroup.svg';
 import HeroStats from '../../heroStats';
 
 export default function Sand() {

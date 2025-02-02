@@ -1,8 +1,8 @@
 'use client';
 import Image from 'next/image';
 import styles from './Mud.module.scss';
-import MudLight from '/public/index/Hero/Mud/MudLight.svg';
-import MudDark from '/public/index/Hero/Mud/MudDark.svg';
+import MudLight from '/public/aboutUs/Hero/Mud/MudLight.svg';
+import MudDark from '/public/aboutUs/Hero/Mud/MudDark.svg';
 
 export default function Mud() {
   return (

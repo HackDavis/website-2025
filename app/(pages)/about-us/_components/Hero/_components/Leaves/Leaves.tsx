@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import styles from './Leaves.module.scss';
-import LeavesSVG from '/public/index/Hero/Leaves/Leaves.svg';
+import LeavesSVG from '/public/aboutUs/Hero/Leaves/Leaves.svg';
 
 export default function Leaves() {
   return (

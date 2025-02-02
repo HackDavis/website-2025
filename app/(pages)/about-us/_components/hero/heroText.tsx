@@ -4,13 +4,13 @@ import styles from './heroText.module.scss';
 export default function HeroText() {
   return (
     <div className={styles.container}>
-      <h2>HELLO, WE'RE</h2>
+      <h3>HELLO, WE'RE</h3>
       <br />
       <h1>HackDavis</h1>
-      <p>
+      <h3 className={styles.description}>
         Bringing together the most talented students <br /> and leaders to
         create for social good
-      </p>
+      </h3>
     </div>
   );
 }
