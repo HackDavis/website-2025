@@ -1,4 +1,4 @@
-import Hero from './_components/hero/background';
+import Hero from './_components/Hero/background';
 import Values from './_components/Values/Values';
 import OurTeam from './_components/OurTeam/OurTeam';
 
