@@ -18,42 +18,32 @@ import HeroStats from '../../heroStats';
 export default function Sand() {
   return (
     <div className={styles.container}>
-      <div className={styles.sand_semicircle}>
-        <HeroStats />
-      </div>
-      <div className={styles.water_normal_wavy}>
-        <Image src={WaterNormalWavy} alt="Normal Water" fill />
-      </div>
-      <div className={styles.water_light}>
-        <Image src={WaterLight} alt="Water Light" fill />
-      </div>
-      <div className={styles.sand_dark}>
-        <Image src={SandDark} alt="Sand Dark" fill />
-      </div>
-      <div className={styles.sand_light}>
-        <Image src={SandLight} alt="Sand Light" fill />
-      </div>
-      {/* <div className={styles.campfire}>
-        <div className={styles.cow_sitting}>
-          <Image src={CowSitting} alt="Cow Sitting" />
+      <div className={styles.transition}>
+        <div className={styles.water_normal}>
+          <Image src={WaterNormalWavy} alt="Normal Water" objectFit="cover" />
         </div>
-        <div className={styles.ducky_sitting}>
-          <Image src={DuckySitting} alt="Ducky Sitting" />
+        <div className={styles.water_light}>
+          <Image src={WaterLight} alt="Water Light" objectFit="cover" />
         </div>
-        <div className={styles.frog_sitting}>
-          <Image src={FrogSitting} alt="Frog Sitting" />
+        <div className={styles.sand_dark}>
+          <Image src={SandDark} alt="Sand Dark" objectFit="cover" />
         </div>
-        <div className={styles.guitar_bunny}>
-          <Image src={GuitarBunny} alt="Guitar Bunny" />
+        <div className={styles.sand_light}>
+          <Image src={SandLight} alt="Sand Light" objectFit="cover" />
         </div>
-      </div> */}
-      <div className={styles.full_group}>
-        <div className={styles.full_group_inside}>
+      </div>
+      <div className={styles.mascots}>
+        <div className={styles.full_group}>
           <Image src={FullGroup} alt="Bunny Cow Frog Duck sitting" />
         </div>
       </div>
+      <HeroStats />
       <div className={styles.beach_decoration}>
-        <Image src={BeachDecoration} alt="Beach Decorations" fill />
+        <Image
+          src={BeachDecoration}
+          alt="Beach Decorations"
+          objectFit="contain"
+        />
       </div>
     </div>
   );

@@ -1,76 +1,63 @@
-// @use 'app/(pages)/_globals/mixins';
-// $bg-color: #015270;
-// $tablet-breakpoint: 1024px;
-// $mobile-breakpoint: 505px;
-
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  // background: #E5C28E; //temp background to see text
-  padding-left: 10%;
-  padding-right: 10%;
-  overflow: hidden; 
-
-}
+@import '@globals/styles/mixins.scss';
 
 .stats{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  gap: 10%;
+  padding: 0px 10%;
 
-//   @media (max-width: $mobile-breakpoint) {
-//     flex-direction: column;
-//   }
+  @include phone {
+    flex-direction: column;
+    padding: 0px var(--edge-space);
+  }
 
   &_inside{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // @media (max-width: $mobile-breakpoint) {
-    //   flex-direction: row;
-    //   width: 100%;
-    //   gap: 18px; 
-    // }
+
+    @include phone {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      gap: 18px; 
+    }
 
     h1{
       color: #B38F5A;
       font-family: "Metropolis";
-      font-size: 64px;
+      font-size: 4rem;
       font-style: normal;
       font-weight: 700;
       line-height: 150%; /* 96px */
       letter-spacing: 1.28px;
       text-transform: lowercase;
 
-    //   @media (max-width: $tablet-breakpoint) {
-    //     font-size: 40px;
-    //   }
-    //   @media (max-width: $mobile-breakpoint) {
-    //     font-size: 48px;
-    //   }
+      @include tablet {
+        font-size: 3rem;
+      }
+      @include phone {
+        font-size: 4rem;
+      }
     }
     p{
-      color: #FFF;
+      color: var(--text-light);
       font-family: "Metropolis";
-      font-size: 36px;
+      font-size: 2.25rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 40px; /* 111.111% */
+      line-height: 111%; /* 40px */
       letter-spacing: 0.72px;
 
-    //   @media (max-width: $tablet-breakpoint) {
-    //     font-size: 14px;
-    //   }
-    //   @media (max-width: $mobile-breakpoint) {
-    //     font-size: 30px;
-    //   }
+      @include tablet {
+        font-size: 1.5rem;
+      }
+      @include phone {
+        font-size: 2.5rem;
+      }
     }
   }
 
