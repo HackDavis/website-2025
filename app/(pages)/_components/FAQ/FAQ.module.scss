@@ -7,7 +7,7 @@
 .underwater_dark{
     position: absolute;
     width:100%;
-    top: -50%;
+    top: -55%;
     // z-index: -1;
 }
 .underwater_med{
@@ -15,6 +15,24 @@
     width:100%;
     top: -25%;
     // z-index: -1;
+}
+.algae_1{
+    position: absolute;
+    top: -48%;
+    width:3%;
+    left: 6%;
+}
+.algae_2{
+    position: absolute;
+    top: -36%;
+    width:3%;
+    left: 12%;
+}
+.algae_3{
+    position: absolute;
+    top: -26%;
+    width:3%;
+    left: 56%;
 }
 .grass_dark{
     position: absolute;
@@ -27,6 +45,13 @@
     width:100%;
     top: -7%;
     // z-index: -1;
+}
+.grass_single{
+    position: absolute;
+    width: 10%;
+    top: 20%;
+    left: 50%
+
 }
 .faq {
     width: 70%;
@@ -42,14 +67,22 @@
 }
 .grass_space{
     width: 10%;
-    background-color: var(--grass-background-dark);
+    background-color: #549645;
 }
 
-// @media screen and (max-width: 760px) {
-//     .container{
-//         // width: 80vw;
-//     }
-// }
+@media screen and (max-width: 760px) { //phone
+    .underwater_dark, .underwater_med, .algae_1, .algae_2, .algae_3, .grass_dark, .grass_light, .grass_space, .waterfall, .grass_single{
+        visibility:hidden;
+        width: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .faq{
+        width: 100%;
+        padding: 5%;
+    }
+}
 
 // @media screen and (min-width: 1920px) {
 //     .container {

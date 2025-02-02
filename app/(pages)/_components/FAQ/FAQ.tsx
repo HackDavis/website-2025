@@ -16,6 +16,27 @@ export default function FAQ() {
           className={style.underwater_dark}
         />
         <Image
+          src="/images/faq/algae_right.svg"
+          alt="waterfall gradient"
+          width={50}
+          height={10}
+          className={style.algae_1}
+        />
+        <Image
+          src="/images/faq/algae_left.svg"
+          alt="waterfall gradient"
+          width={50}
+          height={10}
+          className={style.algae_2}
+        />
+        <Image
+          src="/images/faq/algae_right.svg"
+          alt="waterfall gradient"
+          width={50}
+          height={10}
+          className={style.algae_3}
+        />
+        <Image
           src="/images/faq/underwater_medium.svg"
           alt="waterfall gradient"
           width={1000}
@@ -35,6 +56,13 @@ export default function FAQ() {
           width={1000}
           height={10}
           className={style.grass_light}
+        />
+        <Image
+          src="/images/faq/grass_texture_single.svg"
+          alt="waterfall gradient"
+          width={150}
+          height={10}
+          className={style.grass_single}
         />
       </div>
       <div className={style.container}>
