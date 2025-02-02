@@ -5,7 +5,6 @@ import WaterNormalWavy from '/public/index/Hero/Beach/WaterTransition/WaterNorma
 import WaterLight from '/public/index/Hero/Beach/WaterTransition/WaterLightWavy.svg';
 import SandDark from '/public/index/Hero/Beach/WaterTransition/SandDarkWavy.svg';
 import SandLight from '/public/index/Hero/Beach/WaterTransition/SandLightWavy.svg';
-import SandSemicircle from '/public/index/Hero/Beach/SandArea/SandSemicircle.svg';
 import BeachDecoration from '/public/index/Hero/Beach/SandArea/BeachDecoration.svg';
 
 // import CowSitting from '/public/index/Hero/Beach/BeachCampfire/CowSitting.svg';
@@ -14,12 +13,13 @@ import BeachDecoration from '/public/index/Hero/Beach/SandArea/BeachDecoration.s
 // import GuitarBunny from '/public/index/Hero/Beach/BeachCampfire/GuitarBunny.svg';
 
 import FullGroup from '/public/index/Hero/Beach/BeachCampfire/FullGroup.svg';
+import HeroStats from '../../heroStats';
 
 export default function Sand() {
   return (
     <div className={styles.container}>
       <div className={styles.sand_semicircle}>
-        <Image src={SandSemicircle} alt="Sand Semicircle" fill />
+        <HeroStats />
       </div>
       <div className={styles.water_normal_wavy}>
         <Image src={WaterNormalWavy} alt="Normal Water" fill />

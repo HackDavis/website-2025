@@ -4,10 +4,12 @@ import styles from './Sky.module.scss';
 import WaterBuildingLeft from '/public/index/Hero/Sky/WaterBuildingLeft.svg';
 import WaterBuildingRight from '/public/index/Hero/Sky/WaterBuildingRight.svg';
 import WaterSemicircle from '/public/index/Hero/Sky/WaterSemicircle.svg';
+import HeroText from '../../heroText';
 
 export default function Sky() {
   return (
     <div className={styles.container}>
+      <HeroText />
       <div className={styles.water_building_left}>
         <Image
           src={WaterBuildingLeft}

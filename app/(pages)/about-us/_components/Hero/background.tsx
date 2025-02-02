@@ -2,7 +2,7 @@ import Leaves from './_components/Leaves/Leaves';
 import Beach from './_components/Beach/Beach';
 import Sky from './_components/Sky/Sky';
 import Mud from './_components/Mud/Mud';
-import styles from './Hero.module.scss';
+import styles from './background.module.scss';
 
 export default function Hero() {
   return (
