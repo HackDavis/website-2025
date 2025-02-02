@@ -108,6 +108,34 @@ export default function FAQ() {
           height={10}
           className={style.grass_5}
         />
+        <Image
+          src="/images/faq/firefly_sm.svg"
+          alt="waterfall gradient"
+          width={7}
+          height={10}
+          className={style.firefly_sm1}
+        />
+        <Image
+          src="/images/faq/firefly_sm.svg"
+          alt="waterfall gradient"
+          width={7}
+          height={10}
+          className={style.firefly_sm2}
+        />
+        <Image
+          src="/images/faq/firefly_lg.svg"
+          alt="waterfall gradient"
+          width={7}
+          height={10}
+          className={style.firefly_lg1}
+        />
+        <Image
+          src="/images/faq/firefly_lg.svg"
+          alt="waterfall gradient"
+          width={7}
+          height={10}
+          className={style.firefly_lg2}
+        />
       </div>
       <div className={style.container}>
         <div className={style.faq_donation}>

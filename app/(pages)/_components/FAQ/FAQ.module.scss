@@ -96,7 +96,7 @@
 .grass_3{
     position: absolute;
     width: 14%;
-    top: 50%;
+    top: 45%;
     left: 50%;
 }
 .grass_4{
@@ -110,10 +110,42 @@
     bottom: 2%;
     left: 40%
 }
+.firefly_sm1{
+    position: absolute;
+    width: 1%;
+    bottom: 40%;
+    left: 62%;
+    animation: jump 6s infinite ease-in-out;
+}
+.firefly_lg1{
+    position: absolute;
+    width: 1%;
+    bottom: 41%;
+    left: 60%;
+    animation: jump 5s infinite ease-in-out;
+}
+.firefly_sm2{
+    position: absolute;
+    width: 1%;
+    bottom: 14%;
+    right: 6%;
+    animation: jump 9s infinite ease-in-out;
+}
+.firefly_lg2{
+    position: absolute;
+    width: 1%;
+    bottom: 6%;
+    left: 60%;
+    animation: jump 4s infinite ease-in-out;
+}
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
 
 
 @media screen and (max-width: 760px) { //phone
-    .underwater_dark, .underwater_med, .algae_1, .algae_2, .algae_3, .grass_dark, .grass_light, .grass_space, .waterfall, .grass_single, .water_transition, .grass_1, .grass_2, .grass_3, .grass_4, .grass_5{
+    .underwater_dark, .underwater_med, .algae_1, .algae_2, .algae_3, .grass_dark, .grass_light, .grass_space, .waterfall, .grass_single, .water_transition, .grass_1, .grass_2, .grass_3, .grass_4, .grass_5, .firefly_sm1, .firefly_sm2, .firefly_lg1, .firefly_lg2{
         visibility:hidden;
         width: 0;
         height:0;
