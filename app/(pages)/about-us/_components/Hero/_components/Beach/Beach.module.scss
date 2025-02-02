@@ -1,8 +1,9 @@
+@import '@globals/styles/mixins.scss';
+
 .container {
     position: relative;
     width: 100%;
     background-color: var(--sand-background-light);
-    padding-bottom: 400px;   
 }
 
 .transition {
@@ -60,32 +61,105 @@
 
 .mascots {
     position: relative;
-    width: 100%;
-    height: 500px;
+    width: 75%;
+    z-index: 100;
+    top: -80px;
+    margin: 0 auto;
 }
 
-.full_group {
-    display: flex;
-    justify-content: center;
-
-    position: absolute;
+.stats {
+    position: relative;
     width: 100%;
-    height: 658px;
-    top: -175px;
-    z-index: 100;
+    margin: -200px 0px 0px;
 
-    > img {
-        height: 100%;
+    @include tablet {
+        margin: -150px 0px 0px;
+    }
+
+    @include phone {
+        margin: -125px 0px 0px;
     }
 }
 
 .beach_decoration {
     position: relative;
-    width: 90%;
-    height: 207px;
-    margin: 90px auto 0px;
+    width: 100%;
+}
 
+.shells {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: calc(1281 / 207);
+    padding: 95px;
     > img {
         width: 100%;
+    }
+}
+
+/* Layer: Mud Light */
+.mud_light {
+    position: relative;
+    margin-top: -50px;
+    width: 100%;
+    aspect-ratio: calc(1440 / 432);
+    z-index: 20;
+    img {
+        padding-top: 350px;
+        width: 100%;
+    }
+    
+    @include desktop {
+        margin-top: -50px;
+        >img {
+            padding-top: 250px;
+        }   
+    }
+    
+    @include sm-desktop {
+        margin-top: -60px;
+        >img {
+            padding-top: 200px;
+        }   
+    }
+    
+    @include tablet {
+        margin-top: -80px;
+        >img {
+            padding-top: 160px;
+        }   
+    }
+}
+/* Layer: Mud Dark */
+.mud_dark {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: calc(1440 / 415);
+    bottom: -42px;
+    z-index: 30;
+    img {
+        width: 100%;
+    }
+}
+.leaves {
+    position: absolute;
+    width: 105%;
+    aspect-ratio: calc(1583 / 380);
+    bottom: -245px;
+    left: 50%;
+  transform: translateX(-50%);
+    z-index: 40;
+    img {
+        position: absolute;
+        width: 100%;
+    }
+    
+    @include desktop {
+        bottom: -175px;
+    }
+    @include sm-desktop {
+        bottom: -145px;
+    }
+    @include tablet {
+        bottom: -115px;
     }
 }

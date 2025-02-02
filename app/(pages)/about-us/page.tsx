@@ -4,9 +4,7 @@ import OurTeam from './_components/OurTeam/OurTeam';
 
 export default function AboutUs() {
   return (
-    <div>
-      {/* <HeroText />
-      <HeroStats /> */}
+    <div className="overflow-hidden">
       <Hero />
       <Values />
       <OurTeam />
