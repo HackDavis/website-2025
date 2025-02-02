@@ -8,27 +8,27 @@ export default function Waterfall() {
       <Image
         src="/images/faq/waterfall_gradient.svg"
         alt="waterfall gradient"
-        width={500}
+        width={270}
         height={10}
       />
       <Image
         src="/images/faq/waterfall_sheen.svg"
         alt="waterfall gradient"
-        width={200}
+        width={180}
         height={10}
         className={style.water_sheen}
       />
       <Image
         src="/images/faq/waterfall_sheen.svg"
         alt="waterfall gradient"
-        width={200}
+        width={180}
         height={10}
         className={style.water_sheen}
       />
       <Image
         src="/images/faq/waterfall_base.svg"
         alt="waterfall gradient"
-        width={500}
+        width={423}
         height={10}
         className={style.water_base}
       />
