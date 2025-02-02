@@ -14,49 +14,45 @@
   width: 100%;
 }
 
-.water_building_left {
+.water_building_left, .water_building_right {
   position: absolute;
-  bottom: -56px;
-  left: -16px;
-
-  width: 398px;
-  aspect-ratio: calc(398 / 220);
+  bottom: -80px;
+  width: 648px;
   
-  @include tablet {
-    width: 348px;
+  > img {
+    width: 100%;
   }
-
-  @include phone {
-    width: 298px;
-  }
-}
-
-.water_building_right {
-  position: absolute;
-  bottom: -56px;
-  right: 0;
   
-  width: 448px;
-  aspect-ratio: calc(448 / 423);
-  
-  @include sm-desktop {
+  @include desktop {
+    bottom: -56px;
     width: 398px;
   }
-
+  
   @include tablet {
-    width: 328px;
+    bottom: -40px;
+    width: 298px;
   }
 
   @include phone {
     width: 248px;
   }
 }
+
+.water_building_left {
+  left: -16px;
+  aspect-ratio: calc(398 / 220);
+}
+
+.water_building_right {
+  right: 0;
+  aspect-ratio: calc(448 / 423);
+}
   
 /* Layer: Water Semicircle */
 .water_semicircle {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 30vh;
   z-index: 10; 
   overflow: hidden; 
   

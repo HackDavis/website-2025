@@ -1,4 +1,3 @@
-'use client';
 import Image from 'next/image';
 import styles from './Sky.module.scss';
 import WaterBuildingLeft from '/public/aboutUs/Hero/Sky/WaterBuildingLeft.svg';
