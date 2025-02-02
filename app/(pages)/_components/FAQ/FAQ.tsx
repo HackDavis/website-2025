@@ -3,6 +3,7 @@ import AccordionFAQ from './AccordionFAQ';
 import Waterfall from './Waterfall';
 import style from './FAQ.module.scss';
 import Image from 'next/image';
+import DonationPlaceholder from './DonationPlaceholder';
 
 export default function FAQ() {
   return (
@@ -51,12 +52,20 @@ export default function FAQ() {
           className={style.grass_dark}
         />
         <Image
+          src="/images/faq/water_transition.svg"
+          alt="waterfall gradient"
+          width={243}
+          height={10}
+          className={style.water_transition}
+        />
+        <Image
           src="/images/faq/grass_light.svg"
           alt="waterfall gradient"
           width={1000}
           height={10}
           className={style.grass_light}
         />
+
         <Image
           src="/images/faq/grass_texture_single.svg"
           alt="waterfall gradient"
@@ -64,10 +73,50 @@ export default function FAQ() {
           height={10}
           className={style.grass_single}
         />
+        <Image
+          src="/images/faq/grass_texture_1.svg"
+          alt="waterfall gradient"
+          width={173}
+          height={10}
+          className={style.grass_1}
+        />
+        <Image
+          src="/images/faq/grass_texture_2.svg"
+          alt="waterfall gradient"
+          width={150}
+          height={10}
+          className={style.grass_2}
+        />
+        <Image
+          src="/images/faq/grass_texture_3.svg"
+          alt="waterfall gradient"
+          width={201}
+          height={10}
+          className={style.grass_3}
+        />
+        <Image
+          src="/images/faq/grass_texture_4.svg"
+          alt="waterfall gradient"
+          width={201}
+          height={10}
+          className={style.grass_4}
+        />
+        <Image
+          src="/images/faq/grass_texture_5.svg"
+          alt="waterfall gradient"
+          width={230}
+          height={10}
+          className={style.grass_5}
+        />
       </div>
       <div className={style.container}>
-        <div className={style.faq}>
-          <AccordionFAQ />
+        <div className={style.faq_donation}>
+          <div className={style.donation}>
+            <DonationPlaceholder />
+          </div>
+          <div className={style.faq}>
+            <AccordionFAQ />
+          </div>
         </div>
         <div className={style.waterfall}>
           <Waterfall />
