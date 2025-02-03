@@ -36,6 +36,15 @@ export default {
         inter: 'var(--font-inter)',
         jakarta: 'var(--font-jakarta)',
       },
+      animation: {
+        'spin-slow': 'spin-from-center 20s linear infinite',
+      },
+      keyframes: {
+        'spin-from-center': {
+          '0%': { transform: 'rotate(360deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
+      },
     },
   },
   plugins: [],
