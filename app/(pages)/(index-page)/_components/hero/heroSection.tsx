@@ -54,7 +54,7 @@ export default function HeroSection() {
             height={360}
           />
         </div>
-        <div className="absolute pl-[-114px] pt-[463px] z-[110]">
+        <div className="absolute pl-[-114px] pt-[463px] z-[120]">
           <Image
             src="/Hero/side_mountain.svg"
             alt="Side mountain"
@@ -62,7 +62,7 @@ export default function HeroSection() {
             height={561}
           />
         </div>
-        <div className="absolute pl-[-5px] pt-[559px] z-[120]">
+        <div className="absolute pl-[-5px] pt-[559px] z-[110]">
           <Image src="/Hero/grass.svg" alt="Grass" width={755} height={439} />
         </div>
         <div className="absolute pl-[280px] pt-[642px] z-[120]">
@@ -77,20 +77,6 @@ export default function HeroSection() {
 
         <div className="absolute pl-[195px] pt-[384px] z-[70]">
           <HeroSun />
-        </div>
-        <div className="absolute z-[60] overflow-visible w-full h-full">
-          <Image
-            src="/Hero/sun_rays.svg"
-            alt="Sun Rays"
-            width={2200}
-            height={2200}
-            className="animate-spin-slow origin-center"
-            style={{
-              position: 'absolute',
-              left: '-330px',
-              top: '-130px',
-            }}
-          />
         </div>
         <div className="absolute pl-[-90px] pt-[428px] z-[80]">
           <HeroMountain />
