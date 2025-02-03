@@ -1,4 +1,5 @@
-// values are for the screen width 960 and less
+//screen sizes >=1840px
+@import '@globals/styles/mixins.scss';
 .container {
     display: flex;
     flex-direction: column;
@@ -48,7 +49,6 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            // text-align: center;
             width: 100%; //for lines to stretch throughout the FAQ section
     
             // .dropDownArrow {
@@ -88,7 +88,7 @@
     }   
 }
 
-@media screen and (max-width: 760px) {
+@include phone {
     .container{
         .FAQText {
             font-size: 2.5rem; //40px
@@ -106,81 +106,3 @@
     }
     
 }
-
-// @media screen and (min-width: 961px) {
-//     .container {
-//         // width: 39%;
-
-//         .FAQText {
-//             font-size: 3.75rem;
-//         }
-
-//         .questions {
-//             font-size: 0.9375rem;
-//             line-height: 39px;
-//         }
-
-//         .answer {
-//             font-size: 0.9375rem;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 1024px) {
-//     .container {
-//         // width: 56%;
-
-//         .FAQText {
-//             font-size: 4rem;
-//             // padding-bottom: 55px;
-//         }
-
-//         .questions {
-//             font-size: 1rem;
-//             line-height: 41.6px;
-//         }
-
-//         .answer {
-//             font-size: 1rem;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 1366px) {
-//     .container {
-//         // width: 56%;
-
-//         .FAQText {
-//             font-size: 5.7rem;
-//         }
-
-//         .questions {
-//             font-size: 1.07rem;
-//             line-height: 51.16px;
-//         }
-
-//         .answer {
-//             font-size: 1.07rem;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 1920px) {
-//     .container {
-//         // width: 61%;
-        
-//         .FAQText {
-//             font-size: 8rem;
-//         }
-
-//         .questions {
-//             font-size: 1.5rem;
-//             line-height: 72px;
-//         }
-
-//         .answer {
-//             font-size: 1.5rem;
-//         }
-//     }
-// }
-

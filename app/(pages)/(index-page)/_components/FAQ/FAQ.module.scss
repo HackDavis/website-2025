@@ -1,3 +1,5 @@
+@import '@globals/styles/mixins.scss';
+
 .main_container{
     position: relative;
     // height: 100%
@@ -28,6 +30,9 @@
     width: 12%;
     background-color: #549645;
 }
+.algae_level{
+    position: relative; //not rlly doing anything...
+}
 
 // all asset positioning :p
 .underwater_dark{
@@ -42,7 +47,7 @@
 }
 .algae_1{
     position: absolute;
-    top: -550px;
+    top: -530px;
     width:3%;
     left: 6%;
 }
@@ -62,18 +67,16 @@
     position: absolute;
     width:120%;
     top: -80px;
-    // z-index: -1;
 }
 .grass_light{
     position: absolute;
     width:120%;
     top: -40px;
-    // z-index: -1;
 }
 .water_transition{
     position: absolute;
     width:17%;
-    top: -90px;
+    top: -80px;
     left: 70%
 }
 .grass_single{
@@ -90,7 +93,7 @@
 .grass_2{
     position: absolute;
     width: 7%;
-    top: 40%;
+    top: 30%;
     right: 0;
 }
 .grass_3{
@@ -143,8 +146,66 @@
     50% { transform: translateY(-20px); }
 }
 
+// @include desktop { //1560
+//     //top/bottom: <in-px> // this value should work for screen sizes 1280px to 1840px
+// }
 
-@media screen and (max-width: 760px) { //phone
+@include sm-desktop { //1164
+    // for size 1048 to 1280
+    .underwater_dark{
+        top: -500px;
+    }
+    .underwater_med{
+        top: -230px;
+    }
+    .algae_1{
+        top: -440px;
+    }
+    .algae_2{
+        top: -340px;
+    }
+    .algae_3{
+        top: -250px;
+    }
+    .grass_dark{
+        top: -80px;
+    }
+    .grass_light{
+        top: -40px;
+    }
+    .water_transition{
+        top: -60px;
+    }
+}
+@include tablet { //904
+    // for size 760 to 1048
+    .underwater_dark{
+        top: -395px;
+    }
+    .underwater_med{
+        top: -180px;
+    }
+    .algae_1{
+        top: -335px;
+    }
+    .algae_2{
+        top: -270px;
+    }
+    .algae_3{
+        top: -190px;
+    }
+    .grass_dark{
+        top: -60px;
+    }
+    .grass_light{
+        top: -30px;
+    }
+    .water_transition{
+        top: -45px;
+    }
+}
+
+@include phone { //phone
     .underwater_dark, .underwater_med, .algae_1, .algae_2, .algae_3, .grass_dark, .grass_light, .grass_space, .waterfall, .grass_single, .water_transition, .grass_1, .grass_2, .grass_3, .grass_4, .grass_5, .firefly_sm1, .firefly_sm2, .firefly_lg1, .firefly_lg2{
         visibility:hidden;
         width: 0;
@@ -164,21 +225,3 @@
         padding-top: 10%;
     }
 }
-
-// @media screen and (min-width: 1920px) {
-//     .container {
-//         // display: flex;
-//         // flex-direction: column;
-//         // align-items: center;
-//         width: 50vw;
-//     }
-// }
-
-// @media screen and (max-width: 960px) {
-//     .container {
-//         // display: flex;
-//         // flex-direction: column;
-//         // align-items: center;
-//         width: 60vw;
-//     }
-// }

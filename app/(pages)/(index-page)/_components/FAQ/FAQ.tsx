@@ -16,34 +16,36 @@ export default function FAQ() {
           height={10}
           className={style.underwater_dark}
         />
-        <Image
-          src="/images/faq/algae_right.svg"
-          alt="waterfall gradient"
-          width={50}
-          height={10}
-          className={style.algae_1}
-        />
-        <Image
-          src="/images/faq/algae_left.svg"
-          alt="waterfall gradient"
-          width={50}
-          height={10}
-          className={style.algae_2}
-        />
-        <Image
-          src="/images/faq/algae_right.svg"
-          alt="waterfall gradient"
-          width={50}
-          height={10}
-          className={style.algae_3}
-        />
-        <Image
-          src="/images/faq/underwater_medium.svg"
-          alt="waterfall gradient"
-          width={1000}
-          height={10}
-          className={style.underwater_med}
-        />
+        <div className={style.algae_level}>
+          <Image
+            src="/images/faq/algae_right.svg"
+            alt="waterfall gradient"
+            width={50}
+            height={10}
+            className={style.algae_1}
+          />
+          <Image
+            src="/images/faq/algae_left.svg"
+            alt="waterfall gradient"
+            width={50}
+            height={10}
+            className={style.algae_2}
+          />
+          <Image
+            src="/images/faq/algae_right.svg"
+            alt="waterfall gradient"
+            width={50}
+            height={10}
+            className={style.algae_3}
+          />
+          <Image
+            src="/images/faq/underwater_medium.svg"
+            alt="waterfall gradient"
+            width={1000}
+            height={10}
+            className={style.underwater_med}
+          />
+        </div>
         <Image
           src="/images/faq/grass_dark.svg"
           alt="waterfall gradient"
