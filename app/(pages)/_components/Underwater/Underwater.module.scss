@@ -137,46 +137,16 @@
         }
     }
 
-    // // ray
-    // // animations
-    // @keyframes fadeInOut {
-    //     0%, 100% { opacity: 0}
-    //     50% { opacity: 1}
-    // }
-
-    // .ray {
-    //     // position: absolute;
-    //     width: 100%;
-    //     opacity: 0;
-    //     // top: 0;
-    //     animation: fadeInOut 5s infinite alternate ease-in;
-
-    //     Image {
-    //         display: block;
-    //         pointer-events: none;
-    //     }
-    // }
-
-    // /* Adding delays to each ray for staggered animation */
-    // .ray:nth-child(1) { animation-delay: 0s; }
-    // .ray:nth-child(2) { animation-delay: 0.5s; }
-    // .ray:nth-child(3) { animation-delay: 1s; }
-    // .ray:nth-child(4) { animation-delay: 1.5s; }
-
-    // //ray
-    // .rayContainer {
-    //     border: 3px red solid;
-    //     width: 100%;
-    //     position: absolute;
-    //     // display: flex;
-    //     // align-items: flex-start;
-    //     // justify-content: flex-start;
-    //     // top: 2%;
-
-    //     // .ray1 {
-    //         // left: -50px;
-    //     // }
-    // }
+    .rayContainer {
+        position: absolute;
+        // border: 3px red solid;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow: hidden;
+        top: 0;
+        left: -25%;
+    }
 }
 }
 
@@ -225,13 +195,25 @@
                 padding-top: 1rem;
             }
         }
+
+        .rayContainer {
+            position: absolute;
+            // border: 3px red solid;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            overflow: hidden;
+            top: 0;
+            left: -45%;
+        }
     }
 }
 
 @include phone {
     .container {
         background-color: var(--sea-background);
-        padding: 3% 5% 0% 15%;
+        border: 3px solid white;
+        padding: 10% 5% 0% 15%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -252,8 +234,6 @@
         }
     
         .textcontainer {
-            // border: 3px white solid;
-            // padding: 10% 10% 0% 0%;
             width: 100%;
             z-index: 1;
     
@@ -274,13 +254,17 @@
                 padding-top: 1rem;
             }
         }
+
+        .rayContainer {
+            opacity: 0;
+        }
     }
 }
 
 @include sm-phone {
     .container {
         background-color: var(--sea-background);
-        padding: 3% 5% 0% 15%;
+        padding: 15% 5% 0% 15%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -322,6 +306,10 @@
                 color: var(--text-light);
                 padding-top: 1rem;
             }
+        }
+
+        .rayContainer {
+            opacity: 0;
         }
     }
 }
