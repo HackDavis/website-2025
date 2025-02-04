@@ -1,5 +1,51 @@
 @import '@globals/styles/mixins.scss';
 
+// default 
+.container {
+    background-color: var(--sea-background);
+    // padding: 3% 5% 0% 0%;
+    padding-left: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/landing_page/Caustics.svg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: top center; 
+    .imagecontainer {
+        // border: 3px red solid;
+
+        .bunny {
+            width: 100%;
+            padding-right: 10%;
+        }
+    }
+
+    .textcontainer {
+        // border: 3px white solid;
+        padding: 10% 10% 0% 0%;
+        width: 40%;
+        flex-direction: column;
+
+        .text {
+            font-weight: bold;
+            line-height: 1;
+            color: var(--text-light);
+        }
+
+        .coloredtext {
+            font-weight: bold;
+            line-height: 1;
+            color: var(--highlight-blue);
+        }
+
+        p {
+            color: var(--text-light);
+            padding-top: 1rem;
+        }
+    }
+}
+
 @include sm-desktop {
     .container {
     background-color: var(--sea-background);
@@ -16,14 +62,14 @@
 
         .bunny {
             width: 100%;
-            padding-right: 10%;
+            // padding-right: 10%;
         }
     }
 
     .textcontainer {
         // border: 3px white solid;
-        padding: 10% 10% 0% 5%;
-        width: 40%;
+        padding: 10% 10% 0% 0%;
+        width: 45%;
         flex-direction: column;
 
         .text {
@@ -48,8 +94,8 @@
 
 @include tablet {
     .container {
-        background-color: red;
-        padding: 3% 5% 0% 0%;
+        background-color: darkblue;
+        padding: 3% 5% 10% 10%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -62,15 +108,109 @@
     
             .bunny {
                 width: 100%;
-                padding-right: 10%;
+                // padding-right: 10%;
             }
         }
     
         .textcontainer {
             // border: 3px white solid;
-            padding: 10% 10% 0% 0%;
+            padding: 10% 5% 0% 0%;
             width: 50%;
             flex-direction: column;
+    
+            .text {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--text-light);
+            }
+    
+            .coloredtext {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--highlight-blue);
+            }
+    
+            p {
+                color: var(--text-light);
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+
+@include phone {
+    .container {
+        background-color: var(--sea-background);
+        padding: 3% 5% 0% 15%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-image: url('/images/landing_page/Caustics.svg');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top center; 
+        flex-direction: column-reverse;
+        .imagecontainer {
+            // border: 3px red solid;
+    
+            .bunny {
+                width: 100%;
+                padding: 15% 0% 0% 15%;
+                // margin-left: 10%;
+            }
+        }
+    
+        .textcontainer {
+            // border: 3px white solid;
+            // padding: 10% 10% 0% 0%;
+            width: 100%;
+    
+            .text {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--text-light);
+            }
+    
+            .coloredtext {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--highlight-blue);
+            }
+    
+            p {
+                color: var(--text-light);
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+
+@include sm-phone {
+    .container {
+        background-color: black;
+        padding: 3% 5% 0% 15%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-image: url('/images/landing_page/Caustics.svg');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top center; 
+        flex-direction: column-reverse;
+        .imagecontainer {
+            // border: 3px red solid;
+    
+            .bunny {
+                width: 100%;
+                padding: 5% 0% 0% 5%;
+                // margin-left: 10%;
+            }
+        }
+    
+        .textcontainer {
+            // border: 3px white solid;
+            // padding: 10% 10% 0% 0%;
+            width: 100%;
     
             .text {
                 font-weight: bold;
