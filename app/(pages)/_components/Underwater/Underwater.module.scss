@@ -94,7 +94,7 @@
 
 @include tablet {
     .container {
-        background-color: darkblue;
+        background-color: var(--sea-background);
         padding: 3% 5% 10% 10%;
         display: flex;
         align-items: center;
@@ -187,7 +187,7 @@
 
 @include sm-phone {
     .container {
-        background-color: black;
+        background-color: var(--sea-background);
         padding: 3% 5% 0% 15%;
         display: flex;
         align-items: center;
