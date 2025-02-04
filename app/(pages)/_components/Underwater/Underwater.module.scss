@@ -9,11 +9,13 @@
     align-items: center;
     justify-content: center;
     background-image: url('/images/landing_page/Caustics.svg');
+    // background-image: url('/images/landing_page/ray1.svg');
     background-repeat: no-repeat;
     background-size: contain; 
     background-position: top center; 
     .imagecontainer {
         // border: 3px red solid;
+        z-index: 1;
 
         .bunny {
             width: 100%;
@@ -26,6 +28,7 @@
         padding: 10% 10% 0% 0%;
         width: 40%;
         flex-direction: column;
+        z-index: 1;
 
         .text {
             font-weight: bold;
@@ -48,21 +51,8 @@
 
 // animations
 @keyframes fadeInOut {
-    0%, 100% { opacity: 0.2}
+    0%, 100% { opacity: 0}
     50% { opacity: 1; transform: translateY(0); }
-}
-
-.ray {
-    // position: absolute;
-    width: 100%;
-    // top: 0;
-    opacity: 1;
-    animation: fadeInOut 5s infinite alternate ease-in-out;
-
-    Image {
-        display: block;
-        pointer-events: none;
-    }
 }
 
 /* Adding delays to each ray for staggered animation */
@@ -71,18 +61,33 @@
 .ray:nth-child(3) { animation-delay: 1s; }
 .ray:nth-child(4) { animation-delay: 1.5s; }
 
-//ray
+// rays
+
+.ray {
+    // position: absolute;
+    // border: 3px green solid;
+    opacity: 0;
+    animation: fadeInOut 5s infinite alternate ease-in-out;
+}
+
+.ray1 {
+    margin-right: -15%;
+}
+
+.ray4 {
+    margin-left: -5%;
+}
+
 .rayContainer {
-    border: 3px red solid;
     position: absolute;
+    // background-color: black;
+    // border: 3px red solid;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    top: 2%;
-
-    .ray1 {
-        left: -50px;
-    }
+    overflow: hidden;
+    top: 0;
+    left: -15%;
 }
   
 
@@ -98,6 +103,7 @@
     background-size: contain; 
     background-position: top center; 
     .imagecontainer {
+        z-index: 1;
         // border: 3px red solid;
 
         .bunny {
@@ -111,6 +117,7 @@
         padding: 10% 10% 0% 0%;
         width: 45%;
         flex-direction: column;
+        z-index: 1;
 
         .text {
             font-weight: bold;
@@ -130,46 +137,46 @@
         }
     }
 
-    // ray
-    // animations
-    @keyframes fadeInOut {
-        0%, 100% { opacity: 0.2}
-        50% { opacity: 1; transform: translateY(0); }
-    }
+    // // ray
+    // // animations
+    // @keyframes fadeInOut {
+    //     0%, 100% { opacity: 0}
+    //     50% { opacity: 1}
+    // }
 
-    .ray {
-        // position: absolute;
-        width: 100%;
-        // top: 0;
-        opacity: 1;
-        animation: fadeInOut 5s infinite alternate ease-in-out;
+    // .ray {
+    //     // position: absolute;
+    //     width: 100%;
+    //     opacity: 0;
+    //     // top: 0;
+    //     animation: fadeInOut 5s infinite alternate ease-in;
 
-        Image {
-            display: block;
-            pointer-events: none;
-        }
-    }
+    //     Image {
+    //         display: block;
+    //         pointer-events: none;
+    //     }
+    // }
 
-    /* Adding delays to each ray for staggered animation */
-    .ray:nth-child(1) { animation-delay: 0s; }
-    .ray:nth-child(2) { animation-delay: 0.5s; }
-    .ray:nth-child(3) { animation-delay: 1s; }
-    .ray:nth-child(4) { animation-delay: 1.5s; }
+    // /* Adding delays to each ray for staggered animation */
+    // .ray:nth-child(1) { animation-delay: 0s; }
+    // .ray:nth-child(2) { animation-delay: 0.5s; }
+    // .ray:nth-child(3) { animation-delay: 1s; }
+    // .ray:nth-child(4) { animation-delay: 1.5s; }
 
-    //ray
-    .rayContainer {
-        border: 3px red solid;
-        width: 50%;
-        position: relative;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        top: 2%;
+    // //ray
+    // .rayContainer {
+    //     border: 3px red solid;
+    //     width: 100%;
+    //     position: absolute;
+    //     // display: flex;
+    //     // align-items: flex-start;
+    //     // justify-content: flex-start;
+    //     // top: 2%;
 
-        .ray1 {
-            left: -50px;
-        }
-    }
+    //     // .ray1 {
+    //         // left: -50px;
+    //     // }
+    // }
 }
 }
 
@@ -186,6 +193,7 @@
         background-position: top center; 
         .imagecontainer {
             // border: 3px red solid;
+            z-index: 1;
     
             .bunny {
                 width: 100%;
@@ -198,6 +206,7 @@
             padding: 10% 5% 0% 0%;
             width: 50%;
             flex-direction: column;
+            z-index: 1;
     
             .text {
                 font-weight: bold;
@@ -232,6 +241,7 @@
         background-position: top center; 
         flex-direction: column-reverse;
         .imagecontainer {
+            z-index: 1;
             // border: 3px red solid;
     
             .bunny {
@@ -245,6 +255,7 @@
             // border: 3px white solid;
             // padding: 10% 10% 0% 0%;
             width: 100%;
+            z-index: 1;
     
             .text {
                 font-weight: bold;
@@ -279,6 +290,7 @@
         background-position: top center; 
         flex-direction: column-reverse;
         .imagecontainer {
+            z-index: 1;
             // border: 3px red solid;
     
             .bunny {
@@ -292,6 +304,7 @@
             // border: 3px white solid;
             // padding: 10% 10% 0% 0%;
             width: 100%;
+            z-index: 1;
     
             .text {
                 font-weight: bold;
