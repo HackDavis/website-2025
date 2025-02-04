@@ -3,9 +3,9 @@ import SandCastle from './_components/SandCastle';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 bg-sky-background p-8 pb-20 sm:p-20">
+    <div>
       {/* Intro Section */}
-      <p className="invisible font-metropolis text-4xl font-bold">
+      {/* <p className="invisible font-metropolis text-4xl font-bold">
         Halo! Welcome to the HackDavis template repo :D
       </p>
       <p className="font-montserrat text-4xl font-bold">
@@ -16,8 +16,11 @@ export default function Home() {
       </p>
       <p className="font-jakarta text-4xl font-bold">
         Halo! Welcome to the HackDavis template repo :D
-      </p>
-      <SandCastle />
+      </p> */}
+      <div className="h-[300px] w-full bg-red-500"></div>
+      <div className="flex flex-col items-center justify-center">
+        <SandCastle />
+      </div>
 
       {/* Sections for Testing */}
       <div
