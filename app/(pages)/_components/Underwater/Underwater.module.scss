@@ -1,4 +1,7 @@
-.container {
+@import '@globals/styles/mixins.scss';
+
+@include sm-desktop {
+    .container {
     background-color: var(--sea-background);
     padding: 3% 5% 0% 0%;
     display: flex;
@@ -38,6 +41,53 @@
         p {
             color: var(--text-light);
             padding-top: 1rem;
+        }
+    }
+}
+}
+
+@include tablet {
+    .container {
+        background-color: red;
+        padding: 3% 5% 0% 0%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-image: url('/images/landing_page/Caustics.svg');
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: top center; 
+        .imagecontainer {
+            // border: 3px red solid;
+    
+            .bunny {
+                width: 100%;
+                padding-right: 10%;
+            }
+        }
+    
+        .textcontainer {
+            // border: 3px white solid;
+            padding: 10% 10% 0% 0%;
+            width: 50%;
+            flex-direction: column;
+    
+            .text {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--text-light);
+            }
+    
+            .coloredtext {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--highlight-blue);
+            }
+    
+            p {
+                color: var(--text-light);
+                padding-top: 1rem;
+            }
         }
     }
 }
