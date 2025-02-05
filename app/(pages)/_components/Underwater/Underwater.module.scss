@@ -21,6 +21,7 @@
         .bunny {
             width: 100%;
             padding-right: 10%;
+            padding-top: 10%;
         }
     }
 
@@ -93,22 +94,63 @@
 
 // music notes
 
+// animations
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/* Adding delays to each ray for staggered animation */
+.note:nth-child(1) { animation-delay: 0s; }
+.note:nth-child(2) { animation-delay: 0.5s; }
+.note:nth-child(3) { animation-delay: 1s; }
+.note:nth-child(4) { animation-delay: 1.5s; }
+
 .musicContainer {
     position: absolute;
-    background-color: black;
+    left: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+    top: 0%;
+    // background-color: black;
     // border: 3px red solid;
     display: flex;
     align-items: flex;
     justify-content: flex;
-    overflow: hidden;
     z-index: 1;
+    gap: 2%;
 
     .note1 {
+        padding: 2%;
         margin-bottom: 35%;
+        animation: float 4s infinite alternate ease-in-out;
+        animation-delay: 0s;
+    }
+
+    .note2 {
+        margin-top: 5%;
+        animation: float 4s infinite alternate ease-in-out;
+        animation-delay: 0.5s;
     }
     
     .note3 {
-        margin-bottom: 15%;
+        margin-left: 5%;
+        animation: float 4s infinite alternate ease-in-out;
+        animation-delay: 1s;
+    }
+
+    .note4 {
+        margin-top: 60%;
+        margin-left: -15%;
+        animation: float 4s infinite alternate ease-in-out;
+        animation-delay: 1.5s;
     }
 }
 
@@ -132,7 +174,9 @@
 
         .bunny {
             width: 100%;
+            padding: 25% 15% 0% 15%;
             // padding-right: 10%;
+            border: blue 3px solid;
         }
     }
 
