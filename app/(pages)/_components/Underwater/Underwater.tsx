@@ -7,6 +7,10 @@ import ray1 from 'public/images/landing_page/ray1.svg';
 import ray2 from 'public/images/landing_page/ray2.svg';
 import ray3 from 'public/images/landing_page/ray3.svg';
 import ray4 from 'public/images/landing_page/ray4.svg';
+import note1 from 'public/images/landing_page/note1.svg';
+import note2 from 'public/images/landing_page/note2.svg';
+import note3 from 'public/images/landing_page/note3.svg';
+import note4 from 'public/images/landing_page/note4.svg';
 
 // import Caustics from 'public/images/landing_page/Caustics.svg';
 // import WaterRays from 'public/images/landing_page/WaterRays.svg';
@@ -18,6 +22,29 @@ const Underwater = () => (
       <Image className={`${style.ray} ${style.ray2}`} src={ray2} alt="ray" />
       <Image className={`${style.ray} ${style.ray3}`} src={ray3} alt="ray" />
       <Image className={`${style.ray} ${style.ray4}`} src={ray4} alt="ray" />
+    </div>
+
+    <div className={style.musicContainer}>
+      <Image
+        className={`${style.note} ${style.note1}`}
+        src={note1}
+        alt="music note"
+      />
+      <Image
+        className={`${style.note} ${style.note2}`}
+        src={note2}
+        alt="music note"
+      />
+      <Image
+        className={`${style.note} ${style.note3}`}
+        src={note3}
+        alt="music note"
+      />
+      <Image
+        className={`${style.note} ${style.note4}`}
+        src={note4}
+        alt="music note"
+      />
     </div>
     <div className={style.imagecontainer}>
       <Image className={style.bunny} src={Bunny} alt="bunny" />

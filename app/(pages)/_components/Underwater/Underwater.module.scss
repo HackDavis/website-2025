@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     background-size: contain; 
     background-position: top center; 
+
     .imagecontainer {
         // border: 3px red solid;
         z-index: 1;
@@ -89,6 +90,29 @@
     top: 0;
     left: -15%;
 }
+
+// music notes
+
+.musicContainer {
+    position: absolute;
+    background-color: black;
+    // border: 3px red solid;
+    display: flex;
+    align-items: flex;
+    justify-content: flex;
+    overflow: hidden;
+    z-index: 1;
+
+    .note1 {
+        margin-bottom: 35%;
+    }
+    
+    .note3 {
+        margin-bottom: 15%;
+    }
+}
+
+
   
 
 @include sm-desktop {
