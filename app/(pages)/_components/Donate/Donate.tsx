@@ -3,32 +3,52 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import style from './Donate.module.scss';
-// import Grass from 'public/images/Donate/Grass.svg';
-// import Bunny from 'public/images/landing_page/BunnySnorkel.svg';
-// import Caustics from 'public/images/landing_page/Caustics.svg';
-// import WaterRays from 'public/images/landing_page/WaterRays.svg';
+import Cow from 'public/images/Donate/CowPerson.svg';
+import Heart from 'public/images/Donate/Heart.svg';
 
-const Underwater = () => (
+const Donate = () => (
   <div className={style.container}>
     <div className={style.grassContainer}>
-      <h2>support for social good</h2>
+      <div className={style.title}>
+        <h2>support for social good.</h2>
+      </div>
 
-      {/* <div className={}></div> */}
-      <Link
-        href="https://www.guidestar.org/profile/shared/4cf39094-2e34-44e6-890e-7a547408155b"
-        target="_blank"
-      >
+      <div className={style.children}>
         <div className={style.sealWrapper}>
+          <Link
+            className={style.sealChildren}
+            href="https://www.guidestar.org/profile/shared/4cf39094-2e34-44e6-890e-7a547408155b"
+            target="_blank"
+          >
+            <Image
+              src="https://widgets.guidestar.org/TransparencySeal/10110290"
+              alt="Guidestar Transparency Seal"
+              width={150} // Adjust to match Figma size
+              height={150} // Adjust to match Figma size
+              unoptimized={true}
+            />
+          </Link>
+
+          <div className={style.buttons}>
+            <a className={style.sponsorButton}>
+              <div className={style.heartButton}>
+                <Image src={Heart} alt="Heart blue icon" unoptimized={true} />
+              </div>
+              Sponsor 2024
+            </a>
+          </div>
+        </div>
+
+        <div className={style.cowWrapper}>
           <Image
-            src="https://widgets.guidestar.org/TransparencySeal/10110290"
+            src={Cow}
             alt="Guidestar Transparency Seal"
-            fill={true}
             unoptimized={true}
           />
         </div>
-      </Link>
+      </div>
     </div>
   </div>
 );
 
-export default Underwater;
+export default Donate;
