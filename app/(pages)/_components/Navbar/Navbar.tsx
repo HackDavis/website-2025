@@ -10,7 +10,7 @@ import Banner from '/public/Navbar/mlh-banner-2025.svg';
 
 import styles from './Navbar.module.scss';
 
-const NAVBAR_SHOW_THRESHOLD = 120;
+const NAVBAR_SHOW_THRESHOLD = 200;
 
 interface NavLink {
   body: React.ReactNode;
