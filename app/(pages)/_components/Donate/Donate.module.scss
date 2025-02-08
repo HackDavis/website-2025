@@ -1,169 +1,255 @@
 @import '@globals/styles/mixins.scss';
 
 .container {
-    padding: 15% 0%;
+  width: 100%;
+  height: auto;
 
-    h2 {
-        color: white;
-        font-weight: 700;
-        line-height: 43.546px; /* 111.111% */
-        letter-spacing: 0.784px;
-        text-align: center;
-    }
+  h2 {
+      color: white;
+      font-weight: 700;
+      line-height: 43.546px; /* 111.111% */
+      letter-spacing: 0.784px;
+      text-align: center;
+  }
 
-    .grassContainer{
-      position: relative;
-      overflow: hidden;
-      padding: 3% 0% 10% 0%;
-      width: 60%;
-      background-image: url('/images/Donate/Grass.svg');
-      background-repeat: no-repeat;
-      background-size: contain; 
-      background-position: top center; 
-      // border: 3px red solid;
-      height: 100%;
-      right: -20px; /* Moves it slightly off-screen */
-      top: 50%;
-      transform: translateX(-8%);
-      justify-content: right;
+  .grassContainer{
+    overflow: hidden;
+    padding: 3% 0% 10% 0%;
+    background-image: url('/images/Donate/Grass.svg');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: top center; 
+    border: 3px red solid;
+    justify-content: right;
 
-        .title {
-            padding: 1% 0% 0% 20%;
-            // border: 3px white solid;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            position: relative;
-        }
+      .title {
+          padding: 1% 0% 0% 20%;
+          // border: 3px white solid;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          position: relative;
+      }
 
-        .children{
-            // border: 3px solid pink;
-            display: flex;
-            position: relative;
-            padding: 3% 0% 0% 30%;
-            flex-direction: row;
-            align-items: left;
-            justify-content: left;
+      .children{
+          // border: 3px solid pink;
+          display: flex;
+          position: relative;
+          padding: 3% 0% 0% 30%;
+          flex-direction: row;
+          align-items: left;
+          justify-content: left;
 
-            .sealWrapper {
-                // border: 1px blue solid;
-                align-items: left;
-                justify-content: left;
+          .sealWrapper {
+              // border: 1px blue solid;
+              align-items: left;
+              justify-content: left;
 
-                .sealChildren {
-                    // border: 1px solid black;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    padding-bottom: 5%;
-                }
-
-                .buttons {
+              .sealChildren {
+                  // border: 1px solid black;
+                  display: flex;
+                  flex-direction: column;
                   align-items: center;
                   justify-content: center;
-                  padding: 8%;
-                }
+                  padding-bottom: 5%;
+              }
 
-                .sponsorButton {
-                  font-weight: 700;
-                  // line-height: normal;
-                  // letter-spacing: 0.435px;
-                  overflow: hidden;
-                  background: #ffc53d28;
-                  transition: background 200ms ease flex-direction 200ms ease;
-                  color: #ffc53d;
-                  width: fit-content;
-                  padding: 14px 20px 15px 60px;
-                  border-radius: 100px;
-                  display: flex;
-                  flex-direction: row-reverse;
-                  justify-content: space-around;
-                  align-items: center;
-                  gap: 20px;
-                  position: relative;
-                  text-decoration: none;
-                  transition: all 0.2s ease;
-                
-                  &:hover {
-                    cursor: pointer;
-                    background: #ffc53d;
-                    color: #122f40;
-                    padding: 14px 60px 15px 20px;
-                
-                    .heartButton {
-                      transform: translateX(80px);
-                    }
+              .buttons {
+                align-items: center;
+                justify-content: center;
+                padding: 8%;
+              }
+
+              .sponsorButton {
+                font-weight: 700;
+                // line-height: normal;
+                // letter-spacing: 0.435px;
+                overflow: hidden;
+                background: #ffc53d28;
+                transition: background 200ms ease flex-direction 200ms ease;
+                color: #ffc53d;
+                width: fit-content;
+                padding: 14px 20px 15px 60px;
+                border-radius: 100px;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-around;
+                align-items: center;
+                gap: 20px;
+                position: relative;
+                text-decoration: none;
+                transition: all 0.2s ease;
+              
+                &:hover {
+                  cursor: pointer;
+                  background: #ffc53d;
+                  color: #122f40;
+                  padding: 14px 60px 15px 20px;
+              
+                  .heartButton {
+                    transform: translateX(80px);
                   }
                 }
-                
-                .heartButton {
-                  padding: 10%;
-                  background: #ffc53d;
-                  opacity: 1;
-                  border-radius: 100px;
-                  left: 0;
-                  position: absolute;
-                  transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
-                  box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
-                
-                  // @include mrwd(991px) {
-                  //   padding: 11px 9px 6px 10px;
-                  // }
-                }
-                
-                .yellowCircle {
-                  width: 10px;
-                  height: 10px;
-                  border-radius: 50%;
-                  background-color: #ffc53d;
-                  margin-right: 15px;
-                
-                  // @include mrwd(991px) {
-                  //   display: none;
-                  // }
-                }
               }
-        }
-    }
+              
+              .heartButton {
+                padding: 10%;
+                background: #ffc53d;
+                opacity: 1;
+                border-radius: 100px;
+                left: 0;
+                position: absolute;
+                transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+                box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
+              
+                // @include mrwd(991px) {
+                //   padding: 11px 9px 6px 10px;
+                // }
+              }
+              
+              .yellowCircle {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #ffc53d;
+                margin-right: 15px;
+              
+                // @include mrwd(991px) {
+                //   display: none;
+                // }
+              }
+            }
+      }
+  }
 }
 
-// @include sm-desktop{
-//     .container {
-//         padding: 15% 0%;
-    
-//         h2 {
-//             color: white;
-//             font-weight: 700;
-//             line-height: 43.546px; /* 111.111% */
-//             letter-spacing: 0.784px;
-//             text-align: center;
-//         }
-    
-//         .grassContainer{
-//             position: relative;
-//             overflow: hidden;
-//             padding: 10%;
-//             width: 60%;
-//             background-image: url('/images/Donate/Grass.svg');
-//             background-repeat: no-repeat;
-//             background-size: contain; 
-//             background-position: top center; 
-//             border: 3px red solid;
-//             height: 100%;
-//             right: -20px; /* Moves it slightly off-screen */
-//             top: 50%;
-//             transform: translateX(-8%);
-    
-//             .sealWrapper {
-//                 border: 3px blue solid;
-//                 position: relative;
-//                 width: 100px;
-//                 height: 100px;
-//                 margin-top: 20px;
-//               }
-//         }
-//     }
-// }; 
+@include sm-desktop {
+  .container {
+  padding: 15% 0%;
+
+  h2 {
+      color: white;
+      font-weight: 700;
+      line-height: 43.546px; /* 111.111% */
+      letter-spacing: 0.784px;
+      text-align: center;
+  }
+
+  .grassContainer{
+    position: relative;
+    overflow: hidden;
+    padding: 3% 0% 10% 0%;
+    width: 60%;
+    background-image: url('/images/Donate/Grass.svg');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: top center; 
+    // border: 3px red solid;
+    height: 100%;
+    right: -20px; /* Moves it slightly off-screen */
+    top: 50%;
+    transform: translateX(-8%);
+    justify-content: right;
+
+      .title {
+          padding: 1% 0% 0% 20%;
+          // border: 3px white solid;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          position: relative;
+      }
+
+      .children{
+          // border: 3px solid pink;
+          display: flex;
+          position: relative;
+          padding: 3% 0% 0% 30%;
+          flex-direction: row;
+          align-items: left;
+          justify-content: left;
+
+          .sealWrapper {
+              // border: 1px blue solid;
+              align-items: left;
+              justify-content: left;
+
+              .sealChildren {
+                  // border: 1px solid black;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  padding-bottom: 5%;
+              }
+
+              .buttons {
+                align-items: center;
+                justify-content: center;
+                padding: 8%;
+              }
+
+              .sponsorButton {
+                font-weight: 700;
+                // line-height: normal;
+                // letter-spacing: 0.435px;
+                overflow: hidden;
+                background: #ffc53d28;
+                transition: background 200ms ease flex-direction 200ms ease;
+                color: #ffc53d;
+                width: fit-content;
+                padding: 14px 20px 15px 60px;
+                border-radius: 100px;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-around;
+                align-items: center;
+                gap: 20px;
+                position: relative;
+                text-decoration: none;
+                transition: all 0.2s ease;
+              
+                &:hover {
+                  cursor: pointer;
+                  background: #ffc53d;
+                  color: #122f40;
+                  padding: 14px 60px 15px 20px;
+              
+                  .heartButton {
+                    transform: translateX(80px);
+                  }
+                }
+              }
+              
+              .heartButton {
+                padding: 10%;
+                background: #ffc53d;
+                opacity: 1;
+                border-radius: 100px;
+                left: 0;
+                position: absolute;
+                transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+                box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
+              
+                // @include mrwd(991px) {
+                //   padding: 11px 9px 6px 10px;
+                // }
+              }
+              
+              .yellowCircle {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #ffc53d;
+                margin-right: 15px;
+              
+                // @include mrwd(991px) {
+                //   display: none;
+                // }
+              }
+            }
+      }
+  }
+}
+}
 
 @include phone {
   .container {
@@ -179,23 +265,23 @@
         text-align: center;
     }
 
-    .grassContainer{
-      overflow: hidden;
+    .grassContainer {
+      position: relative;
+      overflow: visible;
       width: 100%;
-      background-image: url('/images/Donate/Grass.svg');
+      min-height: 100vh; /* Ensures it takes full screen height */
+      background-image: url('/images/Donate/CroppedGrass.svg');
       background-repeat: no-repeat;
-      background-size: cover; 
-      background-size: 100% auto;
-      background-position: top center; 
-      justify-content: center;
+      background-size: cover; /* Ensures full coverage */
+      background-position: center;
+      right: 0px;
       transform: translateX(0%);
-      left: 0%; /* Moves it slightly off-screen */
-      top: 0%;
+      justify-content: right;    
 
         .title {
-            font-size: 1rem;
-            padding: 1% 0% 0% 20%;
             // border: 3px white solid;
+            text-align: right;
+            padding: 15% 0% 10% 15%;
             font-weight: 700;
             letter-spacing: 1.5px;
         }
@@ -203,23 +289,28 @@
         .children{
             // border: 3px solid pink;
             display: flex;
-            padding: 1% 0% 0% 22%;
+            padding-left: 15%;
+            padding-right: 15%;
             flex-direction: column;
-            align-items: center;
+            // align-items: center;
             justify-content: center;
-            gap: 5%;
+            width: 100%;
+            border: 3px black solid;
 
             .sealWrapper {
-                // border: 1px blue solid;
-                align-items: center;
-                justify-content: center;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              border: 3px white solid;
 
                 .sealChildren {
-                    // border: 1px solid black;
+                    border: 1px solid pink;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
+                    padding: 5%;
                 }
 
                 .buttons {

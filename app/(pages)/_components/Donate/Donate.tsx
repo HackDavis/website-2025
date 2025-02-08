@@ -22,8 +22,7 @@ const Donate = () => (
             <Image
               src="https://widgets.guidestar.org/TransparencySeal/10110290"
               alt="Guidestar Transparency Seal"
-              width={150} // Adjust to match Figma size
-              height={150} // Adjust to match Figma size
+              fill={true}
               unoptimized={true}
             />
           </Link>
