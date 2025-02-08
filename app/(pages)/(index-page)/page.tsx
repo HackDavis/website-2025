@@ -1,4 +1,5 @@
 // import Directors from './(about-us)/_components/Directors/Directors';
+import HeroSection from './_components/hero/heroSection';
 import SandCastle from './_components/SandCastle';
 import Sponsors from './_components/Sponsors/Sponsors';
 import styles from './page.module.scss';
@@ -20,7 +21,7 @@ export default function Home() {
       <p className="font-jakarta text-4xl font-bold">
         Halo! Welcome to the HackDavis template repo :D
       </p> */}
-      <div className="h-[300px] w-full bg-red-500"></div>
+      <HeroSection />
       <div className="flex flex-col items-center justify-center">
         <SandCastle />
       </div>
