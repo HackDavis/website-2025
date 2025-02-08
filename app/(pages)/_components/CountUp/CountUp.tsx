@@ -59,7 +59,7 @@ const CountUp: React.FC<CountUpProps> = ({
   }, [start, end, duration]);
 
   return (
-    <div ref={countUpRef} style={{ fontFamily: 'Metropolis', color: '005271' }}>
+    <div ref={countUpRef} style={{ fontFamily: 'Metropolis' }}>
       {/* {start && (
         <> */}
       {prefix}
