@@ -1,14 +1,10 @@
-// this doesnt seem to like the globals??
-$brand-icon-color: white;
-$grass-background-dark: #7FB732;
-
 // css styling for the desktop view
 .container {
     width: 100%;
     height: calc(435/1440*100vw - 20px);
     display: flex;
     flex-direction: column;
-    background: $grass-background-dark;
+    background: var(--grass-background-dark);
 
     .footer_grass{
         position: relative;
@@ -65,23 +61,23 @@ $grass-background-dark: #7FB732;
                 .singleIcon { // used for most of the brand icons
                     max-width: 30px;
                     width: 59%;
-                    color:$brand-icon-color;
+                    color: var(--brand-icon-color);
                 }
                 .mediumIcon { // used for most of the brand icons
                     max-width: 40px;
                     width: 59%;
-                    color:$brand-icon-color;
+                    color: var(--brand-icon-color);
                 }
                 .discordIcon { // used for most of the brand icons
                     max-width: 40px;
                     width: 59%;
-                    color:$brand-icon-color;
+                    color: var(--brand-icon-color);
                 }
         
                 .fbIcon { // fb icon is larger than the rest so it needs smaller size
                     max-width: 17px;
                     width: 7%;
-                    color:$brand-icon-color;
+                    color: var(--brand-icon-color);
                 }
             }
             
@@ -124,7 +120,7 @@ $grass-background-dark: #7FB732;
     height: calc(435/1440*100vw - 20px);
     display: flex;
     flex-direction: column;
-    background: $grass-background-dark;
+    background: var(--grass-background-dark);
 
     .footer_grass{
         position: relative;
@@ -188,25 +184,25 @@ $grass-background-dark: #7FB732;
                 .singleIcon { // used for most of the brand icons
                     max-width: 30px;
                     width: 8%;
-                    color:$brand-icon-color;
+                    color: var(--brand-icon-color);
                     
                 }
 
                 .mediumIcon { // used for most of the brand icons
                     max-width: 40px;
                     width: 11%;
-                    color:$brand-icon-color;
+                    color: var(--brand-icon-color);
                 }
                 .discordIcon { // used for most of the brand icons
                     max-width: 40px;
                     width: 11%;
-                    color:$brand-icon-color;
+                    color: var(--brand-icon-color);
                 }
         
                 .fbIcon { // fb icon is larger than the rest so it needs smaller size
                     max-width: 17px;
                     width: 5%;
-                    color:$brand-icon-color;
+                    color: var(--brand-icon-color);
                 }
             }
             
