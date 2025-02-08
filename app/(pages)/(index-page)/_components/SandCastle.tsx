@@ -7,6 +7,7 @@ import crab from '@public/images/what_is_hackdavis/crab.svg';
 import sand_hole1 from '@public/images/what_is_hackdavis/sand_hole1.svg';
 import sand_hole2 from '@public/images/what_is_hackdavis/sand_hole2.svg';
 import sand_hole3 from '@public/images/what_is_hackdavis/sand_hole3.svg';
+import sand_hole_top from '@public/images/what_is_hackdavis/sand_hole_top.svg';
 
 import Image from 'next/image';
 
@@ -17,6 +18,75 @@ export default function SandCastle() {
         <SandCastleContent />
       </SandCastleBackground>
     </main>
+  );
+}
+
+function SandCastleContent() {
+  return (
+    <div className="flex h-fit w-full flex-wrap sm:flex-row mt-20 sm:mt-0 p-[5%] border border-red-500 pt-[10%] justify-center">
+        <div className="w-full sm:w-full md:w-2/3 sm:p-10 ">
+          <WhatIsHackDavisText />
+        </div>
+        <div className="w-full md:w-1/3 flex justify-end items-end sm:justify-center sm:items-center">
+          <div className="relative mt-8 flex h-full w-2/3 sm:w-full justify-center md:-mt-10 md:justify-end ">
+            <div className="relative h-[150px] w-[185px] sm:h-[200px] sm:w-[245px] md:h-[245px] md:w-[301px]">
+              <Image
+                src={sandcastle}
+                alt="sandcastle"
+                fill
+                style={{ objectFit: 'contain' }}
+                priority
+              />
+            </div>
+            <div className="relative -ml-10 sm:-ml-12 md:-ml-16  h-[200px] w-[200px] sm:h-[270px] sm:w-[270px] md:h-[335.45px] md:w-[330px]">
+              <Image
+                src={froggy}
+                alt="froggy"
+                fill
+                style={{ objectFit: 'contain' }}
+                priority
+              />
+            </div>
+          </div>
+        </div>
+    </div>
+  );
+}
+
+function WhatIsHackDavisText() {
+  return (
+    <div className="flex flex-col items-start justify-center text-sand-text-color w-full max-w-[500px]">
+      <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl">HackDavis</h1>
+      <p className="max-w-[90%] text-base xs:text-lg sm:text-xl md:text-2xl">
+        is one of the
+        <strong> largest collegiate hackathon </strong> in Califronia, where
+        over 950 students, creators, and leaders come together to{' '}
+        <strong>create for social good</strong>.
+      </p>
+    </div>
+  );
+}
+
+function SandCastleBackground({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex h-auto w-screen flex-col justify-center bg-sand-background-light">
+      <div className="relative h-[950px] w-full">
+        <Image
+          src={sand_background}
+          alt="sand background"
+          fill
+          className="object-cover object-top"
+          style={{
+            minWidth: '100%',
+            minHeight: '100%',
+          }}
+        />
+        <SandCastleTexture />
+        <div className="absolute inset-0 z-10 flex w-full">
+          {children}
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -73,74 +143,6 @@ function SandCastleTexture() {
           />
         </div>
       </div>
-    </div>
-  );
-}
-
-function SandCastleContent() {
-  return (
-    <div className="flex h-fit w-full flex-row flex-wrap p-[10%]">
-      <div className="w-full sm:w-full md:w-[400px] lg:w-[500px]">
-        <WhatIsHackDavis />
-      </div>
-      <div className="w-full md:w-1/3">
-        <div className="relative mt-8 flex h-full w-full justify-center md:-mt-10 md:justify-end">
-          <div className="relative h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] md:h-[250px] md:w-[250px]">
-            <Image
-              src={sandcastle}
-              alt="sandcastle"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-          <div className="relative -ml-12 h-[150px] w-[150px] sm:-ml-16 sm:h-[200px] sm:w-[200px] md:-ml-24 md:h-[250px] md:w-[250px]">
-            <Image
-              src={froggy}
-              alt="froggy"
-              fill
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function SandCastleBackground({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="flex h-auto w-screen flex-col justify-center bg-sand-background-light">
-      {/* Medium sand layer */}
-      <div className="relative h-[950px] w-full">
-        <Image
-          src={sand_background}
-          alt="sand background"
-          fill
-          className="object-cover"
-          style={{
-            minWidth: '100%',
-            minHeight: '100%',
-          }}
-        />
-        <SandCastleTexture />
-        <div className="absolute inset-0 z-10 flex w-full items-center justify-center">
-          {children}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function WhatIsHackDavis() {
-  return (
-    <div className="flex flex-col items-start justify-center p-4 text-sand-text-color">
-      <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">HackDavis</h1>
-      <p className="max-w-[90%] text-lg sm:max-w-[80%] sm:text-xl md:max-w-[70%] md:text-2xl">
-        is one of the
-        <strong> largest collegiate hackathon </strong> in Califronia, where
-        over 950 students, creators, and leaders come together to{' '}
-        <strong>create for social good</strong>.
-      </p>
     </div>
   );
 }
