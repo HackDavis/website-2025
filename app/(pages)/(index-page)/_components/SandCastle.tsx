@@ -23,8 +23,8 @@ export default function SandCastle() {
 
 function SandCastleContent() {
   return (
-    <div className="flex h-fit w-full flex-wrap sm:flex-row mt-20 sm:mt-0 p-[10%] sm:p-[5%] pt-[10%] justify-center">
-        <div className="w-full md:w-2/3 sm:p-10 border">
+    <div className="flex h-fit w-full flex-wrap sm:flex-row mt-20 sm:mt-10 p-[10%] sm:p-[5%] pt-[10%] justify-center">
+        <div className="w-full md:w-2/3 sm:p-10">
           <WhatIsHackDavisText />
         </div>
         <div className="w-full md:w-1/3 flex justify-end items-end sm:justify-center sm:items-center">
