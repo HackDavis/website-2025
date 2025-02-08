@@ -17,12 +17,12 @@ import note4 from 'public/images/landing_page/note4.svg';
 
 const Underwater = () => (
   <div className={style.relative_container}>
-    <div className={style.rayContainer}>
-      <Image className={`${style.ray} ${style.ray1}`} src={ray1} alt="ray" />
-      <Image className={`${style.ray} ${style.ray2}`} src={ray2} alt="ray" />
-      <Image className={`${style.ray} ${style.ray3}`} src={ray3} alt="ray" />
-      <Image className={`${style.ray} ${style.ray4}`} src={ray4} alt="ray" />
-    </div>
+    {/* <div className={style.rayContainer}> */}
+    <Image className={`${style.ray} ${style.ray1}`} src={ray1} alt="ray" />
+    <Image className={`${style.ray} ${style.ray2}`} src={ray2} alt="ray" />
+    <Image className={`${style.ray} ${style.ray3}`} src={ray3} alt="ray" />
+    <Image className={`${style.ray} ${style.ray4}`} src={ray4} alt="ray" />
+    {/* </div> */}
     <div className={style.container}>
       <div className={style.content}></div>
       <div className={style.imagecontainer}>

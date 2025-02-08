@@ -130,7 +130,7 @@
 // animations
 @keyframes fadeInOut {
     0%, 100% { opacity: 0}
-    50% { opacity: 1; transform: translateY(0); }
+    50% { opacity: 100 }
 }
 
 .ray:nth-child(1) { animation-delay: 0s; }
@@ -141,26 +141,32 @@
 // rays
 
 .ray {
-    // position: absolute;
+    position: absolute;
+    transform: translateX(-50%);
     opacity: 0;
+    width: 17%;
     animation: fadeInOut 5s infinite alternate ease-in-out;
 }
 
 .ray1 {
+    left: 10%;
     margin-right: -15%;
 }
 // do this
 
 .ray2 {
+    left: 17%;
     margin-right: 0%;
 }
 
 .ray3 {
+    left: 33%;
     margin-right: 0%;
 }
 
 // ignore 
 .ray4 {
+    left: 49%;
     margin-left: -5%;
 }
 
@@ -344,8 +350,7 @@
 
     .container {
         background-color: var(--sea-background);
-        border: 3px solid white;
-        padding: 0% 5% 0% 15%;
+        padding: 15% 5% 0% 15%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -356,16 +361,20 @@
         flex-direction: column-reverse;
         .imagecontainer {
             z-index: 1;
-            // border: 3px red solid;
+            padding-top: 5%;
+            display: flex;
+            flex-direction: column;
     
             .bunny {
                 width: 100%;
-                padding: 15% 0% 0% 15%;
+                padding: 20% 0% 20% 20%;
                 // margin-left: 10%;
             }
         }
     
         .textcontainer {
+            // border: 3px white solid;
+            // padding: 10% 10% 0% 0%;
             width: 100%;
             z-index: 1;
     
@@ -384,30 +393,64 @@
             p {
                 color: var(--text-light);
                 padding-top: 1rem;
+                font-size: 1rem;
             }
         }
 
-        .bunny {
-            padding: 5% 0% 0% 25%;
+        .rayContainer {
+            opacity: 0;
         }
 
+        // do not edit, this is for the animations + formatting of the music notes
         .musicContainer {
-            position: relative;
-            padding-left: 0%;
+            left: 0%;
+            padding-bottom: 0%;
             padding-right: 10%;
             top: 0%;
-            // background-color: black;
-            // border: 3px red solid;
             display: flex;
             align-items: flex;
             justify-content: flex;
             z-index: 1;
-            gap: 2%;
+
+            .note1 {
+                padding: 2%;
+                margin-bottom: 35%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 0s;
+            }
+
+            .note2 {
+                margin-top: 30%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 0.5s;
+            }
+            
+            .note3 {
+                margin-left: 5%;
+                margin-bottom: 37%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 1s;
+            }
+
+            .note4 {
+                margin-top: 50%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 1.5s;
+            }
         }
     }
 }
 
 @include sm-phone {
+    .relative_container{
+        position: relative; 
+        overflow: hidden;
+
+        .rayContainer {
+            opacity: 0;
+        }  
+    }
+
     .container {
         background-color: var(--sea-background);
         padding: 15% 5% 0% 15%;
