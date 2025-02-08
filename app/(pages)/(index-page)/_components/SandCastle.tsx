@@ -23,8 +23,8 @@ export default function SandCastle() {
 
 function SandCastleContent() {
   return (
-    <div className="flex h-fit w-full flex-wrap sm:flex-row mt-20 sm:mt-0 p-[5%] border border-red-500 pt-[10%] justify-center">
-        <div className="w-full sm:w-full md:w-2/3 sm:p-10 ">
+    <div className="flex h-fit w-full flex-wrap sm:flex-row mt-20 sm:mt-0 p-[10%] sm:p-[5%] pt-[10%] justify-center">
+        <div className="w-full md:w-2/3 sm:p-10 border">
           <WhatIsHackDavisText />
         </div>
         <div className="w-full md:w-1/3 flex justify-end items-end sm:justify-center sm:items-center">
@@ -57,7 +57,7 @@ function WhatIsHackDavisText() {
   return (
     <div className="flex flex-col items-start justify-center text-sand-text-color w-full max-w-[500px]">
       <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl">HackDavis</h1>
-      <p className="max-w-[90%] text-base xs:text-lg sm:text-xl md:text-2xl">
+      <p className="max-w-[90%] text-base sm:text-xl md:text-2xl">
         is one of the
         <strong> largest collegiate hackathon </strong> in Califronia, where
         over 950 students, creators, and leaders come together to{' '}
@@ -93,8 +93,8 @@ function SandCastleBackground({ children }: { children: React.ReactNode }) {
 function SandCastleTexture() {
   return (
     <div className="absolute inset-0 h-[950px] w-full">
-      <div className="absolute left-[15%] top-[65%]">
-        <div className="relative h-[80px] w-[80px]">
+      <div className="absolute left-[15%] md:left-[10%] top-[50%] md:top-[60%] lg:top-[65%]">
+        <div className="relative h-[50px] w-[50px] sm:h-[60px] sm:w-[60px] md:h-[70px] md:w-[70px] lg:h-[80px] lg:w-[80px]">
           <Image
             src={shell}
             alt="shell"
@@ -103,13 +103,13 @@ function SandCastleTexture() {
           />
         </div>
       </div>
-      <div className="absolute left-[35%] top-[10%]">
+      <div className="absolute right-[10%] lg:left-[35%] top-[8%] lg:top-[10%]">
         <div className="relative h-[50px] w-[50px]">
           <Image src={star} alt="star" fill style={{ objectFit: 'contain' }} />
         </div>
       </div>
       <div className="absolute left-[60%] top-[40%]">
-        <div className="relative h-[100px] w-[100px]">
+        <div className="relative hidden md:block h-[50px] w-[50px] md:h-[75px] md:w-[75px] lg:h-[100px] lg:w-[100px]">
           <Image src={crab} alt="crab" fill style={{ objectFit: 'contain' }} />
         </div>
       </div>
