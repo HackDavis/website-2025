@@ -273,9 +273,19 @@
         position: relative; 
         overflow: hidden;
 
-        .rayContainer {
+        // animations
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0}
+            50% { opacity: 0 }
+}
+
+        .ray {
+            position: absolute;
+            transform: translateX(-50%);
             opacity: 0;
-        }  
+            width: 17%;
+            animation: fadeInOut 5s infinite alternate ease-in-out;
+        }
     }
 
     .container {
@@ -343,9 +353,19 @@
         position: relative; 
         overflow: hidden;
 
-        .rayContainer {
+        // animations
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0}
+            50% { opacity: 0 }
+        }
+
+        .ray {
+            position: absolute;
+            transform: translateX(-50%);
             opacity: 0;
-        }  
+            width: 17%;
+            animation: fadeInOut 5s infinite alternate ease-in-out;
+        }
     }
 
     .container {
@@ -397,10 +417,6 @@
             }
         }
 
-        .rayContainer {
-            opacity: 0;
-        }
-
         // do not edit, this is for the animations + formatting of the music notes
         .musicContainer {
             left: 0%;
@@ -446,9 +462,19 @@
         position: relative; 
         overflow: hidden;
 
-        .rayContainer {
+        // animations
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0}
+            50% { opacity: 0 }
+}
+
+        .ray {
+            position: absolute;
+            transform: translateX(-50%);
             opacity: 0;
-        }  
+            width: 17%;
+            animation: fadeInOut 5s infinite alternate ease-in-out;
+        }
     }
 
     .container {
@@ -497,10 +523,6 @@
                 color: var(--text-light);
                 padding-top: 1rem;
             }
-        }
-
-        .rayContainer {
-            opacity: 0;
         }
 
         // do not edit, this is for the animations + formatting of the music notes
