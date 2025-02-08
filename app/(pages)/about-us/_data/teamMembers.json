@@ -2,7 +2,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
-    "id": 11,
     "name": "Aidan Kim",
     "position": "Finance Director",
     "profile_image_url": "/images/team_members/finance/Aidan_Kim.jpg",
@@ -14,7 +13,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
-    "id": 11,
     "name": "Anna Pandey",
     "position": "Finance Director",
     "profile_image_url": "/images/team_members/finance/Anna_Pandey.jpg",
@@ -26,7 +24,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
-    "id": 11,
     "name": "Krishna Thaker",
     "position": "Finance Lead",
     "profile_image_url": "/images/team_members/finance/Krishna_Thaker.jpg",
@@ -38,31 +35,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
-    "id": 11,
-    "name": "Shreya Maddhali",
-    "position": "Sponsorship Lead",
-    "profile_image_url": "/images/team_members/sponsorship/Shreya_Maddhali.jpg",
-    "team_category": "Sponsorship",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/shreyamaddhali"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4b3"
-    },
-    "id": 11,
-    "name": "Shinaya Arora",
-    "position": "Technical Director",
-    "profile_image_url": "/images/team_members/sponsorship/Shinaya_Arora.jpg",
-    "team_category": "Sponsorship",
-    "year": 2024,
-    "linkedinURL": "https://www.linkedin.com/in/shinayaarora2006/"
-  },
-  {
-    "_id": {
-      "$oid": "65b6e0a06a7eaf354ea8e4b3"
-    },
-    "id": 11,
     "name": "Morgan Brady",
     "position": "Sponsorship Director",
     "profile_image_url": "/images/team_members/sponsorship/Morgan_Brady.jpg",
@@ -74,7 +46,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
-    "id": 11,
     "name": "Satya Sanegepalli",
     "position": "Sponsorship Director",
     "profile_image_url": "/images/team_members/sponsorship/Satya_Sanegepalli.jpg",
@@ -86,7 +57,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b3"
     },
-    "id": 11,
     "name": "Carolyn Vo",
     "position": "Sponsorship Director",
     "profile_image_url": "/images/team_members/sponsorship/Carolyn_Vo.jpg",
@@ -98,7 +68,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4ad"
     },
-    "id": 9,
     "name": "Sandeep Reehal",
     "position": "Technical Director",
     "profile_image_url": "/images/team_members/technical/Sandeep_Reehal.jpg",
@@ -110,7 +79,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4ad"
     },
-    "id": 9,
     "name": "Haylie Tan",
     "position": "Technical Director",
     "profile_image_url": "/images/team_members/technical/Haylie_Tan.jpg",
@@ -122,7 +90,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4ad"
     },
-    "id": 9,
     "name": "Daniel Kim",
     "position": "Technical Director",
     "profile_image_url": "/images/team_members/technical/Daniel_Kim.jpg",
@@ -134,7 +101,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4c0"
     },
-    "id": 24,
     "name": "Suranjana Sooraj",
     "position": "Sponsorship Lead",
     "profile_image_url": "/images/team_members/sponsorship/Suranjana_Sooraj.jpg",
@@ -146,7 +112,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4aa"
     },
-    "id": 2,
     "name": "Samantha Zhang",
     "position": "UI/UX Design Director",
     "profile_image_url": "/images/team_members/design/Samantha_Zhang.jpg",
@@ -158,7 +123,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4ae"
     },
-    "id": 1,
     "name": "Sechan Kim",
     "position": "UX Design Co-Lead",
     "profile_image_url": "/images/team_members/design/Sechan_Kim.jpg",
@@ -170,7 +134,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4ac"
     },
-    "id": 3,
     "name": "Sidney Heng",
     "position": "Content Design Director",
     "profile_image_url": "/images/team_members/design/Sidney_Heng.jpg",
@@ -182,7 +145,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4ab"
     },
-    "id": 8,
     "name": "Michelle Yeoh",
     "position": "Technical Director",
     "profile_image_url": "/images/team_members/technical/Michelle_Yeoh.jpg",
@@ -194,7 +156,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b4"
     },
-    "id": 12,
     "name": "Brandon Wong",
     "position": "Technical Director",
     "profile_image_url": "/images/team_members/technical/Brandon_Wong.jpg",
@@ -206,7 +167,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b9"
     },
-    "id": 16,
     "name": "Sean Batoon",
     "position": "Marketing Director",
     "profile_image_url": "/images/team_members/marketing/Sean_Batoon.jpg",
@@ -218,7 +178,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4c8"
     },
-    "id": 31,
     "name": "Michael Tsortos",
     "position": "Sponsorship Director",
     "profile_image_url": "/images/team_members/Sponsorship/Finance/Michael_Tsortos.jpeg",
@@ -230,7 +189,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4cc"
     },
-    "id": 38,
     "name": "Alice Nguyen",
     "position": "Operations Director",
     "profile_image_url": "/images/team_members/Operations/Alice_Nguyen.jpg",
@@ -242,7 +200,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4d0"
     },
-    "id": 41,
     "name": "Kelly Tran",
     "position": "External Director",
     "profile_image_url": "/images/team_members/External/Kelly_Tran.jpg",
@@ -254,7 +211,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4d1"
     },
-    "id": 42,
     "name": "Lana Wong",
     "position": "External Lead",
     "profile_image_url": "/images/team_members/External/Lana_Wong.jpg",
@@ -266,7 +222,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b5"
     },
-    "id": 13,
     "name": "Austin Shih",
     "position": "Technical Director",
     "profile_image_url": "/images/team_members/technical/Austin_Shih.jpg",
@@ -278,7 +233,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4ba"
     },
-    "id": 17,
     "name": "Christina Chung",
     "position": "Marketing Director",
     "profile_image_url": "/images/team_members/marketing/Christina_Chung.jpg",
@@ -290,7 +244,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4bc"
     },
-    "id": 18,
     "name": "Jamie Chac",
     "position": "Marketing Director",
     "profile_image_url": "/images/team_members/marketing/Jamie_Chac.jpg",
@@ -302,7 +255,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4c3"
     },
-    "id": 29,
     "name": "Joyce Kim",
     "position": "Operations Director",
     "profile_image_url": "/images/team_members/Operations/Joyce_Kim.jpg",
@@ -314,7 +266,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4ca"
     },
-    "id": 30,
     "name": "Jonathan Lew",
     "position": "Operations Director",
     "profile_image_url": "/images/team_members/Operations/Jonathan_Lew.jpg",
@@ -326,7 +277,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b0"
     },
-    "id": 4,
     "name": "Johnson Ou",
     "position": "UI/UX Design Director",
     "profile_image_url": "/images/team_members/design/Johnson_Ou.jpg",
@@ -338,7 +288,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4bd"
     },
-    "id": 20,
     "name": "Vanessa Guo",
     "position": "Marketing Director",
     "profile_image_url": "/images/team_members/marketing/Vanessa_Guo.jpg",
@@ -350,7 +299,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4bf"
     },
-    "id": 23,
     "name": "Roshni Sandhu",
     "position": "External Director",
     "profile_image_url": "/images/team_members/External/Roshni_Sandhu.jpg",
@@ -362,7 +310,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b1"
     },
-    "id": 10,
     "name": "Win Cheng",
     "position": "Technical Lead",
     "profile_image_url": "/images/team_members/technical/Win_Cheng.jpg",
@@ -374,7 +321,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b6"
     },
-    "id": 6,
     "name": "Jason Xie",
     "position": "Brand Design Co-Lead",
     "profile_image_url": "/images/team_members/design/Jason_Xie.jpg",
@@ -386,7 +332,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4ce"
     },
-    "id": 36,
     "name": "Abirami Kathiresan",
     "position": "External Director",
     "profile_image_url": "/images/team_members/External/Abirami_Kathiresan.jpg",
@@ -398,7 +343,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4ce"
     },
-    "id": 36,
     "name": "Saili Karkare",
     "position": "External Director",
     "profile_image_url": "/images/team_members/External/Saili_Karkare.jpg",
@@ -410,7 +354,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4af"
     },
-    "id": 7,
     "name": "Joanne Lai",
     "position": "Product Design Director",
     "profile_image_url": "/images/team_members/design/Joanne_Lai.jpg",
@@ -422,7 +365,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4d2"
     },
-    "id": 40,
     "name": "Siddharth Singh",
     "position": "External Director",
     "profile_image_url": "/images/team_members/External/Siddharth_Singh.jpg",
@@ -434,7 +376,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b2"
     },
-    "id": 5,
     "name": "Michelle Feng",
     "position": "UI/UX Design Director",
     "profile_image_url": "/images/team_members/design/Michelle_Feng.jpg",
@@ -446,7 +387,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4b7"
     },
-    "id": 14,
     "name": "Jay Jain",
     "position": "Technical Lead",
     "profile_image_url": "/images/team_members/technical/Jay_Jain.jpg",
@@ -458,7 +398,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4c7"
     },
-    "id": 32,
     "name": "Michelle Zhu",
     "position": "Operations Lead",
     "profile_image_url": "/images/team_members/Operations/Michelle_Zhu.jpg",
@@ -470,7 +409,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4cb"
     },
-    "id": 37,
     "name": "Denil Neil",
     "position": "Operations Director",
     "profile_image_url": "/images/team_members/Operations/Denil_Neil.jpg",
@@ -482,7 +420,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4cb"
     },
-    "id": 37,
     "name": "Daniel Yang",
     "position": "Operations Director",
     "profile_image_url": "/images/team_members/Operations/Daniel_Yang.jpg",
@@ -494,7 +431,6 @@
     "_id": {
       "$oid": "65b6e0a06a7eaf354ea8e4cb"
     },
-    "id": 37,
     "name": "Matthew Hong",
     "position": "Operations Director",
     "profile_image_url": "/images/team_members/Operations/Matthew_Hong.jpg",
