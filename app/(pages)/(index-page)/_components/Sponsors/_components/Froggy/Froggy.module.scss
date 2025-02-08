@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+}
+
+.froggy {
+  position: relative;
+  z-index: 1;
+}
+
+.shadow {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}

@@ -59,11 +59,14 @@
   /* Landing Colors */
   --sand-background-dark: #E6BB7B;
   --sand-background-light: #E5C28E;
+  --sand-texture: #DFAF67;
   --sky-background: #4DB7D9;
   --sea-background: #123041;
   --water-background: #4DB7D9;
+  --water-edge: #2BACD5;
   --grass-background-dark: #7FB732;
   --grass-background-light: #AFD157;
+  --card-background: #3A9FC4;
 
   --navbar-scrolled-background: rgba(4, 102, 101, 0.415);
 
@@ -122,5 +125,5 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--highlight-yellow);
+  // background-color: var(--highlight-yellow);
 }
