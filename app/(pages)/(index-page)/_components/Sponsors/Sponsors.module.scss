@@ -1,0 +1,189 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 1024px;
+  width: 100%;
+  background-color: var(--grass-background-dark);
+  overflow-x: clip;
+  position: relative;
+}
+
+.topBlock {
+  background-color: var(--grass-background-dark);
+}
+
+.middleBlock {
+  background-color: var(--grass-background-light);
+  border-radius: 40px;
+}
+
+.bottomBlock {
+  background-color: var(--sand-background-dark);
+  border-radius: 40px;
+}
+
+.left {
+  z-index: 1;
+
+  .grass {
+    position: absolute;
+    top: -85px;
+    left: -262px;
+    z-index: inherit;
+
+    .yellowFlower {
+      position: absolute;
+      bottom: -11px;
+      right: 158px;
+    }
+  }
+
+  .topBlock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 268px;
+    border-right: 16px solid var(--water-edge);
+  }
+
+  .middleBlock {
+    position: absolute;
+    bottom: 0;
+    left: -83px;
+    height: 654px;
+    width: 367px;
+    margin-top: 364px;
+
+    .bunny {
+      position: absolute;
+      top: -231px;
+      right: -31px;
+      z-index: inherit;
+    }
+
+    .redFlower {
+      position: absolute;
+      top: 19px;
+      right: 199px;
+      z-index: inherit;
+    }
+  }
+
+  .bottomBlock {
+    position: absolute;
+    bottom: 0;
+    left: -65px;
+    height: 350px;
+    width: 391px;
+
+    .cow {
+      position: absolute;
+      top: -181px;
+      right: 64px;
+      z-index: inherit;
+    }
+
+    .firstTexture {
+      position: absolute;
+      height: 22px;
+      width: 119px;
+      top: 101px;
+      right: 229px;
+      z-index: inherit;
+    }
+
+    .secondTexture {
+      position: absolute;
+      height: 22px;
+      width: 97px;
+      top: 138px;
+      right: 187px;
+      z-index: inherit;
+    }
+  }
+}
+
+.right {
+  z-index: 1;
+
+  .grass {
+    position: absolute;
+    top: -85px;
+    right: -222px;
+    z-index: inherit;
+
+    .redFlower {
+      position: absolute;
+      bottom: 36px;
+      left: 183px;
+    }
+  }
+
+  .topBlock {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 268px;
+    border-left: 16px solid var(--water-edge);
+  }
+
+  .middleBlock {
+    position: absolute;
+    bottom: 0;
+    right: -111px;
+    height: 490px;
+    width: 396px;
+
+    .ducky {
+      position: absolute;
+      top: -203px;
+      left: 8px;
+      z-index: inherit;
+    }
+
+    .yellowFlower {
+      position: absolute;
+      top: -33px;
+      left: 211px;
+      z-index: inherit;
+    }
+  }
+
+  .bottomBlock {
+    position: absolute;
+    bottom: 0;
+    right: -57px;
+    height: 241px;
+    width: 394px;
+
+    .froggy {
+      position: absolute;
+      top: -91px;
+      left: 30px;
+      z-index: inherit;
+    }
+
+    .firstTexture {
+      position: absolute;
+      height: 22px;
+      width: 97px;
+      top: 103px;
+      left: 200px;
+      z-index: inherit;
+    }
+  }
+}
+
+.sponsors {
+  display: flex;
+  align-items: center;
+  background-color: var(--water-background);
+}
+
+.sandTexture {
+  border-radius: 10px;
+  background-color: var(--sand-texture);
+}
