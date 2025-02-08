@@ -36,7 +36,7 @@ export default function OurTeam() {
     function loadAllTeamMembers() {
       // Transform JSON data to match the TeamMember type
       const members: TeamMember[] = teamMembersData.map((member) => ({
-        id: member._id.$oid, // Use `_id.$oid` as the `id`
+        id: `${member.name}-${member.team_category}`,
         name: member.name, // Access the `name` property
         position: member.position, // Access the `position` property
         teamCategory: member.team_category, // Correctly map `team_category` to `teamCategory`
@@ -57,8 +57,10 @@ export default function OurTeam() {
     const filteredMembers = members
       .filter((member) => member.teamCategory === teamName)
       .sort((a, b) => {
-        const aIsLead = a.position.includes('Lead');
-        const bIsLead = b.position.includes('Lead');
+        const aIsLead =
+          a.position.includes('Lead') || a.position.includes('Co-Lead');
+        const bIsLead =
+          b.position.includes('Lead') || b.position.includes('Co-Lead');
 
         if (aIsLead && !bIsLead) return -1;
         if (!aIsLead && bIsLead) return 1;
