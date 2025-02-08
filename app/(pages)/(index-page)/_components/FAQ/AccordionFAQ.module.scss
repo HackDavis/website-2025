@@ -1,0 +1,109 @@
+//screen sizes >=1840px
+@import '@globals/styles/mixins.scss';
+.container {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+
+    .FAQText {
+        color: var(--text-light);
+        font-family: Metropolis;
+        font-size: 4rem; //64px
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1.28px;
+
+        padding-bottom: 4%;
+    }
+    .questions {
+        color: var(--text-light);
+        font-family: Metropolis;
+        font-size: 1.25rem; //20px
+        font-style: normal;
+        font-weight: 700;
+        line-height: 45px; //manual enter
+        letter-spacing: 0.4px;
+    }
+
+    .answer {
+        color: var(--text-light);
+        font-family: Metropolis;
+        font-size: 1.25rem; //20px
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.4px;
+        
+        padding-bottom: 2%;
+    }
+      
+    // used for customizable Accordion item
+    .itemBtn {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        text-align: start;
+        width: 100%;
+        
+        .questionRow{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%; //for lines to stretch throughout the FAQ section
+    
+            // .dropDownArrow {
+            //     margin-left: auto;
+            //     transform: rotate(0deg);
+            //     transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
+            //     transform-origin: center center; 
+            // }
+            .dropDownPlus{
+                visibility: visible;
+                transform: rotate(90deg);
+                padding-left: 15%;
+            }
+        }
+    }
+
+    .itemBtnExpanded {
+        background-color: transparent;
+        
+        .questionRow{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            // .dropDownArrow {
+            //     transform: rotate(180deg);
+            // }
+            .dropDownPlus{
+                visibility: hidden;
+            }
+        }
+    }
+      
+    .itemContent {
+        transition: height 0.3s ease-in-out;
+    }   
+}
+
+@include phone {
+    .container{
+        .FAQText {
+            font-size: 2.5rem; //40px
+        }
+            
+        .questions {
+            font-size: 0.875rem; //14px
+            line-height: 38px; //manual enter
+        }
+            
+        .answer {
+            font-size: 0.75rem; //12px
+            line-height: 21px;
+        }
+    }
+    
+}
