@@ -4,6 +4,7 @@ import metadataJSON from '@app/(pages)/_globals/metadata.json';
 import fonts from './_globals/fonts';
 import Navbar from '@app/(pages)/_components/Navbar/Navbar';
 import Footer from '@app/(pages)/_components/Footer/Footer';
+import { Suspense } from 'react';
 
 export const metadata: Metadata = metadataJSON;
 
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${fonts} antialiased`}>
-        <Navbar />
+        <Suspense>
+          <Navbar />
+        </Suspense>
         {children}
         <Footer />
       </body>
