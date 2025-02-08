@@ -1,53 +1,126 @@
 @import '@globals/styles/mixins.scss';
 
-// default 
-.container {
-    background-color: var(--sea-background);
-    // padding: 3% 5% 0% 0%;
-    padding-left: 12%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('/images/landing_page/Caustics.svg');
-    // background-image: url('/images/landing_page/ray1.svg');
-    background-repeat: no-repeat;
-    background-size: contain; 
-    background-position: top center; 
+@include desktop {
+    .container {
+        background-color: var(--sea-background);
+        padding-left: 12%;
+        padding-bottom: 15%;
+        padding-top: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('/images/landing_page/Caustics.svg');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top center; 
+        position: relative; 
 
-    .imagecontainer {
-        // border: 3px red solid;
-        z-index: 1;
 
-        .bunny {
-            width: 100%;
+        .musicContainer {
+            left: 0%;
+            padding-left: 10%;
             padding-right: 10%;
-            padding-top: 10%;
-        }
-    }
+            padding-bottom: 35%;
+            top: 0%;
+            display: flex;
+            align-items: flex;
+            justify-content: flex;
+            z-index: 1;
+            gap: 2%;
+        
+            .note1 {
+                padding: 2%;
+                margin-bottom: 35%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 0s;
+            }
+        
+            .note2 {
+                margin-top: 5%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 0.5s;
+            }
+            
+            .note3 {
+                margin-left: 5%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 1s;
+            }
+        
+            .note4 {
+                margin-top: 60%;
+                margin-left: -15%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 1.5s;
+            }
 
-    .textcontainer {
-        // border: 3px white solid;
-        padding: 10% 10% 5% 0%;
-        width: 40%;
-        flex-direction: column;
-        z-index: 1;
+            .bunnyContainer {
+                display: flex;
 
-        .text {
-            font-weight: bold;
-            line-height: 1;
-            color: var(--text-light);
+                .bunny {
+                    width: 100%;
+                    padding-right: 5%;
+                    padding-top: 10%;
+                }
+            }
+        } 
+    
+        .imagecontainer {
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+
+            .bunnyContainer {
+                display: flex;
+
+                .bunny {
+                    width: 100%;
+                    padding-right: 10%;
+                    padding-top: 10%;
+                }
+            }
+
+        }
+    
+        .textcontainer {
+            padding: 10% 10% 5% 0%;
+            width: 40%;
+            flex-direction: column;
+            z-index: 1;
+            
+    
+            .text {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--text-light);
+            }
+    
+            .coloredtext {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--highlight-blue);
+            }
+    
+            p {
+                color: var(--text-light);
+                padding-top: 1rem;
+                font-weight: 400;
+                line-height: 125%; /* 22.5px */
+                letter-spacing: 0.36px;
+            }
         }
 
-        .coloredtext {
-            font-weight: bold;
-            line-height: 1;
-            color: var(--highlight-blue);
+        .rayContainer {
+            display: flex;
+            position: absolute;
+            align-items: flex-start;
+            justify-content: flex-start;
+            overflow: visible;
+            width: 100%;
+            height: 100%;
+            border: 3px solid red;
         }
-
-        p {
-            color: var(--text-light);
-            padding-top: 1rem;
-        }
+        
     }
 }
 
@@ -57,7 +130,6 @@
     50% { opacity: 1; transform: translateY(0); }
 }
 
-/* Adding delays to each ray for staggered animation */
 .ray:nth-child(1) { animation-delay: 0s; }
 .ray:nth-child(2) { animation-delay: 0.5s; }
 .ray:nth-child(3) { animation-delay: 1s; }
@@ -67,7 +139,6 @@
 
 .ray {
     // position: absolute;
-    // border: 3px green solid;
     opacity: 0;
     animation: fadeInOut 5s infinite alternate ease-in-out;
 }
@@ -78,18 +149,6 @@
 
 .ray4 {
     margin-left: -5%;
-}
-
-.rayContainer {
-    position: absolute;
-    // background-color: black;
-    // border: 3px red solid;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    overflow: hidden;
-    top: 0;
-    left: -15%;
 }
 
 // music notes
@@ -113,156 +172,87 @@
 .note:nth-child(3) { animation-delay: 1s; }
 .note:nth-child(4) { animation-delay: 1.5s; }
 
-.musicContainer {
-    // position: relative;
-    left: 0%;
-    padding-left: 10%;
-    padding-right: 10%;
-    top: 0%;
-    // background-color: black;
-    // border: 3px red solid;
-    display: flex;
-    align-items: flex;
-    justify-content: flex;
-    z-index: 1;
-    gap: 2%;
 
-    .note1 {
-        padding: 2%;
-        margin-bottom: 35%;
-        animation: float 4s infinite alternate ease-in-out;
-        animation-delay: 0s;
-    }
-
-    .note2 {
-        margin-top: 5%;
-        animation: float 4s infinite alternate ease-in-out;
-        animation-delay: 0.5s;
-    }
-    
-    .note3 {
-        margin-left: 5%;
-        animation: float 4s infinite alternate ease-in-out;
-        animation-delay: 1s;
-    }
-
-    .note4 {
-        margin-top: 60%;
-        margin-left: -15%;
-        animation: float 4s infinite alternate ease-in-out;
-        animation-delay: 1.5s;
-    }
-}
-
-
-  
 
 @include sm-desktop {
     .container {
-    background-color: var(--sea-background);
-    padding: 3% 5% 0% 0%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-image: url('/images/landing_page/Caustics.svg');
-    background-repeat: no-repeat;
-    background-size: contain; 
-    background-position: top center; 
-    .imagecontainer {
-        z-index: 1;
-        // border: 3px red solid;
-
-        .bunny {
-            width: 100%;
-            padding: 20% 0% 10% 5%;
-            // padding-right: 10%;
-        }
-    }
-
-    .textcontainer {
-        // border: 3px white solid;
-        padding: 10% 10% 0% 0%;
-        width: 45%;
-        flex-direction: column;
-        z-index: 1;
-
-        .text {
-            font-weight: bold;
-            line-height: 1;
-            color: var(--text-light);
-        }
-
-        .coloredtext {
-            font-weight: bold;
-            line-height: 1;
-            color: var(--highlight-blue);
-        }
-
-        p {
-            color: var(--text-light);
-            padding-top: 1rem;
-        }
-    }
-
-    .musicContainer {
-        // background-color: pink;
-        position: absolute;
-        left: 10%;
-        padding-left: 0%;
-        padding-right: 10%;
-        top: 0%;
-        // background-color: black;
-        // border: 3px red solid;
+        background-color: var(--sea-background);
+        // padding: 3% 5% 0% 0%;
+        padding-left: 12%;
+        padding-bottom: 20%;
+        // padding-top: 10%;
         display: flex;
-        align-items: flex;
-        justify-content: flex;
-        z-index: 1;
-        gap: 2%;
-    
-        .note1 {
-            padding: 2%;
-            margin-bottom: 35%;
-            animation: float 4s infinite alternate ease-in-out;
-            animation-delay: 0s;
-        }
-    
-        .note2 {
-            margin-top: 5%;
-            animation: float 4s infinite alternate ease-in-out;
-            animation-delay: 0.5s;
-        }
-        
-        .note3 {
-            margin-left: 5%;
-            animation: float 4s infinite alternate ease-in-out;
-            animation-delay: 1s;
-        }
-    
-        .note4 {
-            margin-top: 60%;
-            margin-left: -15%;
-            animation: float 4s infinite alternate ease-in-out;
-            animation-delay: 1.5s;
-        }
-    }
+        align-items: center;
+        justify-content: center;
+        background-image: url('/images/landing_page/Caustics.svg');
+        // background-image: url('/images/landing_page/ray1.svg');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top center; 
 
-    .rayContainer {
-        position: absolute;
-        // border: 3px red solid;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        overflow: hidden;
-        top: 0;
-        left: -25%;
+        .bunnyContainer {
+            display: flex;
+
+            .bunny {
+                width: 100%;
+                padding-right: 5%;
+                padding-top: 10%;
+            }
+        }
+    
+        .imagecontainer {
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+
+            .bunnyContainer {
+                display: flex;
+
+                .bunny {
+                    width: 100%;
+                    padding-right: 10%;
+                    padding-top: 10%;
+                }
+            }
+
+        }
+    
+        .textcontainer {
+            // border: 3px white solid;
+            padding: 10% 10% 5% 0%;
+            width: 40%;
+            flex-direction: column;
+            z-index: 1;
+            
+    
+            .text {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--text-light);
+            }
+    
+            .coloredtext {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--highlight-blue);
+            }
+    
+            p {
+                color: var(--text-light);
+                padding-top: 1rem;
+                font-weight: 400;
+                line-height: 125%; /* 22.5px */
+                letter-spacing: 0.36px;
+            }
+        }
     }
-}
-}
+}    
+
 
 @include tablet {
     .container {
         background-color: var(--sea-background);
-        padding: 3% 5% 10% 10%;
+        padding: 13% 5% 23% 5%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -272,13 +262,22 @@
         background-position: top center; 
         .imagecontainer {
             // border: 3px red solid;
+
+            .musicContainer {
+                top: 0%;
+                display: flex;
+                align-items: flex;
+                justify-content: flex;
+                z-index: 1;
+                gap: 2%;
+            }
     
             .bunny {
                 position: relative;
                 z-index: 1;
                 width: 100%;
                 padding-top: 5%;
-                padding-right: 5%;
+                // padding-right: 5%;
                 padding-left: 5%;
             }
         }
@@ -286,7 +285,7 @@
         .textcontainer {
             // border: 3px white solid;
             padding: 10% 5% 0% 0%;
-            width: 50%;
+            width: 70%;
             flex-direction: column;
             z-index: 1;
     
@@ -305,18 +304,19 @@
             p {
                 color: var(--text-light);
                 padding-top: 1rem;
+                font-size: .8rem;
             }
         }
 
         .rayContainer {
             position: absolute;
-            // border: 3px red solid;
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
             overflow: hidden;
-            top: 0;
+            padding-top: -15%;
             left: -45%;
+            opacity: 0;
         }
 
 
@@ -407,7 +407,9 @@
         flex-direction: column-reverse;
         .imagecontainer {
             z-index: 1;
-            // border: 3px red solid;
+            padding-top: 5%;
+            display: flex;
+            flex-direction: column;
     
             .bunny {
                 width: 100%;
@@ -442,6 +444,44 @@
 
         .rayContainer {
             opacity: 0;
+        }
+
+        // do not edit, this is for the animations + formatting of the music notes
+        .musicContainer {
+            left: 0%;
+            padding-bottom: 0%;
+            padding-right: 10%;
+            top: 0%;
+            display: flex;
+            align-items: flex;
+            justify-content: flex;
+            z-index: 1;
+
+            .note1 {
+                padding: 2%;
+                margin-bottom: 35%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 0s;
+            }
+
+            .note2 {
+                margin-top: 30%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 0.5s;
+            }
+            
+            .note3 {
+                margin-left: 5%;
+                margin-bottom: 37%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 1s;
+            }
+
+            .note4 {
+                margin-top: 50%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 1.5s;
+            }
         }
     }
 }

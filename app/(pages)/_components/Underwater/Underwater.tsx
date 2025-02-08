@@ -23,6 +23,8 @@ const Underwater = () => (
       <Image className={`${style.ray} ${style.ray3}`} src={ray3} alt="ray" />
       <Image className={`${style.ray} ${style.ray4}`} src={ray4} alt="ray" />
     </div>
+
+    <div className={style.content}></div>
     <div className={style.imagecontainer}>
       <div className={style.musicContainer}>
         <Image
@@ -46,7 +48,9 @@ const Underwater = () => (
           alt="music note"
         />
       </div>
-      <Image className={style.bunny} src={Bunny} alt="bunny" />
+      <div className={style.bunnyContainer}>
+        <Image className={style.bunny} src={Bunny} alt="bunny" />
+      </div>
     </div>
     <div className={style.textcontainer}>
       <h2 className={style.text}>create for</h2>
