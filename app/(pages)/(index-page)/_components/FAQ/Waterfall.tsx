@@ -6,10 +6,18 @@ export default function Waterfall() {
   return (
     <div className={style.container}>
       <Image
+        src="/images/faq/water_transition.svg"
+        alt="waterfall gradient"
+        width={243}
+        height={10}
+        className={style.water_transition}
+      />
+      <Image
         src="/images/faq/waterfall_gradient.svg"
         alt="waterfall gradient"
         width={270}
         height={10}
+        className={style.water_gradient}
       />
       <Image
         src="/images/faq/waterfall_sheen.svg"
@@ -25,13 +33,14 @@ export default function Waterfall() {
         height={10}
         className={style.water_sheen}
       />
-      <Image
-        src="/images/faq/waterfall_base.svg"
-        alt="waterfall gradient"
-        width={423}
-        height={10}
-        className={style.water_base}
-      />
+      <div className={style.water_base}>
+        <Image
+          src="/images/faq/waterfall_base.svg"
+          alt="waterfall gradient"
+          width={423}
+          height={10}
+        />
+      </div>
     </div>
   );
 }

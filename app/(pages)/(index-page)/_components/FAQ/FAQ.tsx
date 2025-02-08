@@ -54,13 +54,6 @@ export default function FAQ() {
           className={style.grass_dark}
         />
         <Image
-          src="/images/faq/water_transition.svg"
-          alt="waterfall gradient"
-          width={243}
-          height={10}
-          className={style.water_transition}
-        />
-        <Image
           src="/images/faq/grass_light.svg"
           alt="waterfall gradient"
           width={1000}
@@ -69,32 +62,11 @@ export default function FAQ() {
         />
 
         <Image
-          src="/images/faq/grass_texture_single.svg"
-          alt="waterfall gradient"
-          width={150}
-          height={10}
-          className={style.grass_single}
-        />
-        <Image
-          src="/images/faq/grass_texture_1.svg"
-          alt="waterfall gradient"
-          width={173}
-          height={10}
-          className={style.grass_1}
-        />
-        <Image
           src="/images/faq/grass_texture_2.svg"
           alt="waterfall gradient"
           width={150}
           height={10}
           className={style.grass_2}
-        />
-        <Image
-          src="/images/faq/grass_texture_3.svg"
-          alt="waterfall gradient"
-          width={201}
-          height={10}
-          className={style.grass_3}
         />
         <Image
           src="/images/faq/grass_texture_4.svg"
@@ -115,21 +87,7 @@ export default function FAQ() {
           alt="waterfall gradient"
           width={7}
           height={10}
-          className={style.firefly_sm1}
-        />
-        <Image
-          src="/images/faq/firefly_sm.svg"
-          alt="waterfall gradient"
-          width={7}
-          height={10}
           className={style.firefly_sm2}
-        />
-        <Image
-          src="/images/faq/firefly_lg.svg"
-          alt="waterfall gradient"
-          width={7}
-          height={10}
-          className={style.firefly_lg1}
         />
         <Image
           src="/images/faq/firefly_lg.svg"
@@ -142,9 +100,44 @@ export default function FAQ() {
       <div className={style.container}>
         <div className={style.faq_donation}>
           <div className={style.donation}>
+            <Image
+              src="/images/faq/grass_texture_single.svg"
+              alt="waterfall gradient"
+              width={150}
+              height={10}
+              className={style.grass_single}
+            />
+            <Image
+              src="/images/faq/grass_texture_1.svg"
+              alt="waterfall gradient"
+              width={173}
+              height={10}
+              className={style.grass_1}
+            />
             <DonationPlaceholder />
+            <Image
+              src="/images/faq/grass_texture_3.svg"
+              alt="waterfall gradient"
+              width={201}
+              height={10}
+              className={style.grass_3}
+            />
           </div>
           <div className={style.faq}>
+            <Image
+              src="/images/faq/firefly_sm.svg"
+              alt="waterfall gradient"
+              width={7}
+              height={10}
+              className={style.firefly_sm1}
+            />
+            <Image
+              src="/images/faq/firefly_lg.svg"
+              alt="waterfall gradient"
+              width={7}
+              height={10}
+              className={style.firefly_lg1}
+            />
             <AccordionFAQ />
           </div>
         </div>

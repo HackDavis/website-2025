@@ -9,22 +9,31 @@
 }
 .faq_donation {
     width: 68%;
-    
+    position: relative;
     background-color: #549645;
+    padding-top: 35%;
 }
 .faq{
     padding: 20%;
+    position: relative;
 }
 .donation{
-    padding-right:10%;
-    padding-top: 50%;
+    padding-right: 10%;
+    position: relative;
 }
 .waterfall {
     width: 20%;
     background-color: var(--water-background);
-    border-width: 0px 16px 0px 16px ;
+    border-width: 0px 16px 0px 16px;
     border-style: solid;
     border-color: #2BACD5;
+    
+    @include desktop {
+        border-width: 0px 12px 0px 12px;
+    }
+    @include tablet {
+        border-width: 0px 10px 0px 10px;
+    }
 }
 .grass_space{
     width: 12%;
@@ -38,69 +47,65 @@
 .underwater_dark{
     position: absolute;
     width:100%;
-    top: -600px;
+    top: -875px;
 }
 .underwater_med{
     position: absolute;
     width:100%;
-    top: -270px;
+    top: -400px;
 }
 .algae_1{
     position: absolute;
-    top: -530px;
+    top: -760px;
     width:3%;
     left: 6%;
 }
 .algae_2{
     position: absolute;
-    top: -410px;
+    top: -585px;
     width:3%;
     left: 12%;
 }
 .algae_3{
     position: absolute;
-    top: -290px;
+    top: -425px;
     width:3%;
     left: 56%;
 }
 .grass_dark{
     position: absolute;
     width:120%;
-    top: -80px;
+    top: -125px;
+    z-index: 20;
 }
 .grass_light{
     position: absolute;
     width:120%;
-    top: -40px;
-}
-.water_transition{
-    position: absolute;
-    width:17%;
-    top: -80px;
-    left: 70%
+    top: -60px;
+    z-index: 30;
 }
 .grass_single{
     position: absolute;
-    width: 10%;
-    top: 15%;
-    left: 50%
+    width: 15%;
+    top: -115px;
+    right: 15%;
 }
 .grass_1{
     position: absolute;
-    width: 8%;
-    top: 15%;
+    width: 12%;
+    top: -200px;
 }
 .grass_2{
     position: absolute;
     width: 7%;
-    top: 30%;
+    top: 42%;
     right: 0;
 }
 .grass_3{
     position: absolute;
-    width: 14%;
-    top: 45%;
-    left: 50%;
+    width: 20%;
+    bottom: -225px;
+    right: 8%;
 }
 .grass_4{
     position: absolute;
@@ -116,15 +121,15 @@
 .firefly_sm1{
     position: absolute;
     width: 1%;
-    bottom: 40%;
-    left: 62%;
+    top: 30%;
+    right: 5%;
     animation: jump 6s infinite ease-in-out;
 }
 .firefly_lg1{
     position: absolute;
-    width: 1%;
-    bottom: 41%;
-    left: 60%;
+    width: 1.5%;
+    top: 31%;
+    right: 6%;
     animation: jump 5s infinite ease-in-out;
 }
 .firefly_sm2{
@@ -146,10 +151,50 @@
     50% { transform: translateY(-20px); }
 }
 
+.grass_single, .grass_1, .grass_2{
+    z-index: 0;
+}
+.grass_3, .grass_4, .grass_5 {
+    z-index: 5;
+}
+.firefly_lg1, .firefly_lg2, .firefly_sm1, .firefly_sm2{
+    z-index: 5;
+}
+
 // @include desktop { //1560
 //     //top/bottom: <in-px> // this value should work for screen sizes 1280px to 1840px
 // }
 
+@include desktop { //1164
+    // for size 1280 to 1840
+    .underwater_dark{
+        top: -600px;
+    }
+    .underwater_med{
+        top: -275px;
+    }
+    .algae_1{
+        top: -530px;
+    }
+    .algae_2{
+        top: -410px;
+    }
+    .algae_3{
+        top: -290px;
+    }
+    .grass_dark{
+        top: -85px;
+    }
+    .grass_light{
+        top: -40px;
+    }
+    .grass_1{
+        top: -160px;
+    }
+    .grass_3{
+        bottom: -130px;
+    }
+}
 @include sm-desktop { //1164
     // for size 1048 to 1280
     .underwater_dark{
@@ -173,8 +218,11 @@
     .grass_light{
         top: -40px;
     }
-    .water_transition{
-        top: -60px;
+    .grass_1{
+        top: -115px;
+    }
+    .grass_2{
+        top: 30%;
     }
 }
 @include tablet { //904
@@ -200,13 +248,10 @@
     .grass_light{
         top: -30px;
     }
-    .water_transition{
-        top: -45px;
-    }
 }
 
 @include phone { //phone
-    .underwater_dark, .underwater_med, .algae_1, .algae_2, .algae_3, .grass_dark, .grass_light, .grass_space, .waterfall, .grass_single, .water_transition, .grass_1, .grass_2, .grass_3, .grass_4, .grass_5, .firefly_sm1, .firefly_sm2, .firefly_lg1, .firefly_lg2{
+    .underwater_dark, .underwater_med, .algae_1, .algae_2, .algae_3, .grass_dark, .grass_light, .grass_space, .waterfall, .grass_single, .grass_1, .grass_2, .grass_3, .grass_4, .grass_5, .firefly_sm1, .firefly_sm2, .firefly_lg1, .firefly_lg2{
         visibility:hidden;
         width: 0;
         height:0;
