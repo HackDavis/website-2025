@@ -1,0 +1,62 @@
+@import '@globals/styles/mixins.scss';
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  background: linear-gradient(-345deg, #D5FCD1 0.78%, #B2E7DD 21.73%, #76D6E6 63.99%);
+}
+
+.text {
+  position: relative;
+  width: 100%;
+}
+
+.water_building_left, .water_building_right {
+  position: absolute;
+  bottom: -80px;
+  width: 648px;
+  
+  > img {
+    width: 100%;
+  }
+  
+  @include desktop {
+    bottom: -56px;
+    width: 398px;
+  }
+  
+  @include tablet {
+    bottom: -40px;
+    width: 298px;
+  }
+
+  @include phone {
+    width: 248px;
+  }
+}
+
+.water_building_left {
+  left: -16px;
+  aspect-ratio: calc(398 / 220);
+}
+
+.water_building_right {
+  right: 0;
+  aspect-ratio: calc(448 / 423);
+}
+  
+/* Layer: Water Semicircle */
+.water_semicircle {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  z-index: 10; 
+  overflow: hidden; 
+  
+  > img {
+    width: 100%;
+  }
+}

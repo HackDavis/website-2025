@@ -24,6 +24,7 @@ export default {
         'water-background': 'var(--water-background)',
         'grass-background-dark': 'var(--grass-background-dark)',
         'grass-background-light': 'var(--grass-background-light)',
+        'sand-text-color': 'var(--sand-text-color)',
       },
       spacing: {
         edge: 'var(--edge-space)',
