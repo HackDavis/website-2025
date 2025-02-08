@@ -114,7 +114,7 @@
 .note:nth-child(4) { animation-delay: 1.5s; }
 
 .musicContainer {
-    position: absolute;
+    // position: relative;
     left: 0%;
     padding-left: 10%;
     padding-right: 10%;
@@ -174,9 +174,8 @@
 
         .bunny {
             width: 100%;
-            padding: 25% 15% 0% 15%;
+            padding: 20% 0% 10% 5%;
             // padding-right: 10%;
-            border: blue 3px solid;
         }
     }
 
@@ -202,6 +201,48 @@
         p {
             color: var(--text-light);
             padding-top: 1rem;
+        }
+    }
+
+    .musicContainer {
+        // background-color: pink;
+        position: absolute;
+        left: 10%;
+        padding-left: 0%;
+        padding-right: 10%;
+        top: 0%;
+        // background-color: black;
+        // border: 3px red solid;
+        display: flex;
+        align-items: flex;
+        justify-content: flex;
+        z-index: 1;
+        gap: 2%;
+    
+        .note1 {
+            padding: 2%;
+            margin-bottom: 35%;
+            animation: float 4s infinite alternate ease-in-out;
+            animation-delay: 0s;
+        }
+    
+        .note2 {
+            margin-top: 5%;
+            animation: float 4s infinite alternate ease-in-out;
+            animation-delay: 0.5s;
+        }
+        
+        .note3 {
+            margin-left: 5%;
+            animation: float 4s infinite alternate ease-in-out;
+            animation-delay: 1s;
+        }
+    
+        .note4 {
+            margin-top: 60%;
+            margin-left: -15%;
+            animation: float 4s infinite alternate ease-in-out;
+            animation-delay: 1.5s;
         }
     }
 
@@ -231,11 +272,14 @@
         background-position: top center; 
         .imagecontainer {
             // border: 3px red solid;
-            z-index: 1;
     
             .bunny {
+                position: relative;
+                z-index: 1;
                 width: 100%;
-                // padding-right: 10%;
+                padding-top: 5%;
+                padding-right: 5%;
+                padding-left: 5%;
             }
         }
     
@@ -274,6 +318,8 @@
             top: 0;
             left: -45%;
         }
+
+
     }
 }
 
@@ -281,7 +327,7 @@
     .container {
         background-color: var(--sea-background);
         border: 3px solid white;
-        padding: 10% 5% 0% 15%;
+        padding: 0% 5% 0% 15%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -325,6 +371,24 @@
 
         .rayContainer {
             opacity: 0;
+        }
+
+        .bunny {
+            padding: 5% 0% 0% 25%;
+        }
+
+        .musicContainer {
+            position: relative;
+            padding-left: 0%;
+            padding-right: 10%;
+            top: 0%;
+            // background-color: black;
+            // border: 3px red solid;
+            display: flex;
+            align-items: flex;
+            justify-content: flex;
+            z-index: 1;
+            gap: 2%;
         }
     }
 }
