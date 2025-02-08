@@ -1,12 +1,18 @@
+@import '@globals/styles/mixins.scss';
+
 .container {
-    padding: 15%;
+    padding: 13%;
     align-items: center;
 
     h1 {
-        font-weight: bold;
-        font-size: 2rem;
-        padding-bottom: 3%;
-        letter-spacing: .1rem;
+        color: var(--background-dark);
+        font-family: var(--font-family-Title, Metropolis);
+        font-size: 3rem; //48px
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: .06rem; //.96px
+        padding: 6% 0% 6% 0%;
     }
 
     .valuesContainer {
@@ -15,18 +21,66 @@
         justify-content: space-evenly;
         gap: 3%;
 
+        h4 {
+            color: #123041;
+            font-family: Metropolis;
+            font-size: 1.5rem; //24px
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal; 
+            letter-spacing: 0.03rem; //.48px
+            padding-bottom: 3%;
+        }
+
+        p{
+            color: #000;
+            font-size: 1.125rem; //18px
+            font-style: normal;
+            font-weight: 400;
+            line-height: 145%; /* 26.1px */
+            letter-spacing: 0.023rem; //.36px
+            padding-bottom: 5%;
+        }
+
         .valuesBoxInclusive {
-            padding: 5% 5% 10%;
-            background-color: #79D9D0;
-            border-radius: 20px;
+            padding: 3% 3% 0% 3% ;
+            background-color: #9EE7E5;
+            border-radius: 10px;
             flex-basis: 100%;
             transform-origin: left;
-            transition: flex-basis 0.3s ease, transform 0.3s ease;
+            transition: flex-basis 0.3s ease, transform 0.3s ease;  
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            text-align: left;
+        }
 
-            h4 {
-                font-weight: bold;
-                font-size: 1.4rem;
-            }
+        .valuesBoxLearning {
+            padding: 3% 3% 0% 3% ;
+            background-color: #C2E567;
+            border-radius: 10px;
+            flex-basis: 100%;
+            transition: flex-basis 0.3s ease, transform 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .valuesBoxProjects {
+            padding: 3% 3% 0% 3% ;
+            background-color: #FFC5AB;
+            border-radius: 10px;
+            flex-basis: 100%;
+            transform-origin: right;
+            transition: flex-basis 0.3s ease, transform 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            text-align: left;
         }
 
         .valuesBoxInclusive:hover,
@@ -35,30 +89,62 @@
             flex-basis: 140%; 
             transform: scaleX(1.05);
         }
+    }
 
-        .valuesBoxLearning {
-            padding: 5%;
-            background-color: #AFD157;
-            border-radius: 20px;
-            flex-basis: 100%;
-            transition: flex-basis 0.3s ease, transform 0.3s ease;
+}
 
-            h4 {
-                font-weight: bold;
-                font-size: 1.4rem ;
+@include tablet {
+    .container{
+        padding: 8.5%;
+        h1{
+            padding: 12% 0% 12% 0%;
+        }
+        .valuesContainer {
+            flex-direction: column;
+            h4{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+            .valuesBoxInclusive {
+                padding: 10% 10% 0% 10% ;
+                margin-bottom: 12.8%;
+                transition: none;
+            }
+            .valuesBoxLearning{
+                padding: 10% 10% 0% 10% ;
+                margin-bottom: 12.8%;
+                transition: none;
+            }
+            .valuesBoxProjects{
+                padding: 10% 10% 0% 10% ;
+                margin-bottom: 12.8%;
+                transition:none
+            }
+            .valuesBoxInclusive:hover,
+            .valuesBoxLearning:hover,
+            .valuesBoxProjects:hover {
+                flex-basis:unset;
+                transform:none;
             }
         }
-
-        .valuesBoxProjects {
-            padding: 5%;
-            background-color: #FFA7A7;
-            border-radius: 20px;
-            flex-basis: 100%;
-            transition: flex-basis 0.3s ease, transform 0.3s ease;
-
-            h4 {
-                font-weight: bold;
-                font-size: 1.4rem ;
+        
+    }
+}
+@include phone{
+    .container {
+        h1{
+            padding: 20% 0% 20% 0%;
+        }
+        .valuesContainer{
+            h4{
+                font-size: 1.364rem; //21.825px
+                letter-spacing: 0.027rem; //.436px
+            }
+            p{
+                font-size: 1.023rem; //16.368px
+                letter-spacing: 0.02rem; //0.327px
             }
         }
     }
