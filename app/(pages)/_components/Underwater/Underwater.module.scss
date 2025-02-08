@@ -3,6 +3,7 @@
 @include desktop {
     .relative_container{
         position: relative; 
+        overflow: hidden;
 
         .rayContainer {
             display: flex;
@@ -10,6 +11,7 @@
             align-items: flex-start;
             justify-content: flex-start;
             border: 3px solid red;
+            // width: 100%;
             left: 40%;
             transform: translateX(-50%);
         }  
@@ -147,7 +149,17 @@
 .ray1 {
     margin-right: -15%;
 }
+// do this
 
+.ray2 {
+    margin-right: 0%;
+}
+
+.ray3 {
+    margin-right: 0%;
+}
+
+// ignore 
 .ray4 {
     margin-left: -5%;
 }
@@ -251,6 +263,15 @@
 
 
 @include tablet {
+    .relative_container{
+        position: relative; 
+        overflow: hidden;
+
+        .rayContainer {
+            opacity: 0;
+        }  
+    }
+
     .container {
         background-color: var(--sea-background);
         padding: 13% 5% 23% 5%;
@@ -308,23 +329,19 @@
                 font-size: .8rem;
             }
         }
-
-        .rayContainer {
-            position: absolute;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-            overflow: hidden;
-            padding-top: -15%;
-            left: -45%;
-            opacity: 0;
-        }
-
-
     }
 }
 
 @include phone {
+    .relative_container{
+        position: relative; 
+        overflow: hidden;
+
+        .rayContainer {
+            opacity: 0;
+        }  
+    }
+
     .container {
         background-color: var(--sea-background);
         border: 3px solid white;
@@ -368,10 +385,6 @@
                 color: var(--text-light);
                 padding-top: 1rem;
             }
-        }
-
-        .rayContainer {
-            opacity: 0;
         }
 
         .bunny {
