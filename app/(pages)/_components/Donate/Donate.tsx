@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import style from './Donate.module.scss';
-import Cow from 'public/images/Donate/CowPerson.svg';
 import Heart from 'public/images/Donate/Heart.svg';
 
 const Donate = () => (
@@ -34,17 +33,9 @@ const Donate = () => (
               <div className={style.heartButton}>
                 <Image src={Heart} alt="Heart blue icon" unoptimized={true} />
               </div>
-              Sponsor 2024
+              Donate
             </a>
           </div>
-        </div>
-
-        <div className={style.cowWrapper}>
-          <Image
-            src={Cow}
-            alt="Guidestar Transparency Seal"
-            unoptimized={true}
-          />
         </div>
       </div>
     </div>
