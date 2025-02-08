@@ -74,6 +74,7 @@
             background-color: #FFC5AB;
             border-radius: 10px;
             flex-basis: 100%;
+            transform-origin: right;
             transition: flex-basis 0.3s ease, transform 0.3s ease;
             display: flex;
             justify-content: space-between;
@@ -91,21 +92,17 @@
     }
 
 }
-@include phone {
+
+@include tablet {
     .container{
         padding: 8.5%;
-        h1{
-            padding: 20% 0% 20% 0%;
-        }
         .valuesContainer {
             flex-direction: column;
             h4{
-                font-size: 21.825px;
-                letter-spacing: 0.436px;
+                font-size: 2rem;
             }
             p{
-                font-size: 16.368px;
-                letter-spacing: 0.327px;
+                font-size: 1.5rem;
             }
             .valuesBoxInclusive {
                 padding: 10% 10% 0% 10% ;
@@ -130,5 +127,22 @@
             }
         }
         
+    }
+}
+@include phone{
+    .container {
+        h1{
+            padding: 20% 0% 20% 0%;
+        }
+        .valuesContainer{
+            h4{
+                font-size: 1.364rem; //21.825px
+                letter-spacing: 0.027rem; //.436px
+            }
+            p{
+                font-size: 1.023rem; //16.368px
+                letter-spacing: 0.02rem; //0.327px
+            }
+        }
     }
 }
