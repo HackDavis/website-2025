@@ -1,5 +1,7 @@
 .container {
+    position: sticky;
     width: 100%;
+    z-index: 1000;
   }
   
   .content {
@@ -42,7 +44,6 @@
       color: var(--text-light);
       text-align: center;
       font-family: var(--font-jakarta);
-      font-size: 1.1rem;
       font-style: normal;
       font-weight: 400;
       line-height: 100%;
