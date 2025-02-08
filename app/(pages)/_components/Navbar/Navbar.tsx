@@ -1,100 +1,155 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useRouter, useSearchParams, usePathname } from 'next/navigation';
+import { MouseEvent, useEffect, useState, useRef } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
+import Logo from './Logo';
+
+import Banner from '/public/Navbar/mlh-banner-2025.svg';
+
 import styles from './Navbar.module.scss';
-import WhiteLogo from '/public/icons/white_logo.svg';
+
+const NAVBAR_SHOW_THRESHOLD = 120;
+
+interface NavLink {
+  body: React.ReactNode;
+  page: string;
+  path: string;
+  id: string;
+}
+
+const links = [
+  {
+    body: 'HOME',
+    page: '/',
+    path: '/',
+    id: 'home',
+  },
+  {
+    body: 'ABOUT',
+    page: '/about-us',
+    path: '/about-us',
+    id: 'about-us',
+  },
+  {
+    body: 'FAQ',
+    page: '/',
+    path: '/?section=faq',
+    id: 'faq',
+  },
+  {
+    body: 'SPONSORS',
+    page: '/',
+    path: '/?section=sponsors',
+    id: 'sponsors',
+  },
+] as NavLink[];
 
 export default function Navbar() {
-  const [activeSection, setActiveSection] = useState('');
-  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const section = searchParams.get('section');
+  const [activeSection, setActiveSection] = useState(section || 'home');
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [showBackground, setShowBackground] = useState(false);
+
+  const currScroll = useRef(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 150); // Apply "scrolled" class after 150px
-
-      const sections = ['about', 'faq', 'sponsors'];
-      let newActiveSection = '';
-
-      let closestDistance = Infinity;
-      let closestSection = '';
-
-      sections.forEach((section) => {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          const sectionStart = offsetTop;
-          const sectionEnd = offsetTop + offsetHeight;
-
-          // Check if scroll position is within this section's range
-          if (
-            scrollPosition >= sectionStart - 100 &&
-            scrollPosition < sectionEnd - 100
-          ) {
-            newActiveSection = section;
+    const updateActiveSection = () => {
+      const currScroll = window.scrollY + window.innerHeight * 0.3;
+      const pageLinks = links.filter((link) => link.page === pathname);
+      const sections = pageLinks
+        .map((link) => {
+          const sectionContainer = document.getElementById(link.id);
+          if (!sectionContainer) {
+            return { id: '', sectionStart: 0, sectionEnd: 0 };
           }
+          const { offsetTop, offsetHeight } = sectionContainer;
+          return {
+            id: link.id,
+            sectionStart: offsetTop,
+            sectionEnd: offsetTop + offsetHeight,
+          };
+        })
+        .sort((a, b) => a.sectionStart - b.sectionStart);
 
-          // Calculate distance to section if it's not the active section
-          const distance = Math.abs(
-            scrollPosition - (sectionStart + sectionEnd) / 2
-          );
-          if (distance < closestDistance) {
-            closestDistance = distance;
-            closestSection = section;
-          }
+      let i = sections.length - 1;
+      for (i; i >= 0; i--) {
+        if (currScroll >= sections[i].sectionStart) {
+          break;
         }
-      });
+      }
 
-      // If no section is fully in view, highlight the closest one
-      setActiveSection(newActiveSection || closestSection);
+      setActiveSection(
+        currScroll > sections[i].sectionEnd ? '' : sections[i].id
+      );
     };
 
-    window.addEventListener('scroll', handleScroll);
+    const updateNavbarVisibility = () => {
+      const scroll = window.scrollY;
+      const delta = scroll - currScroll.current;
+      currScroll.current = scroll;
+
+      if (scroll > NAVBAR_SHOW_THRESHOLD) {
+        setShowBackground(true);
+        setShowNavbar(delta < 0);
+      } else {
+        setShowBackground(false);
+        setShowNavbar(true);
+      }
+    };
+
+    const handleScroll = () => {
+      updateActiveSection();
+      updateNavbarVisibility();
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [pathname]);
 
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  useEffect(() => {
+    const sectionContainer = document.getElementById(section as string);
+    if (sectionContainer) {
+      sectionContainer.scrollIntoView({ behavior: 'smooth' });
     }
+  }, [section]);
+
+  const getClickHandler = (path: string) => {
+    return (e: MouseEvent<HTMLAnchorElement>) => {
+      e.preventDefault();
+      router.push(path, { scroll: false });
+    };
   };
 
   return (
-    <div className={styles.container}>
-      <div className={`${styles.content} ${isScrolled ? styles.scrolled : ''}`}>
-        <div className={styles.hdIcon}>
-          <Image src={WhiteLogo} alt="White HackDavis Logo" />
+    <div
+      className={`${styles.container} ${showNavbar ? styles.visible : null} ${showBackground ? styles.background : null}`}
+    >
+      <div className={styles.left}>
+        <Logo width="50px" height="50px" />
+      </div>
+      <div className={styles.right}>
+        <div className={styles.links}>
+          {links.map((link) => (
+            <Link
+              className={`${styles.link} ${activeSection === link.id ? styles.active : null}`}
+              key={link.path}
+              href={link.path}
+              onClick={getClickHandler(link.path)}
+            >
+              {link.body}
+            </Link>
+          ))}
         </div>
-        <div className={styles.navLinks}>
-          <p
-            onClick={() => scrollToSection('about')}
-            className={`${styles.navLink} ${
-              activeSection === 'about' ? styles.active : ''
-            }`}
-          >
-            ABOUT
-          </p>
-          <p
-            onClick={() => scrollToSection('faq')}
-            className={`${styles.navLink} ${
-              activeSection === 'faq' ? styles.active : ''
-            }`}
-          >
-            FAQ
-          </p>
-          <p
-            onClick={() => scrollToSection('sponsors')}
-            className={`${styles.navLink} ${
-              activeSection === 'sponsors' ? styles.active : ''
-            }`}
-          >
-            SPONSORS
-          </p>
+        <div className={styles.mlh_banner}>
+          <Image src={Banner} alt="mlh 2025 banner" height={150} />
         </div>
       </div>
     </div>
