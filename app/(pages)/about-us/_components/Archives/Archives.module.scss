@@ -2,8 +2,8 @@
 
 $content-gap: 48px;
 $padding-y: 90px;
+$padding-x: 32px;
 $padding-y-mobile: 45px;
-$padding-x: 130px;
 $padding-x-mobile: 13%;
 
 .container {
@@ -23,7 +23,7 @@ $padding-x-mobile: 13%;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0 $padding-x;
+        padding: 0 32px;
 
         @include phone{
             padding: 0px $padding-x-mobile;
