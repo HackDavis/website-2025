@@ -1,0 +1,75 @@
+@import '@globals/styles/mixins.scss';
+
+$content-gap: 48px;
+$padding-y: 90px;
+$padding-y-mobile: 45px;
+$padding-x: 130px;
+$padding-x-mobile: 13%;
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: $padding-y;
+    padding: $padding-y 0;
+    
+    margin-top: 500px;
+
+    @include phone {
+        gap: $padding-y-mobile;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 $padding-x;
+
+        @include phone{
+            padding: 0px $padding-x-mobile;
+        }
+
+        .title {
+            color: #123041;
+            font-family: var(--font-metropolis);
+            font-size: 3rem;
+            font-weight: 700;
+            @include phone{
+                font-size: 2.25rem;
+            }
+        }
+
+        .arrows_desktop{
+            @include phone {
+                visibility: hidden;
+                display: none;
+            }
+        }
+    }
+
+    .arrows_mobile{
+        visibility: hidden;
+        display: none;
+        position: relative;
+        top: -75px;
+        @include phone {
+            visibility: visible;
+            display: unset;
+            padding: 0 $padding-x-mobile;
+        }
+    }
+
+    .progress_container {
+        padding: 0 $padding-x;
+        z-index: 2;
+        @include phone{
+            margin: 0 25%;
+            padding: 0px;
+        }
+        @include sm-phone{
+            margin: 0 30%;
+        }
+        
+    }
+}

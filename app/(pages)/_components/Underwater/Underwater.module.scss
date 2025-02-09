@@ -1,0 +1,559 @@
+@import '@globals/styles/mixins.scss';
+
+@include desktop {
+    .relative_container{
+        position: relative; 
+        overflow: hidden;
+
+        .rayContainer {
+            display: flex;
+            position: absolute;
+            align-items: flex-start;
+            justify-content: flex-start;
+            // width: 100%;
+            left: 40%;
+            transform: translateX(-50%);
+        }  
+    }
+
+    .container {
+        background-color: var(--sea-background);
+        padding-left: 12%;
+        padding-bottom: 15%;
+        padding-top: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('/images/landing_page/Caustics.svg');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top center; 
+
+
+        .musicContainer {
+            left: 0%;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 35%;
+            top: 0%;
+            display: flex;
+            align-items: flex;
+            justify-content: flex;
+            z-index: 1;
+            gap: 2%;
+        
+            .note1 {
+                padding: 2%;
+                margin-bottom: 35%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 0s;
+            }
+        
+            .note2 {
+                margin-top: 5%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 0.5s;
+            }
+            
+            .note3 {
+                margin-left: 5%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 1s;
+            }
+        
+            .note4 {
+                margin-top: 60%;
+                margin-left: -15%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 1.5s;
+            }
+
+            .bunnyContainer {
+                display: flex;
+
+                .bunny {
+                    width: 100%;
+                    padding-right: 5%;
+                    padding-top: 10%;
+                }
+            }
+        } 
+    
+        .imagecontainer {
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+
+            .bunnyContainer {
+                display: flex;
+
+                .bunny {
+                    width: 100%;
+                    padding-right: 10%;
+                    padding-top: 10%;
+                }
+            }
+
+        }
+    
+        .textcontainer {
+            padding: 10% 10% 5% 0%;
+            width: 40%;
+            flex-direction: column;
+            z-index: 1;
+            
+    
+            .text {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--text-light);
+            }
+    
+            .coloredtext {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--highlight-blue);
+            }
+    
+            p {
+                color: var(--text-light);
+                padding-top: 1rem;
+                font-weight: 400;
+                line-height: 125%; /* 22.5px */
+                letter-spacing: 0.36px;
+            }
+        }      
+    }
+}
+
+// animations
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0}
+    50% { opacity: 100 }
+}
+
+.ray:nth-child(1) { animation-delay: 0s; }
+.ray:nth-child(2) { animation-delay: 0.5s; }
+.ray:nth-child(3) { animation-delay: 1s; }
+.ray:nth-child(4) { animation-delay: 1.5s; }
+
+// rays
+
+.ray {
+    position: absolute;
+    transform: translateX(-50%);
+    opacity: 0;
+    width: 17%;
+    animation: fadeInOut 5s infinite alternate ease-in-out;
+}
+
+.ray1 {
+    left: 10%;
+    margin-right: -15%;
+}
+// do this
+
+.ray2 {
+    left: 17%;
+    margin-right: 0%;
+}
+
+.ray3 {
+    left: 33%;
+    margin-right: 0%;
+}
+
+// ignore 
+.ray4 {
+    left: 49%;
+    margin-left: -5%;
+}
+
+// music notes
+
+// animations
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/* Adding delays to each ray for staggered animation */
+.note:nth-child(1) { animation-delay: 0s; }
+.note:nth-child(2) { animation-delay: 0.5s; }
+.note:nth-child(3) { animation-delay: 1s; }
+.note:nth-child(4) { animation-delay: 1.5s; }
+
+
+
+@include sm-desktop {
+    .container {
+        background-color: var(--sea-background);
+        padding-left: 12%;
+        padding-bottom: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('/images/landing_page/Caustics.svg');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top center; 
+
+        .bunnyContainer {
+            display: flex;
+
+            .bunny {
+                width: 100%;
+                padding-right: 5%;
+                padding-top: 10%;
+            }
+        }
+    
+        .imagecontainer {
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+
+            .bunnyContainer {
+                display: flex;
+
+                .bunny {
+                    width: 100%;
+                    padding-right: 10%;
+                    padding-top: 10%;
+                }
+            }
+
+        }
+    
+        .textcontainer {
+            padding: 10% 10% 5% 0%;
+            width: 40%;
+            flex-direction: column;
+            z-index: 1;
+            
+    
+            .text {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--text-light);
+            }
+    
+            .coloredtext {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--highlight-blue);
+            }
+    
+            p {
+                color: var(--text-light);
+                padding-top: 1rem;
+                font-weight: 400;
+                line-height: 125%; /* 22.5px */
+                letter-spacing: 0.36px;
+            }
+        }
+    }
+}    
+
+
+@include tablet {
+    .relative_container{
+        position: relative; 
+        overflow: hidden;
+
+        // animations
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0}
+            50% { opacity: 0 }
+}
+
+        .ray {
+            position: absolute;
+            transform: translateX(-50%);
+            opacity: 0;
+            width: 17%;
+            animation: fadeInOut 5s infinite alternate ease-in-out;
+        }
+    }
+
+    .container {
+        background-color: var(--sea-background);
+        padding: 13% 5% 23% 5%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-image: url('/images/landing_page/Caustics.svg');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top center; 
+
+        .imagecontainer {
+
+            .musicContainer {
+                padding-right: 2%;
+                top: 0%;
+                display: flex;
+                align-items: flex;
+                justify-content: flex;
+                z-index: 1;
+                gap: 2%;
+            }
+    
+            .bunny {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                padding-top: 5%;
+                // padding-right: 5%;
+                padding-left: 5%;
+            }
+        }
+    
+        .textcontainer {
+            // border: 3px white solid;
+            padding: 10% 5% 0% 0%;
+            width: 40%;
+            flex-direction: column;
+            z-index: 1;
+    
+            .text {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--text-light);
+            }
+    
+            .coloredtext {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--highlight-blue);
+            }
+    
+            p {
+                color: var(--text-light);
+                padding-top: 1rem;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+@include phone {
+    .relative_container{
+        position: relative; 
+        overflow: hidden;
+
+        // animations
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0}
+            50% { opacity: 0 }
+        }
+
+        .ray {
+            position: absolute;
+            transform: translateX(-50%);
+            opacity: 0;
+            width: 17%;
+            animation: fadeInOut 5s infinite alternate ease-in-out;
+        }
+    }
+
+    .container {
+        background-color: var(--sea-background);
+        padding: 15% 5% 0% 15%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-image: url('/images/landing_page/Caustics.svg');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top center; 
+        flex-direction: column-reverse;
+        .imagecontainer {
+            z-index: 1;
+            padding-top: 5%;
+            display: flex;
+            flex-direction: column;
+    
+            .bunny {
+                width: 100%;
+                padding: 20% 0% 20% 20%;
+                // margin-left: 10%;
+            }
+        }
+    
+        .textcontainer {
+            // padding: 10% 10% 0% 0%;
+            width: 100%;
+            z-index: 1;
+    
+            .text {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--text-light);
+            }
+    
+            .coloredtext {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--highlight-blue);
+            }
+    
+            p {
+                color: var(--text-light);
+                padding-top: 1rem;
+                font-size: 1rem;
+            }
+        }
+
+        // do not edit, this is for the animations + formatting of the music notes
+        .musicContainer {
+            left: 0%;
+            padding-bottom: 0%;
+            padding-right: 10%;
+            top: 0%;
+            display: flex;
+            align-items: flex;
+            justify-content: flex;
+            z-index: 1;
+
+            .note1 {
+                padding: 2%;
+                margin-bottom: 35%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 0s;
+            }
+
+            .note2 {
+                margin-top: 30%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 0.5s;
+            }
+            
+            .note3 {
+                margin-left: 5%;
+                margin-bottom: 37%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 1s;
+            }
+
+            .note4 {
+                margin-top: 50%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 1.5s;
+            }
+        }
+    }
+}
+
+@include sm-phone {
+    .relative_container{
+        position: relative; 
+        overflow: hidden;
+
+        // animations
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0}
+            50% { opacity: 0 }
+}
+
+        .ray {
+            position: absolute;
+            transform: translateX(-50%);
+            opacity: 0;
+            width: 17%;
+            animation: fadeInOut 5s infinite alternate ease-in-out;
+        }
+    }
+
+    .container {
+        background-color: var(--sea-background);
+        padding: 15% 5% 0% 15%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-image: url('/images/landing_page/Caustics.svg');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top center; 
+        flex-direction: column-reverse;
+        .imagecontainer {
+            z-index: 1;
+            padding-top: 5%;
+            display: flex;
+            flex-direction: column;
+    
+            .bunny {
+                width: 100%;
+                padding: 5% 0% 0% 5%;
+                // margin-left: 10%;
+            }
+        }
+    
+        .textcontainer {
+            width: 100%;
+            z-index: 1;
+    
+            .text {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--text-light);
+            }
+    
+            .coloredtext {
+                font-weight: bold;
+                line-height: 1;
+                color: var(--highlight-blue);
+            }
+    
+            p {
+                color: var(--text-light);
+                padding-top: 1rem;
+            }
+        }
+
+        // do not edit, this is for the animations + formatting of the music notes
+        .musicContainer {
+            left: 0%;
+            padding-bottom: 0%;
+            padding-right: 10%;
+            top: 0%;
+            display: flex;
+            align-items: flex;
+            justify-content: flex;
+            z-index: 1;
+
+            .note1 {
+                padding: 2%;
+                margin-bottom: 35%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 0s;
+            }
+
+            .note2 {
+                margin-top: 30%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 0.5s;
+            }
+            
+            .note3 {
+                margin-left: 5%;
+                margin-bottom: 37%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 1s;
+            }
+
+            .note4 {
+                margin-top: 50%;
+                animation: float 4s infinite alternate ease-in-out;
+                animation-delay: 1.5s;
+            }
+        }
+    }
+}
