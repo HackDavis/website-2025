@@ -41,12 +41,23 @@
 .bigVinyl {
     top: 0; 
     left: 50%;
-    transform: translateY(-0.705 * 940 / 1440 * 100vw); // translateX(-50%) translateY(-0.23 * 940 / 1440 * 100vw);
+    transform: translateY(-0.705 * 940 / 1440 * 100vw); 
     aspect-ratio: 1;
     width: 100%;
     z-index: 3;
-    transition: transform 0.1s linear;
+    animation: rotateVinyl 15s linear infinite; /* Infinite smooth rotation */
 }
+
+/* Keyframes for continuous rotation */
+@keyframes rotateVinyl {
+    from {
+        transform: translateY(-0.705 * 940 / 1440 * 100vw) rotate(0deg);
+    }
+    to {
+        transform: translateY(-0.705 * 940 / 1440 * 100vw) rotate(360deg);
+    }
+}
+
   
 .rowMiddle {
     width: 100%;

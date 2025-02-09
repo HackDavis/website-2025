@@ -1,5 +1,5 @@
 'use client';
-import { useParallax } from 'react-scroll-parallax';
+//import { useParallax } from 'react-scroll-parallax';
 import styles from './BigVinyl.module.scss';
 import Image from 'next/image';
 
@@ -7,12 +7,14 @@ import cloudBottom from '/public/BigVinyl/CloudBottom.svg';
 import cloudBottomDim from '/public/BigVinyl/CloudBottomDim.svg';
 import cloudCenter from '/public/BigVinyl/CloudCenter.svg';
 import cloudTop from '/public/BigVinyl/cloudTop.svg';
-import vinyl from '/public/BigVinyl/Vinyl.svg';
+//import vinyl from '/public/BigVinyl/Vinyl.svg';
+import vinyl from '/public/BigVinyl/Vinyl_text_style_1.svg';
+//import vinyl from '/public/BigVinyl/Vinyl_text_style_2.svg';
 
 export default function BigVinyl() {
-  const parallax = useParallax<HTMLDivElement>({
-    rotate: [0, 700],
-  });
+  // const parallax = useParallax<HTMLDivElement>({
+  //   rotate: [0, 360],
+  // });
 
   return (
     <div className={styles.container}>
@@ -101,7 +103,7 @@ export default function BigVinyl() {
         <div className={styles.bigVinyl}>
           <Image
             src={vinyl}
-            ref={parallax.ref}
+            //ref={parallax.ref}
             alt="Big Vinyl Center"
             objectFit="fill"
           />
