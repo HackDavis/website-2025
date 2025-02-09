@@ -26,12 +26,13 @@
 .container {
     background-image: 
         url('/images/cloud_background/TopClouds.svg'),
+        url('/images/cloud_background/Sand.svg'),
         linear-gradient(to bottom, var(--sky-background) 0%, #D5FCD1 100%);
-    background-repeat: no-repeat;
-    background-size: contain; 
-    background-position: top center; 
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: contain, contain, cover; /* Clouds: Contain | Sand: Cover | Gradient: Cover */
+    background-position: top center, bottom center, center;
     padding-top: 25%;
-    padding-bottom: 55%;
+    padding-bottom: 75%;
     display: flex; 
     align-items: stretch;
     height: 100vh; /* Full screen height */
