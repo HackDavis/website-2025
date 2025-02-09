@@ -21,15 +21,17 @@ const Carousel = styled.main<{ position: number }>`
 
   @media (max-width: 768px) {
     width: 100%;
+    height: 100%;
   }
 `;
 
 const Item = styled.div<{ offset: number }>`
   position: absolute;
   width: 100%;
-  max-width: 250px;
   height: 100%;
+  max-width: 250px;
   max-height: 250px;
+
   --offset: ${(props) => props.offset};
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
@@ -40,10 +42,15 @@ const Item = styled.div<{ offset: number }>`
 
   @media (max-width: 768px) {
     max-width: 250px;
-    max-height: 300px;
     transform: rotateY(calc(-20deg * var(--r)))
       translateX(calc(-200px * var(--r)));
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
 `;
 
 const RadioInput = styled.input`

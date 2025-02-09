@@ -3,7 +3,7 @@ import trophies_image from '@public/images/recap/trophies.svg';
 
 export default function RecapAwards() {
   return (
-    <div className="flex w-full flex-col items-center justify-center border p-8">
+    <div className="flex w-full flex-col items-center justify-center p-8">
       <Image
         src={trophies_image}
         alt="trophies"
