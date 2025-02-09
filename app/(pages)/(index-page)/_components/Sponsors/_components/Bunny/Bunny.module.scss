@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+}
+
+.bunny {
+  position: relative;
+  z-index: 1;
+}
+
+.shadow {
+  position: absolute;
+  bottom: -7px;
+  left: 26px;
+}
