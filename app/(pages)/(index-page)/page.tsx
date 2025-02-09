@@ -1,4 +1,7 @@
 // import Directors from './(about-us)/_components/Directors/Directors';
+'use client';
+
+import BigVinyl from './_components/BigVinyl/BigVinyl';
 import HeroSection from './_components/hero/heroMainSection';
 import SandCastle from './_components/SandCastle';
 import Sponsors from './_components/Sponsors/Sponsors';
@@ -47,6 +50,7 @@ export default function Home() {
       <div id="sponsors">
         <Sponsors />
       </div>
+      <BigVinyl />
     </div>
   );
 }
