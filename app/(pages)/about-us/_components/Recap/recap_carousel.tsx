@@ -50,7 +50,6 @@ const Item = styled.div<{ offset: number }>`
     max-width: 300px;
     max-height: 300px;
   }
-
 `;
 
 const RadioInput = styled.input`
