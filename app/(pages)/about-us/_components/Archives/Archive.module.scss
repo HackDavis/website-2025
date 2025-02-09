@@ -1,0 +1,39 @@
+@import '@globals/styles/mixins.scss';
+
+$heights: 200px;
+$heights-mobile: 150px;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.package_container {
+    position: relative;
+}
+
+.package_src {
+    height: $heights;
+    width: auto;
+    z-index: 5;
+    @include phone {
+        height: $heights-mobile;
+    }
+}
+
+.vinyl_src {
+    position: absolute;
+    height: calc(0.94 * $heights);
+    width: auto;
+    left: 50%;
+    @include phone {
+        height: calc(0.94 * $heights-mobile);
+    }
+}
