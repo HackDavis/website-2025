@@ -5,6 +5,8 @@ import { MouseEvent, useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from './Logo';
+import Menu from './Menu';
+import Exit from './Exit';
 
 import Banner from '/public/Navbar/mlh-banner-2025.svg';
 
@@ -22,7 +24,7 @@ const links = [
   {
     body: 'HOME',
     page: '/',
-    path: '/',
+    path: '/?section=home',
     id: 'home',
     color: '#005271',
   },
@@ -55,6 +57,7 @@ export default function Navbar() {
   const searchParams = useSearchParams();
   const section = searchParams.get('section');
   const [activeSection, setActiveSection] = useState(section || 'home');
+  const [showNavbar, setShowNavbar] = useState(false);
 
   useEffect(() => {
     const updateActiveSection = () => {
@@ -112,14 +115,14 @@ export default function Navbar() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.left}>
+      <div
+        className={`${styles.navigation} ${showNavbar ? styles.visible : null}`}
+      >
         <Logo
           fill={`${links.find((link) => activeSection === link.id)?.color ?? '#005271'}`}
           width="50px"
           height="50px"
         />
-      </div>
-      <div className={styles.right}>
         <div
           className={`${styles.links} ${activeSection === 'home' ? styles.home_links : null}`}
         >
@@ -134,9 +137,20 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
+      </div>
+      <div className={styles.items}>
         <div className={styles.mlh_banner}>
           <Image src={Banner} alt="mlh 2025 banner" height={150} />
         </div>
+        {showNavbar ? (
+          <div className={styles.exit} onClick={() => setShowNavbar(false)}>
+            <Exit width="23px" height="23px" />
+          </div>
+        ) : (
+          <div className={styles.menu} onClick={() => setShowNavbar(true)}>
+            <Menu width="30px" height="20px" />
+          </div>
+        )}
       </div>
     </div>
   );
