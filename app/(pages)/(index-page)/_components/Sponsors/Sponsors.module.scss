@@ -1,12 +1,17 @@
+@import '@globals/styles/mixins.scss';
+
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   height: 1024px;
   width: 100%;
   background-color: var(--grass-background-dark);
   overflow-x: clip;
   position: relative;
+
+  @include sm-desktop {
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .topBlock {
@@ -23,8 +28,44 @@
   border-radius: 40px;
 }
 
+.top {
+  display: none;
+
+  @include sm-desktop {
+    display: flex;
+    z-index: 1;
+    
+    .grass {
+      position: absolute;
+      width: 1280px;
+      max-width: none;
+      height: auto;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: inherit;
+    }
+  }
+}
+
+.bottom {
+  display: none;
+
+  @include sm-desktop {
+    display: flex;
+    z-index: 1;
+
+    .bottomCow {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: inherit;
+    }
+  }
+}
+
 .left {
-  z-index: 1;
+  z-index: 100;
 
   .grass {
     position: absolute;
@@ -103,6 +144,10 @@
       z-index: inherit;
     }
   }
+
+  @include sm-desktop {
+    display: none;
+  }
 }
 
 .right {
@@ -175,12 +220,21 @@
       z-index: inherit;
     }
   }
+
+  @include sm-desktop {
+    display: none;
+  }
 }
 
 .sponsors {
   display: flex;
   align-items: center;
   background-color: var(--water-background);
+  z-index: 0;
+
+  @include sm-desktop {
+    padding: 166px 0px 268px;
+  }
 }
 
 .sandTexture {
