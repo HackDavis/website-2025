@@ -13,6 +13,7 @@ const statsData = [
 export default function HeroStats() {
   return (
     <div className={styles.stats}>
+      <div className={styles.stats_align}>
       {statsData.map((item) => (
         <div key={item.stat} className={styles.stats_inside}>
           <h1>
@@ -26,6 +27,7 @@ export default function HeroStats() {
           <p>{item.text}</p>
         </div>
       ))}
+      </div>
     </div>
   );
 }

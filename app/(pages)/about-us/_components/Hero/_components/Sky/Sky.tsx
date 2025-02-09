@@ -17,7 +17,6 @@ export default function Sky() {
           <Image src={WaterBuildingRight} alt="Water Building Right" />
         </div>
       </div>
-
       <div className={styles.water_semicircle}>
         <Image src={WaterSemicircle} alt="Water Semicircle" />
       </div>

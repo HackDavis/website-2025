@@ -5,6 +5,7 @@ import WaterNormalWavy from '/public/aboutUs/Hero/Beach/WaterTransition/WaterNor
 import WaterLight from '/public/aboutUs/Hero/Beach/WaterTransition/WaterLightWavy.svg';
 import SandDark from '/public/aboutUs/Hero/Beach/WaterTransition/SandDarkWavy.svg';
 import SandLight from '/public/aboutUs/Hero/Beach/WaterTransition/SandLightWavy.svg';
+import WaterSheen from '/public/aboutUs/Hero/Beach/WaterTransition/ocean_sheen.svg';
 import BeachDecoration from '/public/aboutUs/Hero/Beach/SandArea/BeachDecoration.svg';
 
 // import CowSitting from '/public/aboutUs/Hero/Beach/BeachCampfire/CowSitting.svg';
@@ -25,6 +26,9 @@ export default function Sand() {
       <div className={styles.transition}>
         <div className={styles.water_normal}>
           <Image src={WaterNormalWavy} alt="Normal Water" objectFit="cover" />
+        </div>
+        <div className={styles.water_sheen}>
+          <Image src={WaterSheen} alt="Normal Water" objectFit="cover" />
         </div>
         <div className={styles.water_light}>
           <Image src={WaterLight} alt="Water Light" objectFit="cover" />

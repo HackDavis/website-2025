@@ -2,17 +2,23 @@
 
 .container {
     padding: 25vh 0px;
-
     text-align: center;
     color: var(--text-light);
     font-family: 'Metropolis';
+
+    @include phone{
+        text-align: left;
+        margin: auto;
+        padding: 23vh 8% 10vh 8%;
+    }
     
     h1 {
         font-size: 15rem;
         font-weight: 800;
         line-height: 102%; /* 130.56px */
         letter-spacing: -3.84px;
-        
+        padding: 1% 0px 0px 0px;
+
         @include desktop {
             font-size: 8rem;
         }
@@ -23,7 +29,9 @@
             font-size: 6.5rem;
         }
         @include phone {
-            font-size: 5rem;
+            font-size: 3.5rem; //56px
+            letter-spacing: -1.68px;
+            padding: 3% 0px 4% 0px;
         }
     }
     h3 {
@@ -40,10 +48,20 @@
             font-size: 1.25rem;
         }
         @include phone {
-            font-size: 1rem;
+            font-size: 1.75rem; //28px
+            letter-spacing: 0.56px;
         }
     }
     .description {
         line-height: 150%; /* 48px */
+        @include phone {
+            font-size: 1.25rem; //20px
+            letter-spacing: 0.4px;
+        }
+    }
+    .text_break{
+        @include phone {
+            display: none;
+        }
     }
 }
