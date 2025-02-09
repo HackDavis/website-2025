@@ -100,7 +100,7 @@ export default function RecapCarousel() {
   const [position, setPosition] = useState(2);
 
   return (
-    <div className="flex h-[30vh] w-full flex-col items-center justify-center gap-4">
+    <div className="flex h-[30vh] w-full flex-col items-center justify-center gap-4 sm:pt-8">
       <Carousel id="carousel" position={position}>
         {colors.map((color, index) => (
           <Item key={index} offset={index + 1}>

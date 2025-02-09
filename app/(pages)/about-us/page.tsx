@@ -11,10 +11,10 @@ export default function AboutUs() {
       <Hero />
       <Values />
       <OurTeam />
-      <Archives />
-      <div className="bg-blue-300">
+      <div className="sm:p-[10%] bg-blue-300">
         <CelebrateWrapper>
           <Recap />
+          <Archives />
         </CelebrateWrapper>
       </div>
     </div>

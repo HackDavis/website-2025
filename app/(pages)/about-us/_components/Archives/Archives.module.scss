@@ -13,7 +13,6 @@ $padding-x-mobile: 13%;
     gap: $padding-y;
     padding: $padding-y 0;
     
-    margin-top: 500px;
 
     @include phone {
         gap: $padding-y-mobile;
