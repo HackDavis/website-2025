@@ -130,7 +130,7 @@ const AccordionFAQ = () => {
                   <div>
                     <div className={styles.dropDownPlus}>
                       <Image
-                        src="/images/faq/plus_vertical.svg"
+                        src="/images/faq/plus_horizontal.svg"
                         alt="expand icon"
                         width={19}
                         height={3}
