@@ -7,6 +7,7 @@ $bg-color: #FFFFFF;
     flex-direction: column;
     background-color: $bg-color;
     align-items: center;
+    overflow: hidden;
 
     &_container{
         display: flex;
@@ -125,6 +126,7 @@ $bg-color: #FFFFFF;
     flex-direction: column;
     background-color: $bg-color;
     align-items: center;
+    overflow: hidden;
 
     &_container{
         display: flex;
@@ -493,7 +495,6 @@ $bg-color: #FFFFFF;
             padding-bottom: 10%;
             padding-left: 10%;
             padding-right: 10%;
-
             overflow: scroll;
         
             // border: 1px solid black;
@@ -536,7 +537,7 @@ $bg-color: #FFFFFF;
                     align-items: center;
                     gap: 16px;
                     margin-bottom: 48px;
-                    // border: 1px solid black;
+                    border: 1px solid black;
         
                     &_button{
                         display: flex;
@@ -612,10 +613,10 @@ $bg-color: #FFFFFF;
             padding-bottom: 10%;
             padding-left: 10%;
             padding-right: 10%;
-
-            overflow: scroll;
+            overflow: hidden;
+            // overflow: scroll;
         
-            // border: 1px solid black;
+            border: 1px solid blue;
 
             &_title{
                 display: flex;
@@ -655,7 +656,7 @@ $bg-color: #FFFFFF;
                     align-items: center;
                     gap: 16px;
                     margin-bottom: 48px;
-                    // border: 1px solid black;
+                    border: 1px solid violet;
         
                     &_button{
                         display: flex;
