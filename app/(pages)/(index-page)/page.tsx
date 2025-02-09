@@ -1,8 +1,10 @@
 // import Directors from './(about-us)/_components/Directors/Directors';
+import HeroSection from './_components/hero/heroSection';
 import SandCastle from './_components/SandCastle';
 import Sponsors from './_components/Sponsors/Sponsors';
 import styles from './page.module.scss';
 import FAQ from './_components/FAQ/FAQ';
+import Underwater from '../_components/Underwater/Underwater';
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
       <p className="font-jakarta text-4xl font-bold">
         Halo! Welcome to the HackDavis template repo :D
       </p> */}
-      <div className="h-[300px] w-full bg-red-500"></div>
+      <HeroSection />
       <div className="flex flex-col items-center justify-center">
         <SandCastle />
       </div>
@@ -38,10 +40,11 @@ export default function Home() {
       // className="h-[800px] w-full flex items-center justify-center bg-gray-200"
       >
         {/* <h2 className="text-3xl font-bold">FAQ Section</h2> */}
+        <Underwater />
         <FAQ />
       </div>
 
-      <div id="sponsors" className={styles.sponsors}>
+      <div id="sponsors">
         <Sponsors />
       </div>
     </div>
