@@ -18,13 +18,14 @@ import waveLayer4 from '@public/index/wave/wave-layer-4.svg';
 export default function BigWave() {
   return (
     <>
-    <div style={{height: '1000px', width: '100%', background: 'black'}}></div>
       <div className={styles.container}>
         <div className={styles.stats_container}>
-          <Statistics />
-          <Link href={'google.com'} className={styles.sponsor_button}>
-            Sponsor 2025
-          </Link>
+          <div className={styles.stats}>
+            <Statistics />
+            <Link href={'google.com'} className={styles.sponsor_button}>
+              Sponsor 2025
+            </Link>
+          </div>
         </div>
         <div className={styles.images}>
           <div className={styles.bottom_left}>
@@ -45,20 +46,21 @@ export default function BigWave() {
           <div className={styles.box_top}>
             <Image src={boxTop} alt="box-top" />
           </div>
-          <div className={styles.wave_layer_1}>
+          <div className={`${styles.wave_layer_1} ${styles.wave}`}>
             <Image src={waveLayer1} alt="wave-layer-1" />
           </div>
-          {/* <div className={styles.wave_layer_2}>
-          <Image src={waveLayer2} alt="wave-layer-2" />
-        </div>
-        <div className={styles.wave_layer_3}>
-          <Image src={waveLayer3} alt="wave-layer-3" />
-        </div>
-        <div className={styles.wave_layer_4}>
-          <Image src={waveLayer4} alt="wave-layer-4" />
-        </div> */}
+          <div className={`${styles.wave_layer_2} ${styles.wave}`}>
+            <Image src={waveLayer2} alt="wave-layer-2" />
+          </div>
+          <div className={`${styles.wave_layer_3} ${styles.wave}`}>
+            <Image src={waveLayer3} alt="wave-layer-3" />
+          </div>
+          <div className={`${styles.wave_layer_4}`}>
+            <Image src={waveLayer4} alt="wave-layer-4" />
+          </div>
         </div>
       </div>
+      <div style={{ height: '600px', width: '100%', background: 'black' }} />
     </>
   );
 }
