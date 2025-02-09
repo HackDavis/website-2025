@@ -11,7 +11,6 @@ const Donate = () => (
       alt="donate section background"
       width={1000}
       height={450}
-      objectFit="fill"
     />
 
     <div className={style.dark_grass_container}>
@@ -64,6 +63,7 @@ const Donate = () => (
                     alt="Heart blue icon"
                     width={30}
                     height={30}
+                    // fill={true}
                   />
                 </div>
                 Donate
