@@ -1,3 +1,5 @@
+@import '@globals/styles/mixins.scss';
+
 .marquee {
   --gap: 36px;
   --scroll-start: 0;
@@ -16,9 +18,13 @@
     hsl(0 0% 0% / 0)
   );
 
-    &:hover .marqueeGroup {
-      animation-play-state: paused;
-    }
+  &:hover .marqueeGroup {
+    animation-play-state: paused;
+  }
+
+  @include phone {
+    --gap: 20px
+  }
 }
 
 .marqueeGroup {
