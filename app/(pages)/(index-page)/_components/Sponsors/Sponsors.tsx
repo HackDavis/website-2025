@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 import Bunny from './_components/Bunny/Bunny';
 import Cow from './_components/Cow/Cow';
 import Ducky from './_components/Ducky/Ducky';
@@ -8,11 +9,24 @@ import RedFlower from 'public/Sponsors/characters/red-flower.svg';
 import YellowFlower from 'public/Sponsors/characters/yellow-flower.svg';
 import LeftGrass from 'public/Sponsors/characters/left-grass.svg';
 import RightGrass from 'public/Sponsors/characters/right-grass.svg';
+import TopGrass from 'public/Sponsors/characters/TopGrass.svg';
+import BottomCow from 'public/Sponsors/characters/BottomCow.svg';
+
 import styles from './Sponsors.module.scss';
 
 export default async function Sponsors() {
   return (
     <div className={styles.container}>
+      <div className={styles.top}>
+        <Image
+          src={TopGrass}
+          alt="grass"
+          width={1280}
+          height={189}
+          className={styles.grass}
+        />
+      </div>
+
       <div className={styles.left}>
         <div className={styles.grass}>
           <Image src={LeftGrass} alt="grass" height={185} width={617} />
@@ -82,6 +96,16 @@ export default async function Sponsors() {
           </div>
           <div className={`${styles.sandTexture} ${styles.firstTexture}`}></div>
         </div>
+      </div>
+
+      <div className={styles.bottom}>
+        <Image
+          src={BottomCow}
+          alt="sleeping cow"
+          width={396}
+          height={209}
+          className={styles.bottomCow}
+        />
       </div>
     </div>
   );

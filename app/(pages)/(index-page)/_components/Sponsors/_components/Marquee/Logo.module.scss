@@ -1,3 +1,5 @@
+@import '@globals/styles/mixins.scss';
+
 .container {
   background: var(--card-background);
   border-radius: 10px;
@@ -16,11 +18,11 @@
     height: 250px;
     padding: 20px 40px;
 
-    // @mixin lg {
-    //   width: 350px;
-    //   height: 200px;
-    //   padding: 30px 60px;
-    // }
+    @include phone {
+      width: 245px;
+      height: 140px;
+      padding: 10px 20px;
+    }
   }
 
   img {

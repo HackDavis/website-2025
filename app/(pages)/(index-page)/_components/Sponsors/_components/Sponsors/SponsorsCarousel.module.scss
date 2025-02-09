@@ -1,3 +1,5 @@
+@import '@globals/styles/mixins.scss';
+
 .container{
     display: flex;
     flex-direction: column;
@@ -13,5 +15,9 @@
         line-height: 60px; /* 120% */
         letter-spacing: 1px;
         margin-top: 2%;
+    }
+
+    @include phone {
+        gap: 10px;
     }
 }
