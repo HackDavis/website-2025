@@ -13,19 +13,21 @@ const statsData = [
 export default function HeroStats() {
   return (
     <div className={styles.stats}>
-      {statsData.map((item) => (
-        <div key={item.stat} className={styles.stats_inside}>
-          <h1>
-            <CountUp
-              end={item.stat}
-              duration={item.duration}
-              prefix={item.prefix}
-              suffix={item.suffix}
-            />
-          </h1>
-          <p>{item.text}</p>
-        </div>
-      ))}
+      <div className={styles.stats_align}>
+        {statsData.map((item) => (
+          <div key={item.stat} className={styles.stats_inside}>
+            <h1>
+              <CountUp
+                end={item.stat}
+                duration={item.duration}
+                prefix={item.prefix}
+                suffix={item.suffix}
+              />
+            </h1>
+            <p>{item.text}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
