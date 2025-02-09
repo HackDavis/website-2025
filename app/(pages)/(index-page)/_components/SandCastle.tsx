@@ -23,7 +23,7 @@ export default function SandCastle() {
 
 function SandCastleContent() {
   return (
-    <div className="mt-20 flex h-fit w-full flex-wrap justify-center p-[10%] pt-[10%] sm:mt-10 sm:flex-row sm:p-[5%]">
+    <div className="mt-20 flex h-fit w-full flex-wrap justify-center p-[10%] pt-[10%] sm:mt-10 sm:flex-row sm:p-[5%] sm:pl-[10%] sm:pr-[10%]">
       <div className="w-full sm:p-10 md:w-2/3">
         <WhatIsHackDavisText />
       </div>
@@ -56,8 +56,8 @@ function SandCastleContent() {
 function WhatIsHackDavisText() {
   return (
     <div className="flex w-full max-w-[500px] flex-col items-start justify-center text-sand-text-color">
-      <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl">HackDavis</h1>
-      <p className="max-w-[90%] text-base sm:text-xl md:text-2xl">
+      <h1 className="text-2xl font-bold sm:text-3xl md:text-5xl">HackDavis</h1>
+      <p className="max-w-[90%] text-base sm:text-xl md:text-3xl">
         is one of the
         <strong> largest collegiate hackathon </strong> in Califronia, where
         over 950 students, creators, and leaders come together to{' '}
