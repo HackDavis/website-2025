@@ -1,3 +1,6 @@
+@import '@globals/styles/mixins.scss';
+$padding-x-mobile: 13%;
+
 .window {
     display: flex;
     flex-direction: row;
@@ -19,5 +22,9 @@
     flex-direction: row;
     align-items: center;
     padding: 0 130px;
-    gap: 32px;
+    gap: 120px;
+    @include phone {
+        padding: 0 $padding-x-mobile;
+        
+    }
 }

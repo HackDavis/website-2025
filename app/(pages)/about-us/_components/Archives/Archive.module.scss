@@ -1,4 +1,7 @@
+@import '@globals/styles/mixins.scss';
+
 $heights: 200px;
+$heights-mobile: 150px;
 
 .container {
     display: flex;
@@ -13,20 +16,24 @@ $heights: 200px;
 }
 
 .package_container {
-    z-index: 1;
+    position: relative;
 }
 
 .package_src {
     height: $heights;
     width: auto;
-}
-
-.vinyl_container {
-    z-index: 0;
+    z-index: 5;
+    @include phone {
+        height: $heights-mobile;
+    }
 }
 
 .vinyl_src {
+    position: absolute;
     height: calc(0.94 * $heights);
     width: auto;
-    margin-left: -50%;
+    left: 50%;
+    @include phone {
+        height: calc(0.94 * $heights-mobile);
+    }
 }

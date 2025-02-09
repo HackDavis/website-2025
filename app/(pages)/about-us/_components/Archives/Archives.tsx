@@ -87,7 +87,9 @@ export default function Archives() {
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>From the archive</h2>
-          <CarouselArrows />
+          <div className={styles.arrows_desktop}>
+            <CarouselArrows />
+          </div>
         </div>
         <CarouselWindow>
           {archives
@@ -104,6 +106,9 @@ export default function Archives() {
         </CarouselWindow>
         <div className={styles.progress_container}>
           <CarouselProgress />
+        </div>
+        <div className={styles.arrows_mobile}>
+          <CarouselArrows />
         </div>
       </div>
     </CarouselContextProvider>

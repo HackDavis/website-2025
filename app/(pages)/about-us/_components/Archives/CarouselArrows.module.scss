@@ -1,3 +1,5 @@
+@import '@globals/styles/mixins.scss';
+
 $button-width: 48px;
 $gray-arrow: #929292;
 $gray-button: #DBDBDB;
@@ -8,6 +10,10 @@ $active-button: #9DE7E5;
     flex-direction: row;
     align-items: center;
     gap: 24px;
+
+    @include phone {
+        justify-content: space-between;
+    }
 
     > button {
         display: flex;

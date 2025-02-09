@@ -20,9 +20,9 @@ export default function Archive({
     <Link href={link} target="_blank" className={styles.container}>
       <div className={styles.package_container}>
         <Image src={packageSrc} alt={alt} className={styles.package_src} />
-      </div>
-      <div className={styles.vinyl_container}>
+        {/* <div className={styles.vinyl_container}> */}
         <Image src={vinylSrc} alt={alt} className={styles.vinyl_src} />
+        {/* </div> */}
       </div>
     </Link>
   );
