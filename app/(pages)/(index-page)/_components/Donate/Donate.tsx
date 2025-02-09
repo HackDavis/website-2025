@@ -7,7 +7,7 @@ import style from './Donate.module.scss';
 const Donate = () => (
   <div className={style.container}>
     <Image
-      src="/images/Donate/light_grass_bg.svg"
+      src="/images/donate/light_grass_bg.svg"
       alt="donate section background"
       width={1000}
       height={450}
@@ -16,7 +16,7 @@ const Donate = () => (
     <div className={style.dark_grass_container}>
       <div className={style.dark_grass_left}>
         <Image
-          src="/images/Donate/dark_grass_left.svg"
+          src="/images/donate/dark_grass_left.svg"
           alt="donate section background"
           width={260}
           height={280}
@@ -25,7 +25,7 @@ const Donate = () => (
       <div className={style.dark_grass_right}>
         <div className={style.dark_grass_top}>
           <Image
-            src="/images/Donate/dark_grass_top.svg"
+            src="/images/donate/dark_grass_top.svg"
             alt="donate section background"
             width={700}
             height={130}
@@ -35,7 +35,7 @@ const Donate = () => (
         <div className={style.dark_grass_hanging}>
           <div className={style.information}>
             <Image
-              src="/images/Donate/dark_grass_hanging.svg"
+              src="/images/donate/dark_grass_hanging.svg"
               alt="donate section background"
               width={330}
               height={280}
@@ -59,7 +59,7 @@ const Donate = () => (
               >
                 <div className={style.heartButton}>
                   <Image
-                    src="/images/Donate/Heart.svg"
+                    src="/images/donate/Heart.svg"
                     alt="Heart blue icon"
                     width={30}
                     height={30}
@@ -72,7 +72,7 @@ const Donate = () => (
           </div>
           <div className={style.dark_grass_droplet}>
             <Image
-              src="/images/Donate/dark_grass_droplet.svg"
+              src="/images/donate/dark_grass_droplet.svg"
               alt="donate section background"
               width={40}
               height={90}
@@ -80,7 +80,7 @@ const Donate = () => (
           </div>
           <div className={style.cow_on_grass}>
             <Image
-              src="/images/Donate/cow_on_grass.svg"
+              src="/images/donate/cow_on_grass.svg"
               alt="donate section background"
               width={370}
               height={250}
