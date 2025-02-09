@@ -3,40 +3,88 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import style from './Donate.module.scss';
-import Heart from 'public/images/Donate/Heart.svg';
 
 const Donate = () => (
   <div className={style.container}>
-    <div className={style.grassContainer}>
-      <div className={style.title}>
-        <h2>support for social good.</h2>
-      </div>
+    <Image
+      src="/images/Donate/light_grass_bg.svg"
+      alt="donate section background"
+      width={1000}
+      height={450}
+      objectFit="fill"
+    />
 
-      <div className={style.children}>
-        <div className={style.darkGreenContainer}>
-          <div className={style.sealChildren}>
-            <Link
-              href="https://www.guidestar.org/profile/shared/4cf39094-2e34-44e6-890e-7a547408155b"
-              target="_blank"
-            >
-              <div className={style.sealImageWrapper}>
+    <div className={style.dark_grass_container}>
+      <div className={style.dark_grass_left}>
+        <Image
+          src="/images/Donate/dark_grass_left.svg"
+          alt="donate section background"
+          width={260}
+          height={280}
+        />
+      </div>
+      <div className={style.dark_grass_right}>
+        <div className={style.dark_grass_top}>
+          <Image
+            src="/images/Donate/dark_grass_top.svg"
+            alt="donate section background"
+            width={700}
+            height={130}
+          />
+          <h2>support for social good.</h2>
+        </div>
+        <div className={style.dark_grass_hanging}>
+          <div className={style.information}>
+            <Image
+              src="/images/Donate/dark_grass_hanging.svg"
+              alt="donate section background"
+              width={330}
+              height={280}
+            />
+            <div className={style.link_wrapper}>
+              <Link
+                href="https://www.guidestar.org/profile/shared/4cf39094-2e34-44e6-890e-7a547408155b"
+                target="_blank"
+                className={style.seal_wrapper}
+              >
                 <Image
                   src="https://widgets.guidestar.org/TransparencySeal/10110290"
                   alt="Guidestar Transparency Seal"
                   fill={true}
                   unoptimized={true}
                 />
-              </div>
-            </Link>
+              </Link>
+              <Link
+                className={style.sponsorButton}
+                href="mailto:team@hackdavis.io"
+              >
+                <div className={style.heartButton}>
+                  <Image
+                    src="/images/Donate/Heart.svg"
+                    alt="Heart blue icon"
+                    width={30}
+                    height={30}
+                  />
+                </div>
+                Donate
+              </Link>
+            </div>
           </div>
-
-          <div className={style.sealWrapper}>
-            <a className={style.sponsorButton}>
-              <div className={style.heartButton}>
-                <Image src={Heart} alt="Heart blue icon" unoptimized={true} />
-              </div>
-              Donate
-            </a>
+          <div className={style.dark_grass_droplet}>
+            <Image
+              src="/images/Donate/dark_grass_droplet.svg"
+              alt="donate section background"
+              width={40}
+              height={90}
+            />
+          </div>
+          <div className={style.cow_on_grass}>
+            <Image
+              src="/images/Donate/cow_on_grass.svg"
+              alt="donate section background"
+              width={370}
+              height={250}
+            />
           </div>
         </div>
       </div>
