@@ -15,6 +15,14 @@ import waveLayer2 from '@public/index/wave/wave-layer-2.svg';
 import waveLayer3 from '@public/index/wave/wave-layer-3.svg';
 import waveLayer4 from '@public/index/wave/wave-layer-4.svg';
 
+import duck from '@public/index/wave/ducky.svg';
+import eightNote from '@public/index/wave/eighth-note.svg';
+import twoEigthNote from '@public/index/wave/two-eighth-note.svg';
+
+import darkAccents from '@public/index/wave/dark-accents.svg';
+import brightAccents from '@public/index/wave/bright-accents.svg';
+import brightAccent from '@public/index/wave/bright-accent.svg';
+
 export default function BigWave() {
   return (
     <>
@@ -27,7 +35,7 @@ export default function BigWave() {
             </Link>
           </div>
         </div>
-        <div className={styles.images}>
+        <div className={styles.water}>
           <div className={styles.bottom_left}>
             <Image src={bottomLeft} alt="bottom-left-foam" />
           </div>
@@ -57,6 +65,24 @@ export default function BigWave() {
           </div>
           <div className={`${styles.wave_layer_4}`}>
             <Image src={waveLayer4} alt="wave-layer-4" />
+          </div>
+          <div className={styles.duck_group}>
+            <Image src={duck} alt="duck" />
+          </div>
+          <div className={styles.eighth_note}>
+            <Image src={eightNote} alt="eighth-note" />
+          </div>
+          <div className={styles.two_eighth_note}>
+            <Image src={twoEigthNote} alt="two-eighth-note" />
+          </div>
+          <div className={styles.bright_accents}>
+            <Image src={brightAccents} alt="bright-accents" />
+          </div>
+          <div className={styles.bright_accent}>
+            <Image src={brightAccent} alt="bright-accent" />
+          </div>
+          <div className={styles.dark_accents}>
+            <Image src={darkAccents} alt="dark-accents" />
           </div>
         </div>
       </div>
