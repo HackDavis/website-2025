@@ -121,7 +121,7 @@ export default function HeroSection() {
           />
         </div>
 
-        <div className="absolute left-[-12px] z-[70] pt-[497px] pt-[555px] break-400:left-[-190px] break-400:pt-[555px] break-625:left-[-20px] break-625:pt-[545px] md:left-[-250px] md:pt-[305px] lg:left-[-50px] lg:pt-[385px] xl:left-[195px] xl:pt-[384px]">
+        <div className="absolute left-[-12px] z-[60] pt-[497px] break-400:left-[-190px] break-400:pt-[555px] break-625:left-[-20px] break-625:pt-[545px] md:left-[-250px] md:pt-[305px] lg:left-[-50px] lg:pt-[385px] xl:left-[195px] xl:pt-[384px]">
           <HeroSun />
         </div>
         <div className="absolute left-[-133px] z-[70] pt-[515px] break-400:left-[-180px] break-400:pt-[550px] break-625:left-[-20px] break-625:pt-[550px] md:left-[-20px] md:pt-[470px] lg:left-[0px] lg:pt-[470px] xl:pt-[428px]">
