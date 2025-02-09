@@ -1,221 +1,216 @@
 .container {
     position: relative;
-    height: calc((940 / 1440) * 50vw + 200px);
-    top: -200px;
-    //bottom: calc(1 * (940 /(2 * 1440) * 100vw + 20px));
+    height: calc((940 / 1440) * 50vw + 350px);
+    //top: -200px;
     background: var(--sky-background);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
-    //padding: 20px;
     z-index: 1;
     overflow: hidden;
-  }
+    //transform: translateY((940 /(2 * 1440) * 100vw));
+
+}
   
-  .rowTop {
+.rowTop {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     height: calc((328/1440 * 100vw) - 40px);
-  } 
-  .rowBottom {
+} 
+  
+.rowBottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     position: relative;
-  }
+}
 
-  .vinylRow {
-    display: flex;
-    //justify-content: center; 
-    align-items: flex-start;
+.vinylRow {
     position: relative;
-    width: 0;
-  }
+    display: flex;
+    flex-direction: row;
     
-  .bigVinyl {
+}
+
+.bigVinyl {
     top: 0; 
-    left: 50%; 
-    transform: translateX(-50%) translateY(-20%);
+    left: 50%;
+    transform: translateY(-0.71 * 940 / 1440 * 100vw); // translateX(-50%) translateY(-0.23 * 940 / 1440 * 100vw);
     height: calc(940 / 1440 * 100vw);
     aspect-ratio: 1;
-    z-index: 2;
-  }
+    z-index: 1;
+    transition: transform 0.1s linear;
+}
   
-  .rowMiddle {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: center;
+.rowMiddle {
     width: 100%;
     height: calc(248/1440 * 100vw);
-    padding-left: calc(74/1440 * 100vw);
+    padding-left: calc(74/1440 * 100vw);    
+}
 
-    .cloudCenter {
-        left: 50%;
-        transform: translateX(-1%);
-        aspect-ratio: calc(842/248);
-        width: calc(842/1440 * 100vw);
-        //height: calc(248/1440 * 100vw);
-        
-
-        > img {
-            width: 100%;
-            height: 100%;
-        }
-    }
+.cloudCenter {
+    left: 50%;
+    transform: translateX(-1%);
+    aspect-ratio: calc(842/248);
+    width: calc(842/1440 * 100vw);
     
-  }
+    > img {
+        width: 100%;
+        height: 100%;
+    }
+}
   
-  .cloudsTopLeft {
+.cloudsTopLeft {
     position: relative;
     left: 50%;
     transform: translateX(-125%);
+}
 
-    .cloudsTopLeft_topLayer {
-        // for 1440px, width = 1069, height = 328
-        position: relative;
-        aspect-ratio: calc(1069/328);
-        width: calc(1069/1440 * 100vw);
-        top: 40px;
-        z-index: 2;
-        > img {
-            width: 100%;
-            height: 100%;
-            
-        }
+.cloudsTopLeft_topLayer {
+    // for 1440px, width = 1069, height = 328
+    position: relative;
+    aspect-ratio: calc(1069/328);
+    width: calc(1069/1440 * 100vw);
+    top: 40px;
+    z-index: 2;
 
+    > img {
+        width: 100%;
+        height: 100%;
+        
     }
-    
-    .cloudsTopLeft_bottomLayer {
-        // for 1440px, width = 1117, height = 339
-        position: relative;
-        aspect-ratio: calc(1117/339);
-        width: calc(1117/1440 * 100vw);
-        z-index: 1;
-        top: calc((-1 * 328/1440 * 100vw));
-        > img {
-            width: 100%;
-            height: 100%;
-            opacity: calc(5/6);
-        }
-    }
-  }
+}
 
-  .cloudsTopRight { 
+.cloudsTopLeft_bottomLayer {
+    // for 1440px, width = 1117, height = 339
+    position: relative;
+    aspect-ratio: calc(1117/339);
+    width: calc(1117/1440 * 100vw);
+    z-index: 1;
+    top: calc((-1 * 328/1440 * 100vw));
+    > img {
+        width: 100%;
+        height: 100%;
+        opacity: calc(5/6);
+    }
+}
+
+.cloudsTopRight { 
     position: relative;
     left: 50%;
     transform: translateX(-70%);
-
-    .cloudsTopRight_topLayer {
-        // for 1440px, width = 1069, height = 328
-        position: relative;
-        aspect-ratio: calc(1069/328);
-        width: calc(1069/1440 * 100vw);
-        z-index: 2;
-        transform: scaleX(-1);
-        top: 37px;
-
-        > img {
-            width: 100%;
-            height: 100%;
-        }
-    } 
-    
-    .cloudsTopRight_bottomLayer {
-        // for 1440px, width = 1117, height = 339
-        position: relative;
-        aspect-ratio: calc(1117/339);
-        width: calc(1117/1440 * 100vw);
-        z-index: 1;
-        top: calc((-1 * 328/1440 * 100vw));
-        right: 50px;
-        transform: scaleX(-1);
-        z-index: 1;
-        
-        > img {
-            width: 100%;
-            height: 100%;
-            opacity: calc(5/6);
-        }
-    }
-  } 
+}
   
+.cloudsTopRight_topLayer {
+    // for 1440px, width = 1069, height = 328
+    position: relative;
+    aspect-ratio: calc(1069/328);
+    width: calc(1069/1440 * 100vw);
+    z-index: 2;
+    transform: scaleX(-1);
+    top: 37px;
 
-  .cloudsBottomLeft{
+    > img {
+        width: 100%;
+        height: 100%;
+    }
+} 
+
+.cloudsTopRight_bottomLayer {
+    // for 1440px, width = 1117, height = 339
+    position: relative;
+    aspect-ratio: calc(1117/339);
+    width: calc(1117/1440 * 100vw);
+    z-index: 1;
+    top: calc((-1 * 328/1440 * 100vw));
+    right: 50px;
+    transform: scaleX(-1);
+    z-index: 1;
+    
+    > img {
+        width: 100%;
+        height: 100%;
+        opacity: calc(5/6);
+    }
+}
+  
+.cloudsBottomLeft{
+    flex-direction: column;
+    align-items: start;
+    left: 50%;
+    transform: translateX(-105%);
+    width: calc(842/(2*1440) * 100vw);
+
+}
+  
+.cloudsBottomLeft_topLayer {
+    // at 1440px, width = 842, height = 234
+    position: relative;
+    aspect-ratio: calc(842/234);
+    width: calc(842/1440 * 100vw);
+    top: 37px;
+    z-index: 5;
+
+    > img {
+        width: 100%;
+        height: 100%;
+    }
+} 
+
+.cloudsBottomLeft_bottomLayer {
+    // at 1440px, width = 842, height = 234
+    position: relative;
+    aspect-ratio: calc(842/234);
+    width: calc(842/1440 * 100vw);
+    top: calc((-1 * 234/1440 * 100vw));
+    z-index: -1;
+
+    > img {
+        width: 100%;
+        height: 100%;
+    }
+}
+  
+.cloudsBottomRight {
     position: relative;
     left: 50%;
-    transform: translateX(-145%);
+    transform: translateX(-35%);
+}
 
-    .cloudsBottomLeft_topLayer {
-        // at 1440px, width = 842, height = 234
-        position: relative;
-        aspect-ratio: calc(842/234);
-        width: calc(842/1440 * 100vw);
-        top: 37px;
-        z-index: 5;
-
-        > img {
-            width: 100%;
-            height: 100%;
-        }
-    } 
-
-    .cloudsBottomLeft_bottomLayer {
-        // at 1440px, width = 842, height = 234
-        position: relative;
-        aspect-ratio: calc(842/234);
-        width: calc(842/1440 * 100vw);
-        z-index: 1;
-        top: calc((-1 * 234/1440 * 100vw));
-
-        > img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-  }
-  
-  
-  .cloudsBottomRight {
+.cloudsBottomRight_topLayer {
+    // at 1440px, width = 842, height = 234
     position: relative;
-    left: 50%;
-    transform: translateX(-65%);
+    aspect-ratio: calc(842/234);
+    width: calc(842/1440 * 100vw);
+    top: 36px;
+    z-index: 5;
+    transform: scaleX(-1) translateX(-3%);
 
-    .cloudsBottomRight_topLayer {
-        // at 1440px, width = 842, height = 234
-        position: relative;
-        aspect-ratio: calc(842/234);
-        width: calc(842/1440 * 100vw);
-        top: 36px;
-        z-index: 5;
-        transform: scaleX(-1) translateX(-3%);
-
-        > img {
-            width: 100%;
-            height: 100%;
-        }
-    } 
-
-    .cloudsBottomRight_bottomLayer {
-        // at 1440px, width = 842, height = 234
-        position: relative;
-        aspect-ratio: calc(842/234);
-        width: calc(842/1440 * 100vw);
-        top: calc((-1 * 234/1440 * 100vw));
-        z-index: 1;
-        
-        > img {
-            width: 100%;
-            height: 100%;
-            opacity: 60%;
-        }
+    > img {
+        width: 100%;
+        height: 100%;
     }
-    }
+} 
+
+.cloudsBottomRight_bottomLayer {
+    // at 1440px, width = 842, height = 234
+    position: relative;
+    aspect-ratio: calc(842/234);
+    width: calc(842/1440 * 100vw);
+    top: calc((-1 * 234/1440 * 100vw));
+    z-index: 1;
     
+    > img {
+        width: 100%;
+        height: 100%;
+        opacity: 60%;
+    }
+}
     
       
       
