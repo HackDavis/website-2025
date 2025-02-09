@@ -33,9 +33,9 @@ export default function Home() {
       {/* Sections for Testing */}
       <div
         id="about"
-        className="flex h-[800px] w-full items-center justify-center bg-gray-100"
+        className="flex h-[1000px] w-full items-center justify-center bg-gray-100"
       >
-        <h2 className="text-3xl font-bold">About Section</h2>
+        <h2 className="text-3xl font-bold">Underwater Section</h2>
       </div>
 
       <div
