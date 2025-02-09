@@ -43,9 +43,7 @@ export default function Home() {
       >
         <h2 className="text-3xl font-bold">Sponsors Section</h2>
       </div>
-      <ParallaxProvider>
-        <BigVinyl />
-      </ParallaxProvider>
+      <BigVinyl />
     </div>
   );
 }
