@@ -4,7 +4,6 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const CarouselContainer = styled.div`
-  padding: 5%;
   height: 100%;
   margin: 0;
   display: grid;
@@ -76,7 +75,7 @@ interface ImageCardProps {
 function ImageCard({ children, color }: ImageCardProps) {
   return (
     <div
-      className="w-full h-full rounded-xl border-2 border-[#9EE7E5]"
+      className="h-full w-full rounded-xl border-2 border-[#9EE7E5]"
       style={{ backgroundColor: color }}
     >
       {children}

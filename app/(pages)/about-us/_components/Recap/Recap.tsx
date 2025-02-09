@@ -4,28 +4,18 @@ import trophies_image from '@public/images/recap/trophies.svg';
 
 export default function Recap() {
   return (
-    <main className="h-screen w-screen bg-blue-300">
-      <div className="text-background-dark bg-transparent flex flex-col justify-center p-[10%] gap-16">
-        <div className="flex flex-col items-start justify-center text-start">
-          <h1 className="text-4xl font-bold ">Celebrate our past with us!</h1>
-          <p>
-            We've been through a lot together, and we're proud of what we've
-            achieved. Let's celebrate our past with us!
-          </p>
-        </div>
-
-        <div className="flex flex-col items-start justify-center ">
-          <h2 className="text-3xl font-bold">HackDavis 2024 Recap</h2>
-          <div className="flex flex-wrap items-center justify-center w-full pr-[10%] pl-[10%]">
-            <div className="w-1/2">
-              <RecapCarousel />
-            </div>
-            <div className="w-1/2 flex flex-col items-center justify-center">
-              <Image src={trophies_image} alt="trophies" />
-              <button className="mt-8 px-6 py-2 bg-[#FFC53D] text-[#58452B] rounded-full font-semibold hover:opacity-90 transition-opacity">
-                View 2024 Winners
-              </button>
-            </div>
+    <main className="flex flex-col justify-center bg-transparent text-background-dark">
+      <div className="flex flex-col items-start justify-center">
+        <h2 className="text-3xl font-bold">HackDavis 2024 Recap</h2>
+        <div className="flex w-full flex-wrap items-center justify-center pl-[10%] pr-[10%]">
+          <div className="w-1/2">
+            <RecapCarousel />
+          </div>
+          <div className="flex w-1/2 flex-col items-center justify-center">
+            <Image src={trophies_image} alt="trophies" />
+            <button className="mt-8 rounded-full bg-[#FFC53D] px-6 py-2 font-semibold text-[#58452B] transition-opacity hover:opacity-90">
+              View 2024 Winners
+            </button>
           </div>
         </div>
       </div>
