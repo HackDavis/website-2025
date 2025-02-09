@@ -54,8 +54,8 @@
     
             .dropDownPlus{
                 position: absolute;
-                transform: rotate(90deg);
-                transition: transform 0.5s cubic-bezier(0, 0, 0, 1);
+                transform: rotate(-90deg);
+                transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
                 
                 >img {
                     max-width: none;
@@ -75,7 +75,7 @@
 
             .dropDownPlus{
                 transform: rotate(0deg);
-                transition: transform 0.5s cubic-bezier(0, 0, 0, 1);
+                transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
             }
         }
     }
