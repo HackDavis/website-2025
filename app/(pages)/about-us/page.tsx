@@ -1,7 +1,6 @@
 import Hero from './_components/Hero/background';
 import Values from './_components/Values/Values';
 import OurTeam from './_components/OurTeam/OurTeam';
-import CloudBackground from './_components/CloudBackground/CloudBackground';
 
 export default function AboutUs() {
   return (
@@ -9,7 +8,6 @@ export default function AboutUs() {
       <Hero />
       <Values />
       <OurTeam />
-      <CloudBackground/>
     </div>
   );
 }

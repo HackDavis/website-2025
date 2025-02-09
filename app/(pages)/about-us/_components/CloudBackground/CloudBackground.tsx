@@ -1,5 +1,5 @@
 import styles from './CloudBackground.module.scss';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function CloudBackground() {
   return (
