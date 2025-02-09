@@ -8,7 +8,7 @@
 
     .footer_grass{
         position: relative;
-        top: -50px;
+        top: calc(-1 * (50/1440) *100vw);
         width: 100%;
         aspect-ratio: calc(1440/435);
         z-index: 5;
@@ -26,7 +26,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        top: -320px;
+        top: calc(-1 * (400/1440)* 100vw);
         gap: 10px;
 
         .hackdavisLogo {

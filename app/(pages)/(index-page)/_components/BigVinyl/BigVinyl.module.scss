@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    height: calc((940 / 1440) * 50vw + 350px);
+    height: calc((940 / 1440) * 87vw);
     //top: -200px;
     background: var(--sky-background);
     display: flex;
@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    z-index: 1;
+    // z-index: 0;
     overflow: hidden;
     //transform: translateY((940 /(2 * 1440) * 100vw));
 
@@ -34,16 +34,17 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    
+    max-height: calc(940 / 1440 * 100vw);
+    max-width: calc(940 / 1440 * 100vw);
 }
 
 .bigVinyl {
     top: 0; 
     left: 50%;
-    transform: translateY(-0.71 * 940 / 1440 * 100vw); // translateX(-50%) translateY(-0.23 * 940 / 1440 * 100vw);
-    height: calc(940 / 1440 * 100vw);
+    transform: translateY(-0.705 * 940 / 1440 * 100vw); // translateX(-50%) translateY(-0.23 * 940 / 1440 * 100vw);
     aspect-ratio: 1;
-    z-index: 1;
+    width: 100%;
+    z-index: 3;
     transition: transform 0.1s linear;
 }
   
@@ -130,7 +131,6 @@
     top: calc((-1 * 328/1440 * 100vw));
     right: 50px;
     transform: scaleX(-1);
-    z-index: 1;
     
     > img {
         width: 100%;
@@ -168,7 +168,7 @@
     aspect-ratio: calc(842/234);
     width: calc(842/1440 * 100vw);
     top: calc((-1 * 234/1440 * 100vw));
-    z-index: -1;
+    z-index: 1;
 
     > img {
         width: 100%;
@@ -188,8 +188,8 @@
     aspect-ratio: calc(842/234);
     width: calc(842/1440 * 100vw);
     top: 36px;
-    z-index: 5;
     transform: scaleX(-1) translateX(-3%);
+    z-index: 10;
 
     > img {
         width: 100%;
@@ -202,6 +202,7 @@
     position: relative;
     aspect-ratio: calc(842/234);
     width: calc(842/1440 * 100vw);
+    //height: 234px;
     top: calc((-1 * 234/1440 * 100vw));
     z-index: 1;
     

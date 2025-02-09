@@ -11,7 +11,7 @@ import vinyl from '/public/BigVinyl/Vinyl.svg';
 
 export default function BigVinyl() {
   const parallax = useParallax<HTMLDivElement>({
-    rotate: [0, 720],
+    rotate: [0, 700],
   });
 
   return (
@@ -102,7 +102,6 @@ export default function BigVinyl() {
           <Image
             src={vinyl}
             ref={parallax.ref}
-            //className={this.changeClassName('circleImage')}
             alt="Big Vinyl Center"
             objectFit="fill"
           />
