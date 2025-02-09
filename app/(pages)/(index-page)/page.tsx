@@ -1,6 +1,5 @@
 // import Directors from './(about-us)/_components/Directors/Directors';
 'use client';
-import { ParallaxProvider } from 'react-scroll-parallax';
 
 import BigVinyl from './_components/BigVinyl/BigVinyl';
 
