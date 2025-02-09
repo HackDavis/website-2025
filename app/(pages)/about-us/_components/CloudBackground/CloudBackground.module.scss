@@ -1,22 +1,64 @@
 @import '@globals/styles/mixins.scss';
 
+// @include desktop {
+//     .container {
+//         background-image: 
+//             url('/images/cloud_background/TopClouds.svg'),
+//             linear-gradient(to bottom, var(--sky-background) 0%, #D5FCD1 100%);
+//         background-repeat: no-repeat;
+//         background-size: contain; 
+//         background-position: top center; 
+//         padding-top: 15%;
+//         padding-bottom: 5%;
+//         display: flex; 
+//         align-items: stretch;
+//         height: 100vh; /* Full screen height */
+//         width: 100%;
+    
+//         .child1, .child2 {
+//             width: 50%;
+//             position: relative; /* Required for Next.js Image fill */
+//             border: 3px solid black;
+//         }
+//     }
+// }
+
 .container {
-    background-color: var(--sky-background);
-    background-image: url('/images/cloud_background/TopClouds.svg');
+    background-image: 
+        url('/images/cloud_background/TopClouds.svg'),
+        linear-gradient(to bottom, var(--sky-background) 0%, #D5FCD1 100%);
     background-repeat: no-repeat;
     background-size: contain; 
     background-position: top center; 
     padding-top: 15%;
-    // padding-bottom: 15%;s
-    border: 3px solid black;
-    display: flex; // Ensures children align in a row
-    align-items: stretch; // Ensure children stretch to equal height
+    padding-bottom: 55%;
+    display: flex; 
+    align-items: stretch;
+    height: 100vh; /* Full screen height */
+    width: 100%;
 
-    .child {
+    .child1 {
+        background-image: url('/images/cloud_background/LeftClouds.svg');
+        width: 50%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top left; 
+        display: flex; 
+        align-items: stretch;
+        border: 3px solid black;
+    }
+
+    .child2 {
+        background-image: url('/images/cloud_background/RightClouds.svg');
+        width: 50%;
+        height: 100vh;
+        padding-top: 15%;
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top right; 
+        display: flex; 
         border: 3px solid red;
-        flex: 1; // Makes both children take up equal space
-        display: flex; // Ensures images inside are properly aligned
-        justify-content: center; // Centers the image
-        align-items: center; // Centers the image
+        align-items: stretch;
     }
 }
