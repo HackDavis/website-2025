@@ -1,0 +1,40 @@
+@import '@globals/styles/mixins.scss';
+
+.container {
+  background: var(--card-background);
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      // cursor: pointer;
+      transform: scale(1.05);
+    }
+
+  > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 250px;
+    padding: 20px 40px;
+
+    @include phone {
+      width: 245px;
+      height: 140px;
+      padding: 10px 20px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+
+    &.tall {
+      width: auto;
+      height: 100%;
+      max-height: initial;
+      max-width: 100%;
+    }
+  }
+}

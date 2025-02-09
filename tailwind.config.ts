@@ -24,6 +24,7 @@ export default {
         'water-background': 'var(--water-background)',
         'grass-background-dark': 'var(--grass-background-dark)',
         'grass-background-light': 'var(--grass-background-light)',
+        'sand-text-color': 'var(--sand-text-color)',
       },
       spacing: {
         edge: 'var(--edge-space)',
@@ -35,6 +36,18 @@ export default {
         montserrat: 'var(--font-montserrat)',
         inter: 'var(--font-inter)',
         jakarta: 'var(--font-jakarta)',
+      },
+      animation: {
+        'spin-slow': 'spin-from-center 30s linear infinite',
+      },
+      keyframes: {
+        'spin-from-center': {
+          '0%': { transform: 'rotate(360deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
+      },
+      screens: {
+        'break-625': '625px',
       },
     },
   },
