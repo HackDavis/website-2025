@@ -36,8 +36,8 @@ export default function Home() {
       </div>
 
       <div
-      // id="faq"
-      // className="h-[800px] w-full flex items-center justify-center bg-gray-200"
+        id="faq"
+        // className="h-[800px] w-full flex items-center justify-center bg-gray-200"
       >
         {/* <h2 className="text-3xl font-bold">FAQ Section</h2> */}
         <Underwater />

@@ -17,6 +17,7 @@ interface NavLink {
   page: string;
   path: string;
   id: string;
+  color: string;
 }
 
 const links = [
@@ -25,24 +26,28 @@ const links = [
     page: '/',
     path: '/',
     id: 'home',
+    color: '#005271',
   },
   {
     body: 'ABOUT',
-    page: '/about-us',
-    path: '/about-us',
-    id: 'about-us',
+    page: '/',
+    path: '/?section=about',
+    id: 'about',
+    color: '#FFC53D',
   },
   {
     body: 'FAQ',
     page: '/',
     path: '/?section=faq',
     id: 'faq',
+    color: '#AFD157',
   },
   {
     body: 'SPONSORS',
     page: '/',
     path: '/?section=sponsors',
     id: 'sponsors',
+    color: '#FFF',
   },
 ] as NavLink[];
 
@@ -53,7 +58,6 @@ export default function Navbar() {
   const section = searchParams.get('section');
   const [activeSection, setActiveSection] = useState(section || 'home');
   const [showNavbar, setShowNavbar] = useState(true);
-  const [showBackground, setShowBackground] = useState(false);
 
   const currScroll = useRef(0);
 
@@ -94,10 +98,8 @@ export default function Navbar() {
       currScroll.current = scroll;
 
       if (scroll > NAVBAR_SHOW_THRESHOLD) {
-        setShowBackground(true);
         setShowNavbar(delta < 0);
       } else {
-        setShowBackground(false);
         setShowNavbar(true);
       }
     };
@@ -130,16 +132,22 @@ export default function Navbar() {
 
   return (
     <div
-      className={`${styles.container} ${showNavbar ? styles.visible : null} ${showBackground ? styles.background : null}`}
+      className={`${styles.container} ${showNavbar ? styles.visible : null}`}
     >
       <div className={styles.left}>
-        <Logo width="50px" height="50px" />
+        <Logo
+          fill={`${links.find((link) => activeSection === link.id)?.color ?? '#005271'}`}
+          width="50px"
+          height="50px"
+        />
       </div>
       <div className={styles.right}>
-        <div className={styles.links}>
+        <div
+          className={`${styles.links} ${activeSection === 'home' ? styles.home_links : null}`}
+        >
           {links.map((link) => (
             <Link
-              className={`${styles.link} ${activeSection === link.id ? styles.active : null}`}
+              className={`${styles.link} ${styles[link.id]} ${activeSection === link.id ? styles.active : null}`}
               key={link.path}
               href={link.path}
               onClick={getClickHandler(link.path)}
