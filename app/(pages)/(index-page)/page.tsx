@@ -12,7 +12,6 @@ import Underwater from '../_components/Underwater/Underwater';
 export default function Home() {
   return (
     <div className={styles.container} id="home">
-
       {/* Intro Section */}
       {/* <p className="invisible font-metropolis text-4xl font-bold">
         Halo! Welcome to the HackDavis template repo :D
