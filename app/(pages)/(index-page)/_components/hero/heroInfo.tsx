@@ -3,50 +3,50 @@ import Image from 'next/image';
 
 export default function HeroInfo() {
   return (
-    <div className="flex flex-col gap-[31px] items-end">
-      <div className="flex flex-col items-end text-right">
-        <p className="flex gap-2 font-metropolis text-[40px] font-bold leading-[115%] tracking-[0.8px]">
+    <div className="break-400:items-end break-400:gap-[31px] flex flex-col items-start gap-[22px]">
+      <div className="break-400:items-end break-400:text-right flex flex-col items-start text-left">
+        <p className="break-400:text-[40px] flex gap-2 font-metropolis text-[30px] font-bold leading-[115%] tracking-[0.8px]">
           <span className="text-white">create</span>
           <span className="text-white/50">for</span>
         </p>
-        <h1 className="text-white font-metropolis md:text-[88px] text-[66px] font-bold tracking-[3.52px]">
+        <h1 className="break-400:text-[66px] break-400:tracking-[3.52px] break-400:leading-[100%] font-metropolis text-[45px] font-bold leading-[115%] tracking-[0.9px] text-white md:text-[88px]">
           social good
         </h1>
-        <p className="text-white font-metropolis text-[24px] font-normal tracking-[0.48px] mt-[31px]">
-          April 20-21, 2025 @ UCenter
+        <p className="break-400:text-[24px] mt-[31px] font-metropolis text-[16px] font-normal tracking-[0.48px] text-white">
+          April 19-20, 2025 @ UCenter
         </p>
       </div>
 
-      <div className="flex flex-col items-end break-625:flex-row break-625:items-center gap-[28px]">
-        <button className="flex items-center gap-[10px] px-[40px] h-[50px] rounded-[100px] bg-highlight-yellow shadow-[0px_5px_75px_0px_rgba(0,0,0,0.25)] text-text-dark text-center font-metropolis text-[20px] font-bold tracking-[0.4px]">
+      <div className="break-400:flex-col break-400:items-end break-400:gap-[28px] flex flex-row items-start gap-[12px] break-625:flex-row break-625:items-center">
+        <button className="break-400:h-[50px] break-400:px-[40px] break-400:py-0 break-400:text-[20px] inline-flex h-[40px] items-center justify-center gap-[10px] whitespace-nowrap rounded-[100px] bg-highlight-yellow px-[10px] py-[11px] text-center font-metropolis text-[18px] font-bold tracking-[0.4px] text-text-dark shadow-[0px_5px_75px_0px_rgba(0,0,0,0.25)]">
           Register Now
         </button>
-        <button className="flex w-[170px] h-[50px] items-center relative rounded-[100px] bg-white/15 text-white text-center font-metropolis text-[20px] font-bold tracking-[0.4px]">
-          <div className="flex items-center justify-center w-[50px] h-[50px] flex-shrink-0 rounded-[50px] bg-highlight-yellow shadow-[0px_5px_75px_0px_rgba(0,0,0,0.25)]">
+        <button className="break-400:w-[170px] break-400:h-[50px] break-400:py-0 break-400:text-[20px] flex h-[40px] w-[138px] flex-shrink-0 items-center rounded-[100px] bg-white/15 pl-0 pr-[10px] text-center font-metropolis text-[18px] font-bold tracking-[0.4px] text-white">
+          <div className="break-400:w-[50px] break-400:h-[50px] flex h-[40px] w-[40px] flex-shrink-0 items-center justify-center rounded-[50px] bg-highlight-yellow shadow-[0px_5px_75px_0px_rgba(0,0,0,0.25)]">
             <Image
               src="/Hero/heart.svg"
               alt="Heart icon"
               width={24}
               height={24}
-              className="object-contain"
+              className="break-400:w-[24px] break-400:h-[24px] h-[15px] w-[17px] object-contain"
             />
           </div>
-          <span className="flex-1 text-center pr-[5px]">Sponsor</span>
+          <span className="flex-1 pl-[9px] pr-[15px] text-center">Sponsor</span>
         </button>
       </div>
 
-      <div className="flex flex-col break-625:flex-row items-end gap-2 text-right">
-        <span className="text-white font-metropolis md:text-[24px] text-[18px] font-normal tracking-[0.48px]">
+      <div className="break-400:items-end break-400:text-right flex flex-col items-start gap-2 text-left break-625:flex-row">
+        <span className="break-400:inline hidden font-metropolis text-[18px] font-normal tracking-[0.48px] text-white md:text-[24px]">
           Apply to be a{' '}
         </span>
         <div className="flex items-center gap-2">
-          <span className="text-white font-metropolis md:text-[24px] text-[18px] font-bold tracking-[0.48px]">
+          <span className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[24px]">
             Judge, Mentor,
           </span>
-          <span className="text-white font-metropolis md:text-[24px] text-[18px] font-normal tracking-[0.48px]">
+          <span className="font-metropolis text-[18px] font-normal tracking-[0.48px] text-white md:text-[24px]">
             or{' '}
           </span>
-          <span className="text-white font-metropolis md:text-[24px] text-[18px] font-bold tracking-[0.48px]">
+          <span className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[24px]">
             Volunteer
           </span>
           <a href="#" className="group flex items-center gap-2">
