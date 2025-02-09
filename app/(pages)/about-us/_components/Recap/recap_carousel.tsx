@@ -3,48 +3,54 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 
-const CarouselContainer = styled.div`
-  height: 100%;
-  margin: 0;
-  display: grid;
-  grid-template-rows: 500px 100px;
-  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-  align-items: center;
-  justify-items: center;
-`;
-
 const Carousel = styled.main<{ position: number }>`
   grid-row: 1 / 2;
   grid-column: 1 / 8;
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   overflow: hidden;
   transform-style: preserve-3d;
-  perspective: 600px;
+  perspective: 1000px;
   --items: 5;
   --middle: 3;
   --position: ${(props) => props.position};
   pointer-events: none;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  border: 1px solid red;
 `;
 
 const Item = styled.div<{ offset: number }>`
   position: absolute;
-  width: 90%;
-  height: 80%;
+  border: 1px solid blue;
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  max-height: 250px;
   --offset: ${(props) => props.offset};
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
   transition: all 0.25s linear;
-  transform: rotateY(calc(-10deg * var(--r)))
-    translateX(calc(-300px * var(--r)));
+  transform: rotateY(calc(-20deg * var(--r)))
+    translateX(calc(-250px * var(--r)));
   z-index: calc((var(--position) - var(--abs)));
+
+  @media (max-width: 768px) {
+    max-width: 250px;
+    max-height: 300px;
+    transform: rotateY(calc(-20deg * var(--r)))
+      translateX(calc(-200px * var(--r)));
+  }
 `;
 
 const RadioInput = styled.input`
-  margin-top: -100px;
+  border: 1px solid blue;
+  // margin-top: -200px;
   &:nth-of-type(1) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -89,17 +95,7 @@ export default function RecapCarousel() {
   const [position, setPosition] = useState(2);
 
   return (
-    <CarouselContainer>
-      {[1, 2, 3, 4, 5].map((num) => (
-        <RadioInput
-          key={num}
-          type="radio"
-          name="position"
-          checked={position === num}
-          onChange={() => setPosition(num)}
-        />
-      ))}
-
+    <div className="flex h-[30vh] w-full flex-col items-center justify-center gap-4">
       <Carousel id="carousel" position={position}>
         {colors.map((color, index) => (
           <Item key={index} offset={index + 1}>
@@ -107,6 +103,17 @@ export default function RecapCarousel() {
           </Item>
         ))}
       </Carousel>
-    </CarouselContainer>
+      <div className="flex border border-blue-500">
+        {[1, 2, 3, 4, 5].map((num) => (
+          <RadioInput
+            key={num}
+            type="radio"
+            name="position"
+            checked={position === num}
+            onChange={() => setPosition(num)}
+          />
+        ))}
+      </div>
+    </div>
   );
 }
