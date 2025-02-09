@@ -22,12 +22,10 @@ const Carousel = styled.main<{ position: number }>`
   @media (max-width: 768px) {
     width: 100%;
   }
-  border: 1px solid red;
 `;
 
 const Item = styled.div<{ offset: number }>`
   position: absolute;
-  border: 1px solid blue;
   width: 100%;
   max-width: 250px;
   height: 100%;
@@ -103,7 +101,7 @@ export default function RecapCarousel() {
           </Item>
         ))}
       </Carousel>
-      <div className="flex border border-blue-500">
+      <div className="flex">
         {[1, 2, 3, 4, 5].map((num) => (
           <RadioInput
             key={num}
