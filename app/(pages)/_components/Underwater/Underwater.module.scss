@@ -366,7 +366,7 @@
 
     .container {
         background-color: var(--sea-background);
-        padding: 15% 5% 0% 15%;
+        padding: 15% 5% 25% 15%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -390,6 +390,8 @@
     
         .textcontainer {
             // padding: 10% 10% 0% 0%;
+            padding-left: 15%;
+            padding-right: 5%;
             width: 100%;
             z-index: 1;
     
@@ -474,7 +476,7 @@
 
     .container {
         background-color: var(--sea-background);
-        padding: 15% 5% 0% 15%;
+        padding: 15% 5% 50% 15%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -497,6 +499,7 @@
         }
     
         .textcontainer {
+            padding-left: 0%;
             width: 100%;
             z-index: 1;
     
