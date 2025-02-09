@@ -18,18 +18,7 @@ import waveLayer4 from '@public/index/wave/wave-layer-4.svg';
 export default function BigWave() {
   return (
     <>
-      <div className={styles.pain_container}>
-        <img
-          src="/index/wave/bottom.svg"
-          className={styles.pain}
-          width="100px"
-          height="400px"
-        />
-      </div>
-
-      <div className={styles.wrapper}>
-        <Image src={bottom} alt={'pain'} fill objectFit="scale-down" />
-      </div>
+    <div style={{height: '1000px', width: '100%', background: 'black'}}></div>
       <div className={styles.container}>
         <div className={styles.stats_container}>
           <Statistics />
@@ -37,49 +26,37 @@ export default function BigWave() {
             Sponsor 2025
           </Link>
         </div>
-        <Image
-          src={bottomLeft}
-          alt="bottom-left-foam"
-          className={styles.bottom_left}
-        />
-        <Image
-          src={bottomRight}
-          alt="bottom-right-foam"
-          className={styles.bottom_right}
-        />
-        <Image
-          src={topRight}
-          alt="top-right-foam"
-          className={styles.top_right}
-        />
-        <div className={styles.box_top}>
-          <Image src={boxTop} alt="box-top" fill />
+        <div className={styles.images}>
+          <div className={styles.bottom_left}>
+            <Image src={bottomLeft} alt="bottom-left-foam" />
+          </div>
+          <div className={styles.bottom}>
+            <Image src={bottom} alt="bottom-foam" />
+          </div>
+          <div className={styles.bottom_right}>
+            <Image src={bottomRight} alt="bottom-right-foam" />
+          </div>
+          <div className={styles.right}>
+            <Image src={right} alt="right-foam" />
+          </div>
+          <div className={styles.top_right}>
+            <Image src={topRight} alt="top-right-foam" />
+          </div>
+          <div className={styles.box_top}>
+            <Image src={boxTop} alt="box-top" />
+          </div>
+          <div className={styles.wave_layer_1}>
+            <Image src={waveLayer1} alt="wave-layer-1" />
+          </div>
+          {/* <div className={styles.wave_layer_2}>
+          <Image src={waveLayer2} alt="wave-layer-2" />
         </div>
-        <Image
-          src={waveLayer1}
-          alt="wave-layer-1"
-          className={styles.wave_layer_1}
-        />
-        <Image
-          src={waveLayer2}
-          alt="wave-layer-2"
-          className={styles.wave_layer_2}
-        />
-        <Image
-          src={waveLayer3}
-          alt="wave-layer-3"
-          className={styles.wave_layer_3}
-        />
-        <Image
-          src={waveLayer4}
-          alt="wave-layer-4"
-          className={styles.wave_layer_4}
-        />
-        <div className={styles.right}>
-          <Image src={right} alt="right-foam" fill />
+        <div className={styles.wave_layer_3}>
+          <Image src={waveLayer3} alt="wave-layer-3" />
         </div>
-        <div className={styles.bottom}>
-          <Image src={bottom} alt="bottom-foam" className={styles.img} />
+        <div className={styles.wave_layer_4}>
+          <Image src={waveLayer4} alt="wave-layer-4" />
+        </div> */}
         </div>
       </div>
     </>
