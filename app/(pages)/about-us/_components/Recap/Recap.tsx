@@ -13,9 +13,14 @@ export default function Recap() {
           </div>
           <div className="flex w-1/2 flex-col items-center justify-center">
             <Image src={trophies_image} alt="trophies" />
-            <button className="mt-8 rounded-full bg-[#FFC53D] px-6 py-2 font-semibold text-[#58452B] transition-opacity hover:opacity-90">
+            <a
+              href="https://hackdavis-2024.devpost.com/project-gallery"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 rounded-full bg-[#FFC53D] px-6 py-2 font-semibold text-[#58452B] transition-opacity hover:opacity-90"
+            >
               View 2024 Winners
-            </button>
+            </a>
           </div>
         </div>
       </div>
