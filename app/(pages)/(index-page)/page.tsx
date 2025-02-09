@@ -1,5 +1,5 @@
 // import Directors from './(about-us)/_components/Directors/Directors';
-import HeroSection from './_components/hero/heroSection';
+import HeroSection from './_components/hero/heroMainSection';
 import SandCastle from './_components/SandCastle';
 import Sponsors from './_components/Sponsors/Sponsors';
 import styles from './page.module.scss';
