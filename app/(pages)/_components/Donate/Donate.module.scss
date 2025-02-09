@@ -1,0 +1,662 @@
+@import '@globals/styles/mixins.scss';
+
+.container {
+  display: inline-block; /* Ensures it only takes the size of its content */
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  h2 {
+      color: white;
+      font-weight: 700;
+      line-height: 43.546px; /* 111.111% */
+      letter-spacing: 0.784px;
+      text-align: center;
+  }
+
+  .grassContainer{
+    position: relative;
+    overflow: hidden;
+    padding: 2% 0% 10% 0%;
+    background-image: url('/images/Donate/Grass.svg');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: top center; 
+    justify-content: right;
+
+    .title {
+        padding: 2% 0% 3% 10%;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        position: relative;
+    }
+
+    .darkGreenContainer {
+      display: flex;
+      position: relative;
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center;
+      gap: 20px; 
+      // border: 3px solid red;
+      // other positioning
+      padding-right: 14%; 
+    }
+    
+    .sealChildren {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .sealImageWrapper {
+      position: relative;
+      width: 150px; /* Controls image size */
+      height: 150px; /* Keeps aspect ratio */
+    }
+
+  .buttons {
+    align-items: center;
+    justify-content: center;
+    padding: 8%;
+  }
+
+  .sponsorButton {
+    font-weight: 700;
+    // line-height: normal;
+    // letter-spacing: 0.435px;
+    overflow: hidden;
+    background: #ffc53d28;
+    transition: background 200ms ease flex-direction 200ms ease;
+    color: #ffc53d;
+    width: fit-content;
+    padding: 14px 20px 15px 60px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  
+    &:hover {
+      cursor: pointer;
+      background: #ffc53d;
+      color: #122f40;
+      padding: 14px 60px 15px 20px;
+  
+      .heartButton {
+        transform: translateX(80px);
+      }
+    }
+  }
+  
+  .heartButton {
+    padding: 10%;
+    background: #ffc53d;
+    opacity: 1;
+    border-radius: 100px;
+    left: 0;
+    position: absolute;
+    transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
+  
+    // @include mrwd(991px) {
+    //   padding: 11px 9px 6px 10px;
+    // }
+  }
+  
+  .yellowCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffc53d;
+    margin-right: 15px;
+  
+    // @include mrwd(991px) {
+    //   display: none;
+    // }
+  }
+  }
+}
+
+@include sm-desktop {
+  .container {
+    display: inline-block; /* Ensures it only takes the size of its content */
+    position: relative;
+    width: 100%;
+    height: auto;
+  
+    h2 {
+        color: white;
+        font-weight: 700;
+        line-height: 43.546px; /* 111.111% */
+        letter-spacing: 0.784px;
+        text-align: center;
+    }
+  
+    .grassContainer{
+      position: relative;
+      overflow: hidden;
+      padding: 2% 0% 10% 0%;
+      background-image: url('/images/Donate/Grass.svg');
+      background-repeat: no-repeat;
+      background-size: contain; 
+      background-position: top center; 
+      justify-content: right;
+  
+      .title {
+          padding: 2% 0% 2% 10%;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          position: relative;
+      }
+  
+      .darkGreenContainer {
+        display: flex;
+        position: relative;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        gap: 20px; 
+        // border: 3px solid red;
+        // other positioning
+        padding-right: 17%; 
+      }
+      
+      .sealChildren {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .sealImageWrapper {
+        position: relative;
+        width: 150px; /* Controls image size */
+        height: 150px; /* Keeps aspect ratio */
+      }
+  
+    .buttons {
+      align-items: center;
+      justify-content: center;
+      padding: 8%;
+    }
+  
+    .sponsorButton {
+      font-weight: 700;
+      // line-height: normal;
+      // letter-spacing: 0.435px;
+      overflow: hidden;
+      background: #ffc53d28;
+      transition: background 200ms ease flex-direction 200ms ease;
+      color: #ffc53d;
+      width: fit-content;
+      padding: 14px 20px 15px 60px;
+      border-radius: 100px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    
+      &:hover {
+        cursor: pointer;
+        background: #ffc53d;
+        color: #122f40;
+        padding: 14px 60px 15px 20px;
+    
+        .heartButton {
+          transform: translateX(80px);
+        }
+      }
+    }
+    
+    .heartButton {
+      padding: 10%;
+      background: #ffc53d;
+      opacity: 1;
+      border-radius: 100px;
+      left: 0;
+      position: absolute;
+      transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+      box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
+    
+      // @include mrwd(991px) {
+      //   padding: 11px 9px 6px 10px;
+      // }
+    }
+    
+    .yellowCircle {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ffc53d;
+      margin-right: 15px;
+    
+      // @include mrwd(991px) {
+      //   display: none;
+      // }
+    }
+    }
+  }
+}
+
+@include tablet {
+  .container {
+    display: inline-block; /* Ensures it only takes the size of its content */
+    position: relative;
+    width: 100%;
+    height: auto;
+  
+    h2 {
+        color: white;
+        font-weight: 700;
+        line-height: 43.546px; /* 111.111% */
+        letter-spacing: 0.784px;
+        text-align: center;
+        font-size: 2rem;
+    }
+  
+    .grassContainer{
+      position: relative;
+      overflow: hidden;
+      padding: 2% 0% 10% 0%;
+      background-image: url('/images/Donate/Grass.svg');
+      background-repeat: no-repeat;
+      background-size: contain; 
+      background-position: top center; 
+      justify-content: right;
+  
+      .title {
+          padding: 3% 0% 2% 15%;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          position: relative;
+      }
+  
+      .darkGreenContainer {
+        display: flex;
+        position: relative;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        gap: 20px; 
+        // border: 3px solid red;
+        // other positioning
+        padding-right: 19%; 
+        padding-bottom: 2%;
+      }
+      
+      .sealChildren {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .sealImageWrapper {
+        position: relative;
+        width: 150px; /* Controls image size */
+        height: 150px; /* Keeps aspect ratio */
+      }
+  
+    .buttons {
+      align-items: center;
+      justify-content: center;
+      padding: 8%;
+    }
+  
+    .sponsorButton {
+      font-weight: 700;
+      // line-height: normal;
+      // letter-spacing: 0.435px;
+      overflow: hidden;
+      background: #ffc53d28;
+      transition: background 200ms ease flex-direction 200ms ease;
+      color: #ffc53d;
+      width: fit-content;
+      padding: 14px 20px 15px 60px;
+      border-radius: 100px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    
+      &:hover {
+        cursor: pointer;
+        background: #ffc53d;
+        color: #122f40;
+        padding: 14px 60px 15px 20px;
+    
+        .heartButton {
+          transform: translateX(80px);
+        }
+      }
+    }
+    
+    .heartButton {
+      padding: 10%;
+      background: #ffc53d;
+      opacity: 1;
+      border-radius: 100px;
+      left: 0;
+      position: absolute;
+      transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+      box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
+    
+      // @include mrwd(991px) {
+      //   padding: 11px 9px 6px 10px;
+      // }
+    }
+    
+    .yellowCircle {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ffc53d;
+      margin-right: 15px;
+    
+      // @include mrwd(991px) {
+      //   display: none;
+      // }
+    }
+    }
+  }
+}
+
+@include phone {
+  .container {
+    display: inline-block; 
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    h2 {
+        color: white;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 43.546px;
+        letter-spacing: 0.784px;
+        text-align: center;
+        padding: 0%;
+    }
+
+    .grassContainer {
+      position: relative;
+      overflow: visible;
+      padding-top: 10%;
+      padding-bottom: 35%;
+      background-image: url('/images/Donate/CroppedGrass.svg');
+      background-repeat: no-repeat;
+      width: 100%;
+      min-height: 50vh;
+      background-size: cover; /* Ensures full coverage */
+      background-position: center;
+
+        .title {
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            padding: 7% 0% 0% 0%;
+        }
+
+        .darkGreenContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column; 
+          align-items: center; 
+          justify-content: center;
+          gap: 20px; 
+          // border: 3px solid red;
+          // other positioning
+          padding-top: 5%;
+          padding-left: 2%;
+          padding-right: 0%; 
+          padding-bottom: 0%;
+        }
+
+        .children{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            // border: 3px black solid;
+
+            .sealWrapper {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+
+              .sealChildren {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+
+                .buttons {
+                  align-items: center;
+                  justify-content: center;
+                  padding: 8%;
+                }
+
+                .sponsorButton {
+                  font-weight: 700;
+                  // line-height: normal;
+                  // letter-spacing: 0.435px;
+                  overflow: hidden;
+                  background: #ffc53d28;
+                  transition: background 200ms ease flex-direction 200ms ease;
+                  color: #ffc53d;
+                  width: fit-content;
+                  padding: 14px 20px 15px 60px;
+                  border-radius: 100px;
+                  display: flex;
+                  flex-direction: row-reverse;
+                  justify-content: space-around;
+                  align-items: center;
+                  gap: 20px;
+                  position: relative;
+                  text-decoration: none;
+                  transition: all 0.2s ease;
+                
+                  &:hover {
+                    cursor: pointer;
+                    background: #ffc53d;
+                    color: #122f40;
+                    padding: 14px 60px 15px 20px;
+                
+                    .heartButton {
+                      transform: translateX(80px);
+                    }
+                  }
+                }
+                
+                .heartButton {
+                  padding: 10%;
+                  background: #ffc53d;
+                  opacity: 1;
+                  border-radius: 100px;
+                  left: 0;
+                  position: absolute;
+                  transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+                  box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
+                
+                  // @include mrwd(991px) {
+                  //   padding: 11px 9px 6px 10px;
+                  // }
+                }
+                
+                .yellowCircle {
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 50%;
+                  background-color: #ffc53d;
+                  margin-right: 15px;
+                
+                  // @include mrwd(991px) {
+                  //   display: none;
+                  // }
+                }
+              }
+        }
+    }
+}
+}
+
+@include sm-phone {
+  .container {
+    display: inline-block; 
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    h2 {
+        color: white;
+        font-weight: 700;
+        font-size: 2.0rem;
+        line-height: 43.546px;
+        letter-spacing: 0.784px;
+        text-align: center;
+        padding: 0%;
+    }
+
+    .grassContainer {
+      position: relative;
+      overflow: visible;
+      padding-top: 10%;
+      padding-bottom: 35%;
+      background-image: url('/images/Donate/CroppedGrass.svg');
+      background-repeat: no-repeat;
+      width: 100%;
+      min-height: 50vh;
+      background-size: cover; /* Ensures full coverage */
+      background-position: center;
+
+        .title {
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            padding: 0% 0% 10% 0%;
+        }
+
+        .darkGreenContainer {
+          display: flex;
+          position: relative;
+          flex-direction: column; 
+          align-items: center; 
+          justify-content: center;
+          gap: 20px; 
+          // border: 3px solid red;
+          // other positioning
+          padding-top: 5%;
+          padding-left: 2%;
+          padding-right: 0%; 
+          padding-bottom: 0%;
+        }
+
+        .children{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            // border: 3px black solid;
+
+            .sealWrapper {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+
+              .sealChildren {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+
+                .buttons {
+                  align-items: center;
+                  justify-content: center;
+                  padding: 8%;
+                }
+
+                .sponsorButton {
+                  font-weight: 700;
+                  // line-height: normal;
+                  // letter-spacing: 0.435px;
+                  overflow: hidden;
+                  background: #ffc53d28;
+                  transition: background 200ms ease flex-direction 200ms ease;
+                  color: #ffc53d;
+                  width: fit-content;
+                  padding: 14px 20px 15px 60px;
+                  border-radius: 100px;
+                  display: flex;
+                  flex-direction: row-reverse;
+                  justify-content: space-around;
+                  align-items: center;
+                  gap: 20px;
+                  position: relative;
+                  text-decoration: none;
+                  transition: all 0.2s ease;
+                
+                  &:hover {
+                    cursor: pointer;
+                    background: #ffc53d;
+                    color: #122f40;
+                    padding: 14px 60px 15px 20px;
+                
+                    .heartButton {
+                      transform: translateX(80px);
+                    }
+                  }
+                }
+                
+                .heartButton {
+                  padding: 10%;
+                  background: #ffc53d;
+                  opacity: 1;
+                  border-radius: 100px;
+                  left: 0;
+                  position: absolute;
+                  transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+                  box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
+                
+                  // @include mrwd(991px) {
+                  //   padding: 11px 9px 6px 10px;
+                  // }
+                }
+                
+                .yellowCircle {
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 50%;
+                  background-color: #ffc53d;
+                  margin-right: 15px;
+                
+                  // @include mrwd(991px) {
+                  //   display: none;
+                  // }
+                }
+              }
+        }
+    }
+}
+}
+
+

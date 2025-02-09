@@ -71,11 +71,11 @@ $bg-color: #FFFFFF;
                     align-items: center;
                     gap: 10px;
                     border-radius: 100px;
-                    background: #DCE0E3;
+                    background: #005271;
                     cursor: pointer;
     
                     p{
-                        color: #123041;
+                        color: #FFFFFF;
                         text-align: center;
                         font-family: "Metropolis";
                         font-size: 18px;
@@ -86,18 +86,10 @@ $bg-color: #FFFFFF;
                     }
     
                     &.active{
-                        display: flex;
-                        flex-direction: row;
-                        height: 48px;
-                        padding: 12px 24px;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        border-radius: 100px;
-                        background: #123041;
+                        background: #9EE7E5;
     
                         p{
-                            color: #FFFFFF;
+                            color: #005271;
                             text-align: center;
                             font-family: "Metropolis";
                             font-size: 18px;

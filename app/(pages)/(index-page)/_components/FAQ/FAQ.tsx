@@ -16,6 +16,13 @@ export default function FAQ() {
           height={10}
           className={style.underwater_dark}
         />
+        <Image
+          src="/images/faq/underwater_dark_mobile.svg"
+          alt="waterfall gradient"
+          width={1000}
+          height={10}
+          className={style.underwater_dark_mobile}
+        />
         <div className={style.algae_level}>
           <Image
             src="/images/faq/algae_right.svg"
@@ -24,6 +31,7 @@ export default function FAQ() {
             height={10}
             className={style.algae_1}
           />
+          {/* algae above being used for both mobile and desktop */}
           <Image
             src="/images/faq/algae_left.svg"
             alt="waterfall gradient"
@@ -45,6 +53,13 @@ export default function FAQ() {
             height={10}
             className={style.underwater_med}
           />
+          <Image
+            src="/images/faq/underwater_medium_mobile.svg"
+            alt="waterfall gradient"
+            width={1000}
+            height={10}
+            className={style.underwater_med_mobile}
+          />
         </div>
         <Image
           src="/images/faq/grass_dark.svg"
@@ -54,13 +69,26 @@ export default function FAQ() {
           className={style.grass_dark}
         />
         <Image
+          src="/images/faq/grass_dark_mobile.svg"
+          alt="waterfall gradient"
+          width={375}
+          height={10}
+          className={style.grass_dark_mobile}
+        />
+        <Image
           src="/images/faq/grass_light.svg"
           alt="waterfall gradient"
           width={1000}
           height={10}
           className={style.grass_light}
         />
-
+        <Image
+          src="/images/faq/grass_light_mobile.svg"
+          alt="waterfall gradient"
+          width={375}
+          height={10}
+          className={style.grass_light_mobile}
+        />
         <Image
           src="/images/faq/grass_texture_2.svg"
           alt="waterfall gradient"

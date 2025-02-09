@@ -160,13 +160,17 @@
 .firefly_lg1, .firefly_lg2, .firefly_sm1, .firefly_sm2{
     z-index: 5;
 }
-
+.underwater_dark_mobile, .underwater_med_mobile, .grass_dark_mobile, .grass_light_mobile{
+    visibility:hidden;
+    width:0;
+}
 // @include desktop { //1560
 //     //top/bottom: <in-px> // this value should work for screen sizes 1280px to 1840px
 // }
 
 @include desktop { //1164
     // for size 1280 to 1840
+    
     .underwater_dark{
         top: -600px;
     }
@@ -250,8 +254,8 @@
     }
 }
 
-@include phone { //phone
-    .underwater_dark, .underwater_med, .algae_1, .algae_2, .algae_3, .grass_dark, .grass_light, .grass_space, .waterfall, .grass_single, .grass_1, .grass_2, .grass_3, .grass_4, .grass_5, .firefly_sm1, .firefly_sm2, .firefly_lg1, .firefly_lg2{
+@include phone { //phone 560
+    .underwater_dark, .underwater_med, .algae_2, .algae_3, .grass_dark, .grass_light, .grass_space, .waterfall, .grass_single, .grass_1, .grass_2, .grass_3, .grass_4, .grass_5, .firefly_sm1, .firefly_sm2, .firefly_lg1, .firefly_lg2{
         visibility:hidden;
         width: 0;
         height:0;
@@ -259,14 +263,62 @@
         padding: 0;
         border: none;
     }
+    .underwater_dark_mobile{
+        position: absolute;
+        width:85%;
+        top: -570px;
+        visibility: visible;
+    }
+    .underwater_med_mobile{
+        position: absolute;
+        width:94%;
+        top: -440px;
+        visibility: visible;
+    }
+    .grass_dark_mobile{
+        position: absolute;
+        width:100%;
+        top: -135px;
+        z-index: 20;
+        visibility: visible;
+    }
+    .grass_light_mobile{
+        position: absolute;
+        width:100%;
+        top: -60px;
+        z-index: 30;
+        visibility: visible;
+    }
+    .algae_1{
+        position: absolute;
+        top: -830px;
+        width:13%;
+        left: 6%;
+    }
     .faq_donation{
         width: 100%;
-        
     }
     .faq{
         padding: 5%;
     }
     .donation{
         padding-top: 10%;
+    }
+    @include sm-phone{ //430
+        .underwater_dark_mobile{
+            top: -425px;
+        }
+        .underwater_med_mobile{
+            top: -300px;
+        }
+        .grass_dark_mobile{
+            top: -120px;
+        }
+        .grass_light_mobile{
+            top: -60px;
+        }
+        .algae_1{
+            top: -510px;
+        }
     }
 }
