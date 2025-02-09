@@ -3,7 +3,7 @@ import AccordionFAQ from './AccordionFAQ';
 import Waterfall from './Waterfall';
 import style from './FAQ.module.scss';
 import Image from 'next/image';
-import DonationPlaceholder from './DonationPlaceholder';
+import Donate from '../Donate/Donate';
 
 export default function FAQ() {
   return (
@@ -142,7 +142,7 @@ export default function FAQ() {
               height={10}
               className={style.grass_1}
             />
-            <DonationPlaceholder />
+            <Donate />
             <Image
               src="/images/faq/grass_texture_3.svg"
               alt="waterfall gradient"
