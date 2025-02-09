@@ -62,6 +62,10 @@
                 visibility: visible;
                 transform: rotate(90deg);
                 padding-left: 15%;
+
+                >img {
+                    max-width: none;
+                }
             }
         }
     }

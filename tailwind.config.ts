@@ -48,6 +48,7 @@ export default {
       },
       screens: {
         'break-625': '625px',
+        'break-400': '400px',
       },
     },
   },

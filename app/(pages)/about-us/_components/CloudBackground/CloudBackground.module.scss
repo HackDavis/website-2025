@@ -1,0 +1,63 @@
+@import '@globals/styles/mixins.scss';
+
+// @include desktop {
+//     .container {
+//         background-image: 
+//             url('/images/cloud_background/TopClouds.svg'),
+//             linear-gradient(to bottom, var(--sky-background) 0%, #D5FCD1 100%);
+//         background-repeat: no-repeat;
+//         background-size: contain; 
+//         background-position: top center; 
+//         padding-top: 15%;
+//         padding-bottom: 5%;
+//         display: flex; 
+//         align-items: stretch;
+//         height: 100vh; /* Full screen height */
+//         width: 100%;
+    
+//         .child1, .child2 {
+//             width: 50%;
+//             position: relative; /* Required for Next.js Image fill */
+//             border: 3px solid black;
+//         }
+//     }
+// }
+
+.container {
+    background-image: 
+        url('/images/cloud_background/TopClouds.svg'),
+        url('/images/cloud_background/Sand.svg'),
+        linear-gradient(to bottom, var(--sky-background) 0%, #D5FCD1 100%);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: contain, contain, cover; /* Clouds: Contain | Sand: Cover | Gradient: Cover */
+    background-position: top center, bottom center, center;
+    padding-top: 25%;
+    padding-bottom: 75%;
+    display: flex; 
+    align-items: stretch;
+    height: 100vh; /* Full screen height */
+    width: 100%;
+
+    .child1 {
+        background-image: url('/images/cloud_background/LeftClouds.svg');
+        width: 50%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top left; 
+        display: flex; 
+        align-items: stretch;
+    }
+
+    .child2 {
+        background-image: url('/images/cloud_background/RightClouds.svg');
+        width: 50%;
+        height: 100vh;
+        padding-top: 15%;
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top right; 
+        display: flex; 
+        align-items: stretch;
+    }
+}
