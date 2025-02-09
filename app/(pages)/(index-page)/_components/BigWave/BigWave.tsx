@@ -25,68 +25,65 @@ import brightAccent from '@public/index/wave/bright-accent.svg';
 
 export default function BigWave() {
   return (
-    <>
-      <div className={styles.container}>
-        <div className={styles.stats_container}>
-          <div className={styles.stats}>
-            <Statistics />
-            <Link href={'google.com'} className={styles.sponsor_button}>
-              Sponsor 2025
-            </Link>
-          </div>
-        </div>
-        <div className={styles.water}>
-          <div className={styles.bottom_left}>
-            <Image src={bottomLeft} alt="bottom-left-foam" />
-          </div>
-          <div className={styles.bottom}>
-            <Image src={bottom} alt="bottom-foam" />
-          </div>
-          <div className={styles.bottom_right}>
-            <Image src={bottomRight} alt="bottom-right-foam" />
-          </div>
-          <div className={styles.right}>
-            <Image src={right} alt="right-foam" />
-          </div>
-          <div className={styles.top_right}>
-            <Image src={topRight} alt="top-right-foam" />
-          </div>
-          <div className={styles.box_top}>
-            <Image src={boxTop} alt="box-top" />
-          </div>
-          <div className={`${styles.wave_layer_1} ${styles.wave}`}>
-            <Image src={waveLayer1} alt="wave-layer-1" />
-          </div>
-          <div className={`${styles.wave_layer_2} ${styles.wave}`}>
-            <Image src={waveLayer2} alt="wave-layer-2" />
-          </div>
-          <div className={`${styles.wave_layer_3} ${styles.wave}`}>
-            <Image src={waveLayer3} alt="wave-layer-3" />
-          </div>
-          <div className={`${styles.wave_layer_4}`}>
-            <Image src={waveLayer4} alt="wave-layer-4" />
-          </div>
-          <div className={styles.duck_group}>
-            <Image src={duck} alt="duck" />
-          </div>
-          <div className={styles.eighth_note}>
-            <Image src={eightNote} alt="eighth-note" />
-          </div>
-          <div className={styles.two_eighth_note}>
-            <Image src={twoEigthNote} alt="two-eighth-note" />
-          </div>
-          <div className={styles.bright_accents}>
-            <Image src={brightAccents} alt="bright-accents" />
-          </div>
-          <div className={styles.bright_accent}>
-            <Image src={brightAccent} alt="bright-accent" />
-          </div>
-          <div className={styles.dark_accents}>
-            <Image src={darkAccents} alt="dark-accents" />
-          </div>
+    <div className={styles.container}>
+      <div className={styles.stats_container}>
+        <div className={styles.stats}>
+          <Statistics />
+          <Link href={'google.com'} className={styles.sponsor_button}>
+            Sponsor 2025
+          </Link>
         </div>
       </div>
-      <div style={{ height: '600px', width: '100%', background: 'black' }} />
-    </>
+      <div className={styles.water}>
+        <div className={styles.bottom_left}>
+          <Image src={bottomLeft} alt="bottom-left-foam" />
+        </div>
+        <div className={styles.bottom}>
+          <Image src={bottom} alt="bottom-foam" />
+        </div>
+        <div className={styles.bottom_right}>
+          <Image src={bottomRight} alt="bottom-right-foam" />
+        </div>
+        <div className={styles.right}>
+          <Image src={right} alt="right-foam" />
+        </div>
+        <div className={styles.top_right}>
+          <Image src={topRight} alt="top-right-foam" />
+        </div>
+        <div className={styles.box_top}>
+          <Image src={boxTop} alt="box-top" />
+        </div>
+        <div className={`${styles.wave_layer_1} ${styles.wave}`}>
+          <Image src={waveLayer1} alt="wave-layer-1" />
+        </div>
+        <div className={`${styles.wave_layer_2} ${styles.wave}`}>
+          <Image src={waveLayer2} alt="wave-layer-2" />
+        </div>
+        <div className={`${styles.wave_layer_3} ${styles.wave}`}>
+          <Image src={waveLayer3} alt="wave-layer-3" />
+        </div>
+        <div className={`${styles.wave_layer_4}`}>
+          <Image src={waveLayer4} alt="wave-layer-4" />
+        </div>
+        <div className={styles.duck_group}>
+          <Image src={duck} alt="duck" />
+        </div>
+        <div className={styles.eighth_note}>
+          <Image src={eightNote} alt="eighth-note" />
+        </div>
+        <div className={styles.two_eighth_note}>
+          <Image src={twoEigthNote} alt="two-eighth-note" />
+        </div>
+        <div className={styles.bright_accents}>
+          <Image src={brightAccents} alt="bright-accents" />
+        </div>
+        <div className={styles.bright_accent}>
+          <Image src={brightAccent} alt="bright-accent" />
+        </div>
+        <div className={styles.dark_accents}>
+          <Image src={darkAccents} alt="dark-accents" />
+        </div>
+      </div>
+    </div>
   );
 }
