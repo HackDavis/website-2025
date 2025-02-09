@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter, useSearchParams, usePathname } from 'next/navigation';
-import { MouseEvent, useEffect, useState, useRef } from 'react';
+import { MouseEvent, useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from './Logo';
@@ -9,8 +9,6 @@ import Logo from './Logo';
 import Banner from '/public/Navbar/mlh-banner-2025.svg';
 
 import styles from './Navbar.module.scss';
-
-const NAVBAR_SHOW_THRESHOLD = 200;
 
 interface NavLink {
   body: React.ReactNode;
@@ -57,9 +55,6 @@ export default function Navbar() {
   const searchParams = useSearchParams();
   const section = searchParams.get('section');
   const [activeSection, setActiveSection] = useState(section || 'home');
-  const [showNavbar, setShowNavbar] = useState(true);
-
-  const currScroll = useRef(0);
 
   useEffect(() => {
     const updateActiveSection = () => {
@@ -92,22 +87,7 @@ export default function Navbar() {
       );
     };
 
-    const updateNavbarVisibility = () => {
-      const scroll = window.scrollY;
-      const delta = scroll - currScroll.current;
-      currScroll.current = scroll;
-
-      if (scroll > NAVBAR_SHOW_THRESHOLD) {
-        setShowNavbar(delta < 0);
-      } else {
-        setShowNavbar(true);
-      }
-    };
-
-    const handleScroll = () => {
-      updateActiveSection();
-      updateNavbarVisibility();
-    };
+    const handleScroll = () => updateActiveSection();
 
     window.addEventListener('scroll', handleScroll, { passive: true });
 
@@ -131,9 +111,7 @@ export default function Navbar() {
   };
 
   return (
-    <div
-      className={`${styles.container} ${showNavbar ? styles.visible : null}`}
-    >
+    <div className={styles.container}>
       <div className={styles.left}>
         <Logo
           fill={`${links.find((link) => activeSection === link.id)?.color ?? '#005271'}`}
