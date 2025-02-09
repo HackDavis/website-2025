@@ -2,8 +2,8 @@
 
 .container {
     position: relative;
-    // height: calc((940 / 1440) * 87vw);
-    height: calc((940 / 1440) * 87vw);
+    //height: calc((940 / 1440) * 87vw);
+    height: clamp(440px, 0.565476 * 100vw + 5.71px, 1080px);
     //top: -200px;
     background: var(--sky-background);
     display: flex;
@@ -16,7 +16,7 @@
     //transform: translateY((940 /(2 * 1440) * 100vw));
     
     @include phone {
-        height: 80vw;
+        height: 85vw;
         //flex-direction: column;
     }
 }
@@ -60,33 +60,35 @@
     left: 50%;
     aspect-ratio: 1;
     width: 100%;
+    max-width: calc(940 * 100vw / 1440);
     z-index: 3;
     animation: rotateVinyl 15s linear infinite; /* Infinite smooth rotation */
     transform-origin: center center;
 
     @include phone {
+        max-width: 160vw;
         width: 200%;
-        animation: rotateVinylPhone 15s linear infinite;
-        transform-origin: 34.7% 34.7%; /* Explicitly set rotation center */
+        left: 50%;
+        animation: rotateVinylPhone 20s linear infinite;
     }
 }
 
 /* Keyframes for continuous rotation */
 @keyframes rotateVinyl {
-    from {
-        transform: translateY(-0.705 * 940 / 1440 * 100vw) rotate(0deg);
-    }
     to {
-        transform: translateY(-0.705 * 940 / 1440 * 100vw) rotate(360deg);
+        transform: translateY(-0.7 * 940 / 1440 * 100vw) rotate(0deg);
+    }
+    from {
+        transform: translateY(-0.7 * 940 / 1440 * 100vw) rotate(360deg);
     }
 }
 
 @keyframes rotateVinylPhone {
-    from {
-        transform: translate(40.5%, -19%) rotate(0deg); /* Adjusted for 2x width */
-    }
     to {
-        transform: translate(40.5%, -19%) rotate(360deg);
+        transform: translateX(44%) translateY(-0.7 * 940 / 1440 * 100vw) rotate(0deg); /* Adjusted for 2x width */
+    }
+    from {
+        transform: translateX(44%) translateY(-0.7 * 940 / 1440 * 100vw) rotate(360deg);
     }
 }
 
@@ -140,8 +142,11 @@
 
     > img {
         width: 100%;
-        height: 100%;
-        
+        height: 100%;   
+    }
+
+    @include phone {
+        top: 10px;
     }
 }
 
