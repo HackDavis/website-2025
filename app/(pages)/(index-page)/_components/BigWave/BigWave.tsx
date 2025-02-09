@@ -18,14 +18,17 @@ import waveLayer4 from '@public/index/wave/wave-layer-4.svg';
 export default function BigWave() {
   return (
     <>
-      <div style={{ width: '400px', height: '400px', position: 'relative' }}>
-        <Image
-          src={bottom}
-          alt="bottom-foam"
-          width={300}
-          height={300}
-          style={{ objectFit: 'fill' }}
+      <div className={styles.pain_container}>
+        <img
+          src="/index/wave/bottom.svg"
+          className={styles.pain}
+          width="100px"
+          height="400px"
         />
+      </div>
+
+      <div className={styles.wrapper}>
+        <Image src={bottom} alt={'pain'} fill objectFit="scale-down" />
       </div>
       <div className={styles.container}>
         <div className={styles.stats_container}>
@@ -76,7 +79,7 @@ export default function BigWave() {
           <Image src={right} alt="right-foam" fill />
         </div>
         <div className={styles.bottom}>
-          <Image src={bottom} alt="bottom-foam" />
+          <Image src={bottom} alt="bottom-foam" className={styles.img} />
         </div>
       </div>
     </>
