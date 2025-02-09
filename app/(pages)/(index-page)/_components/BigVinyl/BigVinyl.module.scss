@@ -16,7 +16,7 @@
     //transform: translateY((940 /(2 * 1440) * 100vw));
     
     @include phone {
-        height: 60vw;
+        height: 80vw;
         //flex-direction: column;
     }
 }
@@ -83,10 +83,10 @@
 
 @keyframes rotateVinylPhone {
     from {
-        transform: translate(40%, -27%) rotate(0deg); /* Adjusted for 2x width */
+        transform: translate(40.5%, -19%) rotate(0deg); /* Adjusted for 2x width */
     }
     to {
-        transform: translate(40%, -27%) rotate(360deg);
+        transform: translate(40.5%, -19%) rotate(360deg);
     }
 }
 
