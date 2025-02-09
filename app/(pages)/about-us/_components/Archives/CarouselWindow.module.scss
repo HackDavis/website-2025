@@ -1,0 +1,23 @@
+.window {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    * {
+        flex-shrink: 0;
+    }
+}
+
+.content_belt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 130px;
+    gap: 32px;
+}

@@ -1,0 +1,32 @@
+$heights: 200px;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.package_container {
+    z-index: 1;
+}
+
+.package_src {
+    height: $heights;
+    width: auto;
+}
+
+.vinyl_container {
+    z-index: 0;
+}
+
+.vinyl_src {
+    height: calc(0.94 * $heights);
+    width: auto;
+    margin-left: -50%;
+}
