@@ -1,3 +1,5 @@
+@import '@globals/styles/mixins.scss';
+
 .container {
     position: relative;
     height: calc((940 / 1440) * 87vw);
@@ -11,7 +13,11 @@
     // z-index: 0;
     overflow: hidden;
     //transform: translateY((940 /(2 * 1440) * 100vw));
-
+    
+    @include phone {
+        height: 60vw;
+        //flex-direction: column;
+    }
 }
   
 .rowTop {
@@ -20,6 +26,10 @@
     justify-content: space-between;
     width: 100%;
     height: calc((328/1440 * 100vw) - 40px);
+
+    @include phone {
+        height: 60vw;
+    }
 } 
   
 .rowBottom {
@@ -28,14 +38,16 @@
     justify-content: space-between;
     width: 100%;
     position: relative;
+
+    @include phone {
+        height: 0px;
+    }
 }
 
 .vinylRow {
     position: relative;
     display: flex;
     flex-direction: row;
-    max-height: calc(940 / 1440 * 100vw);
-    max-width: calc(940 / 1440 * 100vw);
 }
 
 .bigVinyl {
@@ -62,7 +74,12 @@
 .rowMiddle {
     width: 100%;
     height: calc(248/1440 * 100vw);
-    padding-left: calc(74/1440 * 100vw);    
+    padding-left: calc(74/1440 * 100vw);
+
+    @include phone {
+        width: 0px;
+        height: 400px;
+    }
 }
 
 .cloudCenter {
@@ -75,12 +92,22 @@
         width: 100%;
         height: 100%;
     }
+
+    @include phone {
+        width: 0px;
+    }
 }
   
 .cloudsTopLeft {
     position: relative;
     left: 50%;
     transform: translateX(-125%);
+
+    @include phone {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-90%);
+    }
 }
 
 .cloudsTopLeft_topLayer {
@@ -116,6 +143,10 @@
     position: relative;
     left: 50%;
     transform: translateX(-70%);
+
+    @include phone {
+        width: 0px;
+    }
 }
   
 .cloudsTopRight_topLayer {
@@ -157,6 +188,9 @@
     transform: translateX(-105%);
     width: calc(842/(2*1440) * 100vw);
 
+    @include phone {
+        width: 0px;
+    }
 }
   
 .cloudsBottomLeft_topLayer {
@@ -170,6 +204,10 @@
     > img {
         width: 100%;
         height: 100%;
+    }
+
+    @include phone {
+        width: 0px;
     }
 } 
 
@@ -185,12 +223,20 @@
         width: 100%;
         height: 100%;
     }
+
+    @include phone {
+        width: 0px;
+    }
 }
   
 .cloudsBottomRight {
     position: relative;
     left: 50%;
     transform: translateX(-35%);
+
+    @include phone {
+        width: 0px;
+    }
 }
 
 .cloudsBottomRight_topLayer {
@@ -205,6 +251,10 @@
     > img {
         width: 100%;
         height: 100%;
+    }
+
+    @include phone {
+        width: 0px;
     }
 } 
 
@@ -222,9 +272,8 @@
         height: 100%;
         opacity: 60%;
     }
+
+    @include phone {
+        width: 0px;
+    }
 }
-    
-      
-      
-  
-  
