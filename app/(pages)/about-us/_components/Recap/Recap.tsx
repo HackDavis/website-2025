@@ -14,9 +14,9 @@ export default function Recap() {
           </p>
         </div>
 
-        <div className="flex flex-col items-start justify-center border">
-          <h2 className="text-2xl font-bold">HackDavis 2024 Recap</h2>
-          <div className="flex flex-wrap items-center justify-center border w-full">
+        <div className="flex flex-col items-start justify-center ">
+          <h2 className="text-3xl font-bold">HackDavis 2024 Recap</h2>
+          <div className="flex flex-wrap items-center justify-center w-full pr-[10%] pl-[10%]">
             <div className="w-1/2">
               <RecapCarousel />
             </div>

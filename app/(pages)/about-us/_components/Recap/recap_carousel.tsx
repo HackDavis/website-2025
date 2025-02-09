@@ -4,6 +4,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const CarouselContainer = styled.div`
+  padding: 5%;
   height: 100%;
   margin: 0;
   display: grid;
@@ -11,7 +12,6 @@ const CarouselContainer = styled.div`
   grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
   align-items: center;
   justify-items: center;
-  border: 1px solid black;
 `;
 
 const Carousel = styled.main<{ position: number }>`
@@ -34,7 +34,7 @@ const Carousel = styled.main<{ position: number }>`
 const Item = styled.div<{ offset: number }>`
   position: absolute;
   width: 90%;
-  height: 50%;
+  height: 80%;
   --offset: ${(props) => props.offset};
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
@@ -45,6 +45,7 @@ const Item = styled.div<{ offset: number }>`
 `;
 
 const RadioInput = styled.input`
+  margin-top: -100px;
   &:nth-of-type(1) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
