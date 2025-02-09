@@ -70,4 +70,23 @@
   > img {
     width: 100%;
   }
+  .water_sheen {
+    position: absolute;
+    width: 100%;
+    margin:auto;
+    top: 80px;
+    > img {
+      margin: auto;
+      width: 76%;
+    }
+    @include tablet {
+      top: 30px;
+    }
+    @include phone {
+      top: 20px;
+      > img {
+          width:100%;
+      }
+    }
+  }
 }

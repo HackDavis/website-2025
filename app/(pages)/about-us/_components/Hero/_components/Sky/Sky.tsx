@@ -3,6 +3,7 @@ import styles from './Sky.module.scss';
 import WaterBuildingLeft from '/public/aboutUs/Hero/Sky/WaterBuildingLeft.svg';
 import WaterBuildingRight from '/public/aboutUs/Hero/Sky/WaterBuildingRight.svg';
 import WaterSemicircle from '/public/aboutUs/Hero/Sky/WaterSemicircle.svg';
+import WaterSheen from '/public/aboutUs/Hero/Beach/WaterTransition/ocean_sheen.svg';
 import HeroText from '../../heroText';
 
 export default function Sky() {
@@ -19,6 +20,9 @@ export default function Sky() {
       </div>
       <div className={styles.water_semicircle}>
         <Image src={WaterSemicircle} alt="Water Semicircle" />
+        <div className={styles.water_sheen}>
+          <Image src={WaterSheen} alt="Normal Water" objectFit="cover" />
+        </div>
       </div>
     </div>
   );
