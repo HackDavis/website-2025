@@ -33,6 +33,7 @@
         top: 0;
         left: 0;
         padding: 0;
+        gap: 0;
         background: rgba(74, 74, 74, 0.50);
         backdrop-filter: blur(12.5px);
 
@@ -48,8 +49,6 @@
     gap: 48px;
     border-radius: 40px;
     border: 1px solid var(--border-white);
-    background: rgba(136, 136, 136, 0.50);
-    backdrop-filter: blur(2px);
     padding: 16px 48px;
 
     .link {
@@ -63,7 +62,7 @@
         transition: transform 0.3s;
 
         &:hover {
-            transform: translateY(-0.25rem);
+            transform: translateY(-0.1rem);
         }
 
         &.active {
@@ -99,25 +98,13 @@
             font-weight: 400;
             color: var(--text-light);
 
+            &:hover {
+                transform: none;
+            }
+
             &.active {
                 color: var(--text-light);
             }
-        }
-    }
-}
-
-.home_links {
-    background: rgba(255, 255, 255, 0.50);
-
-    .link {
-        color: var(--text-medium);
-    }
-
-    @include tablet {
-        background: none;
-
-        .link {
-            color: var(--text-light)
         }
     }
 }

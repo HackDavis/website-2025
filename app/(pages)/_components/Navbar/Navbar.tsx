@@ -20,20 +20,35 @@ interface NavLink {
   color: string;
 }
 
+interface Section {
+  id: string;
+  page: string;
+  baseColor: string;
+  activeColor: string;
+  background: string;
+}
+
 const links = [
   {
     body: 'HOME',
     page: '/',
-    path: '/?section=home',
+    path: '/',
     id: 'home',
     color: '#005271',
   },
   {
-    body: 'ABOUT',
+    body: 'DONATE',
     page: '/',
-    path: '/?section=about',
-    id: 'about',
+    path: '/?section=donate',
+    id: 'donate',
     color: '#FFC53D',
+  },
+  {
+    body: 'ABOUT',
+    page: '/about-us',
+    path: '/about-us',
+    id: 'about',
+    color: '#005271',
   },
   {
     body: 'FAQ',
@@ -51,42 +66,114 @@ const links = [
   },
 ] as NavLink[];
 
+const sections = [
+  {
+    id: 'home',
+    page: '/',
+    baseColor: '#1589BE',
+    activeColor: '#005271',
+    background: 'rgba(255, 255, 255, 0.50)',
+  },
+  {
+    id: 'donate',
+    page: '/',
+    baseColor: '#FFFFFF',
+    activeColor: '#FFC53D',
+    background: 'rgba(136, 136, 136, 0.50)',
+  },
+  {
+    id: 'faq',
+    page: '/',
+    baseColor: '#FFFFFF',
+    activeColor: '#AFD157',
+    background: 'rgba(136, 136, 136, 0.50)',
+  },
+  {
+    id: 'sponsors',
+    page: '/',
+    baseColor: '#FFFFFF',
+    activeColor: '#FFFFFF',
+    background: 'rgba(136, 136, 136, 0.50)',
+  },
+  {
+    id: 'about',
+    page: '/about-us',
+    baseColor: '#1589BE',
+    activeColor: '#005271',
+    background: 'rgba(255, 255, 255, 0.50)',
+  },
+  {
+    id: 'values',
+    page: '/about-us',
+    baseColor: '#FFFFFF',
+    activeColor: '#005271',
+    background: 'rgba(136, 136, 136, 0.50)',
+  },
+  {
+    id: 'team',
+    page: '/about-us',
+    baseColor: '#FFFFFF',
+    activeColor: '#005271',
+    background: 'rgba(136, 136, 136, 0.50)',
+  },
+  {
+    id: 'recap',
+    page: '/about-us',
+    baseColor: '#FFFFFF',
+    activeColor: '#005271',
+    background: 'rgba(136, 136, 136, 0.50)',
+  },
+] as Section[];
+
 export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
   const section = searchParams.get('section');
-  const [activeSection, setActiveSection] = useState(section || 'home');
+  const [activeLink, setActiveLink] = useState(
+    section || (pathname === '/' ? 'home' : 'about')
+  );
+  const [activeSection, setActiveSection] = useState(
+    section || (pathname === '/' ? 'home' : 'about')
+  );
   const [showNavbar, setShowNavbar] = useState(false);
 
   useEffect(() => {
     const updateActiveSection = () => {
-      const currScroll = window.scrollY + window.innerHeight * 0.3;
-      const pageLinks = links.filter((link) => link.page === pathname);
-      const sections = pageLinks
-        .map((link) => {
-          const sectionContainer = document.getElementById(link.id);
+      const currScroll = window.scrollY + window.innerHeight * 0.2;
+      const pageSections = sections
+        .filter((section) => section.page === pathname)
+        .map((section) => {
+          const sectionContainer = document.getElementById(section.id);
           if (!sectionContainer) {
             return { id: '', sectionStart: 0, sectionEnd: 0 };
           }
           const { offsetTop, offsetHeight } = sectionContainer;
           return {
-            id: link.id,
+            id: section.id,
             sectionStart: offsetTop,
             sectionEnd: offsetTop + offsetHeight,
           };
         })
         .sort((a, b) => a.sectionStart - b.sectionStart);
 
-      let i = sections.length - 1;
+      let i = pageSections.length - 1;
       for (i; i >= 0; i--) {
-        if (currScroll >= sections[i].sectionStart) {
+        if (currScroll >= pageSections[i].sectionStart) {
           break;
         }
       }
 
+      if (pathname === '/about-us') {
+        setActiveLink('about');
+      } else {
+        setActiveLink(
+          currScroll > pageSections[i].sectionEnd ? '' : pageSections[i].id
+        );
+      }
+
       setActiveSection(
-        currScroll > sections[i].sectionEnd ? '' : sections[i].id
+        currScroll > pageSections[i].sectionEnd ? '' : pageSections[i].id
       );
     };
 
@@ -94,17 +181,20 @@ export default function Navbar() {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
 
+    updateActiveSection();
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [pathname]);
 
   useEffect(() => {
-    const sectionContainer = document.getElementById(section as string);
+    const currentSection = section || (pathname === '/' ? 'home' : 'about');
+    const sectionContainer = document.getElementById(currentSection as string);
     if (sectionContainer) {
       sectionContainer.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [section]);
+  }, [section, pathname]);
 
   const getClickHandler = (path: string) => {
     return (e: MouseEvent<HTMLAnchorElement>) => {
@@ -113,22 +203,47 @@ export default function Navbar() {
     };
   };
 
+  const getLogoColor = () => {
+    if (window.innerWidth <= 1048) return '#FFFFFF';
+
+    const currentSection = sections.find(
+      (section) => activeSection === section.id
+    );
+    if (!currentSection) return '#005271';
+
+    return currentSection.activeColor;
+  };
+
+  const getLinkColor = (link: NavLink) => {
+    const currentSection = sections.find(
+      (section) => activeSection === section.id
+    );
+    if (!currentSection) return 'var(--text-medium)';
+
+    if (activeLink === link.id) return currentSection.activeColor;
+    return currentSection.baseColor;
+  };
+
   return (
     <div className={styles.container}>
       <div
         className={`${styles.navigation} ${showNavbar ? styles.visible : null}`}
       >
-        <Logo
-          fill={`${links.find((link) => activeSection === link.id)?.color ?? '#005271'}`}
-          width="50px"
-          height="50px"
-        />
+        <Logo fill={getLogoColor()} width="50px" height="50px" />
         <div
-          className={`${styles.links} ${activeSection === 'home' ? styles.home_links : null}`}
+          className={styles.links}
+          style={{
+            background:
+              sections.find((section) => activeSection === section.id)
+                ?.background ?? 'var(--text-light)',
+          }}
         >
           {links.map((link) => (
             <Link
-              className={`${styles.link} ${styles[link.id]} ${activeSection === link.id ? styles.active : null}`}
+              className={`${styles.link} ${styles[link.id]} ${activeLink === link.id ? styles.active : null}`}
+              style={{
+                color: getLinkColor(link),
+              }}
               key={link.path}
               href={link.path}
               onClick={getClickHandler(link.path)}
