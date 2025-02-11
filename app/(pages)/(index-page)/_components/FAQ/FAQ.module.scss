@@ -3,6 +3,7 @@
 .main_container{
     position: relative;
     // height: 100%
+    overflow-x: clip;
 }
 .container {
     display: flex;
@@ -18,8 +19,12 @@
     position: relative;
 }
 .donation{
-    padding-right: 10%;
+    padding-right: 7%;
     position: relative;
+
+    @include phone {
+        padding: 0;
+    }
 }
 .waterfall {
     width: 20%;

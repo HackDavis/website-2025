@@ -1,0 +1,304 @@
+@import '@globals/styles/mixins.scss';
+
+.container {
+    position: relative;
+    //height: calc((940 / 1440) * 87vw);
+    height: clamp(440px, 0.565476 * 100vw + 5.71px, 1080px);
+    //top: -200px;
+    background: var(--sky-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    // z-index: 0;
+    overflow: hidden;
+    //transform: translateY((940 /(2 * 1440) * 100vw));
+    
+    @include phone {
+        height: 85vw;
+        //flex-direction: column;
+    }
+}
+  
+.rowTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: calc((328/1440 * 100vw) - 40px);
+
+    @include phone {
+        height: 60vw;
+    }
+} 
+  
+.rowBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+
+    @include phone {
+        height: 0px;
+    }
+}
+
+.vinylRow {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    @include phone {
+        width: 200vw;
+    }
+}
+
+.bigVinyl {
+    top: 0; 
+    left: 50%;
+    aspect-ratio: 1;
+    width: 100%;
+    max-width: calc(940 * 100vw / 1440);
+    z-index: 3;
+    animation: rotateVinyl 15s linear infinite; /* Infinite smooth rotation */
+    transform-origin: center center;
+
+    @include phone {
+        max-width: 160vw;
+        width: 200%;
+        left: 50%;
+        animation: rotateVinylPhone 20s linear infinite;
+    }
+}
+
+/* Keyframes for continuous rotation */
+@keyframes rotateVinyl {
+    to {
+        transform: translateY(-0.7 * 940 / 1440 * 100vw) rotate(0deg);
+    }
+    from {
+        transform: translateY(-0.7 * 940 / 1440 * 100vw) rotate(360deg);
+    }
+}
+
+@keyframes rotateVinylPhone {
+    to {
+        transform: translateX(44%) translateY(-0.7 * 940 / 1440 * 100vw) rotate(0deg); /* Adjusted for 2x width */
+    }
+    from {
+        transform: translateX(44%) translateY(-0.7 * 940 / 1440 * 100vw) rotate(360deg);
+    }
+}
+
+  
+.rowMiddle {
+    width: 100%;
+    height: calc(248/1440 * 100vw);
+    padding-left: calc(74/1440 * 100vw);
+
+    @include phone {
+        width: 0px;
+        height: 400px;
+    }
+}
+
+.cloudCenter {
+    left: 50%;
+    transform: translateX(-1%);
+    aspect-ratio: calc(842/248);
+    width: calc(842/1440 * 100vw);
+    
+    > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @include phone {
+        width: 0px;
+    }
+}
+  
+.cloudsTopLeft {
+    position: relative;
+    left: 50%;
+    transform: translateX(-125%);
+
+    @include phone {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-90%);
+    }
+}
+
+.cloudsTopLeft_topLayer {
+    // for 1440px, width = 1069, height = 328
+    position: relative;
+    aspect-ratio: calc(1069/328);
+    width: calc(1069/1440 * 100vw);
+    top: 40px;
+    z-index: 2;
+
+    > img {
+        width: 100%;
+        height: 100%;   
+    }
+
+    @include phone {
+        top: 10px;
+    }
+}
+
+.cloudsTopLeft_bottomLayer {
+    // for 1440px, width = 1117, height = 339
+    position: relative;
+    aspect-ratio: calc(1117/339);
+    width: calc(1117/1440 * 100vw);
+    z-index: 1;
+    top: calc((-1 * 328/1440 * 100vw));
+    > img {
+        width: 100%;
+        height: 100%;
+        opacity: calc(5/6);
+    }
+}
+
+.cloudsTopRight { 
+    position: relative;
+    left: 50%;
+    transform: translateX(-70%);
+
+    @include phone {
+        width: 0px;
+    }
+}
+  
+.cloudsTopRight_topLayer {
+    // for 1440px, width = 1069, height = 328
+    position: relative;
+    aspect-ratio: calc(1069/328);
+    width: calc(1069/1440 * 100vw);
+    z-index: 2;
+    transform: scaleX(-1);
+    top: 37px;
+
+    > img {
+        width: 100%;
+        height: 100%;
+    }
+} 
+
+.cloudsTopRight_bottomLayer {
+    // for 1440px, width = 1117, height = 339
+    position: relative;
+    aspect-ratio: calc(1117/339);
+    width: calc(1117/1440 * 100vw);
+    z-index: 1;
+    top: calc((-1 * 328/1440 * 100vw));
+    right: 50px;
+    transform: scaleX(-1);
+    
+    > img {
+        width: 100%;
+        height: 100%;
+        opacity: calc(5/6);
+    }
+}
+  
+.cloudsBottomLeft{
+    flex-direction: column;
+    align-items: start;
+    left: 50%;
+    transform: translateX(-105%);
+    width: calc(842/(2*1440) * 100vw);
+
+    @include phone {
+        width: 0px;
+    }
+}
+  
+.cloudsBottomLeft_topLayer {
+    // at 1440px, width = 842, height = 234
+    position: relative;
+    aspect-ratio: calc(842/234);
+    width: calc(842/1440 * 100vw);
+    top: 37px;
+    z-index: 5;
+
+    > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @include phone {
+        width: 0px;
+    }
+} 
+
+.cloudsBottomLeft_bottomLayer {
+    // at 1440px, width = 842, height = 234
+    position: relative;
+    aspect-ratio: calc(842/234);
+    width: calc(842/1440 * 100vw);
+    top: calc((-1 * 234/1440 * 100vw));
+    z-index: 1;
+
+    > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @include phone {
+        width: 0px;
+    }
+}
+  
+.cloudsBottomRight {
+    position: relative;
+    left: 50%;
+    transform: translateX(-35%);
+
+    @include phone {
+        width: 0px;
+    }
+}
+
+.cloudsBottomRight_topLayer {
+    // at 1440px, width = 842, height = 234
+    position: relative;
+    aspect-ratio: calc(842/234);
+    width: calc(842/1440 * 100vw);
+    top: 36px;
+    transform: scaleX(-1) translateX(-3%);
+    z-index: 10;
+
+    > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @include phone {
+        width: 0px;
+    }
+} 
+
+.cloudsBottomRight_bottomLayer {
+    // at 1440px, width = 842, height = 234
+    position: relative;
+    aspect-ratio: calc(842/234);
+    width: calc(842/1440 * 100vw);
+    //height: 234px;
+    top: calc((-1 * 234/1440 * 100vw));
+    z-index: 1;
+    
+    > img {
+        width: 100%;
+        height: 100%;
+        opacity: 60%;
+    }
+
+    @include phone {
+        width: 0px;
+    }
+}
