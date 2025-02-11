@@ -5,8 +5,6 @@ import { MouseEvent, useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from './Logo';
-import Menu from './Menu';
-import Exit from './Exit';
 
 import Banner from '/public/Navbar/mlh-banner-2025.svg';
 
@@ -34,35 +32,30 @@ const links = [
     page: '/',
     path: '/?section=home', // remove section if scroll issue fixed
     id: 'home',
-    color: '#005271',
   },
   {
     body: 'DONATE',
     page: '/',
     path: '/?section=donate',
     id: 'donate',
-    color: '#FFC53D',
   },
   {
     body: 'FAQ',
     page: '/',
     path: '/?section=faq',
     id: 'faq',
-    color: '#AFD157',
   },
   {
     body: 'SPONSORS',
     page: '/',
     path: '/?section=sponsors',
     id: 'sponsors',
-    color: '#FFF',
   },
   {
     body: 'ABOUT',
     page: '/about-us',
     path: '/about-us?section=about', // remove section if scroll issue fixed
     id: 'about',
-    color: '#005271',
   },
 ] as NavLink[];
 
