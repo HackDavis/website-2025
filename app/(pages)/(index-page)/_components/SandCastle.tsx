@@ -72,7 +72,7 @@ function WhatIsHackDavisText() {
 function SandCastleBackground({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-auto w-screen flex-col justify-center bg-sand-background-light">
-      <div className="relative h-[950px] w-full xl:h-[1000px] 2xl:h-[1200px]">
+      <div className="relative h-[950px] w-full xl:h-[1000px] 2xl:h-[1400px]">
         <Image
           src={sand_background}
           alt="sand background"
