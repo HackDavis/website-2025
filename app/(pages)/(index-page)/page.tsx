@@ -16,10 +16,10 @@ export default function Home() {
       <div id="home">
         <HeroSection />
         <SandCastle />
-        <BigWave />
       </div>
 
       <div id="donate">
+        <BigWave />
         <Underwater />
       </div>
 
@@ -29,8 +29,8 @@ export default function Home() {
 
       <div id="sponsors">
         <Sponsors />
+        <BigVinyl />
       </div>
-      <BigVinyl />
     </div>
   );
 }
