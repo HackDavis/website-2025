@@ -1,0 +1,393 @@
+@import '@globals/styles/mixins.scss';
+
+$bot-left-w: 355px;
+$bot-left-h: 904px;
+$bot-left-prop: calc(237px / $bot-left-w);
+$bot-h: 159px;
+$bot-right-w: 240px;
+$bot-right-h: 318px;
+$right-w: 80px;
+$right-h: 519px;
+$top-right-w: 240px;
+$top-right-h: 513px;
+$top-right-baseline-prop: 0.31;
+
+$box-top-w: 1368px;
+$box-top-h: 247px;
+
+$wave-1-w: 1631px;
+$wave-1-h: 509px;
+$wave-2-w: 1522px;
+$wave-2-h: 478px;
+$wave-3-w: 1562px;
+$wave-3-h: 476px;
+$wave-4-w: 922px;
+$wave-4-h: 444px;
+$wave-4-line-prop: calc(247px / $wave-4-h);
+
+$wave-top-gap: calc(0.0085 * $wave-3-h * var(--scale));
+
+$bottom-padding: 16px;
+
+$wave-amplitude: -4%;
+$wave-period: 5s;
+
+$ducky-w: 409px;
+$ducky-h: 397px;
+
+.container {
+    position: relative;
+    overflow-x: clip;
+    --scale: 0.9;
+    --right-flex-h: 519px;
+    --duck-scale: var(--scale);
+    --dash-scale: var(--scale);
+
+    @include tablet {
+        --scale: 0.60;
+        --right-flex-h: 350px;
+    }
+
+    @include phone {
+        --scale: 0.50;
+        --right-flex-h: 450px;
+    }
+
+    @include sm-phone {
+        --scale: 0.50;
+        --right-flex-h: 624px;
+        --duck-scale: 0.6;
+        --dash-scale: 0.4;
+    }
+}
+
+.stats_container {
+    background-color: #173A52;
+    height: calc(
+        $bottom-padding + 
+        var(--right-flex-h) + 
+        var(--scale) * calc($bot-right-h + $top-right-h * $top-right-baseline-prop) + 
+        calc($box-top-h * 0.33)
+    );
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+
+    @include tablet {
+        gap: 52px;
+    }
+
+    @include phone {
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    @include sm-phone {
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        padding-top: calc($box-top-h * var(--scale) + 24px);
+        padding-left: calc($right-w * var(--scale));
+        padding-right: calc($right-w * var(--scale));
+        margin-right: calc($right-w * var(--scale));
+    }
+
+    .sponsor_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--background-dark);
+        font-size: 1.125rem;
+        font-weight: 700;
+        background-color: var(--highlight-yellow);
+        padding: 10px 64px;
+        border-radius: 100px;
+
+        @include phone {
+            font-size: 1.25rem;
+            padding: 4px 24px;
+        }
+    }
+}
+
+.duck_group {
+    position: absolute;
+    bottom: calc($bot-h * var(--scale) * 0.7);
+    left: calc($bot-left-w * var(--scale) * $bot-left-prop * 0.5);
+
+    @include sm-phone {
+        left: 45%;
+        transform: translate(-50%, -10%);
+    }
+}
+
+.duck_container {
+    position: relative;
+    width: calc($ducky-w * var(--duck-scale) * 0.69);
+    height: calc($ducky-h * var(--duck-scale) * 0.8);
+}
+
+.duck {
+    position: absolute;
+    width: calc(var(--duck-scale) * $ducky-w);
+    bottom: 0;
+    left: 0;
+
+    @keyframes duck {
+        0% {
+            transform: translate(-12%, 8%);
+        }
+        50% {
+            transform: translate(-12%, calc(8% + 20px));
+        }
+        100% {
+            transform: translate(-12%, 8%);
+        }
+    }
+
+    animation: duck 4s infinite alternate ease-in-out;
+    animation-delay: 0.0s;
+}
+
+.eighth_note {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(53px * var(--duck-scale));
+
+    @keyframes eighth_note {
+        0% {
+            transform: translate(80%, 10%);
+        }
+        50% {
+            transform: translate(80%, calc(10% + 20px));
+        }
+        100% {
+            transform: translate(80%, 10%);
+        }
+    }
+    animation: eighth_note 4s infinite alternate ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.two_eighth_note {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(74px * var(--duck-scale));
+
+    @keyframes two_eighth_note {
+        0% {
+            transform: translate(-10%, -100%);
+        }
+        50% {
+            transform: translate(-10%, calc(-100% + 20px));
+        }
+        100% {
+            transform: translate(-10%, -100%);
+        }
+    }
+
+    animation: two_eighth_note 4s infinite alternate ease-in-out;
+    animation-delay: 1.0s;
+}
+
+.bright_accents {
+    position: absolute;
+    top: calc($box-top-h * var(--dash-scale) * 1.0);
+    width: calc(307px * var(--dash-scale));
+    left: 60%;
+    transform: translateX(-50%);
+
+    @include sm-phone {
+        top: unset;
+        left: unset;
+        right: calc($right-w * var(--scale));
+        bottom: calc($bot-left-h * var(--scale) * 0.95);
+        transform: scaleX(0.8);
+    }
+}
+
+.dark_accents {
+    position: absolute;
+    width: calc(194px * var(--dash-scale));
+    bottom: calc($bot-h * var(--dash-scale) * 1.4);
+    left: 70%;
+    transform: translate(-50%, 0%);
+
+    @include sm-phone {
+        left: 65%;
+        bottom: calc($bot-left-h * var(--scale) * 0.7);
+        transform: scaleX(1.3) translate(-50%, 0%);
+    }
+}
+
+.bright_accent {
+    position: absolute;
+    width: calc(132px * var(--dash-scale));
+    top: calc($box-top-h * var(--dash-scale) * 0.85);
+    left: 30%;
+    transform: translate(-50%, 0%);
+
+    @include sm-phone {
+        display: none;
+    }
+}
+
+.water {
+    width: 100%;
+    > div {
+        position: absolute;
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.bottom_left {
+    left: 0;
+    transform: translate(-33%);
+    bottom: $bottom-padding;
+    width: calc($bot-left-w * var(--scale));
+    height: auto;
+}
+
+.bottom {
+    bottom: $bottom-padding;
+    left: calc($bot-left-w * var(--scale) * 0.66);
+    height: calc($bot-h * var(--scale));
+    width: calc(100% - $bot-left-w * var(--scale) * 0.66 - $bot-right-w * var(--scale));
+}
+
+.bottom_right {
+    bottom: $bottom-padding;
+    right: 0;
+    width: calc($bot-right-w * var(--scale));
+}
+
+.right {
+    bottom: calc($bottom-padding + $bot-right-h * var(--scale));
+    right: 0;
+    width: calc($right-w * var(--scale));
+    height: calc(var(--right-flex-h) + $wave-top-gap);
+    z-index: 3;
+}
+
+.top_right {
+    bottom: calc($bottom-padding + var(--scale) * $bot-right-h + var(--right-flex-h) + $wave-top-gap);
+    right: 0;
+    width: calc($top-right-w * var(--scale));
+    z-index: 2;
+}
+
+.box_top {
+    top: 0;
+    height: calc($box-top-h * var(--scale));
+    width: 96%;
+}
+
+@keyframes wave-1-motion {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX($wave-amplitude);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes wave-2-motion {
+    0% {
+        transform: translateX(5%);
+    }
+    50% {
+        transform: translateX(calc($wave-amplitude + 5%));
+    }
+    100% {
+        transform: translateX(5%);
+    }
+}
+
+@keyframes wave-3-motion {
+    0% {
+        transform: translateX(15%);
+    }
+    50% {
+        transform: translateX(calc($wave-amplitude + 15%));
+    }
+    100% {
+        transform: translateX(15%);
+    }
+}
+
+@keyframes wave-4-motion {
+    0% {
+        transform: translateX(3%);
+    }
+    50% {
+        transform: translateX(calc($wave-amplitude + 3%));
+    }
+    100% {
+        transform: translateX(3%);
+    }
+}
+
+.wave {
+    bottom: calc($bottom-padding + var(--right-flex-h) + var(--scale) * calc($bot-right-h + $top-right-h * $top-right-baseline-prop));
+    left: -5%;
+    width: 110%;
+}
+
+.wave_layer_1 {
+    z-index: 10;
+    height: calc($wave-1-h * var(--scale));
+    animation: wave-1-motion $wave-period infinite ease-in-out;
+}
+
+.wave_layer_2 {
+    z-index: 9;
+    height: calc($wave-2-h * var(--scale));
+    animation: wave-2-motion $wave-period infinite ease-in-out;
+    animation-delay: 0.2s;
+}
+
+.wave_layer_3 {
+    z-index: 8;
+    height: calc($wave-3-h * var(--scale));
+    animation: wave-3-motion $wave-period infinite ease-in-out;
+    animation-delay: 0.4s;
+}
+
+.wave_layer_4 {
+    bottom: calc(
+        $bottom-padding + 
+        var(--right-flex-h) + 
+        var(--scale) * calc(
+            $bot-right-h + 
+            $top-right-h * $top-right-baseline-prop
+        ) + 
+        $wave-top-gap
+    );
+    right: 0;
+    z-index: 0;
+    height: calc($wave-4-h * var(--scale));
+    width: 50%;
+    animation: wave-4-motion $wave-period infinite ease-in-out;
+    animation-delay: 0.6s;
+}
