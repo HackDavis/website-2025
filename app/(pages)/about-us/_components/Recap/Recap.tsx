@@ -8,7 +8,7 @@ export default function Recap() {
         <div className="w-[90%]">
           <h2 className="text-2xl font-bold">HackDavis 2024 Recap</h2>
         </div>
-        <div className="flex flex-col gap-4 sm:-mt-8 sm:flex-row sm:items-center">
+        <div className="flex flex-col gap-4 sm:items-center md:flex-row">
           <div className="w-full">
             <RecapCarousel />
           </div>

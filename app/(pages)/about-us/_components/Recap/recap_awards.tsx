@@ -15,7 +15,9 @@ export default function RecapAwards() {
         rel="noopener noreferrer"
         className="mt-4 flex max-h-[50px] w-full items-center justify-center overflow-hidden text-ellipsis whitespace-nowrap rounded-full bg-[#FFC53D] px-6 py-3 font-semibold text-[#58452B] transition-opacity hover:opacity-90 sm:mt-8"
       >
-        <span className="text-xs sm:text-base">VIEW 2024 WINNERS</span>
+        <span className="text-xs text-background-dark sm:text-base">
+          VIEW 2024 WINNERS
+        </span>
       </a>
     </div>
   );
