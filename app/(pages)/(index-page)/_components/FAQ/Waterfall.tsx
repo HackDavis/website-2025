@@ -7,7 +7,7 @@ export default function Waterfall() {
     <div className={style.container}>
       <Image
         src="/images/faq/water_transition.svg"
-        alt="waterfall gradient"
+        alt="water transition"
         width={243}
         height={10}
         className={style.water_transition}
@@ -21,14 +21,14 @@ export default function Waterfall() {
       />
       <Image
         src="/images/faq/waterfall_sheen.svg"
-        alt="waterfall gradient"
+        alt="water sheen"
         width={180}
         height={10}
         className={style.water_sheen}
       />
       <Image
         src="/images/faq/waterfall_sheen.svg"
-        alt="waterfall gradient"
+        alt="water sheen"
         width={180}
         height={10}
         className={style.water_sheen}
@@ -36,7 +36,7 @@ export default function Waterfall() {
       <div className={style.water_base}>
         <Image
           src="/images/faq/waterfall_base.svg"
-          alt="waterfall gradient"
+          alt="waterfall cloud"
           width={423}
           height={10}
         />
