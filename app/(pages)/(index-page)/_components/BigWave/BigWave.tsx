@@ -65,15 +65,6 @@ export default function BigWave() {
         <div className={`${styles.wave_layer_4}`}>
           <Image src={waveLayer4} alt="wave-layer-4" />
         </div>
-        <div className={styles.duck_group}>
-          <Image src={duck} alt="duck" />
-        </div>
-        <div className={styles.eighth_note}>
-          <Image src={eightNote} alt="eighth-note" />
-        </div>
-        <div className={styles.two_eighth_note}>
-          <Image src={twoEigthNote} alt="two-eighth-note" />
-        </div>
         <div className={styles.bright_accents}>
           <Image src={brightAccents} alt="bright-accents" />
         </div>
@@ -82,6 +73,19 @@ export default function BigWave() {
         </div>
         <div className={styles.dark_accents}>
           <Image src={darkAccents} alt="dark-accents" />
+        </div>
+      </div>
+      <div className={styles.duck_group}>
+        <div className={styles.duck_container}>
+          <div className={styles.duck}>
+            <Image src={duck} alt="duck" />
+          </div>
+          <div className={styles.eighth_note}>
+            <Image src={eightNote} alt="eighth-note" />
+          </div>
+          <div className={styles.two_eighth_note}>
+            <Image src={twoEigthNote} alt="two-eighth-note" />
+          </div>
         </div>
       </div>
     </div>
