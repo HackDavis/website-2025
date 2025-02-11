@@ -5,6 +5,8 @@ import { MouseEvent, useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from './Logo';
+import Menu from './Menu';
+import Exit from './Exit';
 
 import Banner from '/public/Navbar/mlh-banner-2025.svg';
 
