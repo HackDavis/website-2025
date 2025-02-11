@@ -5,8 +5,6 @@ import { MouseEvent, useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from './Logo';
-import Menu from './Menu';
-import Exit from './Exit';
 
 import Banner from '/public/Navbar/mlh-banner-2025.svg';
 
@@ -32,7 +30,7 @@ const links = [
   {
     body: 'HOME',
     page: '/',
-    path: '/',
+    path: '/?section=home', // remove section if scroll issue fixed
     id: 'home',
     color: '#005271',
   },
@@ -42,13 +40,6 @@ const links = [
     path: '/?section=donate',
     id: 'donate',
     color: '#FFC53D',
-  },
-  {
-    body: 'ABOUT',
-    page: '/about-us',
-    path: '/about-us',
-    id: 'about',
-    color: '#005271',
   },
   {
     body: 'FAQ',
@@ -63,6 +54,13 @@ const links = [
     path: '/?section=sponsors',
     id: 'sponsors',
     color: '#FFF',
+  },
+  {
+    body: 'ABOUT',
+    page: '/about-us',
+    path: '/about-us?section=about', // remove section if scroll issue fixed
+    id: 'about',
+    color: '#005271',
   },
 ] as NavLink[];
 
@@ -189,7 +187,8 @@ export default function Navbar() {
   }, [pathname]);
 
   useEffect(() => {
-    const currentSection = section || (pathname === '/' ? 'home' : 'about');
+    // const currentSection = section || (pathname === '/' ? 'home' : 'about');
+    const currentSection = section;
     const sectionContainer = document.getElementById(currentSection as string);
     if (sectionContainer) {
       sectionContainer.scrollIntoView({ behavior: 'smooth' });
@@ -199,6 +198,7 @@ export default function Navbar() {
   const getClickHandler = (path: string) => {
     return (e: MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault();
+      setShowNavbar(false);
       router.push(path, { scroll: false });
     };
   };
@@ -227,7 +227,9 @@ export default function Navbar() {
       <div
         className={`${styles.navigation} ${showNavbar ? styles.visible : null}`}
       >
-        <Logo fill={getLogoColor()} width="50px" height="50px" />
+        <div className={styles.logo} style={{ color: getLogoColor() }}>
+          <Logo height="50" width="50" />
+        </div>
         <div
           className={styles.links}
           style={{
@@ -255,15 +257,24 @@ export default function Navbar() {
         <div className={styles.mlh_banner}>
           <Image src={Banner} alt="mlh 2025 banner" height={150} />
         </div>
-        {showNavbar ? (
-          <div className={styles.exit} onClick={() => setShowNavbar(false)}>
-            <Exit width="23px" height="23px" />
+        <div className={styles.menu} onClick={() => setShowNavbar(!showNavbar)}>
+          <div
+            className={`${showNavbar ? styles.hamburger_active : styles.hamburger}`}
+          >
+            <span
+              className={styles.hamburger_line}
+              style={{ backgroundColor: getLogoColor() }}
+            ></span>
+            <span
+              className={styles.hamburger_line}
+              style={{ backgroundColor: getLogoColor() }}
+            ></span>
+            <span
+              className={styles.hamburger_line}
+              style={{ backgroundColor: getLogoColor() }}
+            ></span>
           </div>
-        ) : (
-          <div className={styles.menu} onClick={() => setShowNavbar(true)}>
-            <Menu width="30px" height="20px" />
-          </div>
-        )}
+        </div>
       </div>
     </div>
   );
