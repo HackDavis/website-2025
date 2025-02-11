@@ -204,8 +204,6 @@ export default function Navbar() {
   };
 
   const getLogoColor = () => {
-    if (window.innerWidth <= 1048) return '#FFFFFF';
-
     const currentSection = sections.find(
       (section) => activeSection === section.id
     );
