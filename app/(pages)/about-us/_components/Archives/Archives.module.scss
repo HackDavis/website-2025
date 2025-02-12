@@ -12,7 +12,6 @@ $padding-x-mobile: 13%;
     flex-direction: column;
     gap: $padding-y;
     padding: $padding-y 0;
-    
 
     @include phone {
         gap: $padding-y-mobile;

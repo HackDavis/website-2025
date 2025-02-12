@@ -8,15 +8,26 @@ import CloudBackground from './_components/CloudBackground/CloudBackground';
 export default function AboutUs() {
   return (
     <div className="overflow-hidden">
-      <Hero />
-      <Values />
-      <OurTeam />
-      <CloudBackground>
-        <CelebrateWrapper>
-          <Recap />
-          <Archives />
-        </CelebrateWrapper>
-      </CloudBackground>
+      <div id="about">
+        <Hero />
+      </div>
+
+      <div id="values">
+        <Values />
+      </div>
+
+      <div id="team">
+        <OurTeam />
+      </div>
+
+      <div id="recap">
+        <CloudBackground>
+          <CelebrateWrapper>
+            <Recap />
+            <Archives />
+          </CelebrateWrapper>
+        </CloudBackground>
+      </div>
     </div>
   );
 }

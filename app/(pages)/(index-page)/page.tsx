@@ -12,20 +12,25 @@ import BigWave from './_components/BigWave/BigWave';
 
 export default function Home() {
   return (
-    <div className={styles.container} id="home">
-      <HeroSection />
-      <SandCastle />
-      <BigWave />
+    <div className={styles.container}>
+      <div id="home">
+        <HeroSection />
+        <SandCastle />
+      </div>
+
+      <div id="donate">
+        <BigWave />
+        <Underwater />
+      </div>
 
       <div id="faq">
-        <Underwater />
         <FAQ />
       </div>
 
       <div id="sponsors">
         <Sponsors />
+        <BigVinyl />
       </div>
-      <BigVinyl />
     </div>
   );
 }
