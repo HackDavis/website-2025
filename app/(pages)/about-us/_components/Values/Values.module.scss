@@ -19,7 +19,9 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        gap: 3%;
+        gap: 5%;
+        transition: .5s ease-in-out;
+        
 
         h4 {
             color: #123041;
@@ -54,6 +56,7 @@
             align-items: center;
             flex-direction: column;
             text-align: left;
+
         }
 
         .valuesBoxLearning {
@@ -83,11 +86,15 @@
             text-align: left;
         }
 
+        &:hover {
+            gap: 2%;
+            transition: .5s ease-in-out;
+        }
         .valuesBoxInclusive:hover,
         .valuesBoxLearning:hover,
         .valuesBoxProjects:hover {
-            flex-basis: 140%; 
-            transform: scaleX(1.05);
+            flex-basis: 120%;
+            // transition: .5s ease-in-out;
         }
     }
 
