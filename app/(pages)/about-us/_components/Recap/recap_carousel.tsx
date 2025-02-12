@@ -1,122 +1,112 @@
 'use client';
 
-import { useState } from 'react';
-import styled from 'styled-components';
-
-const Carousel = styled.main<{ position: number }>`
-  grid-row: 1 / 2;
-  grid-column: 1 / 8;
-  width: 90%;
-  height: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  --items: 5;
-  --middle: 3;
-  --position: ${(props) => props.position};
-  pointer-events: none;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    height: 100%;
-  }
-`;
-
-const Item = styled.div<{ offset: number }>`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 250px;
-  max-height: 250px;
-
-  --offset: ${(props) => props.offset};
-  --r: calc(var(--position) - var(--offset));
-  --abs: max(calc(var(--r) * -1), var(--r));
-  transition: all 0.25s linear;
-  transform: rotateY(calc(-20deg * var(--r)))
-    translateX(calc(-250px * var(--r)));
-  z-index: calc((var(--position) - var(--abs)));
-
-  @media (max-width: 768px) {
-    max-width: 250px;
-    transform: rotateY(calc(-20deg * var(--r)))
-      translateX(calc(-200px * var(--r)));
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    max-width: 300px;
-    max-height: 300px;
-  }
-`;
-
-const RadioInput = styled.input`
-  border: 1px solid blue;
-  // margin-top: -200px;
-  &:nth-of-type(1) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-  &:nth-of-type(2) {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-  }
-  &:nth-of-type(3) {
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
-  }
-  &:nth-of-type(4) {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
-  }
-  &:nth-of-type(5) {
-    grid-column: 6 / 7;
-    grid-row: 2 / 3;
-  }
-`;
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import carousel1 from '@public/images/recap/carousel/carousel1.jpeg';
+import carousel2 from '@public/images/recap/carousel/carousel2.jpeg';
+import carousel3 from '@public/images/recap/carousel/carousel3.jpeg';
+import carousel4 from '@public/images/recap/carousel/carousel4.jpeg';
+import carousel5 from '@public/images/recap/carousel/carousel5.jpeg';
+import carousel6 from '@public/images/recap/carousel/carousel6.jpeg';
+import carousel7 from '@public/images/recap/carousel/carousel7.jpeg';
+import carousel8 from '@public/images/recap/carousel/carousel8.jpeg';
+import carousel9 from '@public/images/recap/carousel/carousel9.jpeg';
 
 interface ImageCardProps {
   children: React.ReactNode;
-  color: string;
 }
 
-function ImageCard({ children, color }: ImageCardProps) {
-  return (
-    <div
-      className="h-full w-full rounded-xl border-2 border-[#9EE7E5]"
-      style={{ backgroundColor: color }}
-    >
-      {children}
-    </div>
-  );
+function ImageCard({ children }: ImageCardProps) {
+  return <div className="h-full w-full rounded-xl">{children}</div>;
 }
 
-const colors = ['#90f1ef', '#ff70a6', '#ff9770', '#ffd670', '#e9ff70'];
+const images = [
+  carousel1,
+  carousel2,
+  carousel3,
+  carousel4,
+  carousel5,
+  carousel6,
+  carousel7,
+  carousel8,
+  carousel9,
+];
 
 export default function RecapCarousel() {
   const [position, setPosition] = useState(2);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPosition((prev) => (prev >= 5 ? 1 : prev + 1));
+    }, 5000); // Increased to 5 seconds for slower rotation
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStart(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 75) {
+      // Swipe left
+      setPosition((prev) => (prev >= 5 ? 1 : prev + 1));
+    }
+
+    if (touchStart - touchEnd < -75) {
+      // Swipe right
+      setPosition((prev) => (prev <= 1 ? 5 : prev - 1));
+    }
+  };
 
   return (
     <div className="flex h-[30vh] w-full flex-col items-center justify-center gap-4 sm:pt-8">
-      <Carousel id="carousel" position={position}>
-        {colors.map((color, index) => (
-          <Item key={index} offset={index + 1}>
-            <ImageCard color={color}>{index}</ImageCard>
-          </Item>
-        ))}
-      </Carousel>
-      <div className="flex">
-        {[1, 2, 3, 4, 5].map((num) => (
-          <RadioInput
-            key={num}
-            type="radio"
-            name="position"
-            checked={position === num}
-            onChange={() => setPosition(num)}
-          />
-        ))}
+      <div
+        className="relative flex h-full w-[90%] items-start justify-center overflow-hidden md:w-[90%]"
+        style={{ perspective: '1000px' }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
+        {images.map((image, index) => {
+          const offset = index + 1;
+          const r = position - offset;
+          const absR = Math.max(Math.abs(r), r);
+          const zIndex = position - absR;
+
+          return (
+            <motion.div
+              key={index}
+              className="absolute h-full w-full max-w-[250px] rounded-2xl border-4 border-[#9EE7E5] md:max-w-[300px]"
+              animate={{
+                rotateY: -20 * r,
+                x: -250 * r,
+                zIndex,
+                scale: r === 0 ? 1 : 0.8,
+              }}
+              transition={{
+                duration: 0.8,
+                ease: 'easeOut',
+              }}
+            >
+              <ImageCard>
+                <Image
+                  src={image}
+                  alt="carousel"
+                  fill
+                  style={{ objectFit: 'cover', borderRadius: '30px' }}
+                />
+              </ImageCard>
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   );
