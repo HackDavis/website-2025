@@ -15,9 +15,13 @@
     overflow: hidden;
     //transform: translateY((940 /(2 * 1440) * 100vw));
     
-    @include phone {
-        height: 85vw;
+    @include sm-phone {
+        height: 75vw;
         //flex-direction: column;
+    }
+
+    @include phone {
+        height: 540px;
     }
 }
   
@@ -27,6 +31,7 @@
     justify-content: space-between;
     width: 100%;
     height: calc((328/1440 * 100vw) - 40px);
+    z-index: 2;
 
     @include phone {
         height: 60vw;
@@ -61,7 +66,7 @@
     left: 50%;
     width: min(calc(940 * 100vw / 1440), 940px);
     aspect-ratio: 1;
-    z-index: 3;
+    z-index: 1;
     transform-origin: center;
     animation: rotateVinyl 15s linear infinite;
     will-change: transform;
@@ -71,8 +76,15 @@
     }
 
     @include phone {
-        width: 160vw;
+        width: calc(939.5px);
+        transform-origin: center;
         animation: rotateVinylPhone 15s linear infinite;
+    }
+
+    @include sm-phone {
+        width: 160vw;
+        transform-origin: center;
+        animation: rotateVinylsmPhone 15s linear infinite;
     }
 }
 
@@ -96,13 +108,22 @@
 
 @keyframes rotateVinylPhone {
     0% {
-        transform: translate(-20%, -47%) rotate(0deg);  /* Moved right and down */
+        transform: translateX(calc(-1 * clamp(9%, -20.455% + 87.273vw, 21%))) translateY(-52%) rotate(0deg);  /* Moved right and down */      // 21% for 540px, 9% for 760px
     }
     100% {
-        transform: translate(-20%, -47%) rotate(360deg);
+        transform: translateX(calc(-1 * clamp(9%, -20.455% + 87.273vw, 21%))) translateY(-52%) rotate(360deg);
     }
 }
-  
+
+@keyframes rotateVinylsmPhone {
+    0% {
+        transform: translate(-19%, -52%) rotate(0deg);  /* Moved right and down */
+    }
+    100% {
+        transform: translate(-19%, -52%) rotate(360deg);
+    }
+}
+
 .rowMiddle {
     width: 100%;
     height: calc(248/1440 * 100vw);
