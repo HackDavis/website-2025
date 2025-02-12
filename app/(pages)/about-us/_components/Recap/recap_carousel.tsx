@@ -67,9 +67,9 @@ export default function RecapCarousel() {
   };
 
   return (
-    <div className="flex h-[30vh] w-full flex-col items-center justify-center gap-4 sm:pt-8">
+    <div className="flex h-[350px] w-full flex-col items-center justify-center gap-4">
       <div
-        className="relative flex h-full w-[90%] items-start justify-center overflow-hidden md:w-[90%]"
+        className="relative flex h-full w-full items-start justify-center overflow-hidden"
         style={{ perspective: '1000px' }}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
@@ -84,7 +84,7 @@ export default function RecapCarousel() {
           return (
             <motion.div
               key={index}
-              className="absolute h-full w-full max-w-[250px] rounded-2xl border-4 border-[#9EE7E5] md:max-w-[300px]"
+              className="absolute aspect-video h-full w-full max-w-[90%] rounded-2xl border-4 border-[#9EE7E5]"
               animate={{
                 rotateY: -20 * r,
                 x: -250 * r,
