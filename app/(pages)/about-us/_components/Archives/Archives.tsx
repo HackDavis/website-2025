@@ -85,9 +85,11 @@ export default function Archives() {
   return (
     <CarouselContextProvider>
       <div className={styles.container}>
-        <div className={styles.header}>
-          <h2 className={styles.title}>From the archive</h2>
-          <div className={styles.arrows_desktop}>
+        <div className="flex flex-row items-center justify-between px-16">
+          <h2 className="font-metropolis text-xl font-bold text-[#123041] sm:text-[2.25rem]">
+            From the archive
+          </h2>
+          <div className={styles.arrow_container}>
             <CarouselArrows />
           </div>
         </div>
