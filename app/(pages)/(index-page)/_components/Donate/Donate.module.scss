@@ -50,6 +50,7 @@
     // object-fit: fill;
     position: relative;
     left: -2px;
+    bottom: -1px;
   }
 
   h2 {
@@ -73,6 +74,7 @@
 
 .information {
   position: relative;
+  left: -1px;
 
   width: 35%;
 
@@ -95,52 +97,52 @@
   flex-direction: column;
   padding-right: 6%;
   gap: 20px;
+}
 
-  .seal_wrapper {
-    position: relative;
-    width: 70%;
-    margin: auto;
-    aspect-ratio: 1;
+.seal_wrapper {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  aspect-ratio: 1;
+}
+
+.donate_button {
+  width: 70%;
+  margin: auto;
+  height: 70px;
+
+  h4 {
+    font-size: 1.5rem;
   }
 
-  .donate_button {
-    width: 70%;
-    margin: auto;
-    height: 70px;
-
+  @include desktop {
+    height: 40px;
+  }
+  @include sm-desktop {
+    h4 {
+      font-size: 1.1rem;
+    }
+  }
+  @include tablet {
+    height: 35px;
+  }
+  @include sm-tablet {
+    height: 25px;
+    h4 {
+      font-size: 0.8rem;
+  }
+  }
+  @include phone {
+    height: 55px;
+    h4 {
+      font-size: 2rem;
+  }
+  }
+  @include sm-phone {
+    height: 35px;
     h4 {
       font-size: 1.5rem;
-    }
-
-    @include desktop {
-      height: 40px;
-    }
-    @include sm-desktop {
-      h4 {
-        font-size: 1.1rem;
-      }
-    }
-    @include tablet {
-      height: 35px;
-    }
-    @include sm-tablet {
-      height: 25px;
-      h4 {
-        font-size: 0.8rem;
-    }
-    }
-    @include phone {
-      height: 50px;
-      h4 {
-        font-size: 1.5rem;
-    }
-    }
-    @include sm-phone {
-      height: 25px;
-      h4 {
-        font-size: 0.6rem;
-    }
-    }
+  }
   }
 
   .sponsorButton {
@@ -284,16 +286,25 @@
 }}
 @include phone {
   .container {
-    width: 150%;
+    width: 190%;
+    margin-left: -16%;
 
     h2 {
-      font-size: 1.75rem;
-      left: 4%;
-      bottom: 15%;
+      font-size: 2rem;
+      left: 3%;
+      bottom: 29%;
     }
   }
   .information {
-    width: 45%;
+    width: 48%;
+  }
+
+  .seal_wrapper, .donate_button {
+    width: 80%;
+  }
+  .dark_grass_droplet {
+    width: 6%;
+    margin-left: -12%;
   }
   .link_wrapper {
     gap: 25px;
@@ -311,15 +322,18 @@
 }
 @include sm-phone {
   .container {
+    width: 205%;
+    margin-left: -20%;
+
     h2 {
       font-size: 1rem;
-      bottom: 10%;
-      left: 5%;
+      bottom: 20%;
+      left: 4%;
     }
   }  
 
   .link_wrapper {
-    gap: 10px;
+    gap: 12px;
     .sponsorButton {
       font-size: 0.7rem;
       padding: 8px 20px 8px 30%;
@@ -328,6 +342,10 @@
       height: 80%;
     }
     
+  }
+
+  .dark_grass_droplet {
+    margin-left: -5%;
   }
   
 }
