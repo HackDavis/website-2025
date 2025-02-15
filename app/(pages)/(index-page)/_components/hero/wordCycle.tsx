@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import styles from './WordCycle.module.scss';
+import styles from './wordCycle.module.scss';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
 
 const words = [
