@@ -25,7 +25,7 @@
 .dark_grass_left {
   position: relative;
   width: 30%;
-  > img {
+  .asset {
     position: absolute;
     width: 100%;
     top: 10%;
@@ -48,6 +48,9 @@
   img {
     width: 100%;
     // object-fit: fill;
+    position: relative;
+    left: -2px;
+    bottom: -1px;
   }
 
   h2 {
@@ -71,10 +74,10 @@
 
 .information {
   position: relative;
+  left: -1px;
 
   width: 35%;
 
-  z-index: 10;
   display: flex;
   flex-direction: column;
 
@@ -93,12 +96,52 @@
   flex-direction: column;
   padding-right: 6%;
   gap: 20px;
+}
 
-  .seal_wrapper {
-    position: relative;
-    width: 70%;
-    margin: auto;
-    aspect-ratio: 1;
+.seal_wrapper {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  aspect-ratio: 1;
+}
+
+.donate_button {
+  width: 70%;
+  margin: auto;
+  height: 70px;
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  @include desktop {
+    height: 40px;
+  }
+  @include sm-desktop {
+    h4 {
+      font-size: 1.1rem;
+    }
+  }
+  @include tablet {
+    height: 35px;
+  }
+  @include sm-tablet {
+    height: 25px;
+    h4 {
+      font-size: 0.8rem;
+  }
+  }
+  @include phone {
+    height: 55px;
+    h4 {
+      font-size: 2rem;
+  }
+  }
+  @include sm-phone {
+    height: 35px;
+    h4 {
+      font-size: 1.5rem;
+  }
   }
 
   .sponsorButton {
@@ -153,7 +196,7 @@
 .dark_grass_droplet {
   margin-left: -20%;
   width: 5%;
-  img {
+  .asset {
     width: 100%;
   }
 }
@@ -162,9 +205,46 @@
   padding: 25px 0px;
   width: 50%;
 
-  img {
+  .asset {
     width: 100%;
   }
+}
+
+.firefly_sm1{
+  position: absolute;
+  width: 1%;
+  top: 50%;
+  right: 5%;
+  animation: jump 7s infinite ease-in-out;
+}
+.firefly_lg1{
+  position: absolute;
+  width: 1.5%;
+  top: 40%;
+  right: 6%;
+  animation: jump 5s infinite ease-in-out;
+}
+.firefly_sm2{
+  position: absolute;
+  width: 1.5%;
+  bottom: -10%;
+  right: 40%;
+  animation: jump 4s infinite ease-in-out;
+}
+.firefly_lg2{
+  position: absolute;
+  width: 6%;
+  top: 27%;
+  left: 55%;
+  animation: jump 9s infinite ease-in-out;
+}
+@keyframes jump {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.firefly_lg1, .firefly_lg2, .firefly_sm1, .firefly_sm2{
+  z-index: 5;
 }
 
 @include desktop {
@@ -183,7 +263,7 @@
   .cow_on_grass {
     // width: 40%;
     width: auto;
-    img {
+    .asset {
       width: 95%;
     }
   }
@@ -210,7 +290,7 @@
     margin-left: -4%;
   }
   .cow_on_grass {
-    img {
+    .asset {
       width: 90%;
     }
   }
@@ -236,22 +316,31 @@
     }
   }
   .cow_on_grass {
-    img {
+    .asset {
       width: 80%;
     }
 }}
 @include phone {
   .container {
-    width: 150%;
+    width: 190%;
+    margin-left: -16%;
 
     h2 {
-      font-size: 1.75rem;
-      left: 4%;
-      bottom: 15%;
+      font-size: 2rem;
+      left: 3%;
+      bottom: 29%;
     }
   }
   .information {
-    width: 45%;
+    width: 48%;
+  }
+
+  .seal_wrapper, .donate_button {
+    width: 80%;
+  }
+  .dark_grass_droplet {
+    width: 6%;
+    margin-left: -12%;
   }
   .link_wrapper {
     gap: 25px;
@@ -266,18 +355,40 @@
   .cow_on_grass {
     visibility: hidden;
   }
+
+  .firefly_sm2 {
+    bottom: 15%;
+    right: 38%;
+  }
+  .firefly_lg2 {
+    top: 25%;
+    left: 205%;
+  }
+  .firefly_sm1 {
+    visibility: visible;
+    top: 35%;
+    right: 75%;
+  }
+  .firefly_lg1 {
+    visibility: visible;
+    top: 25%;
+    right: 77%;
+  }
 }
 @include sm-phone {
   .container {
+    width: 205%;
+    margin-left: -20%;
+
     h2 {
       font-size: 1rem;
-      bottom: 10%;
-      left: 5%;
+      bottom: 20%;
+      left: 4%;
     }
   }  
 
   .link_wrapper {
-    gap: 10px;
+    gap: 12px;
     .sponsorButton {
       font-size: 0.7rem;
       padding: 8px 20px 8px 30%;
@@ -286,6 +397,10 @@
       height: 80%;
     }
     
+  }
+
+  .dark_grass_droplet {
+    margin-left: -5%;
   }
   
 }

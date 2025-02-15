@@ -96,34 +96,6 @@ export default function FAQ() {
           height={10}
           className={style.grass_2}
         />
-        <Image
-          src="/images/faq/grass_texture_4.svg"
-          alt="grass texture"
-          width={201}
-          height={10}
-          className={style.grass_4}
-        />
-        <Image
-          src="/images/faq/grass_texture_5.svg"
-          alt="grass texture"
-          width={230}
-          height={10}
-          className={style.grass_5}
-        />
-        <Image
-          src="/images/faq/firefly_sm.svg"
-          alt="firefly"
-          width={7}
-          height={10}
-          className={style.firefly_sm2}
-        />
-        <Image
-          src="/images/faq/firefly_lg.svg"
-          alt="firefly"
-          width={7}
-          height={10}
-          className={style.firefly_lg2}
-        />
       </div>
       <div className={style.container}>
         <div className={style.faq_donation}>
@@ -153,6 +125,34 @@ export default function FAQ() {
           </div>
           <div className={style.faq}>
             <Image
+              src="/images/faq/grass_texture_4.svg"
+              alt="grass texture"
+              width={201}
+              height={10}
+              className={style.grass_4}
+            />
+            <Image
+              src="/images/faq/grass_texture_5.svg"
+              alt="grass texture"
+              width={230}
+              height={10}
+              className={style.grass_5}
+            />
+            <Image
+              src="/images/faq/firefly_sm.svg"
+              alt="firefly"
+              width={7}
+              height={10}
+              className={style.firefly_sm2}
+            />
+            <Image
+              src="/images/faq/firefly_lg.svg"
+              alt="firefly"
+              width={11}
+              height={10}
+              className={style.firefly_lg2}
+            />
+            <Image
               src="/images/faq/firefly_sm.svg"
               alt="firefly"
               width={7}
@@ -162,7 +162,7 @@ export default function FAQ() {
             <Image
               src="/images/faq/firefly_lg.svg"
               alt="firefly"
-              width={7}
+              width={11}
               height={10}
               className={style.firefly_lg1}
             />

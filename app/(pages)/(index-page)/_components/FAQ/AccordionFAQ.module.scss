@@ -1,6 +1,7 @@
 //screen sizes >=1840px
 @import '@globals/styles/mixins.scss';
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     z-index: 10;
@@ -83,6 +84,14 @@
     .itemContent {
         transition: height 0.3s ease-in-out;
     }   
+}
+
+@include tablet {
+    .container{
+        .questions {
+            font-size: 1rem;
+        }
+    }
 }
 
 @include phone {

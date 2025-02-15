@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from './AccordionFAQ.module.scss';
 import Link from 'next/link';
 import { Accordion, AccordionItem as Item } from '@szhsin/react-accordion';
@@ -116,9 +117,42 @@ const AccordionFAQ = () => {
     */
   }
 
+  const [fixedHeight, setFixedHeight] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const longestAnswerRef = useRef<HTMLParagraphElement>(null);
+
+  useEffect(() => {
+    if (containerRef.current && longestAnswerRef.current) {
+      const collapsedHeight = containerRef.current.scrollHeight;
+      const longestAnswerHeight = longestAnswerRef.current.scrollHeight;
+
+      setFixedHeight(collapsedHeight + longestAnswerHeight);
+    }
+  }, []);
+
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      ref={containerRef}
+      style={{ height: fixedHeight ? `${fixedHeight}px` : 'auto' }}
+    >
       <h1 className={styles.FAQText}>FAQ</h1>
+
+      {/* 
+        Hidden element to measure the longest answer (first question) for calculating fixed height of the container
+      */}
+      <div
+        style={{
+          position: 'absolute',
+          visibility: 'hidden',
+          pointerEvents: 'none',
+        }}
+      >
+        <p ref={longestAnswerRef} className={styles.answer}>
+          {faqs[0].answer}
+        </p>
+      </div>
+
       <Accordion transition transitionTimeout={250}>
         {faqs.map(({ question, answer }, index) => (
           <React.Fragment key={index}>
