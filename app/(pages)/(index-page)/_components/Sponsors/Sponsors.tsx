@@ -14,7 +14,7 @@ import BottomCow from 'public/Sponsors/characters/BottomCow.svg';
 
 import styles from './Sponsors.module.scss';
 
-export default async function Sponsors() {
+export default function Sponsors() {
   return (
     <div className={styles.container}>
       <div className={styles.top}>

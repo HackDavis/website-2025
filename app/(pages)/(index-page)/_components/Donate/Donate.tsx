@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import style from './Donate.module.scss';
+import HeartButton from '../HeartButton/heartButton';
 
 const Donate = () => (
   <div className={style.container}>
@@ -53,7 +54,7 @@ const Donate = () => (
                   unoptimized={true}
                 />
               </Link>
-              <Link
+              {/* <Link
                 className={style.sponsorButton}
                 href="mailto:team@hackdavis.io"
               >
@@ -67,7 +68,13 @@ const Donate = () => (
                   />
                 </div>
                 Donate
-              </Link>
+              </Link> */}
+              <div className={style.donate_button}>
+                <HeartButton
+                  text="Donate"
+                  href="https://www.givecampus.com/schools/UniversityofCaliforniaDavis/crowdfund-uc-davis-february-2025/pages/hackdavis2025"
+                />
+              </div>
             </div>
           </div>
           <div className={style.dark_grass_droplet}>
