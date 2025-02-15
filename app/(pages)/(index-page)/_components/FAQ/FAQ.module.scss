@@ -12,10 +12,11 @@
     width: 68%;
     position: relative;
     background-color: #549645;
-    padding-top: 35%;
+    padding-top: 30%;
 }
 .faq{
     padding: 20%;
+    padding-top: 8%;
     position: relative;
 }
 .donation{
@@ -99,18 +100,18 @@
 .grass_single{
     position: absolute;
     width: 15%;
-    top: -115px;
+    top: -35%;
     right: 15%;
 }
 .grass_1{
     position: absolute;
     width: 12%;
-    top: -200px;
+    top: -40%;
 }
 .grass_3{
     position: absolute;
     width: 20%;
-    bottom: -225px;
+    bottom: -25%;
     right: 8%;
 }
 
@@ -205,9 +206,6 @@
     .grass_1{
         top: -160px;
     }
-    .grass_3{
-        bottom: -130px;
-    }
 }
 @include sm-desktop { //1164
     // for size 1048 to 1280
@@ -261,6 +259,12 @@
     }
     .grass_light{
         top: -30px;
+    }
+    .grass_single{
+        top: -40%;
+    }
+    .grass_1{
+        top: -45%;
     }
 }
 
