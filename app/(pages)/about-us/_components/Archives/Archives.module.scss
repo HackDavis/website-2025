@@ -1,8 +1,8 @@
 @import '@globals/styles/mixins.scss';
 
 $content-gap: 48px;
-$padding-y: 90px;
-$padding-x: 32px;
+$padding-y: 50px;
+$padding-x: 4rem;
 $padding-y-mobile: 45px;
 $padding-x-mobile: 13%;
 
@@ -12,6 +12,7 @@ $padding-x-mobile: 13%;
     flex-direction: column;
     gap: $padding-y;
     padding: $padding-y 0;
+    padding-top: 0;
 
     @include phone {
         gap: $padding-y-mobile;
@@ -44,6 +45,14 @@ $padding-x-mobile: 13%;
                 display: none;
             }
         }
+    }
+
+    .arrow_container {
+
+        @include phone {
+            display: none;
+        }
+
     }
 
     .arrows_mobile{

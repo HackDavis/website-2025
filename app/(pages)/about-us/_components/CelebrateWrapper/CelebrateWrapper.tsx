@@ -4,8 +4,8 @@ export default function CelebrateWrapper({
   children: React.ReactNode;
 }) {
   return (
-    <main className="text-background-dark sm:p-[10%]">
-      <div className="flex flex-col gap-4 rounded-3xl bg-gray-100/50 backdrop-blur-sm">
+    <main className="text-background-dark sm:p-[calc(13%-4rem)]">
+      <div className="flex flex-col gap-20 rounded-3xl bg-gray-100/50 backdrop-blur-sm">
         <div className="flex flex-col items-start justify-center gap-4 p-8 pb-0 pl-16 pr-16 pt-12 text-start">
           <div className="w-[90%]">
             <h1 className="text-4xl font-bold">Celebrate our past with us!</h1>

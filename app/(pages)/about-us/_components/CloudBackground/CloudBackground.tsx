@@ -10,7 +10,9 @@ export default function CloudBackground({
     <div className={styles.container}>
       <div className={styles.child1}></div>
       <div className={styles.child2}></div>
-      <div className="absolute inset-0 w-full pt-[10%]">{children}</div>
+      <div className="absolute inset-0 w-full pt-[25%] md:pt-[18%]">
+        {children}
+      </div>
     </div>
   );
 }

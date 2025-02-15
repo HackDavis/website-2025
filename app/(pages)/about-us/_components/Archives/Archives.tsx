@@ -89,7 +89,7 @@ export default function Archives() {
           <h2 className="font-metropolis text-xl font-bold text-[#123041] sm:text-[2.25rem]">
             From the archive
           </h2>
-          <div className="hidden sm:block">
+          <div className={styles.arrow_container}>
             <CarouselArrows />
           </div>
         </div>

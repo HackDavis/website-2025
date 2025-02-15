@@ -69,7 +69,7 @@ export default function RecapCarousel() {
   return (
     <div className="flex h-[350px] w-full flex-col items-center justify-center gap-4">
       <div
-        className="relative flex h-full w-full items-start justify-center overflow-hidden"
+        className="relative flex h-full w-5/6 items-start justify-center overflow-hidden"
         style={{ perspective: '1000px' }}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
