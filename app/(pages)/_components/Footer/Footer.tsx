@@ -20,13 +20,22 @@ export default function Footer() {
   return (
     <footer className="relative z-10 flex w-full flex-col bg-grass-background-dark">
       {/* Footer Background Image */}
-      <div className="z-11 overflow-y-show absolute h-[calc(425/1440*100vw)] h-full w-full">
+      <div className="z-11 overflow-y-show absolute h-0 lg:h-[calc(425/1440*100vw)] lg:h-full lg:w-full">
         <Image
           src="/Footer/grass.svg"
           alt="Footer Grass"
           layout="fill"
           objectFit="cover"
           className="translate-y-[clamp(-65px,-0.032143*100vw+4.428571px,-25px)] transform"
+        />
+      </div>
+      <div className="z-11 overflow-y-show absolute left-1/2 h-[calc(205/1440*100vw)] h-full w-full -translate-x-1/2 lg:h-0">
+        <Image
+          src="/Footer/grass_topOnly.svg"
+          alt="Footer Grass"
+          layout="fill"
+          objectFit="cover"
+          className="translate-y-[clamp(-65px,-0.032143*100vw+4.428571px,-15px)] transform"
         />
       </div>
 
