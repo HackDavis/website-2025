@@ -75,7 +75,7 @@ export default function HeroSection() {
             className="h-[306px] w-[132px] md:h-[472px] md:w-[216px] lg:h-[472px] lg:w-[216px] xl:h-[561px] xl:w-[264px]"
           />
         </div>
-        <div className="absolute left-[-120px] z-[120] hidden pt-[606px] break-625:block sm:left-[-20px] sm:pt-[606px] md:left-[-60px] md:pt-[582px] lg:left-[0px] lg:pt-[582px] xl:pt-[559px]">
+        <div className="absolute left-[-120px] top-[-1px] z-[120] hidden pt-[606px] break-625:block sm:left-[-20px] sm:pt-[606px] md:left-[-60px] md:pt-[582px] lg:left-[0px] lg:pt-[582px] xl:pt-[559px]">
           <Image
             src="/Hero/grass.svg"
             alt="Grass"
