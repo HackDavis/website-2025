@@ -1,13 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
 import HeartButton from '../HeartButton/heartButton';
+import WordCycle from './wordCycle';
 
 export default function HeroInfo() {
   return (
     <div className="flex flex-col items-start gap-[22px] break-625:items-end break-625:gap-[31px]">
       <div className="flex flex-col items-start text-left break-625:items-end break-625:text-right">
         <p className="flex gap-2 font-metropolis text-[30px] font-bold leading-[115%] tracking-[0.8px] break-625:text-[40px]">
-          <span className="text-white">create</span>
+          <span className="text-white">
+            <WordCycle />
+          </span>
           <span className="text-white/50">for</span>
         </p>
         <h1 className="font-metropolis text-[45px] font-bold leading-[115%] tracking-[0.9px] text-white break-625:text-[66px] break-625:leading-[100%] break-625:tracking-[3.52px] md:text-[88px]">

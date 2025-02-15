@@ -2,6 +2,12 @@ import React from 'react';
 import HeroInfo from './heroInfo';
 import HeroSun from './heroSun';
 import Image from 'next/image';
+import styles from './heroMainSection.module.scss';
+
+import DarkWaterLayer from '@public/Hero/dark_water_layer.svg';
+import LightWaterLayer from '@public/Hero/light_water_layer.svg';
+import LightBeachLayer from '@public/Hero/light_beach_layer.svg';
+import DarkBeachLayer from '@public/Hero/dark_beach_layer.svg';
 
 export default function HeroSection() {
   return (
@@ -93,23 +99,32 @@ export default function HeroSection() {
             className="h-[107.5px] w-[176px] md:h-[180px] md:w-[288px] lg:h-[180px] lg:w-[288px] xl:h-[215px] xl:w-[352px]"
           />
         </div>
-        <div className="absolute right-[-80px] z-[110] flex hidden justify-end pt-[651px] break-625:block sm:right-[0px] sm:pt-[651px] md:right-[-140px] md:pt-[647px] lg:right-[0px] xl:right-[-20px] xl:pt-[657px]">
-          <Image
-            src="/Hero/wave.svg"
-            alt="wave"
-            width={609}
-            height={261}
-            className="h-[142.5px] w-[304.5px] md:h-[215.75px] md:w-[456.75px] lg:h-[215.75px] lg:w-[456.75px] xl:h-[261px] xl:w-[609px]"
-          />
-        </div>
-        <div className="absolute right-[0px] z-[120] block pt-[611px] break-625:hidden">
-          <Image
-            src="/Hero/wave_mobile.svg"
-            alt="wave"
-            width={375}
-            height={223}
-            className="h-[223px] w-[375px]"
-          />
+        <div className="xl:1/3 absolute right-[-20px] top-[-1px] z-[110] w-2/5 justify-end pt-[611px] break-625:pt-[657px] md:right-[-15px] lg:right-[-20px] xl:right-[-40px] xl:pt-[657px] 2xl:w-1/4">
+          <div className="relative">
+            <Image
+              src={DarkWaterLayer}
+              alt="dark-water-layer"
+              className={styles.dark_water_layer}
+              // stationary
+            />
+            <Image
+              src={LightWaterLayer}
+              alt="light-water-layer"
+              className={styles.light_water_layer}
+              // only moves atmost 5% to the left
+            />
+            <Image
+              src={DarkBeachLayer}
+              alt="dark-beach-layer"
+              className={styles.dark_beach_layer}
+              // -23% to -5%
+            />
+            <Image
+              src={LightBeachLayer}
+              alt="light-beach-layer"
+              className={styles.light_beach_layer}
+            />
+          </div>
         </div>
         <div className="absolute left-[0px] z-[120] block pt-[431px] break-625:hidden">
           <Image
