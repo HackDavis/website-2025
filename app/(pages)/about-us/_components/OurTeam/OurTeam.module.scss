@@ -111,7 +111,6 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr); // Always four columns
             gap: 4%;
-            border: 1px solid red;
         }
     }
 
@@ -132,7 +131,6 @@
             height: 100%;
             // max-width: 1440px;
             padding: 0% 13% 5% 13%;
-            border: 1px solid black;
     
             &_title{
                 display: flex;
