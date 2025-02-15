@@ -1,5 +1,5 @@
 // import Directors from './(about-us)/_components/Directors/Directors';
-'use client';
+// 'use client';
 
 import BigVinyl from './_components/BigVinyl/BigVinyl';
 import HeroSection from './_components/hero/heroMainSection';
