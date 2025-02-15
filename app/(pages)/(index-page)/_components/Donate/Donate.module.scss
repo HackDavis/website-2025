@@ -1,0 +1,406 @@
+@import '@globals/styles/mixins.scss';
+
+.container {
+  display: inline-block; /* Ensures it only takes the size of its content */
+  position: relative;
+  width: 100%;
+  margin-left: -80px;
+
+  > img {
+    width: 100%;
+  }
+}
+
+.dark_grass_container {
+  position: absolute;
+  top: -21%;
+  height: 100%;
+  width: 105%;
+  margin-left: -10%;
+
+  display: flex;
+  gap: 0;
+}
+
+.dark_grass_left {
+  position: relative;
+  width: 30%;
+  .asset {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    right: 0;
+  }
+}
+
+.dark_grass_right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+}
+
+.dark_grass_top {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  
+  img {
+    width: 100%;
+    // object-fit: fill;
+    position: relative;
+    left: -2px;
+    bottom: -1px;
+  }
+
+  h2 {
+    position: absolute;
+    // bottom: 25px;
+    bottom: 15%;
+    left: 25px;
+    color: white;
+    font-weight: 700;
+    line-height: 43.546px; /* 111.111% */
+    letter-spacing: 0.784px;
+    z-index: 10;
+  }
+}
+
+.dark_grass_hanging {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.information {
+  position: relative;
+  left: -1px;
+
+  width: 35%;
+
+  display: flex;
+  flex-direction: column;
+
+  > img {
+    width: 90%;
+    object-fit: contain;
+  }
+}
+
+.link_wrapper {
+  position: absolute;
+
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  padding-right: 6%;
+  gap: 20px;
+}
+
+.seal_wrapper {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  aspect-ratio: 1;
+}
+
+.donate_button {
+  width: 70%;
+  margin: auto;
+  height: 70px;
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  @include desktop {
+    height: 40px;
+  }
+  @include sm-desktop {
+    h4 {
+      font-size: 1.1rem;
+    }
+  }
+  @include tablet {
+    height: 35px;
+  }
+  @include sm-tablet {
+    height: 25px;
+    h4 {
+      font-size: 0.8rem;
+  }
+  }
+  @include phone {
+    height: 55px;
+    h4 {
+      font-size: 2rem;
+  }
+  }
+  @include sm-phone {
+    height: 35px;
+    h4 {
+      font-size: 1.5rem;
+  }
+  }
+
+  .sponsorButton {
+    width: 70%;
+    margin: auto;
+      
+    font-weight: 700;
+    // overflow: hidden;
+    background: #ffc53d28;
+    // transition: background 200ms ease, flex-direction 200ms ease;
+    color: var(--highlight-yellow);
+    padding: 14px 20px 15px 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  
+    &:hover {
+      cursor: pointer;
+      background: var(--highlight-yellow);
+      color: #122f40;
+      padding: 14px 60px 15px 20px;
+  
+      .heartButton {
+        transform: translateX(80px);
+      }
+    }
+  }
+  .heartButton {
+    height: 100%;
+    aspect-ratio: 1;
+    padding: 10%;
+    background: var(--highlight-yellow);
+    opacity: 1;
+    border-radius: 100px;
+    left: 0;
+    position: absolute;
+    transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
+  
+    img {
+      width: 90%;
+      height: 90%;
+    }
+  }
+}
+
+.dark_grass_droplet {
+  margin-left: -20%;
+  width: 5%;
+  .asset {
+    width: 100%;
+  }
+}
+
+.cow_on_grass {
+  padding: 25px 0px;
+  width: 50%;
+
+  .asset {
+    width: 100%;
+  }
+}
+
+.firefly_sm1{
+  position: absolute;
+  width: 1%;
+  top: 50%;
+  right: 5%;
+  animation: jump 7s infinite ease-in-out;
+}
+.firefly_lg1{
+  position: absolute;
+  width: 1.5%;
+  top: 40%;
+  right: 6%;
+  animation: jump 5s infinite ease-in-out;
+}
+.firefly_sm2{
+  position: absolute;
+  width: 1.5%;
+  bottom: -10%;
+  right: 40%;
+  animation: jump 4s infinite ease-in-out;
+}
+.firefly_lg2{
+  position: absolute;
+  width: 6%;
+  top: 27%;
+  left: 55%;
+  animation: jump 9s infinite ease-in-out;
+}
+@keyframes jump {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.firefly_lg1, .firefly_lg2, .firefly_sm1, .firefly_sm2{
+  z-index: 5;
+}
+
+@include desktop {
+  .container {
+    margin-left: -30px;
+    h2 {
+      font-size: 2.25rem;
+    }
+  }
+  .information {
+    width: 40%;
+  }
+  .dark_grass_droplet {
+    margin-left: -5%;
+  }
+  .cow_on_grass {
+    // width: 40%;
+    width: auto;
+    .asset {
+      width: 95%;
+    }
+  }
+}
+@include sm-desktop {
+  .container {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .information {
+    width: 53%;
+  }
+  .link_wrapper {
+    gap: 15px;
+    .sponsorButton {
+      padding: 10px 20px 10px 50px;
+    }
+    .heartButton {
+      padding: 6%;
+    }
+  }
+  .dark_grass_droplet {
+    margin-left: -4%;
+  }
+  .cow_on_grass {
+    .asset {
+      width: 90%;
+    }
+  }
+}
+@include tablet {
+  .container {
+    h2 {
+      font-size: 1.5rem;
+      bottom: 8%;
+    }
+  }  
+  .dark_grass_container {
+    top: -27%;
+  }
+  .information {
+    width: 70%;
+  }
+  .link_wrapper {
+    gap: 10px;
+    .sponsorButton {
+      font-size: 0.75rem;
+      padding: 10px 20px 10px 40px;
+    }
+  }
+  .cow_on_grass {
+    .asset {
+      width: 80%;
+    }
+}}
+@include phone {
+  .container {
+    width: 190%;
+    margin-left: -16%;
+
+    h2 {
+      font-size: 2rem;
+      left: 3%;
+      bottom: 29%;
+    }
+  }
+  .information {
+    width: 48%;
+  }
+
+  .seal_wrapper, .donate_button {
+    width: 80%;
+  }
+  .dark_grass_droplet {
+    width: 6%;
+    margin-left: -12%;
+  }
+  .link_wrapper {
+    gap: 25px;
+    .sponsorButton {
+      font-size: 1.3rem;
+      padding: 15px 20px 15px 65px;
+    }
+    .heartButton {
+      height: 90%;
+    }
+  }
+  .cow_on_grass {
+    visibility: hidden;
+  }
+
+  .firefly_sm2 {
+    bottom: 15%;
+    right: 38%;
+  }
+  .firefly_lg2 {
+    top: 25%;
+    left: 205%;
+  }
+  .firefly_sm1 {
+    visibility: visible;
+    top: 35%;
+    right: 75%;
+  }
+  .firefly_lg1 {
+    visibility: visible;
+    top: 25%;
+    right: 77%;
+  }
+}
+@include sm-phone {
+  .container {
+    width: 205%;
+    margin-left: -20%;
+
+    h2 {
+      font-size: 1rem;
+      bottom: 20%;
+      left: 4%;
+    }
+  }  
+
+  .link_wrapper {
+    gap: 12px;
+    .sponsorButton {
+      font-size: 0.7rem;
+      padding: 8px 20px 8px 30%;
+    }
+    .heartButton {
+      height: 80%;
+    }
+    
+  }
+
+  .dark_grass_droplet {
+    margin-left: -5%;
+  }
+  
+}

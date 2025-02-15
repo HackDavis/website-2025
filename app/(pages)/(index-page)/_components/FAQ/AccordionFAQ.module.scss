@@ -1,6 +1,7 @@
 //screen sizes >=1840px
 @import '@globals/styles/mixins.scss';
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     z-index: 10;
@@ -52,16 +53,14 @@
             align-items: center;
             width: 100%; //for lines to stretch throughout the FAQ section
     
-            // .dropDownArrow {
-            //     margin-left: auto;
-            //     transform: rotate(0deg);
-            //     transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
-            //     transform-origin: center center; 
-            // }
             .dropDownPlus{
-                visibility: visible;
-                transform: rotate(90deg);
-                padding-left: 15%;
+                position: absolute;
+                transform: rotate(-90deg);
+                transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
+                
+                >img {
+                    max-width: none;
+                }
             }
         }
     }
@@ -75,11 +74,9 @@
             justify-content: space-between;
             align-items: center;
 
-            // .dropDownArrow {
-            //     transform: rotate(180deg);
-            // }
             .dropDownPlus{
-                visibility: hidden;
+                transform: rotate(0deg);
+                transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
             }
         }
     }
@@ -87,6 +84,14 @@
     .itemContent {
         transition: height 0.3s ease-in-out;
     }   
+}
+
+@include tablet {
+    .container{
+        .questions {
+            font-size: 1rem;
+        }
+    }
 }
 
 @include phone {

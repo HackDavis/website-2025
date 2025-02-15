@@ -3,6 +3,7 @@
 .main_container{
     position: relative;
     // height: 100%
+    overflow-x: clip;
 }
 .container {
     display: flex;
@@ -11,15 +12,20 @@
     width: 68%;
     position: relative;
     background-color: #549645;
-    padding-top: 35%;
+    padding-top: 30%;
 }
 .faq{
     padding: 20%;
+    padding-top: 8%;
     position: relative;
 }
 .donation{
-    padding-right: 10%;
+    padding-right: 7%;
     position: relative;
+
+    @include phone {
+        padding: 0;
+    }
 }
 .waterfall {
     width: 20%;
@@ -84,67 +90,72 @@
     top: -60px;
     z-index: 30;
 }
-.grass_single{
-    position: absolute;
-    width: 15%;
-    top: -115px;
-    right: 15%;
-}
-.grass_1{
-    position: absolute;
-    width: 12%;
-    top: -200px;
-}
 .grass_2{
     position: absolute;
     width: 7%;
     top: 42%;
     right: 0;
 }
+//assets in donate section
+.grass_single{
+    position: absolute;
+    width: 15%;
+    top: -35%;
+    right: 15%;
+}
+.grass_1{
+    position: absolute;
+    width: 12%;
+    top: -40%;
+}
 .grass_3{
     position: absolute;
     width: 20%;
-    bottom: -225px;
+    bottom: -25%;
     right: 8%;
 }
+
+//assets in faq section
+
 .grass_4{
     position: absolute;
-    width: 7%;
-    bottom: 20%;
+    width: 10.5%;
+    top: 600px;
+    left:0;
 }
 .grass_5{
     position: absolute;
-    width: 16%;
+    width: 23.1%;
     bottom: 2%;
-    left: 40%
+    right: 10%
 }
 .firefly_sm1{
     position: absolute;
     width: 1%;
-    top: 30%;
-    right: 5%;
+    top: 320px;
+    right: 4%;
     animation: jump 6s infinite ease-in-out;
 }
 .firefly_lg1{
     position: absolute;
     width: 1.5%;
-    top: 31%;
+    top: 300px;
     right: 6%;
     animation: jump 5s infinite ease-in-out;
 }
 .firefly_sm2{
     position: absolute;
     width: 1%;
-    bottom: 14%;
-    right: 6%;
-    animation: jump 9s infinite ease-in-out;
+    top: 500px;
+    right: -40%;
+    animation: jump 6.5s infinite ease-in-out;
 }
 .firefly_lg2{
     position: absolute;
-    width: 1%;
-    bottom: 6%;
-    left: 60%;
-    animation: jump 4s infinite ease-in-out;
+    width: 1.5%;
+    bottom: 100px;
+    right: 6%;
+    animation: jump 5.5s infinite ease-in-out;
 }
 @keyframes jump {
     0%, 100% { transform: translateY(0); }
@@ -194,9 +205,6 @@
     }
     .grass_1{
         top: -160px;
-    }
-    .grass_3{
-        bottom: -130px;
     }
 }
 @include sm-desktop { //1164
@@ -251,6 +259,12 @@
     }
     .grass_light{
         top: -30px;
+    }
+    .grass_single{
+        top: -40%;
+    }
+    .grass_1{
+        top: -45%;
     }
 }
 

@@ -1,5 +1,8 @@
 import styles from './Values.module.scss';
 import Image from 'next/image';
+import CowTada from '/public/aboutUs/Values/cow_tada.svg';
+import FroggyTada from '/public/aboutUs/Values/froggy_tada.svg';
+import BunnyTada from '/public/aboutUs/Values/bunny_tada.svg';
 
 export default function Values() {
   return (
@@ -14,12 +17,7 @@ export default function Values() {
               grow in an inclusive environment.
             </p>
           </div>
-          <Image
-            src="/aboutUs/Values/cow_tada.svg"
-            alt="cow_tada"
-            width={175}
-            height={10}
-          />
+          <Image src={CowTada} alt="cow tada" />
         </div>
         <div className={styles.valuesBoxLearning}>
           <div>
@@ -29,12 +27,7 @@ export default function Values() {
               experience and an opportunity to explore a new discipline.
             </p>
           </div>
-          <Image
-            src="/aboutUs/Values/froggy_tada.svg"
-            alt="cow_tada"
-            width={175}
-            height={10}
-          />
+          <Image src={FroggyTada} alt="froggy tada" />
         </div>
         <div className={styles.valuesBoxProjects}>
           <div>
@@ -44,12 +37,7 @@ export default function Values() {
               benefit local and global communities.
             </p>
           </div>
-          <Image
-            src="/aboutUs/Values/bunny_tada.svg"
-            alt="cow_tada"
-            width={175}
-            height={10}
-          />
+          <Image src={BunnyTada} alt="bunny tada" />
         </div>
       </div>
     </div>

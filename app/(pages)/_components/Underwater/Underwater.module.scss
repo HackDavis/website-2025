@@ -1,5 +1,135 @@
 @import '@globals/styles/mixins.scss';
 
+.relative_container{
+    position: relative; 
+    overflow: hidden;
+
+    .rayContainer {
+        display: flex;
+        position: absolute;
+        align-items: flex-start;
+        justify-content: flex-start;
+        // width: 100%;
+        left: 40%;
+        transform: translateX(-50%);
+    }  
+}
+
+.container {
+    background-color: var(--sea-background);
+    padding-left: 5%;
+    padding-bottom: 15%;
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/landing_page/Caustics.svg');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: top center; 
+
+
+    .musicContainer {
+        left: 0%;
+        // border: 3px solid black;
+        // padding-left: 10%;
+        padding-right: 0%;
+        padding-bottom: 55%;
+        margin-right: -5%;
+        top: 0%;
+        display: flex;
+        align-items: flex;
+        justify-content: flex;
+        z-index: 1;
+        gap: 2%;
+    
+        .note1 {
+            padding: 2%;
+            margin-bottom: 35%;
+            animation: float 4s infinite alternate ease-in-out;
+            animation-delay: 0s;
+        }
+    
+        .note2 {
+            margin-top: 5%;
+            animation: float 4s infinite alternate ease-in-out;
+            animation-delay: 0.5s;
+        }
+        
+        .note3 {
+            margin-left: 5%;
+            animation: float 4s infinite alternate ease-in-out;
+            animation-delay: 1s;
+        }
+    
+        .note4 {
+            margin-top: 60%;
+            margin-left: -15%;
+            animation: float 4s infinite alternate ease-in-out;
+            animation-delay: 1.5s;
+        }
+
+        .bunnyContainer {
+            display: flex;
+        
+            .bunny {
+                width: 100%;
+                padding-right: 5%;
+                padding-top: 10%;
+                animation: bunnyBob 4s infinite alternate ease-in-out;
+                animation-delay: 0.0s;
+            }
+        }
+    } 
+
+    .imagecontainer {
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+
+        .bunnyContainer {
+            display: flex;
+
+            .bunny {
+                width: 100%;
+                padding-right: 5%;
+                padding-top: 10%;
+                animation: bunnyBob 4s infinite alternate ease-in-out;
+                animation-delay: 0.0s;
+            }
+        }
+
+    }
+
+    .textcontainer {
+        padding: 10% 5% 5% 2%;
+        width: 40%;
+        flex-direction: column;
+        z-index: 1;
+        
+
+        .text {
+            font-weight: bold;
+            line-height: 1;
+            color: var(--text-light);
+        }
+
+        .coloredtext {
+            font-weight: bold;
+            line-height: 1;
+            color: var(--highlight-blue);
+        }
+
+        p {
+            color: var(--text-light);
+            padding-top: 1rem;
+            font-weight: 400;
+            line-height: 125%; /* 22.5px */
+            letter-spacing: 0.36px;
+        }
+    }      
+}
+
 @include desktop {
     .relative_container{
         position: relative; 
@@ -18,7 +148,7 @@
 
     .container {
         background-color: var(--sea-background);
-        padding-left: 12%;
+        padding-left: 8%;
         padding-bottom: 15%;
         padding-top: 10%;
         display: flex;
@@ -31,10 +161,7 @@
 
 
         .musicContainer {
-            left: 0%;
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-bottom: 35%;
+            padding-bottom: 60%;
             top: 0%;
             display: flex;
             align-items: flex;
@@ -75,6 +202,8 @@
                     width: 100%;
                     padding-right: 5%;
                     padding-top: 10%;
+                    animation: bunnyBob 4s infinite alternate ease-in-out;
+                    animation-delay: 0.0s;
                 }
             }
         } 
@@ -89,8 +218,10 @@
 
                 .bunny {
                     width: 100%;
-                    padding-right: 10%;
+                    padding-right: 5%;
                     padding-top: 10%;
+                    animation: bunnyBob 4s infinite alternate ease-in-out;
+                    animation-delay: 0.0s;
                 }
             }
 
@@ -184,6 +315,19 @@
 	}
 }
 
+// Move keyframes outside of .bunny
+@keyframes bunnyBob {
+    0% {
+        transform: translate(-12%, 8%);
+    }
+    50% {
+        transform: translate(-12%, calc(8% + 20px));
+    }
+    100% {
+        transform: translate(-12%, 8%);
+    }
+}
+
 /* Adding delays to each ray for staggered animation */
 .note:nth-child(1) { animation-delay: 0s; }
 .note:nth-child(2) { animation-delay: 0.5s; }
@@ -195,7 +339,7 @@
 @include sm-desktop {
     .container {
         background-color: var(--sea-background);
-        padding-left: 12%;
+        padding-left: 5%;
         padding-bottom: 20%;
         display: flex;
         align-items: center;
@@ -212,6 +356,8 @@
                 width: 100%;
                 padding-right: 5%;
                 padding-top: 10%;
+                animation: bunnyBob 4s infinite alternate ease-in-out;
+                animation-delay: 0.0s;
             }
         }
     
@@ -225,8 +371,10 @@
 
                 .bunny {
                     width: 100%;
-                    padding-right: 10%;
+                    padding-right: 5%;
                     padding-top: 10%;
+                    animation: bunnyBob 4s infinite alternate ease-in-out;
+                    animation-delay: 0.0s;
                 }
             }
 
@@ -234,7 +382,7 @@
     
         .textcontainer {
             padding: 10% 10% 5% 0%;
-            width: 40%;
+            width: 50%;
             flex-direction: column;
             z-index: 1;
             
@@ -297,29 +445,33 @@
         .imagecontainer {
 
             .musicContainer {
-                padding-right: 2%;
                 top: 0%;
+                padding-left: 5%;
                 display: flex;
                 align-items: flex;
                 justify-content: flex;
                 z-index: 1;
                 gap: 2%;
             }
-    
-            .bunny {
-                position: relative;
-                z-index: 1;
-                width: 100%;
-                padding-top: 5%;
-                // padding-right: 5%;
-                padding-left: 5%;
+
+            .bunnyContainer{
+                .bunny {
+                    position: relative;
+                    z-index: 1;
+                    width: 100%;
+                    padding-top: 5%;
+                    padding-right: 15%;
+                    padding-left: 5%;
+                    animation: bunnyBob 4s infinite alternate ease-in-out;
+                    animation-delay: 0.0s;
+                }
             }
         }
     
         .textcontainer {
             // border: 3px white solid;
             padding: 10% 5% 0% 0%;
-            width: 40%;
+            width: 50%;
             flex-direction: column;
             z-index: 1;
     
@@ -366,7 +518,7 @@
 
     .container {
         background-color: var(--sea-background);
-        padding: 15% 5% 0% 15%;
+        padding: 15% 5% 25% 15%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -382,14 +534,19 @@
             flex-direction: column;
     
             .bunny {
+                margin-top: -15%;
                 width: 100%;
-                padding: 20% 0% 20% 20%;
-                // margin-left: 10%;
+                padding: 0% 0% 35% 20%;
+                margin-left: 20%;
+                animation: bunnyBob 4s infinite alternate ease-in-out;
+                animation-delay: 0.0s;
             }
         }
     
         .textcontainer {
             // padding: 10% 10% 0% 0%;
+            padding-left: 15%;
+            padding-right: 5%;
             width: 100%;
             z-index: 1;
     
@@ -474,7 +631,7 @@
 
     .container {
         background-color: var(--sea-background);
-        padding: 15% 5% 0% 15%;
+        padding: 15% 5% 50% 15%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -493,10 +650,13 @@
                 width: 100%;
                 padding: 5% 0% 0% 5%;
                 // margin-left: 10%;
+                animation: bunnyBob 4s infinite alternate ease-in-out;
+                animation-delay: 0.0s;
             }
         }
     
         .textcontainer {
+            padding-left: 0%;
             width: 100%;
             z-index: 1;
     

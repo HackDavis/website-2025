@@ -56,8 +56,10 @@ function SandCastleContent() {
 function WhatIsHackDavisText() {
   return (
     <div className="flex w-full max-w-[500px] flex-col items-start justify-center text-sand-text-color">
-      <h1 className="text-2xl font-bold sm:text-3xl md:text-5xl">HackDavis</h1>
-      <p className="max-w-[90%] text-base sm:text-xl md:text-3xl">
+      <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
+        HackDavis
+      </h1>
+      <p className="max-w-[90%] text-base sm:text-xl md:text-2xl lg:text-3xl">
         is one of the
         <strong> largest collegiate hackathon </strong> in Califronia, where
         over 950 students, creators, and leaders come together to{' '}
@@ -70,7 +72,7 @@ function WhatIsHackDavisText() {
 function SandCastleBackground({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-auto w-screen flex-col justify-center bg-sand-background-light">
-      <div className="relative h-[950px] w-full">
+      <div className="relative h-[950px] w-full xl:h-[1000px] 2xl:h-[1400px]">
         <Image
           src={sand_background}
           alt="sand background"
