@@ -224,7 +224,7 @@
     
             &_team{
                 display: grid;
-                grid-template-columns: repeat(4, 1fr); // Always four columns
+                grid-template-columns: repeat(3, 1fr); // Always four columns
                 gap: 3%;
                 padding-bottom: 2%;
             }
