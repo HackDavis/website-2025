@@ -136,3 +136,23 @@ button {
   align-items: center;
   // background-color: var(--highlight-yellow);
 }
+
+.bg-footer-grass {
+  background-image: url('/Footer/grass.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes rotateVinyl {
+  100% {
+    transform: translate(-50%, -51%) rotate(0deg);
+  }
+  0% {
+    transform: translate(-50%, -51%) rotate(360deg);
+  }
+}
+
+.animate-rotateVinyl {
+  animation: rotateVinyl 15s linear infinite;
+}

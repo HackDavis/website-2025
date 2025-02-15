@@ -15,9 +15,13 @@
     overflow: hidden;
     //transform: translateY((940 /(2 * 1440) * 100vw));
     
-    @include phone {
-        height: 85vw;
+    @include sm-phone {
+        height: 75vw;
         //flex-direction: column;
+    }
+
+    @include phone {
+        height: 540px;
     }
 }
   
@@ -27,6 +31,7 @@
     justify-content: space-between;
     width: 100%;
     height: calc((328/1440 * 100vw) - 40px);
+    z-index: 2;
 
     @include phone {
         height: 60vw;
@@ -56,43 +61,69 @@
 }
 
 .bigVinyl {
-    top: 0; 
+    position: absolute;
+    top: 50%;
     left: 50%;
+    width: min(calc(940 * 100vw / 1440), 940px);
     aspect-ratio: 1;
-    width: 100%;
-    max-width: calc(940 * 100vw / 1440);
-    z-index: 3;
-    animation: rotateVinyl 15s linear infinite; /* Infinite smooth rotation */
-    transform-origin: center center;
+    z-index: 1;
+    transform-origin: center;
+    animation: rotateVinyl 15s linear infinite;
+    will-change: transform;
+
+    @supports (-webkit-appearance:none) and (not (-webkit-hyphens:none)) {
+        animation: rotateVinylChrome 15s linear infinite;
+    }
 
     @include phone {
-        max-width: 160vw;
-        width: 200%;
-        left: 50%;
-        animation: rotateVinylPhone 20s linear infinite;
+        width: calc(939.5px);
+        transform-origin: center;
+        animation: rotateVinylPhone 15s linear infinite;
+    }
+
+    @include sm-phone {
+        width: 160vw;
+        transform-origin: center;
+        animation: rotateVinylsmPhone 15s linear infinite;
     }
 }
 
-/* Keyframes for continuous rotation */
 @keyframes rotateVinyl {
-    to {
-        transform: translateY(-0.7 * 940 / 1440 * 100vw) rotate(0deg);
+    0% {
+        transform: translate(-50%, -65%) rotate(0deg);
     }
-    from {
-        transform: translateY(-0.7 * 940 / 1440 * 100vw) rotate(360deg);
+    100% {
+        transform: translate(-50%, -65%) rotate(360deg);
+    }
+}
+
+@keyframes rotateVinylChrome {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
     }
 }
 
 @keyframes rotateVinylPhone {
-    to {
-        transform: translateX(44%) translateY(-0.7 * 940 / 1440 * 100vw) rotate(0deg); /* Adjusted for 2x width */
+    0% {
+        transform: translateX(calc(-1 * clamp(9%, -20.455% + 87.273vw, 21%))) translateY(-52%) rotate(0deg);  /* Moved right and down */      // 21% for 540px, 9% for 760px
     }
-    from {
-        transform: translateX(44%) translateY(-0.7 * 940 / 1440 * 100vw) rotate(360deg);
+    100% {
+        transform: translateX(calc(-1 * clamp(9%, -20.455% + 87.273vw, 21%))) translateY(-52%) rotate(360deg);
     }
 }
 
-  
+@keyframes rotateVinylsmPhone {
+    0% {
+        transform: translate(-19%, -52%) rotate(0deg);  /* Moved right and down */
+    }
+    100% {
+        transform: translate(-19%, -52%) rotate(360deg);
+    }
+}
+
 .rowMiddle {
     width: 100%;
     height: calc(248/1440 * 100vw);
