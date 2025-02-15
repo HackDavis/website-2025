@@ -101,7 +101,7 @@ export default function BigVinyl() {
 
       {/* Vinyl Row - Large screens center it, Small screens move it to right edge */}
       <div className="relative flex w-full">
-        <div className="animate-rotateVinyl absolute left-1/2 left-[100%] aspect-square w-[150vw] -translate-x-[100%] lg:left-[50%] lg:w-[80vw] lg:w-[min(calc(940*100vw/1440),940px)] lg:-translate-x-1/2 lg:-translate-y-[60%]">
+        <div className="animate-rotateVinyl absolute left-1/2 left-[100%] aspect-square w-[150vw] -translate-x-[100%] lg:left-[50%] lg:w-[80vw] lg:w-[min(calc(940*100vw/1440))] lg:-translate-x-1/2 lg:-translate-y-[60%]">
           <Image src={vinyl} alt="Big Vinyl Center" className="h-full w-full" />
         </div>
       </div>
