@@ -25,7 +25,7 @@
 .dark_grass_left {
   position: relative;
   width: 30%;
-  > img {
+  .asset {
     position: absolute;
     width: 100%;
     top: 10%;
@@ -78,7 +78,6 @@
 
   width: 35%;
 
-  z-index: 10;
   display: flex;
   flex-direction: column;
 
@@ -197,7 +196,7 @@
 .dark_grass_droplet {
   margin-left: -20%;
   width: 5%;
-  img {
+  .asset {
     width: 100%;
   }
 }
@@ -206,9 +205,46 @@
   padding: 25px 0px;
   width: 50%;
 
-  img {
+  .asset {
     width: 100%;
   }
+}
+
+.firefly_sm1{
+  position: absolute;
+  width: 1%;
+  top: 50%;
+  right: 5%;
+  animation: jump 7s infinite ease-in-out;
+}
+.firefly_lg1{
+  position: absolute;
+  width: 1.5%;
+  top: 40%;
+  right: 6%;
+  animation: jump 5s infinite ease-in-out;
+}
+.firefly_sm2{
+  position: absolute;
+  width: 1.5%;
+  bottom: -10%;
+  right: 40%;
+  animation: jump 4s infinite ease-in-out;
+}
+.firefly_lg2{
+  position: absolute;
+  width: 6%;
+  top: 27%;
+  left: 55%;
+  animation: jump 9s infinite ease-in-out;
+}
+@keyframes jump {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.firefly_lg1, .firefly_lg2, .firefly_sm1, .firefly_sm2{
+  z-index: 5;
 }
 
 @include desktop {
@@ -227,7 +263,7 @@
   .cow_on_grass {
     // width: 40%;
     width: auto;
-    img {
+    .asset {
       width: 95%;
     }
   }
@@ -254,7 +290,7 @@
     margin-left: -4%;
   }
   .cow_on_grass {
-    img {
+    .asset {
       width: 90%;
     }
   }
@@ -280,7 +316,7 @@
     }
   }
   .cow_on_grass {
-    img {
+    .asset {
       width: 80%;
     }
 }}
@@ -318,6 +354,25 @@
   }
   .cow_on_grass {
     visibility: hidden;
+  }
+
+  .firefly_sm2 {
+    bottom: 15%;
+    right: 38%;
+  }
+  .firefly_lg2 {
+    top: 25%;
+    left: 205%;
+  }
+  .firefly_sm1 {
+    visibility: visible;
+    top: 35%;
+    right: 75%;
+  }
+  .firefly_lg1 {
+    visibility: visible;
+    top: 25%;
+    right: 77%;
   }
 }
 @include sm-phone {

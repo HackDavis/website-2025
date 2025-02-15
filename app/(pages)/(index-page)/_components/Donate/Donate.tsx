@@ -17,10 +17,18 @@ const Donate = () => (
     <div className={style.dark_grass_container}>
       <div className={style.dark_grass_left}>
         <Image
+          src="/images/faq/firefly_lg.svg"
+          alt="firefly"
+          width={7}
+          height={10}
+          className={style.firefly_lg2}
+        />
+        <Image
           src="/images/donate/dark_grass_left.svg"
           alt="donate section background"
           width={260}
           height={280}
+          className={style.asset}
         />
       </div>
       <div className={style.dark_grass_right}>
@@ -79,18 +87,41 @@ const Donate = () => (
           </div>
           <div className={style.dark_grass_droplet}>
             <Image
+              src="/images/faq/firefly_sm.svg"
+              alt="firefly"
+              width={7}
+              height={10}
+              className={style.firefly_sm2}
+            />
+            <Image
               src="/images/donate/dark_grass_droplet.svg"
               alt="donate section background"
               width={40}
               height={90}
+              className={style.asset}
             />
           </div>
           <div className={style.cow_on_grass}>
+            <Image
+              src="/images/faq/firefly_sm.svg"
+              alt="firefly"
+              width={7}
+              height={10}
+              className={style.firefly_sm1}
+            />
+            <Image
+              src="/images/faq/firefly_lg.svg"
+              alt="firefly"
+              width={7}
+              height={10}
+              className={style.firefly_lg1}
+            />
             <Image
               src="/images/donate/cow_on_grass.svg"
               alt="donate section background"
               width={370}
               height={250}
+              className={style.asset}
             />
           </div>
         </div>
