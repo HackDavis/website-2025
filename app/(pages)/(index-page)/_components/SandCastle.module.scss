@@ -1,0 +1,47 @@
+@import '@globals/styles/mixins.scss';
+
+$wave-amplitude: -4%;
+$wave-period: 5s;
+
+@keyframes wave-4-motion {
+    0% {
+        transform: translateX(3%);
+    }
+    50% {
+        transform: translateX(calc($wave-amplitude + 3%));
+    }
+    100% {
+        transform: translateX(3%);
+    }
+}
+
+.sand_background_dark {
+    position: absolute;
+    bottom: 0;
+    // right: -3%;
+
+    min-width: 106%;
+    height: 650px;
+    width: 106%;
+
+    // animation: wave-4-motion $wave-period infinite ease-in-out;
+    // animation-delay: 0.6s;
+    right: 0;
+    
+    @include desktop {
+        height: 560px;
+        width: 170%;
+    }
+    @include sm-desktop {
+        height: 500px;
+    }
+    @include tablet {
+        height: 330px;
+    }
+    @include phone {
+        height: 245px;
+    } 
+    @include sm-phone {
+        height: 230px;
+    }
+}
