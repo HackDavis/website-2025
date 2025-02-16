@@ -13,9 +13,6 @@ export default function HeroSun() {
           width={2800}
           height={2800}
           className="absolute left-[-150px] top-[-120px] z-[10] origin-center animate-spin-slow break-625:left-[0px] break-625:top-[0px]"
-          style={{
-            transform: 'translate(-50%, -50%)',
-          }}
         />
       </div>
     </div>

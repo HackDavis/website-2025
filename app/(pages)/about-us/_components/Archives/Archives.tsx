@@ -85,7 +85,7 @@ export default function Archives() {
   return (
     <CarouselContextProvider>
       <div className={styles.container}>
-        <div className="flex flex-row items-center justify-between px-16">
+        <div className="flex flex-row items-center justify-between px-[13%] sm:px-16">
           <h2 className="font-metropolis text-xl font-bold text-[#123041] sm:text-[2.25rem]">
             From the archive
           </h2>
