@@ -29,7 +29,7 @@ export default function BigWave() {
       <div className={styles.stats_container}>
         <div className={styles.stats}>
           <Statistics />
-          <Link href={'google.com'} className={styles.sponsor_button}>
+          <Link href={'mailto:team@hackdavis.io'} className={styles.sponsor_button}>
             Sponsor 2025
           </Link>
         </div>

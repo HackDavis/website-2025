@@ -11,13 +11,12 @@ import whyNotBoba from 'public/index/Sponsors/whyNotBoba.webp';
 
 // Row 2: tier 2 sponsors
 import pepsi from 'public/index/Sponsors/pepsi.png';
-import chevron from 'public/index/Sponsors/chevron.png';
 import cfc from 'public/index/Sponsors/cfc.jpg';
 import glico from 'public/index/Sponsors/Glico.png';
 import guayaki from 'public/index/Sponsors/gym.png';
 import ucdLS from 'public/index/Sponsors/ls.png';
-import rhombus from 'public/index/Sponsors/rhombus.png';
 import codeCrafters from 'public/index/Sponsors/codecrafters.png';
+import datalab from 'public/index/Sponsors/datalab.png';
 
 // Row 3: IPO Sponsors
 import aggieHouse from 'public/index/Sponsors/IPOs/aggieHouseCow.png';
@@ -28,16 +27,16 @@ export default function SponsorsCarousel() {
   return (
     <div className={styles.container}>
       <Marquee iterations={2} duration={50}>
-        <Logo
+        {/* <Logo
           imgSrc={Intel}
           url="https://www.intel.com/content/www/us/en/homepage.html"
           alt="Intel Logo"
-        />
-        <Logo
+        /> */}
+        {/* <Logo
           imgSrc={ucDavis}
           url="https://www.ucdavis.edu"
           alt="UC Davis Logo"
-        />
+        /> */}
         <Logo
           imgSrc={csDepartment}
           url="https://cs.ucdavis.edu/"
@@ -48,21 +47,21 @@ export default function SponsorsCarousel() {
           url="https://asucd.ucdavis.edu/"
           alt="ASUCD Logo"
         />
-        <Logo
+        {/* <Logo
           imgSrc={whyNotBoba}
           url="https://www.whynotboba.com/about-us"
           alt="Why Not Boba Logo"
-        />
+        /> */}
       </Marquee>
 
       <Marquee iterations={2} reverse duration={50}>
-        <Logo imgSrc={pepsi} url="https://www.pepsi.com/" alt="Pepsi Logo" />
+        {/* <Logo imgSrc={pepsi} url="https://www.pepsi.com/" alt="Pepsi Logo" /> */}
         <Logo
-          imgSrc={chevron}
-          url="https://www.chevron.com/"
-          alt="Chevron Logo"
+          imgSrc={datalab}
+          url="https://datalab.ucdavis.edu/"
+          alt="Datalab Logo"
         />
-        <Logo
+        {/* <Logo
           imgSrc={cfc}
           url="https://csi.ucdavis.edu/cfc/"
           alt="Club Financial Council Logo"
@@ -87,11 +86,11 @@ export default function SponsorsCarousel() {
           imgSrc={codeCrafters}
           url="https://codecrafters.io/"
           alt="CodeCrafters logo"
-        />
+        /> */}
       </Marquee>
 
       <Marquee iterations={2} duration={50}>
-        <Logo
+        {/* <Logo
           imgSrc={aggieHouse}
           url="https://www.aggiehousedavis.org/"
           alt="Aggie House Logo"
@@ -105,7 +104,7 @@ export default function SponsorsCarousel() {
           imgSrc={dcmh}
           url="https://daviscommunitymeals.org/"
           alt="Davis Community Meals & Housing Logo"
-        />
+        /> */}
       </Marquee>
     </div>
   );

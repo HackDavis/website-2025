@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import HeartButton from '../HeartButton/heartButton';
 import WordCycle from './wordCycle';
 
@@ -22,9 +23,13 @@ export default function HeroInfo() {
       </div>
 
       <div className="flex flex-row items-start gap-[12px] break-625:flex-col break-625:items-end break-625:gap-[28px] sm:flex-row sm:items-center">
-        <button className="inline-flex h-[40px] items-center justify-center gap-[10px] whitespace-nowrap rounded-[100px] bg-highlight-yellow px-[10px] py-[11px] text-center font-metropolis text-[18px] font-bold tracking-[0.4px] text-text-dark shadow-[0px_5px_75px_0px_rgba(0,0,0,0.25)] break-625:h-[50px] break-625:px-[40px] break-625:py-0 break-625:text-[20px]">
+        <Link
+          href="https://form.typeform.com/to/BKslCqI1"
+          target="_blank"
+          className="inline-flex h-[40px] items-center justify-center gap-[10px] whitespace-nowrap rounded-[100px] bg-highlight-yellow px-[10px] py-[11px] text-center font-metropolis text-[18px] font-bold tracking-[0.4px] text-text-dark shadow-[0px_5px_75px_0px_rgba(0,0,0,0.25)] break-625:h-[50px] break-625:px-[40px] break-625:py-0 break-625:text-[20px]"
+        >
           Register Now
-        </button>
+        </Link>
         <div className="flex h-[40px] w-[138px] flex-shrink-0 items-center rounded-[100px] bg-white/15 text-center font-metropolis text-[18px] font-bold tracking-[0.4px] text-white break-625:h-[50px] break-625:w-[170px] break-625:py-0 break-625:text-[20px]">
           {/* <div className="flex h-[40px] w-[40px] flex-shrink-0 items-center justify-center rounded-[50px] bg-highlight-yellow shadow-[0px_5px_75px_0px_rgba(0,0,0,0.25)] break-625:h-[50px] break-625:w-[50px]">
             <Image
@@ -45,15 +50,24 @@ export default function HeroInfo() {
           Apply to be a{' '}
         </span>
         <div className="flex items-center gap-2">
-          <span className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]">
-            Judge, Mentor,
-          </span>
+          <Link 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeEZpfB1aTUvXwJBnsxQq8r8V2ch1FJJ8J9pumz5EhrtsXMeQ/viewform"
+          target='_blank'
+          className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]">
+            Judge,
+          </Link>
+          <Link 
+          href="https://form.typeform.com/to/uNuWRicb"
+          target='_blank'
+          className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]">
+            Mentor,
+          </Link>
           <span className="font-metropolis text-[18px] font-normal tracking-[0.48px] text-white md:text-[20px]">
             or{' '}
           </span>
-          <span className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]">
+          <Link href="https://form.typeform.com/to/sTYMFPMW" target='_blank' className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]">
             Volunteer
-          </span>
+          </Link>
           <a href="#" className="group flex items-center gap-2">
             <Image
               src="/Hero/icon_arrow.svg"
