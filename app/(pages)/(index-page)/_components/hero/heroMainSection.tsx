@@ -27,12 +27,36 @@ export default function HeroSection() {
             height={159}
           />
         </div>
+        <div className="absolute left-[50px] top-[180px] z-[10] hidden break-625:block">
+          <Image
+            src="/Hero/single_sparkle.svg"
+            alt="Sparkle"
+            width={20}
+            height={20}
+          />
+        </div>
+        <div className="absolute left-[350px] top-[20px] z-[10] hidden break-625:block md:left-[500px] lg:top-[95px] 2xl:left-[600px] 2xl:top-[50px]">
+          <Image
+            src="/Hero/two_sparkles.svg"
+            alt="Sparkle"
+            width={60}
+            height={50}
+          />
+        </div>
         <div className="absolute z-[10] hidden pl-[376px] pt-[217px] md:block">
           <Image
             src="/Hero/cloud_two.svg"
             alt="Cloud"
             width={379}
             height={118}
+          />
+        </div>
+        <div className="absolute left-[100px] top-[350px] z-[10] hidden md:block lg:left-[300px] lg:top-[380px] lg:pl-[100px] xl:left-[690px] xl:top-[150px] 2xl:pl-[300px]">
+          <Image
+            src="/Hero/sparkles_in_a_line.svg"
+            alt="Sparkle"
+            width={225}
+            height={50}
           />
         </div>
         <div className="absolute left-[-89px] z-[80] block pt-[497px] break-625:left-[0px] break-625:hidden break-625:pt-[324px] md:block">
