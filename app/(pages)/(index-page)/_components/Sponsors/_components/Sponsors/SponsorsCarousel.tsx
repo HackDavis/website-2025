@@ -3,25 +3,25 @@ import Marquee from '../Marquee/Marquee';
 import styles from './SponsorsCarousel.module.scss';
 
 // Row 1: tier 1 sponsors
-import Intel from 'public/index/Sponsors/intel.png';
+// import Intel from 'public/index/Sponsors/intel.png';
 import csDepartment from 'public/index/Sponsors/cs.png';
 import asucd from 'public/index/Sponsors/asucd.png';
-import ucDavis from 'public/index/Sponsors/ucDavis.png';
-import whyNotBoba from 'public/index/Sponsors/whyNotBoba.webp';
+// import ucDavis from 'public/index/Sponsors/ucDavis.png';
+// import whyNotBoba from 'public/index/Sponsors/whyNotBoba.webp';
 
 // Row 2: tier 2 sponsors
-import pepsi from 'public/index/Sponsors/pepsi.png';
-import cfc from 'public/index/Sponsors/cfc.jpg';
-import glico from 'public/index/Sponsors/Glico.png';
-import guayaki from 'public/index/Sponsors/gym.png';
-import ucdLS from 'public/index/Sponsors/ls.png';
-import codeCrafters from 'public/index/Sponsors/codecrafters.png';
+// import pepsi from 'public/index/Sponsors/pepsi.png';
+// import cfc from 'public/index/Sponsors/cfc.jpg';
+// import glico from 'public/index/Sponsors/Glico.png';
+// import guayaki from 'public/index/Sponsors/gym.png';
+// import ucdLS from 'public/index/Sponsors/ls.png';
+// import codeCrafters from 'public/index/Sponsors/codecrafters.png';
 import datalab from 'public/index/Sponsors/datalab.png';
 
 // Row 3: IPO Sponsors
-import aggieHouse from 'public/index/Sponsors/IPOs/aggieHouseCow.png';
-import lifeOfKai from 'public/index/Sponsors/IPOs/lifeOfKai.png';
-import dcmh from 'public/index/Sponsors/IPOs/dcmh.png';
+// import aggieHouse from 'public/index/Sponsors/IPOs/aggieHouseCow.png';
+// import lifeOfKai from 'public/index/Sponsors/IPOs/lifeOfKai.png';
+// import dcmh from 'public/index/Sponsors/IPOs/dcmh.png';
 
 export default function SponsorsCarousel() {
   return (
