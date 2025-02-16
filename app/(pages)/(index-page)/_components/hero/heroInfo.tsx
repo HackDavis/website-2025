@@ -16,7 +16,7 @@ export default function HeroInfo() {
         <h1 className="font-metropolis text-[45px] font-bold leading-[115%] tracking-[0.9px] text-white break-625:text-[66px] break-625:leading-[100%] break-625:tracking-[3.52px] md:text-[88px]">
           social good
         </h1>
-        <p className="mt-[31px] font-metropolis text-[16px] font-normal tracking-[0.48px] text-white break-625:text-[24px]">
+        <p className="mt-[31px] font-metropolis text-[16px] font-normal tracking-[0.48px] text-white break-625:text-[20px]">
           April 19-20, 2025 @ UCenter
         </p>
       </div>
@@ -41,17 +41,17 @@ export default function HeroInfo() {
       </div>
 
       <div className="flex flex-col items-start gap-2 text-left break-625:flex-row break-625:items-end break-625:text-right">
-        <span className="hidden font-metropolis text-[18px] font-normal tracking-[0.48px] text-white break-625:inline md:text-[24px]">
+        <span className="hidden font-metropolis text-[18px] font-normal tracking-[0.48px] text-white break-625:inline md:text-[20px]">
           Apply to be a{' '}
         </span>
         <div className="flex items-center gap-2">
-          <span className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[24px]">
+          <span className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]">
             Judge, Mentor,
           </span>
-          <span className="font-metropolis text-[18px] font-normal tracking-[0.48px] text-white md:text-[24px]">
+          <span className="font-metropolis text-[18px] font-normal tracking-[0.48px] text-white md:text-[20px]">
             or{' '}
           </span>
-          <span className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[24px]">
+          <span className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]">
             Volunteer
           </span>
           <a href="#" className="group flex items-center gap-2">
