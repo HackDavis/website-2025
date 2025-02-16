@@ -44,7 +44,7 @@ export default function HeroSection() {
             className="h-[62.785px] w-[211.268px] break-625:h-[166px] break-625:w-[502px]"
           />
         </div>
-        <div className="absolute z-[90] block pl-[162px] pt-[570px] break-625:hidden break-625:pl-[582px] break-625:pt-[534px] lg:block">
+        <div className="absolute z-[70] block pl-[162px] pt-[570px] break-625:hidden break-625:pl-[582px] break-625:pt-[534px] lg:block">
           <Image
             src="/Hero/cloud_four.svg"
             alt="Cloud"
