@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    pointer-events: none;
 
     transition: all 0.4s;
     z-index: 1000;
@@ -19,6 +20,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    pointer-events: none;
     gap: 43px;
     height: 100%;
     width: 100%;
@@ -57,6 +59,7 @@
 .links {
     display: flex;
     flex-direction: row;
+    pointer-events: auto;
     gap: 48px;
     border-radius: 40px;
     border: 1px solid var(--border-white);
@@ -110,6 +113,7 @@
 
 .items {
     align-self: baseline;
+    pointer-events: auto;
 
     .mlh_banner {
         margin-right: 108px;
