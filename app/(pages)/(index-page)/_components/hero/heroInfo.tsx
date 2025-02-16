@@ -49,36 +49,53 @@ export default function HeroInfo() {
         <span className="hidden font-metropolis text-[18px] font-normal tracking-[0.48px] text-white break-625:inline md:text-[20px]">
           Apply to be a{' '}
         </span>
-        <div className="flex items-center gap-2">
-          <Link 
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeEZpfB1aTUvXwJBnsxQq8r8V2ch1FJJ8J9pumz5EhrtsXMeQ/viewform"
-          target='_blank'
-          className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]">
-            Judge,
-          </Link>
-          <Link 
-          href="https://form.typeform.com/to/uNuWRicb"
-          target='_blank'
-          className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]">
-            Mentor,
-          </Link>
-          <span className="font-metropolis text-[18px] font-normal tracking-[0.48px] text-white md:text-[20px]">
+        <div className="flex items-center gap-2 text-white">
+          <FormLink
+            text="Judge"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeEZpfB1aTUvXwJBnsxQq8r8V2ch1FJJ8J9pumz5EhrtsXMeQ/viewform"
+            includeComma={true}
+          />
+          <FormLink
+            text="Mentor"
+            href="https://form.typeform.com/to/uNuWRicb"
+            includeComma={true}
+          />
+          <span className="font-metropolis text-[18px] font-normal tracking-[0.48px] md:text-[20px]">
             or{' '}
           </span>
-          <Link href="https://form.typeform.com/to/sTYMFPMW" target='_blank' className="font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]">
-            Volunteer
-          </Link>
-          <a href="#" className="group flex items-center gap-2">
-            <Image
-              src="/Hero/icon_arrow.svg"
-              alt="Arrow icon"
-              width={16}
-              height={16}
-              className="object-contain transition-transform group-hover:translate-x-1"
-            />
-          </a>
+          <FormLink
+            text="Volunteer"
+            href="https://form.typeform.com/to/sTYMFPMW"
+            includeComma={false}
+          />
         </div>
       </div>
     </div>
+  );
+}
+
+interface FormLinkProps {
+  text: string;
+  href: string;
+  includeComma: boolean;
+}
+
+function FormLink({ text, href, includeComma }: FormLinkProps) {
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      className="flex font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]"
+    >
+      <p className="border-b-2 border-b-white font-bold">{text}</p>
+      <Image
+        src="/Hero/icon_arrow.svg"
+        alt="Arrow icon"
+        width={10}
+        height={10}
+        className="m-1 object-contain transition-transform group-hover:translate-x-1"
+      />
+      {includeComma && <p>,</p>}
+    </Link>
   );
 }
