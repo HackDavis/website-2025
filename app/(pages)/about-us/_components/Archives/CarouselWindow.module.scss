@@ -9,6 +9,12 @@ $padding-x-mobile: 13%;
     -ms-overflow-style: none;
     scrollbar-width: none;
 
+    padding-right: 4rem;
+
+    @include phone {
+        padding-right: $padding-x-mobile;
+    }
+
     &::-webkit-scrollbar {
         display: none;
     }

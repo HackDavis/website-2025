@@ -6,7 +6,7 @@ export default function CelebrateWrapper({
   return (
     <main className="my-auto w-full text-background-dark sm:p-[calc(13%-4rem)]">
       <div className="flex flex-col gap-8 rounded-3xl bg-gray-100/50 backdrop-blur-sm md:gap-20">
-        <div className="flex flex-col items-start justify-center gap-4 px-[13%] pb-0 pt-12 text-start md:px-16 md:pt-8">
+        <div className="flex flex-col items-start justify-center gap-4 px-[13%] pb-0 pt-12 text-start sm:px-16 sm:pt-8">
           <div className="w-[90%]">
             <h1 className="text-4xl font-bold">Celebrate our past with us!</h1>
           </div>
