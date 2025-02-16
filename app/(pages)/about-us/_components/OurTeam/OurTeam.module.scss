@@ -111,6 +111,7 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr); // Always four columns
             gap: 4%;
+            padding-bottom: 45px;
         }
     }
 
@@ -226,7 +227,7 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr); // Always four columns
                 gap: 3%;
-                padding-bottom: 2%;
+                padding-bottom: 45px;
             }
         }
     
@@ -345,7 +346,7 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
                 gap: 48.5px;
-                // border: 1px solid red;
+                padding-bottom: 45px;
             }
         }
     
