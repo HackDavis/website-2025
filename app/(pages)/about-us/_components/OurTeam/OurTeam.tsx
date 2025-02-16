@@ -73,12 +73,12 @@ export default function OurTeam() {
 
   const teamNames = [
     'Design',
+    'Technical',
     'External',
     'Finance',
     'Marketing',
     'Operations',
     'Sponsorship',
-    'Technical',
   ];
 
   return (

@@ -4,7 +4,12 @@
     background-image: 
         url('/images/cloud_background/TopClouds.svg'),
         url('/images/cloud_background/Sand.svg'),
-        linear-gradient(to bottom, var(--sky-background) 0%, #D5FCD1 100%);
+        linear-gradient(to bottom, 
+            white 0%,   
+            white 5%,   
+            var(--sky-background) 10%, 
+            #D5FCD1 100%, 
+        );
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: contain, contain, cover; /* Clouds: Contain | Sand: Cover | Gradient: Cover */
     background-position: top center, bottom center, center;
@@ -15,6 +20,7 @@
     height: 1976px; /* Full screen height */
     width: 100%;
     position: relative;
+    margin-top: -5px;
 
     .child1 {
         background-image: url('/images/cloud_background/LeftClouds.svg');
