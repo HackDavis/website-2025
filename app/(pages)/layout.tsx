@@ -5,6 +5,7 @@ import fonts from './_globals/fonts';
 import Navbar from '@app/(pages)/_components/Navbar/Navbar';
 import Footer from '@app/(pages)/_components/Footer/Footer';
 import { Suspense } from 'react';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = metadataJSON;
 
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${fonts} antialiased`}>
+        <Analytics />
         <Suspense>
           <Navbar />
         </Suspense>
