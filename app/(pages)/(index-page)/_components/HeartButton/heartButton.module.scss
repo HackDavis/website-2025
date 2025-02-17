@@ -5,7 +5,7 @@
     width: 100%;
     height: 100%;
  
-    transition: background 500ms ease, flex-direction 100ms ease;
+    transition: background 500ms ease, flex-direction 200ms ease-in-out;
     color: var(--text-light);
     border-radius: 100px;
 
@@ -20,6 +20,12 @@
         flex-direction: row-reverse;
         background: var(--highlight-yellow);
         color: var(--background-dark);
+
+        .heart_coin_animated {
+            right: 0;
+            left: unset;
+            animation: slide 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
     }
 
     h4 {
@@ -29,6 +35,43 @@
         font-size: inherit;
     }
 
+    .heart_coin, .heart_coin_animated {
+        height: 100%;
+        aspect-ratio: 1;
+        z-index: 2;
+        border-radius: 50%;
+        box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
+    }
+    
+    .heart_coin {
+        visibility: hidden;
+        position: relative;
+    }
+    
+    .heart_coin_animated {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: 20%;
+    }
+    50% {
+        left: 40%;
+    }
+    75% {
+        left: 60%;
+    }
+    100% {
+        right: 0;
+        left: unset;
+    }
 }
 
 .button_container::after {
@@ -40,15 +83,4 @@
     bottom: 0;
     right: 0;
     position: absolute;
-}
-
-.heart_coin {
-    position: relative;
-    height: 100%;
-    aspect-ratio: 1;
-    z-index: 2;
-    border-radius: 50%;
-    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
-
 }
