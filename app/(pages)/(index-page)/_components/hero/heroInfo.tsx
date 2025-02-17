@@ -53,7 +53,8 @@ export default function HeroInfo() {
           <FormLink
             text="Judge"
             href="https://docs.google.com/forms/d/e/1FAIpQLSeEZpfB1aTUvXwJBnsxQq8r8V2ch1FJJ8J9pumz5EhrtsXMeQ/viewform"
-            includeComma={true}
+            // includeComma={true}
+            includeComma={false}
           />
           <span className="font-metropolis text-[18px] font-normal tracking-[0.48px] md:text-[20px]">
             or{' '}
