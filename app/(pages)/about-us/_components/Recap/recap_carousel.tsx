@@ -37,13 +37,29 @@ export default function RecapCarousel() {
   const [position, setPosition] = useState(2);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  const [xOffset, setXOffset] = useState(-250);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setPosition((prev) => (prev >= 5 ? 1 : prev + 1));
-    }, 5000); // Increased to 5 seconds for slower rotation
+      setPosition((prev) => (prev + 1) % images.length);
+    }, 5000);
 
-    return () => clearInterval(interval);
+    // Handle the initial window width and subsequent resizes
+    const handleResize = () => {
+      setXOffset(window.innerWidth < 400 ? -100 : -250);
+    };
+
+    // Set initial value
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -57,12 +73,12 @@ export default function RecapCarousel() {
   const handleTouchEnd = () => {
     if (touchStart - touchEnd > 75) {
       // Swipe left
-      setPosition((prev) => (prev >= 5 ? 1 : prev + 1));
+      setPosition((prev) => (prev + 1) % images.length);
     }
 
     if (touchStart - touchEnd < -75) {
       // Swipe right
-      setPosition((prev) => (prev <= 1 ? 5 : prev - 1));
+      setPosition((prev) => (prev - 1 + images.length) % images.length);
     }
   };
 
@@ -76,18 +92,20 @@ export default function RecapCarousel() {
         onTouchEnd={handleTouchEnd}
       >
         {images.map((image, index) => {
-          const offset = index + 1;
-          const r = position - offset;
-          const absR = Math.max(Math.abs(r), r);
-          const zIndex = position - absR;
+          const totalImages = images.length;
+          const r =
+            ((position - index + totalImages / 2) % totalImages) -
+            totalImages / 2;
+          const absR = Math.abs(r);
+          const zIndex = totalImages / 2 - absR;
 
           return (
             <motion.div
               key={index}
-              className="absolute aspect-video h-full w-full max-w-[90%] border-[#9EE7E5] md:rounded-[35px] md:border-4"
+              className="absolute aspect-video h-full w-full max-w-[90%] rounded-[35px] border-4 border-[#9EE7E5]"
               animate={{
                 rotateY: -20 * r,
-                x: -250 * r,
+                x: xOffset * r,
                 zIndex,
                 scale: r === 0 ? 1 : 0.8,
               }}
