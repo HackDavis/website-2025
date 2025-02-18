@@ -11,10 +11,10 @@ import Banner from '/public/Navbar/mlh-banner-2025.svg';
 import styles from './Navbar.module.scss';
 
 interface NavLink {
+  ids: string[];
   body: React.ReactNode;
   page: string;
   path: string;
-  id: string;
   color: string;
 }
 
@@ -28,34 +28,34 @@ interface Section {
 
 const links = [
   {
+    ids: ['home', 'underwater'],
     body: 'HOME',
     page: '/',
     path: '/?section=home', // remove section if scroll issue fixed
-    id: 'home',
   },
   {
+    ids: ['donate'],
     body: 'DONATE',
     page: '/',
     path: '/?section=donate',
-    id: 'donate',
   },
   {
+    ids: ['faq'],
     body: 'FAQ',
     page: '/',
     path: '/?section=faq',
-    id: 'faq',
   },
   {
+    ids: ['sponsors'],
     body: 'SPONSORS',
     page: '/',
     path: '/?section=sponsors',
-    id: 'sponsors',
   },
   {
+    ids: ['about'],
     body: 'ABOUT',
     page: '/about-us',
     path: '/about-us?section=about', // remove section if scroll issue fixed
-    id: 'about',
   },
 ] as NavLink[];
 
@@ -68,10 +68,17 @@ const sections = [
     background: 'rgba(255, 255, 255, 0.50)',
   },
   {
-    id: 'donate',
+    id: 'underwater',
     page: '/',
     baseColor: '#FFFFFF',
     activeColor: '#FFC53D',
+    background: 'rgba(136, 136, 136, 0.50)',
+  },
+  {
+    id: 'donate',
+    page: '/',
+    baseColor: '#FFFFFF',
+    activeColor: '#AFD157',
     background: 'rgba(136, 136, 136, 0.50)',
   },
   {
@@ -96,21 +103,7 @@ const sections = [
     background: 'rgba(255, 255, 255, 0.50)',
   },
   {
-    id: 'values',
-    page: '/about-us',
-    baseColor: '#FFFFFF',
-    activeColor: '#005271',
-    background: 'rgba(136, 136, 136, 0.50)',
-  },
-  {
-    id: 'team',
-    page: '/about-us',
-    baseColor: '#FFFFFF',
-    activeColor: '#005271',
-    background: 'rgba(136, 136, 136, 0.50)',
-  },
-  {
-    id: 'recap',
+    id: 'about-page',
     page: '/about-us',
     baseColor: '#FFFFFF',
     activeColor: '#005271',
@@ -141,14 +134,18 @@ export default function Navbar() {
           if (!sectionContainer) {
             return { id: '', sectionStart: 0, sectionEnd: 0 };
           }
-          const { offsetTop, offsetHeight } = sectionContainer;
+          const { offsetHeight } = sectionContainer;
+          const rect = sectionContainer.getBoundingClientRect();
           return {
             id: section.id,
-            sectionStart: offsetTop,
-            sectionEnd: offsetTop + offsetHeight,
+            sectionStart: rect.top + window.scrollY,
+            sectionEnd: rect.top + window.scrollY + offsetHeight,
           };
         })
-        .sort((a, b) => a.sectionStart - b.sectionStart);
+        .sort((a, b) => a.sectionStart - b.sectionStart)
+        .filter(
+          (section) => section.sectionStart !== 0 || section.sectionEnd !== 0
+        );
 
       let i = pageSections.length - 1;
       for (i; i >= 0; i--) {
@@ -211,9 +208,10 @@ export default function Navbar() {
     const currentSection = sections.find(
       (section) => activeSection === section.id
     );
-    if (!currentSection) return 'var(--text-medium)';
+    if (!currentSection) return 'var(--text-light)';
 
-    if (activeLink === link.id) return currentSection.activeColor;
+    if (link.ids.find((id) => activeLink === id))
+      return currentSection.activeColor;
     return currentSection.baseColor;
   };
 
@@ -230,12 +228,12 @@ export default function Navbar() {
           style={{
             background:
               sections.find((section) => activeSection === section.id)
-                ?.background ?? 'var(--text-light)',
+                ?.background ?? 'rgba(136, 136, 136, 0.50)',
           }}
         >
           {links.map((link) => (
             <Link
-              className={`${styles.link} ${styles[link.id]} ${activeLink === link.id ? styles.active : null}`}
+              className={`${styles.link} ${link.ids.find((id) => activeLink === id) ? styles.active : null}`}
               style={{
                 color: getLinkColor(link),
               }}
