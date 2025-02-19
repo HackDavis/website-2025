@@ -64,7 +64,7 @@ function WhatIsHackDavisText() {
       <p className="text-base sm:text-xl md:text-2xl lg:text-3xl 2xl:text-5xl">
         is one of the
         <strong> largest collegiate hackathons </strong> in California, where
-        over 850 students, creators, and leaders come together to{' '}
+        over 900 students, creators, and leaders come together to{' '}
         <strong>create for social good</strong>.
       </p>
     </div>
