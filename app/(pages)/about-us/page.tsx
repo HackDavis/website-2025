@@ -12,15 +12,9 @@ export default function AboutUs() {
         <Hero />
       </div>
 
-      <div id="values">
+      <div id="about-page">
         <Values />
-      </div>
-
-      <div id="team">
         <OurTeam />
-      </div>
-
-      <div id="recap">
         <CloudBackground>
           <CelebrateWrapper>
             <Recap />

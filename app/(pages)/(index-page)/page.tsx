@@ -18,12 +18,12 @@ export default function Home() {
         <SandCastle />
       </div>
 
-      <div id="donate">
+      <div id="underwater">
         <BigWave />
         <Underwater />
       </div>
 
-      <div id="faq">
+      <div id="donate">
         <FAQ />
       </div>
 
