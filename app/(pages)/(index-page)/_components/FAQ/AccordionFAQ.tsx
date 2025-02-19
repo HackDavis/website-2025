@@ -53,9 +53,9 @@ const whatToHelpAnswer = (
   <>
     HackDavis is largely built upon the efforts of our mentors and volunteers,
     who ensure that our hackers have a great experience at our event! Our mentor
-    and volunteer applications will open in late April, so keep an eye out! If
-    you're interested in making a tax-deductible contribution to HackDavis,
-    please get in touch at{' '}
+    applications are open and volunteer applications will open up soon, so keep
+    an eye out! If you're interested in making a tax-deductible contribution to
+    HackDavis, please get in touch with us at{' '}
     <a
       style={{
         textDecoration: 'underline',
@@ -81,11 +81,11 @@ const AccordionFAQ = () => {
     },
     {
       question: 'Do I need to know how to code?',
-      answer: `Nope! Coming in, you do not need to know how to code, but you have to be willing to learn! HackDavis is proud to be a beginner-focused hackathon, and we welcome hackers from all experience levels and backgrounds - over 40% of our hackers are beginners! HackDavis is the perfect time and place to learn new skills - we host beginner-friendly workshops and our mentors provide guidance to help you build something you can be proud of.`,
+      answer: `Nope! Coming in, you do not need to know how to code, but you have to be willing to learn! HackDavis is proud to be a beginner-focused hackathon, and we welcome hackers from all experience levels and backgrounds - over 65% of our hackers are beginners! HackDavis is the perfect time and place to learn new skills - we host beginner-friendly workshops and our mentors provide guidance to help you build something you can be proud of.`,
     },
     {
       question: 'How do teams work?',
-      answer: `Teams can have up to four members, and submit a single project together! Want to go solo? Fine by us, but we'd highly recommend joining a team to make new friends, bounce ideas off one another, and bring your ideas to life!`,
+      answer: `Teams can have up to 4 members, and submit a single project together! Want to go solo? Fine by us, but we'd highly recommend joining a team to make new friends, bounce ideas off one another, and bring your ideas to life!`,
     },
     {
       question: 'How can I help?',

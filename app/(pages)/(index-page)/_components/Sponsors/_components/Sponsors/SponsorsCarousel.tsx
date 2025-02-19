@@ -3,7 +3,6 @@ import Marquee from '../Marquee/Marquee';
 import styles from './SponsorsCarousel.module.scss';
 
 // Row 1: tier 1 sponsors
-// import Intel from 'public/index/Sponsors/intel.png';
 import csDepartment from 'public/index/Sponsors/cs.png';
 import asucd from 'public/index/Sponsors/asucd.png';
 // import ucDavis from 'public/index/Sponsors/ucDavis.png';
@@ -17,6 +16,8 @@ import asucd from 'public/index/Sponsors/asucd.png';
 // import ucdLS from 'public/index/Sponsors/ls.png';
 // import codeCrafters from 'public/index/Sponsors/codecrafters.png';
 import datalab from 'public/index/Sponsors/datalab.png';
+import cerebras from 'public/index/Sponsors/cerebras.png';
+import nosu from 'public/index/Sponsors/nosu.png';
 
 // Row 3: IPO Sponsors
 // import aggieHouse from 'public/index/Sponsors/IPOs/aggieHouseCow.png';
@@ -87,6 +88,12 @@ export default function SponsorsCarousel() {
           url="https://codecrafters.io/"
           alt="CodeCrafters logo"
         /> */}
+        <Logo
+          imgSrc={cerebras}
+          url="https://cerebras.ai/"
+          alt="Cerebras Logo"
+        />
+        <Logo imgSrc={nosu} url="https://www.nosu.io/" alt="Nosu Logo" />
       </Marquee>
 
       <Marquee iterations={2} duration={50}>

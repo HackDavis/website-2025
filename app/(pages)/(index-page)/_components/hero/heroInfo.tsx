@@ -18,7 +18,7 @@ export default function HeroInfo() {
           social good
         </h1>
         <p className="mt-[31px] font-metropolis text-[16px] font-normal tracking-[0.48px] text-white break-625:text-[20px]">
-          April 19-20, 2025 @ UCenter
+          April 19-20, 2025 @ University Credit Union Center
         </p>
       </div>
 

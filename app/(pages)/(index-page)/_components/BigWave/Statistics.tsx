@@ -6,10 +6,10 @@ import styles from './Statistics.module.scss';
 const ANIMATION_LEN = 2000;
 
 const statsData = [
-  { stat: 850, text: 'HACKERS', suffix: '+' },
+  { stat: 900, text: 'HACKERS', suffix: '+' },
   { stat: 24, text: 'HOURS' },
   { stat: 150, text: 'PROJECTS', suffix: '+' },
-  { stat: 10, text: 'PRIZES', prefix: '$', suffix: 'k+' },
+  { stat: 20, text: 'PRIZES', prefix: '$', suffix: 'k+' },
 ];
 
 export default function Statistics() {
