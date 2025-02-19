@@ -56,7 +56,7 @@ const Donate = () => (
                 className={style.seal_wrapper}
               >
                 <Image
-                  src="https://widgets.guidestar.org/TransparencySeal/10110290"
+                  src="/images/donate/seal.svg"
                   alt="Guidestar Transparency Seal"
                   fill={true}
                   unoptimized={true}
