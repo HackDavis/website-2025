@@ -53,6 +53,12 @@ export default function HeroInfo() {
           <FormLink
             text="Judge"
             href="https://docs.google.com/forms/d/e/1FAIpQLSeEZpfB1aTUvXwJBnsxQq8r8V2ch1FJJ8J9pumz5EhrtsXMeQ/viewform"
+            includeComma={true}
+            // includeComma={false}
+          />
+          <FormLink
+            text="Mentor"
+            href="https://form.typeform.com/to/uNuWRicb"
             // includeComma={true}
             includeComma={false}
           />
@@ -60,16 +66,10 @@ export default function HeroInfo() {
             or{' '}
           </span>
           <FormLink
-            text="Mentor"
-            href="https://form.typeform.com/to/uNuWRicb"
-            // includeComma={true}
-            includeComma={false}
-          />
-          {/*           <FormLink
             text="Volunteer"
             href="https://form.typeform.com/to/sTYMFPMW"
             includeComma={false}
-          /> */}
+          />
         </div>
       </div>
     </div>
