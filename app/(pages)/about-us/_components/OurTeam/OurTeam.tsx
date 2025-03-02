@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures';
 import teamMembersData from '../../_data/teamMembers.json';
-// import teamMembersData from '_data/teamMembers.json'; // Import team members JSON file
 
 type TeamMember = {
   id: string;

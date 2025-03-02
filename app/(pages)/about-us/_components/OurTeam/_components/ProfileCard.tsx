@@ -19,34 +19,34 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
 
   return (
     <div className={styles.profile_card}>
-      <div
-        className={styles.profile_card_image}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <Image
-          src={imageUrl}
-          alt={name}
-          layout="fill"
-          className={styles.profile_card_image_image}
-          placeholder="blur"
-          blurDataURL={imageUrl}
-          style={{ objectFit: 'cover', borderRadius: 11 }}
-        />
+      <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
         <div
-          className={`${styles.profile_card_image_hover} ${
-            isHovered ? styles.visible : ''
-          }`}
+          className={styles.profile_card_image}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
-          <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
+          <Image
+            src={imageUrl}
+            alt={name}
+            layout="fill"
+            className={styles.profile_card_image_image}
+            placeholder="blur"
+            blurDataURL={imageUrl}
+            style={{ objectFit: 'cover', borderRadius: 11 }}
+          />
+          <div
+            className={`${styles.profile_card_image_hover} ${
+              isHovered ? styles.visible : ''
+            }`}
+          >
             <FaLinkedin
               size={60}
               className={styles.profile_card_image_linkedIn_icon}
               color="white"
             />
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
       <h3>{name}</h3>
       <p>{title}</p>
     </div>
