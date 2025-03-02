@@ -80,7 +80,7 @@ const Donate = () => (
               <div className={style.donate_button}>
                 <HeartButton
                   text="Donate"
-                  href="https://www.givecampus.com/schools/UniversityofCaliforniaDavis/crowdfund-uc-davis-february-2025/pages/hackdavis2025"
+                  href="mailto:finance@hackdavis.io?subject=Donation%20Inquiry%20for%20501(c)(3)%20Organization%3A%20HackDavis"
                 />
               </div>
             </div>
