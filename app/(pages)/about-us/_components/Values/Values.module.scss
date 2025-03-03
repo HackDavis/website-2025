@@ -20,7 +20,6 @@
         flex-direction: row;
         justify-content: space-between;
         transition: .5s ease-in-out;
-        
 
         h4 {
             color: #123041;
@@ -28,33 +27,39 @@
             font-size: 1.5rem; //24px
             font-style: normal;
             font-weight: 700;
-            line-height: normal; 
+            line-height: normal;
             letter-spacing: 0.03rem; //.48px
             padding-bottom: 3%;
         }
 
-        p{
+        p {
             color: #000;
             font-size: 1.125rem; //18px
             font-style: normal;
             font-weight: 400;
-            line-height: 145%; /* 26.1px */
+            line-height: 145%;
+            /* 26.1px */
             letter-spacing: 0.023rem; //.36px
-            padding-bottom: 5%;
+            padding-bottom: auto;
         }
 
         .valuesBoxInclusive,
         .valuesBoxLearning,
         .valuesBoxProjects {
-            padding: 3% 3% 0% 3% ;
+            padding: 2.5% 2.5% 0% 2.5%;
             border-radius: 10px;
-            transition: width 0.3s ease, transform 0.3s ease;  
+            transition: width 0.3s ease, transform 0.3s ease;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-direction: column;
             text-align: left;
             width: 30%;
+            min-height: auto;
+
+            .cow_bunny_padding {
+                padding-bottom: 53px;
+            }
         }
 
         .valuesBoxInclusive {
@@ -64,6 +69,7 @@
 
         .valuesBoxLearning {
             background-color: #C2E567;
+            transform-origin: center;
         }
 
         .valuesBoxProjects {
@@ -78,50 +84,60 @@
             transition: .5s ease-in-out;
         }
     }
-
 }
 
 @include tablet {
-    .container{
+    .container {
+
         // padding: 8.5%;
-        h1{
+        h1 {
             padding: 12% 0% 12% 0%;
         }
+
         .valuesContainer {
             flex-direction: column;
-            h4{
+
+            h4 {
                 font-size: 2rem;
             }
-            p{
+
+            p {
                 font-size: 1.5rem;
             }
-            .valuesBoxInclusive, .valuesBoxLearning, .valuesBoxProjects{
-                padding: 10% 10% 0% 10% ;
+
+            .valuesBoxInclusive,
+            .valuesBoxLearning,
+            .valuesBoxProjects {
+                padding: 10% 10% 0% 10%;
                 margin-bottom: 12.8%;
                 transition: none;
                 width: 100%;
             }
+
             .valuesBoxInclusive:hover,
             .valuesBoxLearning:hover,
             .valuesBoxProjects:hover {
                 width: 100%;
-                transform:none;
+                transform: none;
             }
         }
-        
+
     }
 }
-@include phone{
+
+@include phone {
     .container {
-        h1{
+        h1 {
             padding: 20% 0% 20% 0%;
         }
-        .valuesContainer{
-            h4{
+
+        .valuesContainer {
+            h4 {
                 font-size: 1.364rem; //21.825px
                 letter-spacing: 0.027rem; //.436px
             }
-            p{
+
+            p {
                 font-size: 1.023rem; //16.368px
                 letter-spacing: 0.02rem; //0.327px
             }

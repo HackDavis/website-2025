@@ -10,27 +10,31 @@ export default function Values() {
       <h1> What we're all about </h1>
       <div className={styles.valuesContainer}>
         <div className={styles.valuesBoxInclusive}>
-          <div>
+          <div className={styles.cow_bunny_padding}>
             <h4> Inclusivity </h4>
             <p>
               We invite individuals of all backgrounds to learn new skills and
               grow in an inclusive environment.
             </p>
           </div>
-          <Image src={CowTada} alt="cow tada" />
+          <Image src={CowTada} alt="cow tada" style={{ paddingTop: '33px' }} />
         </div>
         <div className={styles.valuesBoxLearning}>
-          <div>
+          <div className={styles.frog_padding}>
             <h4> Hands-on learning </h4>
             <p>
               No matter which prompt you choose, each project provides hands-on
               experience and an opportunity to explore a new discipline.
             </p>
           </div>
-          <Image src={FroggyTada} alt="froggy tada" />
+          <Image
+            src={FroggyTada}
+            alt="froggy tada"
+            style={{ paddingTop: '46px' }}
+          />
         </div>
         <div className={styles.valuesBoxProjects}>
-          <div>
+          <div className={styles.cow_bunny_padding}>
             <h4> Impactful projects </h4>
             <p>
               Create meaningful, impactful, and innovative solutions that
