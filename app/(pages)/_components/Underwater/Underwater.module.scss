@@ -530,13 +530,19 @@
         .imagecontainer {
             z-index: 1;
             padding-top: 5%;
+            padding-right: 27%;
+            padding-left: 15%;
             display: flex;
             flex-direction: column;
     
             .bunny {
                 margin-top: -15%;
                 width: 100%;
-                padding: 0% 0% 35% 20%;
+                border: 3px solid red;
+                // padding: 0% 0% 35% 20%;
+                padding-right: 47%;
+                padding-left: 35%;
+                padding-bottom: 25%;
                 margin-left: 20%;
                 animation: bunnyBob 4s infinite alternate ease-in-out;
                 animation-delay: 0.0s;
@@ -571,9 +577,11 @@
 
         // do not edit, this is for the animations + formatting of the music notes
         .musicContainer {
+            border: 3px solid red;
             left: 0%;
             padding-bottom: 0%;
-            padding-right: 10%;
+            padding-right: 20%;
+            padding-left: 10%;
             top: 0%;
             display: flex;
             align-items: flex;
@@ -643,12 +651,16 @@
         .imagecontainer {
             z-index: 1;
             padding-top: 5%;
+            padding-right: 27%;
+            padding-left: 15%;
             display: flex;
             flex-direction: column;
     
             .bunny {
                 width: 100%;
-                padding: 5% 0% 0% 5%;
+                // padding: 0% 0% 35% 20%;
+                padding-right: 27%;
+                padding-left: 15%;
                 // margin-left: 10%;
                 animation: bunnyBob 4s infinite alternate ease-in-out;
                 animation-delay: 0.0s;
@@ -680,9 +692,12 @@
 
         // do not edit, this is for the animations + formatting of the music notes
         .musicContainer {
+            margin-bottom: -30%;
+            width: 37%;
             left: 0%;
             padding-bottom: 0%;
             padding-right: 10%;
+            padding-left: 10%;
             top: 0%;
             display: flex;
             align-items: flex;
@@ -691,20 +706,21 @@
 
             .note1 {
                 padding: 2%;
-                margin-bottom: 35%;
+                margin-bottom: 300%;
                 animation: float 4s infinite alternate ease-in-out;
                 animation-delay: 0s;
             }
 
             .note2 {
-                margin-top: 30%;
+                margin-bottom: 10%;
+                width: 70%;
                 animation: float 4s infinite alternate ease-in-out;
                 animation-delay: 0.5s;
             }
             
             .note3 {
                 margin-left: 5%;
-                margin-bottom: 37%;
+                margin-bottom: 187%;
                 animation: float 4s infinite alternate ease-in-out;
                 animation-delay: 1s;
             }
