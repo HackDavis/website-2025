@@ -268,7 +268,7 @@ $ducky-h: 397px;
 
 .bottom {
     bottom: $bottom-padding;
-    left: calc($bot-left-w * var(--scale) * 0.66);
+    left: calc($bot-left-w * var(--scale) * 0.665);
     height: calc($bot-h * var(--scale));
     width: calc(100% - $bot-left-w * var(--scale) * 0.66 - $bot-right-w * var(--scale));
 }

@@ -109,6 +109,10 @@ const AccordionFAQ = () => {
       question: 'How much does it cost?',
       answer: `Zero. Zip. Zilch. Nada. HackDavis is free for all admitted participants, so don't sweat it! We will provide you with WiFi, meals, caffeine, swag, and workspace for the entire weekend.`,
     },
+    {
+      question: 'Is travel reimbursement provided?',
+      answer: `Unfortunately, we are unable to offer travel reimbursement this year. Participants are responsible for covering their own travel costs.`,
+    },
   ];
 
   {
