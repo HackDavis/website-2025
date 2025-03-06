@@ -6,39 +6,29 @@ import styles from './SponsorsCarousel.module.scss';
 import csDepartment from 'public/index/Sponsors/cs.png';
 import asucd from 'public/index/Sponsors/asucd.png';
 import anthropic from 'public/index/Sponsors/anthropic.png';
-// import ucDavis from 'public/index/Sponsors/ucDavis.png';
-// import whyNotBoba from 'public/index/Sponsors/whyNotBoba.webp';
+import ucDavis from 'public/index/Sponsors/ucDavis.png';
 
 // Row 2: tier 2 sponsors
 // import pepsi from 'public/index/Sponsors/pepsi.png';
 // import cfc from 'public/index/Sponsors/cfc.jpg';
-// import glico from 'public/index/Sponsors/Glico.png';
-// import guayaki from 'public/index/Sponsors/gym.png';
 // import ucdLS from 'public/index/Sponsors/ls.png';
-// import codeCrafters from 'public/index/Sponsors/codecrafters.png';
 import datalab from 'public/index/Sponsors/datalab.png';
 import cerebras from 'public/index/Sponsors/cerebras.png';
-// import nosu from 'public/index/Sponsors/nosu.png';
+import msba from 'public/index/Sponsors/MSBA.png';
 
 // Row 3: IPO Sponsors
-// import aggieHouse from 'public/index/Sponsors/IPOs/aggieHouseCow.png';
-// import lifeOfKai from 'public/index/Sponsors/IPOs/lifeOfKai.png';
-// import dcmh from 'public/index/Sponsors/IPOs/dcmh.png';
+import govops from 'public/index/Sponsors/IPOs/govops.png';
+import yolonami from 'public/index/Sponsors/IPOs/yoloNAMI.png';
 
 export default function SponsorsCarousel() {
   return (
     <div className={styles.container}>
       <Marquee iterations={2} duration={50}>
-        {/* <Logo
-          imgSrc={Intel}
-          url="https://www.intel.com/content/www/us/en/homepage.html"
-          alt="Intel Logo"
-        /> */}
-        {/* <Logo
+        <Logo
           imgSrc={ucDavis}
           url="https://www.ucdavis.edu"
           alt="UC Davis Logo"
-        /> */}
+        />
         <Logo
           imgSrc={csDepartment}
           url="https://cs.ucdavis.edu/"
@@ -63,56 +53,39 @@ export default function SponsorsCarousel() {
           url="https://datalab.ucdavis.edu/"
           alt="Datalab Logo"
         />
+        <Logo
+          imgSrc={msba}
+          url="https://gsm.ucdavis.edu/master-science-business-analytics-msba"
+          alt="MSBA Logo"
+        />
         {/* <Logo
           imgSrc={cfc}
           url="https://csi.ucdavis.edu/cfc/"
           alt="Club Financial Council Logo"
         />
-        <Logo imgSrc={glico} url="https://www.glico.com/us/" alt="Glico Logo" />
-        <Logo
-          imgSrc={guayaki}
-          url="https://guayaki.com/"
-          alt="Guayaki Yerba Mate Logo"
-        />
         <Logo
           imgSrc={ucdLS}
           url="https://lettersandscience.ucdavis.edu/"
           alt="UC Davis College of Letters & Science Logo"
-        />
-        <Logo
-          imgSrc={rhombus}
-          url="https://www.rhombus.com/"
-          alt="Rhombus logo"
-        />
-        <Logo
-          imgSrc={codeCrafters}
-          url="https://codecrafters.io/"
-          alt="CodeCrafters logo"
         /> */}
         <Logo
           imgSrc={cerebras}
           url="https://cerebras.ai/"
           alt="Cerebras Logo"
         />
-        {/* <Logo imgSrc={nosu} url="https://www.nosu.io/" alt="Nosu Logo" /> */}
       </Marquee>
 
       <Marquee iterations={2} duration={50}>
-        {/* <Logo
-          imgSrc={aggieHouse}
-          url="https://www.aggiehousedavis.org/"
-          alt="Aggie House Logo"
+        <Logo
+          imgSrc={govops}
+          url="https://www.govops.ca.gov/"
+          alt="California Government Operations Agency Logo"
         />
         <Logo
-          imgSrc={lifeOfKai}
-          url="https://www.thelifeofkai.org/"
-          alt="Life Of Kai Logo"
+          imgSrc={yolonami}
+          url="https://namiyolo.org/"
+          alt="NAMI Yolo Country Logo"
         />
-        <Logo
-          imgSrc={dcmh}
-          url="https://daviscommunitymeals.org/"
-          alt="Davis Community Meals & Housing Logo"
-        /> */}
       </Marquee>
     </div>
   );
