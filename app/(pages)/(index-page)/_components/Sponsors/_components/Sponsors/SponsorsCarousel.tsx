@@ -5,7 +5,7 @@ import styles from './SponsorsCarousel.module.scss';
 // Row 1: tier 1 sponsors
 import csDepartment from 'public/index/Sponsors/cs.png';
 import asucd from 'public/index/Sponsors/asucd.png';
-import anthropic from 'public/index/Sponsors/anthropic.png';
+// import anthropic from 'public/index/Sponsors/anthropic.png';
 import ucDavis from 'public/index/Sponsors/ucDavis.png';
 
 // Row 2: tier 2 sponsors
@@ -39,11 +39,11 @@ export default function SponsorsCarousel() {
           url="https://asucd.ucdavis.edu/"
           alt="ASUCD Logo"
         />
-        <Logo
+        {/*         <Logo
           imgSrc={anthropic}
           url="https://www.anthropic.com/"
           alt="Anthropic Logo"
-        />
+        /> */}
       </Marquee>
 
       <Marquee iterations={2} reverse duration={50}>
