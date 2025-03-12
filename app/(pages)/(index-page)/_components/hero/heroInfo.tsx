@@ -50,12 +50,12 @@ export default function HeroInfo() {
           Apply to be a{' '}
         </span>
         <div className="flex items-center gap-2 text-white">
-          <FormLink
+          {/* <FormLink
             text="Judge"
             href="https://docs.google.com/forms/d/e/1FAIpQLSeEZpfB1aTUvXwJBnsxQq8r8V2ch1FJJ8J9pumz5EhrtsXMeQ/viewform"
             includeComma={true}
             // includeComma={false}
-          />
+          /> */}
           <FormLink
             text="Mentor"
             href="https://form.typeform.com/to/uNuWRicb"
