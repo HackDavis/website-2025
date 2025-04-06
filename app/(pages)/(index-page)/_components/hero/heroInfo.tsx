@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+// import Image from 'next/image';
+// import Link from 'next/link';
 import HeartButton from '../HeartButton/heartButton';
 import WordCycle from './wordCycle';
 
@@ -23,13 +23,13 @@ export default function HeroInfo() {
       </div>
 
       <div className="flex flex-row items-start gap-[12px] break-625:flex-col break-625:items-end break-625:gap-[28px] sm:flex-row sm:items-center">
-        <Link
+        {/* <Link
           href="https://form.typeform.com/to/BKslCqI1"
           target="_blank"
           className="inline-flex h-[40px] items-center justify-center gap-[10px] whitespace-nowrap rounded-[100px] bg-highlight-yellow px-[10px] py-[11px] text-center font-metropolis text-[18px] font-bold tracking-[0.4px] text-text-dark shadow-[0px_5px_75px_0px_rgba(0,0,0,0.25)] break-625:h-[50px] break-625:px-[40px] break-625:py-0 break-625:text-[20px]"
         >
           Register Now
-        </Link>
+        </Link> */}
         <div className="flex h-[40px] w-[138px] flex-shrink-0 items-center rounded-[100px] bg-white/15 text-center font-metropolis text-[18px] font-bold tracking-[0.4px] text-white break-625:h-[50px] break-625:w-[170px] break-625:py-0 break-625:text-[20px]">
           {/* <div className="flex h-[40px] w-[40px] flex-shrink-0 items-center justify-center rounded-[50px] bg-highlight-yellow shadow-[0px_5px_75px_0px_rgba(0,0,0,0.25)] break-625:h-[50px] break-625:w-[50px]">
             <Image
@@ -45,17 +45,17 @@ export default function HeroInfo() {
         </div>
       </div>
 
-      <div className="flex flex-col items-start gap-2 text-left break-625:flex-row break-625:items-end break-625:text-right">
+      {/* <div className="flex flex-col items-start gap-2 text-left break-625:flex-row break-625:items-end break-625:text-right">
         <span className="hidden font-metropolis text-[18px] font-normal tracking-[0.48px] text-white break-625:inline md:text-[20px]">
           Apply to be a{' '}
         </span>
         <div className="flex items-center gap-2 text-white">
-          {/* <FormLink
+          <FormLink
             text="Judge"
             href="https://docs.google.com/forms/d/e/1FAIpQLSeEZpfB1aTUvXwJBnsxQq8r8V2ch1FJJ8J9pumz5EhrtsXMeQ/viewform"
             includeComma={true}
             // includeComma={false}
-          /> */}
+          />
           <FormLink
             text="Mentor"
             href="https://form.typeform.com/to/uNuWRicb"
@@ -71,33 +71,33 @@ export default function HeroInfo() {
             includeComma={false}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
 
-interface FormLinkProps {
-  text: string;
-  href: string;
-  includeComma: boolean;
-}
+// interface FormLinkProps {
+//   text: string;
+//   href: string;
+//   includeComma: boolean;
+// }
 
-function FormLink({ text, href, includeComma }: FormLinkProps) {
-  return (
-    <Link
-      href={href}
-      target="_blank"
-      className="flex font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]"
-    >
-      <p className="border-b-2 border-b-white font-bold">{text}</p>
-      <Image
-        src="/Hero/icon_arrow.svg"
-        alt="Arrow icon"
-        width={10}
-        height={10}
-        className="m-1 object-contain transition-transform group-hover:translate-x-1"
-      />
-      {includeComma && <p>,</p>}
-    </Link>
-  );
-}
+// function FormLink({ text, href, includeComma }: FormLinkProps) {
+//   return (
+//     <Link
+//       href={href}
+//       target="_blank"
+//       className="flex font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]"
+//     >
+//       <p className="border-b-2 border-b-white font-bold">{text}</p>
+//       <Image
+//         src="/Hero/icon_arrow.svg"
+//         alt="Arrow icon"
+//         width={10}
+//         height={10}
+//         className="m-1 object-contain transition-transform group-hover:translate-x-1"
+//       />
+//       {includeComma && <p>,</p>}
+//     </Link>
+//   );
+// }
