@@ -44,7 +44,11 @@
       }
 
       @include sm-tablet {
-        font-size: 23px;
+        font-size: 25px;
+      }
+
+      @include sm-phone {
+        font-size: 13px;
       }
     }
   
@@ -55,6 +59,16 @@
       font-weight: 800;
       aspect-ratio: 1/1;
       color: var(--text-light);
+
+      @include sm-tablet {
+        width: 30px;
+        height: 30px;
+      }
+
+      @include phone {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 }

@@ -18,6 +18,10 @@
     hsl(0 0% 0% / 0)
   );
 
+  ul {
+    animation-duration: 150s !important;
+  }
+
   &:hover .marqueeGroup {
     animation-play-state: paused;
   }
@@ -26,6 +30,7 @@
     --gap: 20px
   }
 }
+
 
 .marqueeGroup {
   display: flex;
