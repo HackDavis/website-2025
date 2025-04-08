@@ -40,7 +40,7 @@
 
   > * {
     margin-right: 28px;
-    padding: 5px 15px;
+    padding: 12px 24px;
     border-radius: 108.865px;
     border: 1px solid rgba(255, 255, 255, 0.70);
     background: rgba(255, 255, 255, 0.20);
@@ -53,6 +53,10 @@
     font-weight: 600;
     line-height: 125%;
     letter-spacing: 0.32px;
+
+    @include tablet {
+      padding: 5px 15px;
+    }
   }
 
   > *:last-child {

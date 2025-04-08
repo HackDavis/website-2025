@@ -13,6 +13,14 @@
     padding-top: 5%;
   }
 
+  @include tablet {
+    padding-top: 10%;
+  }
+
+  @include phone {
+    padding-top: 15%;
+  }
+
   .heading {
     display: flex;
     flex-direction: row;
