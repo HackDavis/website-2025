@@ -1,0 +1,28 @@
+@import '@globals/styles/mixins.scss';
+
+.container {
+  display: flex;
+  padding: 5% 0%;
+  width: 100%;
+  border: 3px solid red;
+  background-color: var(--water-background);
+  overflow-x: clip;
+  position: relative;
+
+  @include sm-desktop {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.sponsors {
+  border: 3px solid red;
+  display: flex;
+  align-items: center;
+  background-color: var(--water-background);
+  z-index: 0;
+
+  @include sm-desktop {
+    padding: 166px 0px 268px;
+  }
+}
