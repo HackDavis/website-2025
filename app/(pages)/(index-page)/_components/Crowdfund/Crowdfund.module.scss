@@ -8,21 +8,46 @@
   background-color: var(--water-background);
   overflow-x: clip;
   position: relative;
+  flex-direction: column;
+
+  .heading {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+
+    h1 {
+      color: var(--text-light);
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 125%;
+      letter-spacing: 0.8px;
+      text-align: center;
+      display: flex;
+    }
+  
+    .heartIcon {
+      padding-left: 10px;
+      width: 40px;
+      height: 40px;
+      font-weight: 800;
+      aspect-ratio: 1/1;
+      color: var(--text-light);
+    }
+  }
 
   @include sm-desktop {
-    flex-direction: column;
-    height: 100%;
+    // flex-direction: column;
+    padding: 2% 0%;
   }
 }
 
 .sponsors {
-  border: 3px solid red;
   display: flex;
   align-items: center;
   background-color: var(--water-background);
   z-index: 0;
-
-  @include sm-desktop {
-    padding: 166px 0px 268px;
-  }
 }
