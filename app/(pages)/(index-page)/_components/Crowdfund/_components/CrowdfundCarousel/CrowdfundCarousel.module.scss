@@ -3,7 +3,6 @@
 .container{
     display: flex;
     flex-direction: column;
-    gap: 18px;
 
     .supportText {
         color: #FFF;
@@ -12,12 +11,8 @@
         font-size: 50px;
         font-style: normal;
         font-weight: 700;
-        line-height: 60px; /* 120% */
+        line-height: 60px;
         letter-spacing: 1px;
         margin-top: 2%;
-    }
-
-    @include phone {
-        gap: 10px;
     }
 }

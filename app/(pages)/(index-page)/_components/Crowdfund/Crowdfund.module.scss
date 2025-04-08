@@ -4,11 +4,14 @@
   display: flex;
   padding: 5% 0%;
   width: 100%;
-  border: 3px solid red;
   background-color: var(--water-background);
   overflow-x: clip;
   position: relative;
   flex-direction: column;
+
+  @include sm-desktop {
+    padding-top: 5%;
+  }
 
   .heading {
     display: flex;
@@ -27,6 +30,14 @@
       letter-spacing: 0.8px;
       text-align: center;
       display: flex;
+
+      @include tablet {
+        font-size: 30px;
+      }
+
+      @include sm-tablet {
+        font-size: 23px;
+      }
     }
   
     .heartIcon {
@@ -37,11 +48,6 @@
       aspect-ratio: 1/1;
       color: var(--text-light);
     }
-  }
-
-  @include sm-desktop {
-    // flex-direction: column;
-    padding: 2% 0%;
   }
 }
 
