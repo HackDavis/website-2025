@@ -1,0 +1,18 @@
+@import '@globals/styles/mixins.scss';
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    .supportText {
+        color: #FFF;
+        text-align: center;
+        font-family: "Metropolis";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 1px;
+        margin-top: 2%;
+    }
+}

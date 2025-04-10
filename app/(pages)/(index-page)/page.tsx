@@ -9,6 +9,7 @@ import styles from './page.module.scss';
 import FAQ from './_components/FAQ/FAQ';
 import Underwater from '../_components/Underwater/Underwater';
 import BigWave from './_components/BigWave/BigWave';
+import Crowdfund from './_components/Crowdfund/Crowdfund';
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
 
       <div id="sponsors">
         <Sponsors />
+        <Crowdfund />
         <BigVinyl />
       </div>
     </div>

@@ -1,0 +1,81 @@
+@import '@globals/styles/mixins.scss';
+
+.container {
+  display: flex;
+  padding: 5% 0%;
+  width: 100%;
+  background-color: var(--water-background);
+  overflow-x: clip;
+  position: relative;
+  flex-direction: column;
+
+  @include sm-desktop {
+    padding-top: 5%;
+  }
+
+  @include tablet {
+    padding-top: 10%;
+  }
+
+  @include phone {
+    padding-top: 15%;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+
+    h1 {
+      color: var(--text-light);
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 125%;
+      letter-spacing: 0.8px;
+      text-align: center;
+      display: flex;
+
+      @include tablet {
+        font-size: 30px;
+      }
+
+      @include sm-tablet {
+        font-size: 25px;
+      }
+
+      @include sm-phone {
+        font-size: 13px;
+      }
+    }
+  
+    .heartIcon {
+      padding-left: 10px;
+      width: 40px;
+      height: 40px;
+      font-weight: 800;
+      aspect-ratio: 1/1;
+      color: var(--text-light);
+
+      @include sm-tablet {
+        width: 30px;
+        height: 30px;
+      }
+
+      @include phone {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+.sponsors {
+  display: flex;
+  align-items: center;
+  background-color: var(--water-background);
+  z-index: 0;
+}

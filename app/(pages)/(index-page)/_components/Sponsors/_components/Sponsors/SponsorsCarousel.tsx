@@ -5,20 +5,24 @@ import styles from './SponsorsCarousel.module.scss';
 // Row 1: tier 1 sponsors
 import csDepartment from 'public/index/Sponsors/cs.png';
 import asucd from 'public/index/Sponsors/asucd.png';
-// import anthropic from 'public/index/Sponsors/anthropic.png';
+import anthropic from 'public/index/Sponsors/anthropic.png';
 import ucDavis from 'public/index/Sponsors/ucDavis.png';
 
 // Row 2: tier 2 sponsors
 // import pepsi from 'public/index/Sponsors/pepsi.png';
-// import cfc from 'public/index/Sponsors/cfc.jpg';
+import cfc from 'public/index/Sponsors/cfc.jpg';
 // import ucdLS from 'public/index/Sponsors/ls.png';
 import datalab from 'public/index/Sponsors/datalab.png';
 import cerebras from 'public/index/Sponsors/cerebras.png';
 import msba from 'public/index/Sponsors/MSBA.png';
+import freepik from 'public/index/Sponsors/freepik.png';
+import emojis from 'public/index/Sponsors/emojis.png';
+import letta from 'public/index/Sponsors/letta.png';
 
 // Row 3: IPO Sponsors
 import govops from 'public/index/Sponsors/IPOs/govops.png';
 import yolonami from 'public/index/Sponsors/IPOs/yoloNAMI.png';
+import fourthAndHope from 'public/index/Sponsors/IPOs/fourthAndHope.png';
 
 export default function SponsorsCarousel() {
   return (
@@ -39,11 +43,11 @@ export default function SponsorsCarousel() {
           url="https://asucd.ucdavis.edu/"
           alt="ASUCD Logo"
         />
-        {/*         <Logo
+        <Logo
           imgSrc={anthropic}
           url="https://www.anthropic.com/"
           alt="Anthropic Logo"
-        /> */}
+        />
       </Marquee>
 
       <Marquee iterations={2} reverse duration={50}>
@@ -58,12 +62,12 @@ export default function SponsorsCarousel() {
           url="https://gsm.ucdavis.edu/master-science-business-analytics-msba"
           alt="MSBA Logo"
         />
-        {/* <Logo
+        <Logo
           imgSrc={cfc}
           url="https://csi.ucdavis.edu/cfc/"
           alt="Club Financial Council Logo"
         />
-        <Logo
+        {/* <Logo
           imgSrc={ucdLS}
           url="https://lettersandscience.ucdavis.edu/"
           alt="UC Davis College of Letters & Science Logo"
@@ -73,9 +77,16 @@ export default function SponsorsCarousel() {
           url="https://cerebras.ai/"
           alt="Cerebras Logo"
         />
+        <Logo
+          imgSrc={freepik}
+          url="https://www.freepik.com/"
+          alt="Freepik Logo"
+        />
+        <Logo imgSrc={letta} url="https://www.letta.com/" alt="Letta Logo" />
+        <Logo imgSrc={emojis} url="http://emojis.com/" alt="Emojis.com Logo" />
       </Marquee>
 
-      <Marquee iterations={2} duration={50}>
+      <Marquee iterations={1} duration={50}>
         <Logo
           imgSrc={govops}
           url="https://www.govops.ca.gov/"
@@ -85,6 +96,11 @@ export default function SponsorsCarousel() {
           imgSrc={yolonami}
           url="https://namiyolo.org/"
           alt="NAMI Yolo Country Logo"
+        />
+        <Logo
+          imgSrc={fourthAndHope}
+          url="https://fourthandhope.org/"
+          alt="Fourth And Hope Logo"
         />
       </Marquee>
     </div>
