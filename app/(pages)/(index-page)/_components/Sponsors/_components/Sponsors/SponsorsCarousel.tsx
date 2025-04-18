@@ -8,6 +8,7 @@ import asucd from 'public/index/Sponsors/asucd.png';
 import anthropic from 'public/index/Sponsors/anthropic.png';
 import ucDavis from 'public/index/Sponsors/ucDavis.png';
 import cfc from 'public/index/Sponsors/cfc.jpg';
+import deloitte from 'public/index/Sponsors/deloitte.png';
 
 // Row 2: tier 2 sponsors
 import pepsi from 'public/index/Sponsors/pepsi.png';
@@ -35,6 +36,11 @@ export default function SponsorsCarousel() {
           imgSrc={ucDavis}
           url="https://www.ucdavis.edu"
           alt="UC Davis Logo"
+        />
+        <Logo
+          imgSrc={deloitte}
+          url="https://www.deloitte.com/"
+          alt="Deloitte Logo"
         />
         <Logo
           imgSrc={csDepartment}
