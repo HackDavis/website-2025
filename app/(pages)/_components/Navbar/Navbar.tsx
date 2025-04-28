@@ -40,11 +40,17 @@ const links = [
     path: '/?section=donate',
   },
   {
-    ids: ['faq'],
-    body: 'FAQ',
+    ids: ['teams'],
+    body: 'TEAMS',
     page: '/',
-    path: '/?section=faq',
+    path: '/?section=teams',
   },
+  // {
+  //   ids: ['faq'],
+  //   body: 'FAQ',
+  //   page: '/',
+  //   path: '/?section=faq',
+  // },
   {
     ids: ['sponsors'],
     body: 'SPONSORS',
@@ -82,12 +88,19 @@ const sections = [
     background: 'rgba(136, 136, 136, 0.50)',
   },
   {
-    id: 'faq',
+    id: 'teams',
     page: '/',
     baseColor: '#FFFFFF',
     activeColor: '#AFD157',
     background: 'rgba(136, 136, 136, 0.50)',
   },
+  // {
+  //   id: 'faq',
+  //   page: '/',
+  //   baseColor: '#FFFFFF',
+  //   activeColor: '#AFD157',
+  //   background: 'rgba(136, 136, 136, 0.50)',
+  // },
   {
     id: 'sponsors',
     page: '/',

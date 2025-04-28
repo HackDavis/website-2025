@@ -123,7 +123,7 @@ export default function FAQ() {
               className={style.grass_3}
             />
           </div>
-          <div id="faq" className={style.faq}>
+          <div id="teams" className={style.faq}>
             <Image
               src="/images/faq/grass_texture_4.svg"
               alt="grass texture"

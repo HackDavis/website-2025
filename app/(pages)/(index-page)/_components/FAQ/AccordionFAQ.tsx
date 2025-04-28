@@ -115,6 +115,215 @@ const AccordionFAQ = () => {
     },
   ];
 
+  const teams = [
+    // {
+    //   question: 'Why join us?',
+    //   answer:
+    //     'Personal and professional growth in a student-run organization. Add impressive skills and experience to your resume. Collaborate with a team of students passionate about social good. Create valuable connections in the tech industry. ',
+    // },
+    {
+      question: 'Technical',
+      answer: (
+        <>
+          Are you interested in full-stack web development with a desire to
+          learn and collaborate with a team of developers? If you have a strong
+          foundation in HTML/CSS, JavaScript, and React.js and are eager to
+          expand your skill set, join the Technical team! As a Technical
+          Director, you will get the chance to create and maintain the HackDavis
+          website and web applications, devise creative solutions, participate
+          in code review sessions, and grow with your fellow Technical
+          directors.
+          <br />
+          <br />
+          <strong>Required Qualifications: </strong>
+          Experience with version control, HTML, CSS, JavaScript and React.js.
+          Strong desire to learn and grow in the field of web development.
+          Excellent problem-solving skills and attention to detail. Ability to
+          work well in a team and take constructive feedback positively. Passion
+          for technology and a proactive approach to keeping up with industry
+          standards and trends.
+          <br />
+          <br />
+          <strong>Preferred Qualifications: </strong>
+          Familiarity with Next.js framework and database systems like MongoDB.
+        </>
+      ),
+    },
+    {
+      question: 'Operations',
+      answer: (
+        <>
+          As an Operations Director, you’ll be a key part of the engine that
+          powers one of the biggest hackathons in California. You’ll help plan,
+          organize, and execute the behind-the-scenes logistics that ensure
+          everything runs smoothly from managing venue and schedules to
+          coordinating with vendors. If you’re detail-oriented,
+          reliable,interested in large-scale event planning, this role is for
+          you.
+          <br />
+          <br />
+          <strong>Required Qualifications: </strong>
+          Strong organizational skills and attention to detail. Excellent
+          communication skills. Ability to stay calm and make quick decisions,
+          particularly in high-pressure situations. A proactive, dependable and
+          responsible approach to tackling challenges. Thrive in a team setting,
+          fostering a spirit of collaboration and mutual support. A passion for
+          learning and developing organizational and leadership skills.
+        </>
+      ),
+    },
+    {
+      question: 'Marketing',
+      answer: (
+        <>
+          As a Marketing Director, you’ll play a key role in driving our
+          visibility and engagement within and beyond the campus community.
+          You’ll bring creative ideas to life, run engaging campaigns, and
+          collaborate across teams to share our initiatives in fresh, exciting
+          ways. This is a role for someone who’s creative, organized,
+          enthusiastic, and ready to turn ideas into impact.
+          <br />
+          <br />
+          <strong>Required Qualifications: </strong>
+          Strong communication and time management skills. Basic understanding
+          of social media platforms, and promotion tactics. Creative thinker
+          with a good sense of trends and starategic approach to audience
+          engagement. Confident in shooting and editing short-form video
+          content. Enthusiasm for marketing and a strong desire to learn and
+          grow in the field. Comfortable working both independently and
+          collaboratively.
+          <br />
+          <br />
+          <strong>Preferred Qualifications: </strong>
+          Prior experience in social media advertising and content analytics.
+          Photography, videography or video editing skills. Familiarity with
+          email campaign tools like MailChimp.
+        </>
+      ),
+    },
+    {
+      question: 'Sponsorship',
+      answer: (
+        <>
+          As a Sponsorship Team Member, you’ll help build the partnerships that
+          make our hackathons possible. From reaching out to potential sponsors
+          to managing ongoing relationships, you'll play a critical role in
+          securing funding, resources, and support. You will collaborate with
+          other teams to ensure sponsor visibility and fulfillment of
+          deliverables. This role is perfect for someone who’s professional,
+          proactive, and excited to connect with companies and organizations.
+          <br />
+          <br />
+          <strong>Required Qualifications: </strong>
+          Confidence and an ability to think on your feet in negotiations. A
+          natural talent for building and maintaining relationships. Proactive
+          mindset, always on the lookout for new sponsorship opportunities.
+          Strong organizational and communication skills. Ability to manage
+          multiple sponsorship commitments and devliverables efficiently.
+          Professionalism, attention to detail and ability to take initiative
+          and follow up consistently.
+          <br />
+          <br />
+          <strong>Preferred Qualifications: </strong>
+          Familiarity with outreach automation and lead generation tools like
+          Apollo.io and SalesQL. Experience with sales or fundraising.
+        </>
+      ),
+    },
+    {
+      question: 'Finance',
+      answer: (
+        <>
+          As a Finance Director, you will play a vital role in managing our
+          finances, ensuring the sustainability of our initiatives. From
+          budgeting and expense tracking to reimbursements, and grant writing,
+          you’ll play a key role in ensuring we use our resources wisely and
+          stay financially organized. This is a great role for someone who’s
+          detail-oriented, responsible, and interested in learning more about
+          financial management in a real-world setting.
+          <br />
+          <br />
+          <strong>Required Qualifications: </strong>
+          Strong financial acumen with an interest in budgeting and financial
+          planning. Good understanding of cash flow management and financial
+          forecasting. Fundraising experience or a willingness to learn and
+          engage with donors and sponsors effectively. Exceptional communication
+          skills, both written and verbal. A can-do attitude that will be an
+          invaluable asset to HackDavis' growth.
+          <br />
+          <br />
+          <strong>Preferred Qualifications: </strong>
+          Experience with managing budgets or grant writing. Familiarity with
+          nonprofit tax requirements or an interest in learning about them.
+        </>
+      ),
+    },
+    {
+      question: 'External',
+      answer: (
+        <>
+          As an External Team Member, you'll represent HackDavis to external
+          organizations and communities, playing a crucial role in creating and
+          managing partnerships with other student clubs, industry
+          professionals, mentors, nonprofit organizations, and more. You’ll
+          coordinate events, workshops, and outreach efforts that enrich our
+          initiatives. If you’re organized, outgoing, and passionate about
+          building strong, long-lasting relationships, this role is for you!
+          <br />
+          <br />
+          <strong>Required Qualifications: </strong>
+          Spearhead the planning and execution of external events, demonstrating
+          your organizational skills and attention to detail. A proactive and
+          personable demeanor, radiating energy and enthusiasm. Strong
+          communication skills, both written and verbal. Confidence in
+          connecting with diverse groups and individuals. Initiative to learn
+          and develop organizational and communication skills. Outreach to clubs
+          on-campus, students and alumni, and off-campus industry leaders; being
+          able to network and foster meaningful connections Familiarity with
+          HackDavis or hackathons is preferred but not mandatory.
+        </>
+      ),
+    },
+    {
+      question: 'Design',
+      answer: (
+        <>
+          Are you a creative, innovative, and proactive designer with a passion
+          for human-centered design? Join the Design team and help us create
+          brand-consistent, minimal, and aesthetically pleasing designs that
+          captivate and excite our audience. Your creative talent will play a
+          pivotal role in shaping the future of HackDavis. We are looking for
+          talented individuals to join our design team in various roles:
+          <br />
+          <br />
+          <strong>Brand Designer: </strong>
+          Craft the brand identity for the Hackathon season. Storytelling and
+          experimental design. Proficiency in illustration using Figma and Adobe
+          Illustrator.
+          <br />
+          <br />
+          <strong>Product Designer: </strong>
+          Design products that aim to delight and leave an impression, including
+          apparel, stickers, and branded items. Detail-oriented with a focus on
+          product specs. Conduct market research to inform design decisions.
+          <br />
+          <br />
+          <strong>Content Designer: </strong>
+          Create eye-catching, compelling content for social media and printed
+          flyers. Deep understanding of the audience. Attention to detail to
+          ensure engaging visuals.
+          <br />
+          <br />
+          <strong>UI/UX Designer: </strong>
+          Design beautiful and intuitive web experiences that bring joy to
+          users. Focus on responsive design and intuitive user experiences.
+          Proficiency in wireframing and creating delightful web interfaces
+          using Figma.
+        </>
+      ),
+    },
+  ];
+
   {
     /*
       This interface and AccordionItem is used to define the structure of the accordion item, allowing us to apply our styling to it
@@ -140,7 +349,8 @@ const AccordionFAQ = () => {
       ref={containerRef}
       style={{ height: fixedHeight ? `${fixedHeight}px` : 'auto' }}
     >
-      <h1 className={styles.FAQText}>FAQ</h1>
+      {/* <h1 className={styles.FAQText}>FAQ</h1> */}
+      <h1 className={styles.FAQText}>Teams</h1>
 
       {/* 
         Hidden element to measure the longest answer (first question) for calculating fixed height of the container
@@ -153,12 +363,12 @@ const AccordionFAQ = () => {
         }}
       >
         <p ref={longestAnswerRef} className={styles.answer}>
-          {faqs[0].answer}
+          {teams[6].answer}
         </p>
       </div>
 
       <Accordion transition transitionTimeout={250}>
-        {faqs.map(({ question, answer }, index) => (
+        {teams.map(({ question, answer }, index) => (
           <React.Fragment key={index}>
             <Item
               key={index}

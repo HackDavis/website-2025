@@ -33,7 +33,7 @@ export default function BigWave() {
             href={'mailto:team@hackdavis.io'}
             className={styles.sponsor_button}
           >
-            Sponsor 2025
+            Sponsor 2026
           </Link>
         </div>
       </div>
