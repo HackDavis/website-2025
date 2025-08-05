@@ -33,7 +33,7 @@ const links = [
     page: '/',
     path: '/?section=home', // remove section if scroll issue fixed
   },
-  {
+  /*{
     ids: ['donate'],
     body: 'DONATE',
     page: '/',
@@ -56,7 +56,7 @@ const links = [
     body: 'SPONSORS',
     page: '/',
     path: '/?section=sponsors',
-  },
+  },*/
   {
     ids: ['about'],
     body: 'ABOUT',
@@ -80,7 +80,7 @@ const sections = [
     activeColor: '#FFC53D',
     background: 'rgba(136, 136, 136, 0.50)',
   },
-  {
+  /*{
     id: 'donate',
     page: '/',
     baseColor: '#FFFFFF',
@@ -93,7 +93,7 @@ const sections = [
     baseColor: '#FFFFFF',
     activeColor: '#AFD157',
     background: 'rgba(136, 136, 136, 0.50)',
-  },
+  },*/
   // {
   //   id: 'faq',
   //   page: '/',
@@ -101,13 +101,13 @@ const sections = [
   //   activeColor: '#AFD157',
   //   background: 'rgba(136, 136, 136, 0.50)',
   // },
-  {
+  /*{
     id: 'sponsors',
     page: '/',
     baseColor: '#FFFFFF',
     activeColor: '#FFFFFF',
     background: 'rgba(136, 136, 136, 0.50)',
-  },
+  },*/
   {
     id: 'about',
     page: '/about-us',

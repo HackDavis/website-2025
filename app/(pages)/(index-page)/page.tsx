@@ -16,9 +16,9 @@ export default function Home() {
     <div className={styles.container}>
       <div id="home">
         <HeroSection />
-        <SandCastle />
+        {/*<SandCastle />*/}
       </div>
-
+      {/*
       <div id="underwater">
         <BigWave />
         <Underwater />
@@ -32,7 +32,7 @@ export default function Home() {
         <Sponsors />
         <Crowdfund />
         <BigVinyl />
-      </div>
+      </div>*/}
     </div>
   );
 }
