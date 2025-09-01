@@ -16,23 +16,7 @@ export default function Home() {
     <div className={styles.container}>
       <div id="home">
         <HeroSection />
-        {/*<SandCastle />*/}
       </div>
-      {/*
-      <div id="underwater">
-        <BigWave />
-        <Underwater />
-      </div>
-
-      <div id="donate">
-        <FAQ />
-      </div>
-
-      <div id="sponsors">
-        <Sponsors />
-        <Crowdfund />
-        <BigVinyl />
-      </div>*/}
     </div>
   );
 }

@@ -80,34 +80,6 @@ const sections = [
     activeColor: '#FFC53D',
     background: 'rgba(136, 136, 136, 0.50)',
   },
-  /*{
-    id: 'donate',
-    page: '/',
-    baseColor: '#FFFFFF',
-    activeColor: '#AFD157',
-    background: 'rgba(136, 136, 136, 0.50)',
-  },
-  {
-    id: 'teams',
-    page: '/',
-    baseColor: '#FFFFFF',
-    activeColor: '#AFD157',
-    background: 'rgba(136, 136, 136, 0.50)',
-  },*/
-  // {
-  //   id: 'faq',
-  //   page: '/',
-  //   baseColor: '#FFFFFF',
-  //   activeColor: '#AFD157',
-  //   background: 'rgba(136, 136, 136, 0.50)',
-  // },
-  /*{
-    id: 'sponsors',
-    page: '/',
-    baseColor: '#FFFFFF',
-    activeColor: '#FFFFFF',
-    background: 'rgba(136, 136, 136, 0.50)',
-  },*/
   {
     id: 'about',
     page: '/about-us',
