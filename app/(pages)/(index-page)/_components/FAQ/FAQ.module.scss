@@ -1,25 +1,29 @@
 @import '@globals/styles/mixins.scss';
 
-.main_container{
+.main_container {
     position: relative;
     // height: 100%
     overflow-x: clip;
 }
+
 .container {
     display: flex;
 }
+
 .faq_donation {
     width: 68%;
     position: relative;
     background-color: #549645;
     padding-top: 30%;
 }
-.faq{
+
+.faq {
     padding: 20%;
     padding-top: 8%;
     position: relative;
 }
-.donation{
+
+.donation {
     padding-right: 7%;
     position: relative;
 
@@ -27,88 +31,102 @@
         padding: 0;
     }
 }
+
 .waterfall {
     width: 20%;
     background-color: var(--water-background);
     border-width: 0px 16px 0px 16px;
     border-style: solid;
     border-color: #2BACD5;
-    
+
     @include desktop {
         border-width: 0px 12px 0px 12px;
     }
+
     @include tablet {
         border-width: 0px 10px 0px 10px;
     }
 }
-.grass_space{
+
+.grass_space {
     width: 12%;
     background-color: #549645;
 }
-.algae_level{
+
+.algae_level {
     position: relative; //not rlly doing anything...
 }
 
 // all asset positioning :p
-.underwater_dark{
+.underwater_dark {
     position: absolute;
-    width:100%;
+    width: 100%;
     top: -875px;
 }
-.underwater_med{
+
+.underwater_med {
     position: absolute;
-    width:100%;
+    width: 100%;
     top: -400px;
 }
-.algae_1{
+
+.algae_1 {
     position: absolute;
     top: -760px;
-    width:3%;
+    width: 3%;
     left: 6%;
 }
-.algae_2{
+
+.algae_2 {
     position: absolute;
     top: -585px;
-    width:3%;
+    width: 3%;
     left: 12%;
 }
-.algae_3{
+
+.algae_3 {
     position: absolute;
     top: -425px;
-    width:3%;
+    width: 3%;
     left: 56%;
 }
-.grass_dark{
+
+.grass_dark {
     position: absolute;
-    width:120%;
+    width: 120%;
     top: -125px;
     z-index: 20;
 }
-.grass_light{
+
+.grass_light {
     position: absolute;
-    width:120%;
+    width: 120%;
     top: -60px;
     z-index: 30;
 }
-.grass_2{
+
+.grass_2 {
     position: absolute;
     width: 7%;
-    top: 42%;
+    top: 700px;
     right: 0;
 }
+
 //assets in donate section
-.grass_single{
+.grass_single {
     position: absolute;
     width: 15%;
     top: -35%;
     right: 15%;
 }
-.grass_1{
+
+.grass_1 {
     position: absolute;
     width: 12%;
     top: -40%;
 }
-.grass_3{
+
+.grass_3 {
     position: absolute;
     width: 20%;
     bottom: -25%;
@@ -117,221 +135,312 @@
 
 //assets in faq section
 
-.grass_4{
+.grass_4 {
     position: absolute;
     width: 10.5%;
     top: 600px;
-    left:0;
+    left: 0;
 }
-.grass_5{
+
+.grass_5 {
     position: absolute;
     width: 23.1%;
     bottom: 2%;
     right: 10%
 }
-.firefly_sm1{
+
+.firefly_sm1 {
     position: absolute;
     width: 1%;
     top: 320px;
     right: 4%;
     animation: jump 6s infinite ease-in-out;
 }
-.firefly_lg1{
+
+.firefly_lg1 {
     position: absolute;
     width: 1.5%;
     top: 300px;
     right: 6%;
     animation: jump 5s infinite ease-in-out;
 }
-.firefly_sm2{
+
+.firefly_sm2 {
     position: absolute;
     width: 1%;
     top: 500px;
     right: -40%;
     animation: jump 6.5s infinite ease-in-out;
 }
-.firefly_lg2{
+
+.firefly_lg2 {
     position: absolute;
     width: 1.5%;
     bottom: 100px;
     right: 6%;
     animation: jump 5.5s infinite ease-in-out;
 }
+
 @keyframes jump {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
-.grass_single, .grass_1, .grass_2{
+.grass_single,
+.grass_1,
+.grass_2 {
     z-index: 0;
 }
-.grass_3, .grass_4, .grass_5 {
+
+.grass_3,
+.grass_4,
+.grass_5 {
     z-index: 5;
 }
-.firefly_lg1, .firefly_lg2, .firefly_sm1, .firefly_sm2{
+
+.firefly_lg1,
+.firefly_lg2,
+.firefly_sm1,
+.firefly_sm2 {
     z-index: 5;
 }
-.underwater_dark_mobile, .underwater_med_mobile, .grass_dark_mobile, .grass_light_mobile{
-    visibility:hidden;
-    width:0;
+
+.underwater_dark_mobile,
+.underwater_med_mobile,
+.grass_dark_mobile,
+.grass_light_mobile {
+    visibility: hidden;
+    width: 0;
 }
+
 // @include desktop { //1560
 //     //top/bottom: <in-px> // this value should work for screen sizes 1280px to 1840px
 // }
 
-@include desktop { //1164
+@include desktop {
+    //1164
     // for size 1280 to 1840
-    
-    .underwater_dark{
+
+    .underwater_dark {
         top: -600px;
     }
-    .underwater_med{
+
+    .underwater_med {
         top: -275px;
     }
-    .algae_1{
+
+    .algae_1 {
         top: -530px;
     }
-    .algae_2{
+
+    .algae_2 {
         top: -410px;
     }
-    .algae_3{
+
+    .algae_3 {
         top: -290px;
     }
-    .grass_dark{
+
+    .grass_dark {
         top: -85px;
     }
-    .grass_light{
+
+    .grass_light {
         top: -40px;
     }
-    .grass_1{
+
+    .grass_1 {
         top: -160px;
     }
 }
-@include sm-desktop { //1164
+
+@include sm-desktop {
+
+    //1164
     // for size 1048 to 1280
-    .underwater_dark{
+    .underwater_dark {
         top: -500px;
     }
-    .underwater_med{
+
+    .underwater_med {
         top: -230px;
     }
-    .algae_1{
+
+    .algae_1 {
         top: -440px;
     }
-    .algae_2{
+
+    .algae_2 {
         top: -340px;
     }
-    .algae_3{
+
+    .algae_3 {
         top: -250px;
     }
-    .grass_dark{
+
+    .grass_dark {
         top: -80px;
     }
-    .grass_light{
+
+    .grass_light {
         top: -40px;
     }
-    .grass_1{
+
+    .grass_1 {
         top: -115px;
     }
-    .grass_2{
+
+    .grass_2 {
         top: 30%;
     }
 }
-@include tablet { //904
+
+@include tablet {
+
+    //904
     // for size 760 to 1048
-    .underwater_dark{
+    .underwater_dark {
         top: -395px;
     }
-    .underwater_med{
+
+    .underwater_med {
         top: -180px;
     }
-    .algae_1{
+
+    .algae_1 {
         top: -335px;
     }
-    .algae_2{
+
+    .algae_2 {
         top: -270px;
     }
-    .algae_3{
+
+    .algae_3 {
         top: -190px;
     }
-    .grass_dark{
+
+    .grass_dark {
         top: -60px;
     }
-    .grass_light{
+
+    .grass_light {
         top: -30px;
     }
-    .grass_single{
+
+    .grass_single {
         top: -40%;
     }
-    .grass_1{
+
+    .grass_1 {
         top: -45%;
     }
 }
 
-@include phone { //phone 560
-    .underwater_dark, .underwater_med, .algae_2, .algae_3, .grass_dark, .grass_light, .grass_space, .waterfall, .grass_single, .grass_1, .grass_2, .grass_3, .grass_4, .grass_5, .firefly_sm1, .firefly_sm2, .firefly_lg1, .firefly_lg2{
-        visibility:hidden;
+@include phone {
+
+    //phone 560
+    .underwater_dark,
+    .underwater_med,
+    .algae_2,
+    .algae_3,
+    .grass_dark,
+    .grass_light,
+    .grass_space,
+    .waterfall,
+    .grass_single,
+    .grass_1,
+    .grass_2,
+    .grass_3,
+    .grass_4,
+    .grass_5,
+    .firefly_sm1,
+    .firefly_sm2,
+    .firefly_lg1,
+    .firefly_lg2 {
+        visibility: hidden;
         width: 0;
-        height:0;
+        height: 0;
         margin: 0;
         padding: 0;
         border: none;
     }
-    .underwater_dark_mobile{
+
+    .underwater_dark_mobile {
         position: absolute;
-        width:85%;
+        width: 85%;
         top: -570px;
         visibility: visible;
     }
-    .underwater_med_mobile{
+
+    .underwater_med_mobile {
         position: absolute;
-        width:94%;
+        width: 94%;
         top: -440px;
         visibility: visible;
     }
-    .grass_dark_mobile{
+
+    .grass_dark_mobile {
         position: absolute;
-        width:100%;
+        width: 100%;
         top: -135px;
         z-index: 20;
         visibility: visible;
     }
-    .grass_light_mobile{
+
+    .grass_light_mobile {
         position: absolute;
-        width:100%;
+        width: 100%;
         top: -60px;
         z-index: 30;
         visibility: visible;
     }
-    .algae_1{
+
+    .algae_1 {
         position: absolute;
         top: -830px;
-        width:13%;
+        width: 13%;
         left: 6%;
     }
-    .faq_donation{
+
+    .faq_donation {
         width: 100%;
     }
-    .faq{
+
+    .faq {
         padding: 5%;
     }
-    .donation{
+
+    .donation {
         padding-top: 10%;
     }
-    @include sm-phone{ //430
-        .underwater_dark_mobile{
+
+    @include sm-phone {
+
+        //430
+        .underwater_dark_mobile {
             top: -425px;
         }
-        .underwater_med_mobile{
+
+        .underwater_med_mobile {
             top: -300px;
         }
-        .grass_dark_mobile{
+
+        .grass_dark_mobile {
             top: -120px;
         }
-        .grass_light_mobile{
+
+        .grass_light_mobile {
             top: -60px;
         }
-        .algae_1{
+
+        .algae_1 {
             top: -510px;
         }
     }
