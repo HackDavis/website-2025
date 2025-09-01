@@ -349,13 +349,12 @@ const AccordionFAQ = () => {
       ref={containerRef}
       style={{ height: fixedHeight ? `${fixedHeight}px` : 'auto' }}
     >
-      {/* <h1 className={styles.FAQText}>FAQ</h1> */}
       <h1 className={styles.FAQText}>Teams</h1>
 
       {/* 
         Hidden element to measure the longest answer (first question) for calculating fixed height of the container
       */}
-      <div
+      {/* <div
         style={{
           position: 'absolute',
           visibility: 'hidden',
@@ -365,7 +364,7 @@ const AccordionFAQ = () => {
         <p ref={longestAnswerRef} className={styles.answer}>
           {teams[6].answer}
         </p>
-      </div>
+      </div> */}
 
       <Accordion transition transitionTimeout={250}>
         {teams.map(({ question, answer }, index) => (
@@ -405,6 +404,50 @@ const AccordionFAQ = () => {
           </React.Fragment>
         ))}
       </Accordion>
+
+      <br id="faq" />
+      <br />
+      <h1 className={styles.FAQText}>FAQ</h1>
+
+      <Accordion transition transitionTimeout={250}>
+        {faqs.map(({ question, answer }, index) => (
+          <React.Fragment key={index}>
+            <Item
+              key={index}
+              header={
+                <div className={styles.questionRow}>
+                  <p className={styles.questions}>{question}</p>
+                  <div>
+                    <div className={styles.dropDownPlus}>
+                      <Image
+                        src="/images/faq/plus_horizontal.svg"
+                        alt="expand icon"
+                        width={19}
+                        height={3}
+                      />
+                    </div>
+                    <Image
+                      src="/images/faq/plus_horizontal.svg"
+                      alt="collapse icon"
+                      width={19}
+                      height={3}
+                    />
+                  </div>
+                </div>
+              }
+              buttonProps={{
+                className: ({ isEnter }: { isEnter: boolean }) =>
+                  `${styles.itemBtn} ${isEnter ? styles.itemBtnExpanded : ''}`,
+              }}
+              contentProps={{ className: styles.itemContent }}
+            >
+              <p className={styles.answer}>{answer}</p>
+            </Item>
+            {index < faqs.length - 1 && <hr />}
+          </React.Fragment>
+        ))}
+      </Accordion>
+
     </div>
   );
 };
