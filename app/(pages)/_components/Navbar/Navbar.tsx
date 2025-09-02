@@ -33,7 +33,7 @@ const links = [
     page: '/',
     path: '/?section=home', // remove section if scroll issue fixed
   },
-  {
+  /*{
     ids: ['donate'],
     body: 'DONATE',
     page: '/',
@@ -56,7 +56,7 @@ const links = [
     body: 'SPONSORS',
     page: '/',
     path: '/?section=sponsors',
-  },
+  },*/
   {
     ids: ['about'],
     body: 'ABOUT',
