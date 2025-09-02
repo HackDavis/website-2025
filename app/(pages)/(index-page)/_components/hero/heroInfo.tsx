@@ -1,14 +1,13 @@
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import HeartButton from '../HeartButton/heartButton';
 import WordCycle from './wordCycle';
 
+/*import Image from 'next/image';
+import Link from 'next/link';
+import HeartButton from '../HeartButton/heartButton';*/
 
 export default function HeroInfo() {
   return (
     <div className="flex flex-col items-start gap-[22px] break-625:items-end break-625:gap-[31px]">
-
       <div className="flex flex-col items-start text-left break-625:items-end break-625:text-right">
         <p className="flex gap-2 font-metropolis text-[30px] font-bold leading-[115%] tracking-[0.8px] break-625:text-[40px]">
           <span className="text-white">
@@ -25,18 +24,21 @@ export default function HeroInfo() {
       </div>
 
       <div className="flex flex-col items-start gap-[12px] break-625:flex-col break-625:items-end break-625:gap-[28px] sm:flex-col sm:items-center">
-        <a href="https://forms.gle/QgmucXL1RN97pNFh9" target="_blank" rel="noopener noreferrer">
-          <button className="grid justify-center w-fit text-[--text-dark] text-[16px] break-625:text-[20px] font-bold bg-[--highlight-yellow] border-none rounded-full place-items-center pt-[8px] pb-[8px] pr-[24px] pl-[24px] break-625:pt-[10px] break-625:pb-[10px] break-625:pr-[30px] break-625:pl-[30px]">
+        <a
+          href="https://forms.gle/QgmucXL1RN97pNFh9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="grid w-fit place-items-center justify-center rounded-full border-none bg-[--highlight-yellow] pb-[8px] pl-[24px] pr-[24px] pt-[8px] text-[16px] font-bold text-[--text-dark] break-625:pb-[10px] break-625:pl-[30px] break-625:pr-[30px] break-625:pt-[10px] break-625:text-[20px]">
             2026 Judge Interest Form
           </button>
         </a>
       </div>
-
     </div>
   );
 }
 
-interface FormLinkProps {
+/*interface FormLinkProps {
   text: string;
   href: string;
   includeComma: boolean;
@@ -60,4 +62,4 @@ function FormLink({ text, href, includeComma }: FormLinkProps) {
       {includeComma && <p>,</p>}
     </Link>
   );
-}
+}*/

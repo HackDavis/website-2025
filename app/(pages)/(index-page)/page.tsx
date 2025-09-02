@@ -1,15 +1,15 @@
 // import Directors from './(about-us)/_components/Directors/Directors';
 // 'use client';
 
-import BigVinyl from './_components/BigVinyl/BigVinyl';
-import HeroSection from './_components/hero/heroMainSection';
+/*import BigVinyl from './_components/BigVinyl/BigVinyl';
 import SandCastle from './_components/SandCastle';
 import Sponsors from './_components/Sponsors/Sponsors';
-import styles from './page.module.scss';
 import FAQ from './_components/FAQ/FAQ';
 import Underwater from '../_components/Underwater/Underwater';
 import BigWave from './_components/BigWave/BigWave';
-import Crowdfund from './_components/Crowdfund/Crowdfund';
+import Crowdfund from './_components/Crowdfund/Crowdfund';*/
+import HeroSection from './_components/hero/heroMainSection';
+import styles from './page.module.scss';
 
 export default function Home() {
   return (
