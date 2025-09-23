@@ -405,7 +405,7 @@ const AccordionFAQ = () => {
         ))}
       </Accordion>
 
-      <br id="faq" />
+      {/* <br id="faq" />
       <br />
       <h1 className={styles.FAQText}>FAQ</h1>
 
@@ -446,7 +446,7 @@ const AccordionFAQ = () => {
             {index < faqs.length - 1 && <hr />}
           </React.Fragment>
         ))}
-      </Accordion>
+      </Accordion> */}
     </div>
   );
 };

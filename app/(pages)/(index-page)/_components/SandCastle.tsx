@@ -12,6 +12,7 @@ import sand_hole2 from '@public/images/what_is_hackdavis/sand_hole2.svg';
 
 import styles from './SandCastle.module.scss';
 import Image from 'next/image';
+import AccordionFAQ from './FAQ/AccordionFAQ';
 
 export default function SandCastle() {
   return (
@@ -27,7 +28,8 @@ function SandCastleContent() {
   return (
     <div className="mt-20 flex h-fit w-full flex-wrap justify-between gap-4 p-[10%] pt-[15%] sm:mt-10 sm:gap-0 md:flex-row md:p-[10%]">
       <div className="lg:2/3 w-full break-400:w-3/4 sm:p-10 sm:pr-0 md:w-3/5 xl:w-1/2">
-        <WhatIsHackDavisText />
+        {/* <WhatIsHackDavisText /> */}
+        <AccordionFAQ />
       </div>
       <div className="flex w-full items-end justify-end sm:items-center sm:justify-center md:w-1/3">
         <div className="relative mt-8 flex h-full w-2/3 justify-center sm:w-full md:-mt-10 md:justify-end">
@@ -55,21 +57,21 @@ function SandCastleContent() {
   );
 }
 
-function WhatIsHackDavisText() {
-  return (
-    <div className="flex w-full max-w-[900px] flex-col items-start justify-center text-sand-text-color">
-      <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl">
-        HackDavis
-      </h1>
-      <p className="text-base sm:text-xl md:text-2xl lg:text-3xl 2xl:text-5xl">
-        is one of the
-        <strong> largest collegiate hackathons </strong> in California, where
-        over 900 students, creators, and leaders come together to{' '}
-        <strong>create for social good</strong>.
-      </p>
-    </div>
-  );
-}
+// function WhatIsHackDavisText() {
+//   return (
+//     <div className="flex w-full max-w-[900px] flex-col items-start justify-center text-sand-text-color">
+//       <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl">
+//         HackDavis
+//       </h1>
+//       <p className="text-base sm:text-xl md:text-2xl lg:text-3xl 2xl:text-5xl">
+//         is one of the
+//         <strong> largest collegiate hackathons </strong> in California, where
+//         over 900 students, creators, and leaders come together to{' '}
+//         <strong>create for social good</strong>.
+//       </p>
+//     </div>
+//   );
+// }
 
 function SandCastleBackground({ children }: { children: React.ReactNode }) {
   return (
