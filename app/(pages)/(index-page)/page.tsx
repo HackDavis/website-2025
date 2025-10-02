@@ -2,7 +2,7 @@
 // 'use client';
 
 // import BigVinyl from './_components/BigVinyl/BigVinyl';
-// import SandCastle from './_components/SandCastle';
+import SandCastle from './_components/SandCastle';
 // import Sponsors from './_components/Sponsors/Sponsors';
 // import FAQ from './_components/FAQ/FAQ';
 // import Underwater from '../_components/Underwater/Underwater';
@@ -17,16 +17,16 @@ export default function Home() {
       <div id="home">
         <HeroSection />
       </div>
-      {/* <div id="teams">
+      <div id="teams">
         <SandCastle />
-      </div> */}
+      </div>
 
       {/* <div id="underwater">
         <BigWave />
         <Underwater />
-      </div> */}
+      </div>
 
-      {/* <div id="donate">
+      <div id="donate">
         <FAQ />
       </div> */}
 

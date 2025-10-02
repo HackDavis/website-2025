@@ -1,8 +1,8 @@
 import React from 'react';
 import WordCycle from './wordCycle';
 
-// import Image from 'next/image';
-// import Link from 'next/link';
+import Image from 'next/image';
+import Link from 'next/link';
 // import HeartButton from '../HeartButton/heartButton';
 
 export default function HeroInfo() {
@@ -43,7 +43,7 @@ export default function HeroInfo() {
           </button>
         </a>
       </div>
-      {/* <div className="flex flex-col items-start gap-2 text-left break-625:flex-row break-625:items-end break-625:text-right">
+      <div className="flex flex-col items-start gap-2 text-left break-625:flex-row break-625:items-end break-625:text-right">
         <span className="hidden font-metropolis text-[18px] font-normal tracking-[0.48px] text-white break-625:inline md:text-[20px]">
           Check out the{' '}
         </span>
@@ -58,33 +58,33 @@ export default function HeroInfo() {
             we have!
           </span>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
 
-// interface FormLinkProps {
-//   text: string;
-//   href: string;
-//   includeComma: boolean;
-// }
+interface FormLinkProps {
+  text: string;
+  href: string;
+  includeComma: boolean;
+}
 
-// function FormLink({ text, href, includeComma }: FormLinkProps) {
-//   return (
-//     <Link
-//       href={href}
-//       // target="_blank"
-//       className="flex font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]"
-//     >
-//       <p className="border-b-2 border-b-white font-bold">{text}</p>
-//       <Image
-//         src="/Hero/icon_arrow.svg"
-//         alt="Arrow icon"
-//         width={10}
-//         height={10}
-//         className="m-1 object-contain transition-transform group-hover:translate-x-1"
-//       />
-//       {includeComma && <p>,</p>}
-//     </Link>
-//   );
-// }
+function FormLink({ text, href, includeComma }: FormLinkProps) {
+  return (
+    <Link
+      href={href}
+      // target="_blank"
+      className="flex font-metropolis text-[18px] font-bold tracking-[0.48px] text-white md:text-[20px]"
+    >
+      <p className="border-b-2 border-b-white font-bold">{text}</p>
+      <Image
+        src="/Hero/icon_arrow.svg"
+        alt="Arrow icon"
+        width={10}
+        height={10}
+        className="m-1 object-contain transition-transform group-hover:translate-x-1"
+      />
+      {includeComma && <p>,</p>}
+    </Link>
+  );
+}

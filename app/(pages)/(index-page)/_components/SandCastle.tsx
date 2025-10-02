@@ -76,7 +76,7 @@ function SandCastleContent() {
 function SandCastleBackground({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-auto w-screen flex-col justify-center bg-sand-background-light">
-      <div className="relative h-[750px] w-full sm:h-[950px] md:h-[900px] lg:h-[950px] xl:h-[1100px] 2xl:h-[1300px]">
+      <div className="relative min-h-[750px] w-full sm:min-h-[950px] md:min-h-[900px] lg:min-h-[950px] xl:min-h-[1100px] 2xl:min-h-[1300px]">
         <Image
           src={sand_background}
           alt="sand background"
@@ -101,7 +101,7 @@ function SandCastleBackground({ children }: { children: React.ReactNode }) {
             }}
           />
         </div>
-        <div className="absolute inset-0 z-10 flex w-full">{children}</div>
+        <div className="z-10 flex w-full">{children}</div>
       </div>
     </div>
   );

@@ -122,7 +122,7 @@ const AccordionFAQ = () => {
     //     'Personal and professional growth in a student-run organization. Add impressive skills and experience to your resume. Collaborate with a team of students passionate about social good. Create valuable connections in the tech industry. ',
     // },
     {
-      question: 'Technical',
+      question: 'Technical *',
       answer: (
         <>
           Are you interested in full-stack web development with a desire to
@@ -136,16 +136,13 @@ const AccordionFAQ = () => {
           <br />
           <br />
           <strong>Required Qualifications: </strong>
+          Familiarity with Next.js framework and database systems like MongoDB.
           Experience with version control, HTML, CSS, JavaScript and React.js.
           Strong desire to learn and grow in the field of web development.
           Excellent problem-solving skills and attention to detail. Ability to
           work well in a team and take constructive feedback positively. Passion
           for technology and a proactive approach to keeping up with industry
           standards and trends.
-          <br />
-          <br />
-          <strong>Preferred Qualifications: </strong>
-          Familiarity with Next.js framework and database systems like MongoDB.
         </>
       ),
     },
@@ -160,7 +157,7 @@ const AccordionFAQ = () => {
           coordinating with vendors. If you’re detail-oriented,
           reliable,interested in large-scale event planning, this role is for
           you.
-          <br />
+          {/* <br />
           <br />
           <strong>Required Qualifications: </strong>
           Strong organizational skills and attention to detail. Excellent
@@ -168,7 +165,7 @@ const AccordionFAQ = () => {
           particularly in high-pressure situations. A proactive, dependable and
           responsible approach to tackling challenges. Thrive in a team setting,
           fostering a spirit of collaboration and mutual support. A passion for
-          learning and developing organizational and leadership skills.
+          learning and developing organizational and leadership skills. */}
         </>
       ),
     },
@@ -182,7 +179,7 @@ const AccordionFAQ = () => {
           collaborate across teams to share our initiatives in fresh, exciting
           ways. This is a role for someone who’s creative, organized,
           enthusiastic, and ready to turn ideas into impact.
-          <br />
+          {/* <br />
           <br />
           <strong>Required Qualifications: </strong>
           Strong communication and time management skills. Basic understanding
@@ -197,12 +194,12 @@ const AccordionFAQ = () => {
           <strong>Preferred Qualifications: </strong>
           Prior experience in social media advertising and content analytics.
           Photography, videography or video editing skills. Familiarity with
-          email campaign tools like MailChimp.
+          email campaign tools like MailChimp. */}
         </>
       ),
     },
     {
-      question: 'Sponsorship',
+      question: 'Sponsorship *',
       answer: (
         <>
           As a Sponsorship Team Member, you’ll help build the partnerships that
@@ -241,7 +238,7 @@ const AccordionFAQ = () => {
           stay financially organized. This is a great role for someone who’s
           detail-oriented, responsible, and interested in learning more about
           financial management in a real-world setting.
-          <br />
+          {/* <br />
           <br />
           <strong>Required Qualifications: </strong>
           Strong financial acumen with an interest in budgeting and financial
@@ -254,7 +251,7 @@ const AccordionFAQ = () => {
           <br />
           <strong>Preferred Qualifications: </strong>
           Experience with managing budgets or grant writing. Familiarity with
-          nonprofit tax requirements or an interest in learning about them.
+          nonprofit tax requirements or an interest in learning about them. */}
         </>
       ),
     },
@@ -269,7 +266,7 @@ const AccordionFAQ = () => {
           coordinate events, workshops, and outreach efforts that enrich our
           initiatives. If you’re organized, outgoing, and passionate about
           building strong, long-lasting relationships, this role is for you!
-          <br />
+          {/* <br />
           <br />
           <strong>Required Qualifications: </strong>
           Spearhead the planning and execution of external events, demonstrating
@@ -280,12 +277,12 @@ const AccordionFAQ = () => {
           and develop organizational and communication skills. Outreach to clubs
           on-campus, students and alumni, and off-campus industry leaders; being
           able to network and foster meaningful connections Familiarity with
-          HackDavis or hackathons is preferred but not mandatory.
+          HackDavis or hackathons is preferred but not mandatory. */}
         </>
       ),
     },
     {
-      question: 'Design',
+      question: 'Design *',
       answer: (
         <>
           Are you a creative, innovative, and proactive designer with a passion
@@ -296,7 +293,7 @@ const AccordionFAQ = () => {
           talented individuals to join our design team in various roles:
           <br />
           <br />
-          <strong>Brand Designer: </strong>
+          {/* <strong>Brand Designer: </strong>
           Craft the brand identity for the Hackathon season. Storytelling and
           experimental design. Proficiency in illustration using Figma and Adobe
           Illustrator.
@@ -313,7 +310,7 @@ const AccordionFAQ = () => {
           flyers. Deep understanding of the audience. Attention to detail to
           ensure engaging visuals.
           <br />
-          <br />
+          <br /> */}
           <strong>UI/UX Designer: </strong>
           Design beautiful and intuitive web experiences that bring joy to
           users. Focus on responsive design and intuitive user experiences.
